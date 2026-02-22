@@ -1,0 +1,338 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const teamMembers = await getCollection('team');
+
+// Sort by order
+teamMembers.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+
+// Group by role
+const grouped = {
+    staff: teamMembers.filter(m => m.data.role === 'staff' || m.data.role === 'director'),
+    postdocs: teamMembers.filter(m => m.data.role === 'postdoc' || m.data.role === 'researcher'),
+    phds: teamMembers.filter(m => m.data.role === 'phd' || m.data.role === 'student'),
+    alumni: teamMembers.filter(m => m.data.role === 'alumni')
+};
+
+// Map nicely formatted titles
+const sectionTitles = {
+    staff: "Principal Investigators & Staff",
+    postdocs: "Postdoctoral Researchers",
+    phds: "PhD Researchers",
+    alumni: "Alumni"
+};
+---
+
+<Layout title="Team - VIOS Collaboratory">
+    <section class="team-header">
+        <div class="s-head">
+            <div class="s-eyebrow">
+                <div class="s-eyebrow-line"></div>
+                <span class="s-eyebrow-text">The People</span>
+            </div>
+            <h1 class="s-title">Meet the <em>team</em></h1>
+        </div>
+    </section>
+
+    <div class="team-container">
+        {Object.entries(grouped).map(([key, members]) => {
+            if (members.length === 0) return null;
+            return (
+                <div class="team-tier">
+                    <h2 class="tier-title">{sectionTitles[key as keyof typeof sectionTitles]}</h2>
+                    <div class="team-grid">
+                        {members.map(async (member) => {
+                            const { Content } = await member.render();
+                            return (
+                            <div class="team-card" data-member-id={member.id}>
+                                <div class="card-inner">
+                                    {member.data.profile ? (
+                                        <div class="profile-img-wrap">
+                                            <img src={"/vios.science/assets/images/team/" + member.data.profile} alt={member.data.title} loading="lazy" />
+                                        </div>
+                                    ) : (
+                                        <div class="profile-placeholder"></div>
+                                    )}
+                                    <div class="member-info">
+                                        <h3 class="member-name">{member.data.title}</h3>
+                                        {member.data.subtitle && <p class="member-role">{member.data.subtitle}</p>}
+                                    </div>
+                                </div>
+                                <!-- Hidden content for the modal -->
+                                <template class="member-bios">
+                                    <div class="modal-content-wrap">
+                                        <div class="modal-header-info">
+                                            {member.data.profile && <img class="modal-img" src={"/vios.science/assets/images/team/" + member.data.profile} alt={member.data.title}/>}
+                                            <div class="modal-titles">
+                                                <h2>{member.data.title}</h2>
+                                                {member.data.subtitle && <h3>{member.data.subtitle}</h3>}
+                                                <div class="modal-socials">
+                                                    {member.data.linkedin && <a href={member.data.linkedin} target="_blank">LinkedIn</a>}
+                                                    {member.data.scholar && <a href={member.data.scholar} target="_blank">Google Scholar</a>}
+                                                    {member.data.twitter && <a href={member.data.twitter} target="_blank">Twitter</a>}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="rendered-markdown">
+                                            <Content />
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        )})}
+                    </div>
+                </div>
+            )
+        })}
+    </div>
+
+    <!-- The floating modal -->
+    <dialog id="teamModal" class="team-modal">
+        <div class="modal-inner">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </dialog>
+</Layout>
+
+<style>
+    .team-header {
+        padding: 8rem 8rem 2rem;
+    }
+    .team-container {
+        padding: 0 8rem 6rem;
+    }
+    .team-tier {
+        margin-bottom: 4rem;
+    }
+    .tier-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.8rem;
+        color: var(--accent);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1rem;
+    }
+    
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 2rem;
+    }
+    
+    .team-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        cursor: pointer;
+        transition: transform 0.3s, border-color 0.3s, background 0.35s ease;
+        overflow: hidden;
+    }
+    .team-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(0,212,170,0.4);
+        background: var(--bg3);
+    }
+    
+    .profile-img-wrap {
+        width: 100%;
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .profile-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .team-card:hover .profile-img-wrap img {
+        transform: scale(1.05);
+    }
+    
+    .profile-placeholder {
+        width: 100%;
+        aspect-ratio: 1;
+        background: var(--bg3);
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .member-info {
+        padding: 1.5rem;
+    }
+    
+    .member-name {
+        font-family: 'Spectral', serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--text);
+        margin-bottom: 0.4rem;
+    }
+    
+    .member-role {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.4;
+    }
+    
+    /* Modal Styles */
+    .team-modal {
+        margin: auto;
+        padding: 0;
+        border: 1px solid var(--border);
+        background: var(--bg2);
+        color: var(--text);
+        border-radius: 4px;
+        max-width: 800px;
+        width: 90%;
+        max-height: 85vh;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    .team-modal::backdrop {
+        background: rgba(6, 13, 26, 0.8);
+        backdrop-filter: blur(4px);
+    }
+    
+    .modal-inner {
+        padding: 3rem;
+        position: relative;
+        overflow-y: auto;
+        max-height: 85vh;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: transparent;
+        border: none;
+        color: var(--muted);
+        font-size: 2rem;
+        cursor: pointer;
+        line-height: 1;
+        transition: color 0.2s;
+    }
+    
+    .close-btn:hover {
+        color: var(--accent);
+    }
+    
+    /* Global classes injected into modal content */
+    :global(.modal-content-wrap) {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    :global(.modal-header-info) {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+    }
+    
+    :global(.modal-img) {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--accent);
+    }
+    
+    :global(.modal-titles h2) {
+        font-family: 'Spectral', serif;
+        font-size: 2.2rem;
+        color: var(--text);
+        margin-bottom: 0.3rem;
+    }
+    
+    :global(.modal-titles h3) {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 1rem;
+    }
+    
+    :global(.modal-socials) {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    :global(.modal-socials a) {
+        font-size: 0.8rem;
+        color: var(--muted);
+        text-decoration: none;
+        padding: 0.3rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s;
+    }
+    :global(.modal-socials a:hover) {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+    
+    :global(.rendered-markdown) {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.05rem;
+    }
+    
+    :global(.rendered-markdown p) {
+        margin-bottom: 1rem;
+    }
+    :global(.rendered-markdown a) {
+        color: var(--accent2);
+        text-decoration: none;
+    }
+</style>
+
+<script is:inline>
+    // Modal interaction logic
+    const teamCards = document.querySelectorAll('.team-card');
+    const modal = document.getElementById('teamModal');
+    const modalBody = document.getElementById('modalBody');
+    const closeBtn = document.getElementById('closeModal');
+    if (modal && modalBody && closeBtn) {
+        teamCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const template = card.querySelector('template');
+                if (template) {
+                    modalBody.innerHTML = '';
+                    modalBody.appendChild(template.content.cloneNode(true));
+                    modal.showModal();
+                    document.body.style.overflow = 'hidden'; // prevent bg scroll
+                }
+            });
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            modal.close();
+        });
+        
+        modal.addEventListener('close', () => {
+            document.body.style.overflow = '';
+        });
+        
+        // Close when clicking outside
+        modal.addEventListener('click', (e) => {
+            const dialogDimensions = modal.getBoundingClientRect();
+            if (
+                e.clientX < dialogDimensions.left ||
+                e.clientX > dialogDimensions.right ||
+                e.clientY < dialogDimensions.top ||
+                e.clientY > dialogDimensions.bottom
+            ) {
+                modal.close();
+            }
+        });
+    }
+</script>

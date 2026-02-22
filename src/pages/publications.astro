@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const pubs = await getCollection('publications');
+---
+<Layout title="Publications - VIOS Collaboratory">
+    <section class="page-header">
+        <div class="s-head">
+            <div class="s-eyebrow">
+                <div class="s-eyebrow-line"></div>
+                <span class="s-eyebrow-text">Our Output</span>
+            </div>
+            <h1 class="s-title">Latest <em>publications</em></h1>
+        </div>
+    </section>
+
+    <div class="pub-container">
+        <div class="pub-cards stagger">
+            {pubs.map(pub => (
+                <div class="pub-card">
+                    {pub.data.image ? (
+                        <img class="pub-card-img" src={pub.data.image} alt="Paper Teaser" loading="lazy" />
+                    ) : (
+                        <div class="pub-card-img-placeholder"></div>
+                    )}
+                    <div class="pub-card-body">
+                        <span class="pub-card-venue">{pub.data.venue}</span>
+                        <p class="pub-card-title">{pub.data.title}</p>
+                        <p class="pub-card-authors">{pub.data.authors}</p>
+                    </div>
+                    <div class="pub-card-footer">
+                        <a href={pub.data.link || '#'} class="pub-card-link">Read paper →</a>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 8rem 8rem 2rem;
+    }
+    .pub-container {
+        padding: 0 8rem 6rem;
+    }
+    .pub-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+    .pub-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s, border-color 0.3s, background 0.35s ease;
+        overflow: hidden;
+    }
+    .pub-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(0,212,170,0.4);
+        background: var(--bg3);
+    }
+    .pub-card-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-bottom: 1px solid var(--border);
+    }
+    .pub-card-img-placeholder {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: var(--bg3);
+        border-bottom: 1px solid var(--border);
+    }
+    .pub-card-body {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .pub-card-venue {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+    .pub-card-title {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text);
+        line-height: 1.35;
+    }
+    .pub-card-authors {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.4;
+        margin-top: auto;
+        padding-top: 0.5rem;
+    }
+    .pub-card-footer {
+        padding: 0.85rem 1.5rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: flex-end;
+    }
+    .pub-card-link {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-decoration: none;
+        letter-spacing: 0.08em;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: color 0.2s;
+    }
+    .pub-card-link:hover {
+        color: var(--accent);
+    }
+</style>

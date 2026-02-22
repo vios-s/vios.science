@@ -1,0 +1,174 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allTutorials = await getCollection("tutorials");
+allTutorials.sort((a, b) => {
+    // try formatting by date if available
+    const aDate = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const bDate = b.data.date ? new Date(b.data.date).getTime() : 0;
+    return bDate - aDate;
+});
+---
+
+<Layout title="Tutorials - VIOS Collaboratory">
+    <section class="page-header">
+        <div class="s-head">
+            <div class="s-eyebrow">
+                <div class="s-eyebrow-line"></div>
+                <span class="s-eyebrow-text">Knowledge Hub</span>
+            </div>
+            <h1 class="s-title">Educational <em>tutorials</em></h1>
+        </div>
+        <p class="header-desc">
+            Explore our open-source tutorials, workshops, and educational
+            materials designed to help researchers and practitioners apply AI to
+            the life sciences.
+        </p>
+    </section>
+
+    <div class="tutorials-container">
+        <div class="tutorials-grid stagger">
+            {
+                allTutorials.map((tutorial) => (
+                    <a
+                        href={`/vios.science/tutorials/${tutorial.slug || tutorial.id.replace(/\.md$/, "")}`}
+                        class="tutorial-card"
+                    >
+                        <div class="tc-eyebrow">
+                            {tutorial.data.date
+                                ? new Date(tutorial.data.date).getFullYear()
+                                : "Tutorial"}
+                        </div>
+                        <h3 class="tc-title">
+                            {tutorial.data.title || tutorial.data.shorttitle}
+                        </h3>
+                        {tutorial.data.summary && (
+                            <p class="tc-desc">{tutorial.data.summary}</p>
+                        )}
+                        <div class="tc-footer">
+                            <span>Read more</span>
+                            <svg
+                                width="14"
+                                height="14"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </div>
+                    </a>
+                ))
+            }
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .page-header {
+        padding: 10rem 8rem 4rem;
+    }
+    .header-desc {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 650px;
+        margin-top: -1.5rem;
+    }
+
+    .tutorials-container {
+        padding: 0 8rem 8rem;
+    }
+
+    .tutorials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .tutorial-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        padding: 2.5rem;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        transition:
+            transform 0.3s,
+            border-color 0.3s,
+            background 0.35s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tutorial-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--accent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+    }
+
+    .tutorial-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(0, 212, 170, 0.4);
+        background: var(--bg3);
+    }
+    html.light .tutorial-card:hover {
+        border-color: rgba(0, 137, 106, 0.3);
+    }
+
+    .tutorial-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .tc-eyebrow {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.7rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .tc-title {
+        font-family: "Spectral", serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--text);
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+
+    .tc-desc {
+        font-size: 0.95rem;
+        color: var(--muted);
+        line-height: 1.6;
+        flex-grow: 1;
+        margin-bottom: 2rem;
+    }
+
+    .tc-footer {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--dim);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+    }
+
+    .tutorial-card:hover .tc-footer {
+        color: var(--accent);
+    }
+</style>

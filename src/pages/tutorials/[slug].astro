@@ -1,0 +1,174 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const tutorials = await getCollection("tutorials");
+    return tutorials.map((tutorial) => ({
+        params: { slug: tutorial.slug || tutorial.id.replace(/\.md$/, "") },
+        props: { tutorial },
+    }));
+}
+
+const { tutorial } = Astro.props;
+const { Content } = await tutorial.render();
+---
+
+<Layout
+    title={`${tutorial.data.title || tutorial.data.shorttitle} - VIOS Collaboratory`}
+>
+    <article class="tutorial-wrapper">
+        <header class="tutorial-header">
+            <div class="th-eyebrow">
+                {
+                    tutorial.data.date
+                        ? new Date(tutorial.data.date).getFullYear()
+                        : "Tutorial"
+                }
+            </div>
+            <h1 class="th-title">
+                {tutorial.data.title || tutorial.data.shorttitle}
+            </h1>
+            {
+                tutorial.data.summary && (
+                    <p class="th-desc">{tutorial.data.summary}</p>
+                )
+            }
+            <a href="/vios.science/tutorials" class="th-back"
+                >← Back to Tutorials</a
+            >
+        </header>
+
+        <div class="tutorial-content">
+            <Content />
+        </div>
+    </article>
+</Layout>
+
+<style>
+    .tutorial-wrapper {
+        padding: 10rem 8rem 8rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tutorial-header {
+        margin-bottom: 5rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 3rem;
+    }
+
+    .th-eyebrow {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    .th-title {
+        font-family: "Spectral", serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 400;
+        color: var(--text);
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+
+    .th-desc {
+        font-size: 1.2rem;
+        color: var(--muted);
+        line-height: 1.6;
+        max-width: 700px;
+        margin-bottom: 3rem;
+    }
+
+    .th-back {
+        display: inline-flex;
+        align-items: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+        color: var(--dim);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+    }
+
+    .th-back:hover {
+        color: var(--accent);
+    }
+
+    /* Markdown Content Styling */
+    .tutorial-content :global(h1),
+    .tutorial-content :global(h2),
+    .tutorial-content :global(h3) {
+        font-family: "Spectral", serif;
+        color: var(--text);
+        margin: 3rem 0 1.5rem;
+        font-weight: 400;
+    }
+
+    .tutorial-content :global(h1) {
+        font-size: 2.5rem;
+    }
+    .tutorial-content :global(h2) {
+        font-size: 2rem;
+    }
+    .tutorial-content :global(h3) {
+        font-size: 1.5rem;
+    }
+
+    .tutorial-content :global(p) {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+    }
+
+    .tutorial-content :global(a) {
+        color: var(--accent2);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+
+    .tutorial-content :global(a:hover) {
+        border-color: var(--accent2);
+    }
+
+    .tutorial-content :global(ul),
+    .tutorial-content :global(ol) {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .tutorial-content :global(li) {
+        margin-bottom: 0.5rem;
+    }
+
+    .tutorial-content :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: 2rem 0;
+        border: 1px solid var(--border);
+    }
+
+    .tutorial-content :global(strong) {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    .tutorial-content :global(blockquote) {
+        border-left: 4px solid var(--accent);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: var(--dim);
+    }
+</style>
