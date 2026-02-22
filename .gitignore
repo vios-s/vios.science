@@ -2,6 +2,9 @@
 dist/
 # generated types
 .astro/
+.agent/
+.agents/
+.claude/
 
 # dependencies
 node_modules/
@@ -22,3 +25,5 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+.old_site/
+node_modules/
