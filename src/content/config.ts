@@ -22,7 +22,9 @@ const tutorials = defineCollection({
     schema: z.object({
         title: z.string(),
         description: z.string().optional(),
+        summary: z.string().optional(),
         date: z.coerce.date().optional(),
+        teaser: z.string().optional(),
         author: z.string().optional(),
         permalink: z.string().optional(),
     }).catchall(z.any())

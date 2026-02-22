@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 export async function getStaticPaths() {
     const tutorials = await getCollection("tutorials");
     return tutorials.map((tutorial) => ({
-        params: { slug: tutorial.slug || tutorial.id.replace(/\.md$/, "") },
+        params: { slug: tutorial.slug || tutorial.id.replace(/\.(md|mdx)$/, "") },
         props: { tutorial },
     }));
 }

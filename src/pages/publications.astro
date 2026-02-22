@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 
-const pubs = await getCollection('publications');
+const pubs = await getCollection("publications");
 ---
+
 <Layout title="Publications - VIOS Collaboratory">
     <section class="page-header">
         <div class="s-head">
@@ -17,23 +18,35 @@ const pubs = await getCollection('publications');
 
     <div class="pub-container">
         <div class="pub-cards stagger">
-            {pubs.map(pub => (
-                <div class="pub-card">
-                    {pub.data.image ? (
-                        <img class="pub-card-img" src={import.meta.env.BASE_URL + pub.data.image.replace(/^\//, '')} alt="Paper Teaser" loading="lazy" />
-                    ) : (
-                        <div class="pub-card-img-placeholder"></div>
-                    )}
-                    <div class="pub-card-body">
-                        <span class="pub-card-venue">{pub.data.venue}</span>
-                        <p class="pub-card-title">{pub.data.title}</p>
-                        <p class="pub-card-authors">{pub.data.authors}</p>
+            {
+                pubs.map((pub) => (
+                    <div class="pub-card">
+                        {pub.data.image ? (
+                            <img
+                                class="pub-card-img"
+                                src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/${pub.data.image.replace(/^\//, "")}`}
+                                alt="Paper Teaser"
+                                loading="lazy"
+                            />
+                        ) : (
+                            <div class="pub-card-img-placeholder" />
+                        )}
+                        <div class="pub-card-body">
+                            <span class="pub-card-venue">{pub.data.venue}</span>
+                            <p class="pub-card-title">{pub.data.title}</p>
+                            <p class="pub-card-authors">{pub.data.authors}</p>
+                        </div>
+                        <div class="pub-card-footer">
+                            <a
+                                href={pub.data.link || "#"}
+                                class="pub-card-link"
+                            >
+                                Read paper →
+                            </a>
+                        </div>
                     </div>
-                    <div class="pub-card-footer">
-                        <a href={pub.data.link || '#'} class="pub-card-link">Read paper →</a>
-                    </div>
-                </div>
-            ))}
+                ))
+            }
         </div>
     </div>
 </Layout>
@@ -55,12 +68,15 @@ const pubs = await getCollection('publications');
         border: 1px solid var(--border);
         display: flex;
         flex-direction: column;
-        transition: transform 0.3s, border-color 0.3s, background 0.35s ease;
+        transition:
+            transform 0.3s,
+            border-color 0.3s,
+            background 0.35s ease;
         overflow: hidden;
     }
     .pub-card:hover {
         transform: translateY(-4px);
-        border-color: rgba(0,212,170,0.4);
+        border-color: rgba(0, 212, 170, 0.4);
         background: var(--bg3);
     }
     .pub-card-img {
@@ -83,14 +99,14 @@ const pubs = await getCollection('publications');
         gap: 0.5rem;
     }
     .pub-card-venue {
-        font-family: 'JetBrains Mono', monospace;
+        font-family: "JetBrains Mono", monospace;
         font-size: 0.7rem;
         color: var(--accent);
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
     .pub-card-title {
-        font-family: 'Outfit', sans-serif;
+        font-family: "Outfit", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
         color: var(--text);
@@ -110,7 +126,7 @@ const pubs = await getCollection('publications');
         justify-content: flex-end;
     }
     .pub-card-link {
-        font-family: 'JetBrains Mono', monospace;
+        font-family: "JetBrains Mono", monospace;
         font-size: 0.75rem;
         color: var(--muted);
         text-decoration: none;

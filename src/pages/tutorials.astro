@@ -32,33 +32,47 @@ allTutorials.sort((a, b) => {
             {
                 allTutorials.map((tutorial) => (
                     <a
-                        href={`/vios.science/tutorials/${tutorial.slug || tutorial.id.replace(/\.md$/, "")}`}
+                        href={`/vios.science/tutorials/${tutorial.slug || tutorial.id.replace(/\.(md|mdx)$/, "")}`}
                         class="tutorial-card"
                     >
-                        <div class="tc-eyebrow">
-                            {tutorial.data.date
-                                ? new Date(tutorial.data.date).getFullYear()
-                                : "Tutorial"}
-                        </div>
-                        <h3 class="tc-title">
-                            {tutorial.data.title || tutorial.data.shorttitle}
-                        </h3>
-                        {tutorial.data.summary && (
-                            <p class="tc-desc">{tutorial.data.summary}</p>
+                        {tutorial.data.teaser && (
+                            <img
+                                class="tc-img"
+                                src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/${tutorial.data.teaser.replace(/^\//, "")}`}
+                                alt={
+                                    tutorial.data.shorttitle ||
+                                    tutorial.data.title
+                                }
+                                loading="lazy"
+                            />
                         )}
-                        <div class="tc-footer">
-                            <span>Read more</span>
-                            <svg
-                                width="14"
-                                height="14"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
+                        <div class="tc-body">
+                            <span class="tc-year">
+                                {tutorial.data.date
+                                    ? new Date(tutorial.data.date).getFullYear()
+                                    : "Tutorial"}
+                            </span>
+                            <h3 class="tc-title">
+                                {tutorial.data.title ||
+                                    tutorial.data.shorttitle}
+                            </h3>
+                            {tutorial.data.summary && (
+                                <p class="tc-desc">{tutorial.data.summary}</p>
+                            )}
+                            <div class="tc-footer">
+                                <span>Read more</span>
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </div>
                         </div>
                     </a>
                 ))
@@ -92,7 +106,7 @@ allTutorials.sort((a, b) => {
     .tutorial-card {
         background: var(--bg2);
         border: 1px solid var(--border);
-        padding: 2.5rem;
+        padding: 0;
         text-decoration: none;
         display: flex;
         flex-direction: column;
@@ -115,6 +129,7 @@ allTutorials.sort((a, b) => {
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.4s ease;
+        z-index: 1;
     }
 
     .tutorial-card:hover {
@@ -130,30 +145,63 @@ allTutorials.sort((a, b) => {
         transform: scaleX(1);
     }
 
-    .tc-eyebrow {
+    /* Teaser image */
+    .tc-img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+        border-bottom: 1px solid var(--border);
+        transition: transform 0.5s ease;
+    }
+    .tutorial-card:hover .tc-img {
+        transform: scale(1.04);
+    }
+
+    /* Card body */
+    .tc-body {
+        padding: 2rem 2.2rem 2rem;
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Year badge — upper right corner */
+    .tc-year {
+        position: absolute;
+        top: 1.8rem;
+        right: 2rem;
         font-family: "JetBrains Mono", monospace;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         color: var(--accent);
-        letter-spacing: 0.1em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
-        margin-bottom: 1rem;
+        background: rgba(0, 212, 170, 0.07);
+        border: 1px solid var(--border);
+        padding: 0.18rem 0.5rem;
+        line-height: 1.6;
+    }
+    html.light .tc-year {
+        background: rgba(0, 137, 106, 0.07);
     }
 
     .tc-title {
         font-family: "Spectral", serif;
-        font-size: 1.8rem;
+        font-size: 1.55rem;
         font-weight: 400;
         color: var(--text);
         line-height: 1.25;
-        margin-bottom: 1rem;
+        margin-bottom: 0.9rem;
+        padding-right: 4rem; /* avoid overlapping the year badge */
     }
 
     .tc-desc {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         color: var(--muted);
         line-height: 1.6;
         flex-grow: 1;
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
     }
 
     .tc-footer {
@@ -161,7 +209,7 @@ allTutorials.sort((a, b) => {
         align-items: center;
         gap: 0.5rem;
         font-family: "JetBrains Mono", monospace;
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--dim);
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -170,5 +218,26 @@ allTutorials.sort((a, b) => {
 
     .tutorial-card:hover .tc-footer {
         color: var(--accent);
+    }
+
+    @media (max-width: 900px) {
+        .page-header {
+            padding: 8rem 3rem 3rem;
+        }
+        .tutorials-container {
+            padding: 0 3rem 5rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .page-header {
+            padding: 6rem 1.5rem 2rem;
+        }
+        .tutorials-container {
+            padding: 0 1.5rem 3rem;
+        }
+        .tutorials-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>

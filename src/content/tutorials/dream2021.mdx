@@ -1,0 +1,112 @@
+---
+title: "DREAM 2021: Disentangled Representations for Efficient Algorithms for Medical data"
+shorttitle: "DREAM 2021"
+summary: At MICCAI 2021, we present disentangled representations and their connection to causal mechanisms, with applications in medical imaging.
+date: 2021-09-27
+teaser: /assets/images/tutorial/dream2021grad.png
+collection: tutorials
+permalink: /tutorials/dream2021
+---
+
+A **MICCAI 2021** (Virtual) Tutorial by Sotirios A. Tsaftaris, Alison Q. O'Neil, Spyridon Thermos, Xiao Liu and Pedro Sanchez.
+
+![DREAM 2021](/vios.science/assets/images/tutorial/dream2021grad.png)
+
+## Date
+
+MICCAI day 1 - September 27, 2021 - 14h-18h [UTC time]
+
+## Accompanying Material
+
+- [Paper (Medical Image Analysis)](https://doi.org/10.1016/j.media.2022.102516)
+- [GitHub Repository](https://github.com/vios-s/disentanglement_tutorial)
+- [YouTube Playlist](https://www.youtube.com/watch?v=j5FkqQXpd3M&list=PLhBFvhTs6IB6FRX77QUomHiLaEo_nJ0Ti&index=2)
+- [Slide Deck (PDF)](https://drive.google.com/file/d/1jW8tp00sRq94Hv17jAZKmLdiYUN3jGhN/view?usp=sharing)
+
+- The contents of this tutorial have been compiled into a [paper](https://doi.org/10.1016/j.media.2022.102516) published at the Medical Image Analysis journal;
+- A [github repository](https://github.com/vios-s/disentanglement_tutorial) summarizes the codebases of several important works in the area;
+- The videos of the presentations are available on our YouTube channel, find the playlist [here](https://www.youtube.com/watch?v=j5FkqQXpd3M&list=PLhBFvhTs6IB6FRX77QUomHiLaEo_nJ0Ti&index=2);
+- The tutorial's slide deck in pdf is also available [here](https://drive.google.com/file/d/1jW8tp00sRq94Hv17jAZKmLdiYUN3jGhN/view?usp=sharing).
+
+```
+@article{liu2022disentangled,
+title = {Learning disentangled representations in the imaging domain},
+journal = {Medical Image Analysis},
+volume = {80},
+pages = {102516},
+year = {2022},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2022.102516},
+author = {Xiao Liu and Pedro Sanchez and Spyridon Thermos and Alison Q. O'Neil and Sotirios A. Tsaftaris},
+}
+```
+
+## Outline
+
+The deep learning (DL) paradigm has been widely adopted in almost all domains of image analysis as an alternative to traditional handcrafted techniques. However, the majority of deep neural networks rely on the existence of significant amounts of training data that are not always readily available. Medical image analysis is a characteristic example of a field where the difficulty and expense of acquiring and annotating data prohibit the true exploitation of the deep learning potential.
+
+Disentangled representation learning has been proposed as an approach to encode generic and explainable data representations through separating out underlying explanatory factors. Interestingly, this can be achieved with limited or no annotations. A general and explainable representation can be readily fine-tuned for new target tasks using modest amounts of data. This alleviation of the data and annotation requirements offers tantalising prospects for tractable and affordable healthcare, while the explainability of disentangled representations increase their suitability for real-world human-controlled applications.
+
+In this **half-day** tutorial, a satellite event in conjunction with [MICCAI 2021](https://miccai2021.org/) (Virtual), we present an overview of representation learning, focusing on disentangled representation learning and criteria, as well as on the connection between disentangled representations and causal mechanisms. Finally, we discuss about possible applications in the medical imaging field and existing open-ended challenges. This tutorial is a **follow-up** of the DREAM @ MICCAI 2020 which was extremely well received and attended by around 200 members of the MICCAI community.
+
+## Program
+
+![DREAM 2021 Schedule](/vios.science/assets/images/schedule2021.png)
+
+![DREAM 2021 Panel](/vios.science/assets/images/tutorial/DREAM_Tutorial_2021_Panel_ST.png)
+
+## Learning Objectives
+
+* Understand representation space and why (in)variance matters
+* Understand the theories of information bottleneck and compositionality
+* Learn the different objectives in achieving disentanglement
+* Appreciate the inductive biases introduced by network design choices
+* Appreciate when disentanglement is useful in practice
+
+## Motivation
+
+Imagine that we want to develop a system that localises the heart in MRI and CT
+images. This system will need to be robust to any changes in imaging, the
+scanner, noise, and critically anatomical and pathological variation. The
+current paradigm with deep learning is that we *must* present to the system as
+many examples as possible to make it robust and learn what is nuisance (e.g.
+noise and imaging differences) as opposed to what matters (e.g. the location of
+the heart).
+
+Clearly this is not sustainable and leads to poor performance.
+Disentangled learning can help because it allows us to learn latent factors that
+can describe what we see in the data. In the example below, we can
+imagine a latent factor that one learns a change in pose (or in the patient for
+the cardiac example), and another factor for the change in a car's colour (or a
+different scanner). Surprisingly we do not always need annotated data to achieve this.
+
+<img style={{display: "block", margin: "0 auto", width: "70%", maxWidth: "100%", borderRadius: "4px"}} src="/vios.science/assets/images/tutorial/disentangled_example.svg" alt="Disentangled representation example" />
+
+## Applications
+
+But is disentanglement relevant to real-life applications? We will answer this question reporting details of exemplar methods that exploit disentanglement to improve challenging tasks in computer vision and medical image analysis.
+
+<img style={{display: "block", margin: "0 auto", width: "80%", maxWidth: "100%", borderRadius: "4px"}} src="/vios.science/assets/images/tutorial/disentanglement_applications.svg" alt="Disentanglement applications" />
+
+## Teachers
+
+[Prof. Sotirios A Tsaftaris (Sotos)](/team/tsaftaris) is Chair in Machine Learning and Computer
+Vision with the University of Edinburgh and is also the Canon Medical/Royal
+Academy of Engineering Research Chair in Healthcare AI.
+
+[Dr Alison Q O'Neil (Alison)](/team/oneil) is a Senior Scientist in the AI Research Team at
+Canon Medical Research Europe and Honorary Research Fellow at the University of
+Edinburgh.
+
+[Dr. Spyridon Thermos (Spiros)](/team/thermos) is a postdoc at UoE. Spiros expertise lies in disentangled representation learning, disentanglement evaluation and conditional image synthesis.
+
+[Mr. Xiao Liu](/team/liu) is a PhD student at UoE. His research interests include cardiac image segmentation, disentangled representation learning and domain generalization.
+
+[Mr. Pedro Sanchez](/team/sanchez) is a PhD student working on disentanglement and causal learning.
+
+## Support
+
+Generously supported by [Canon Medical Research
+Europe](https://research.eu.medical.canon/), the [Royal Academy of
+Engineering](https://www.raeng.org.uk/) and the
+[School of Engineering](https://www.eng.ed.ac.uk/).
