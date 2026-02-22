@@ -1,17 +1,279 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import { getEntry } from "astro:content";
+
+const researchEntry = await getEntry("pages", "research");
+if (!researchEntry) {
+    throw new Error("Could not find Research page content");
+}
+const { Content, headings } = await researchEntry.render();
 ---
+
 <Layout title="Research - VIOS Collaboratory">
-    <section class="page-header" style="padding: 12rem 8rem 6rem;">
+    <section class="page-header" style="padding: 10rem 8rem 4rem;">
         <div class="s-head">
             <div class="s-eyebrow">
                 <div class="s-eyebrow-line"></div>
                 <span class="s-eyebrow-text">Explore</span>
             </div>
-            <h1 class="s-title">Research... <em>coming soon</em></h1>
+            <h1 class="s-title">Research<br /><em>Vision &amp; Focus</em></h1>
         </div>
-        <p style="color: var(--muted); max-width: 600px; line-height: 1.6;">
-            We are working on porting this section to the new website. Please check back later.
-        </p>
     </section>
+
+    <div class="research-container">
+        <article class="prose">
+            <Content />
+        </article>
+
+        <aside class="toc-sidebar">
+            <div class="toc-sticky">
+                <h3>ON THIS PAGE</h3>
+                <nav>
+                    <ul>
+                        {
+                            headings
+                                .filter((h) => h.depth === 2)
+                                .map((heading) => (
+                                    <li>
+                                        <a href={`#${heading.slug}`}>
+                                            {heading.text}
+                                        </a>
+                                    </li>
+                                ))
+                        }
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    </div>
 </Layout>
+
+<style>
+    .page-header {
+        padding: 8rem 8rem 2rem;
+    }
+    .research-container {
+        padding: 0 8rem 8rem;
+        max-width: none; /* Removed to allow full width */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 5rem;
+        align-items: start;
+    }
+    .prose {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    .prose :global(h2) {
+        scroll-margin-top: 140px;
+        font-family: "Spectral", serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: var(--text);
+        margin: 3rem 0 1.5rem;
+        line-height: 1.2;
+    }
+    .prose :global(h3) {
+        scroll-margin-top: 140px;
+        font-family: "Outfit", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--text);
+        margin: 2.5rem 0 1rem;
+    }
+    .prose :global(p) {
+        margin-bottom: 1.5rem;
+    }
+    .prose :global(img) {
+        max-width: 400px;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    html.dark .prose :global(img) {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .prose :global(a) {
+        color: var(--accent);
+        text-decoration: none;
+        box-shadow: 0 1px 0 rgba(0, 212, 170, 0.4);
+        transition:
+            box-shadow 0.2s,
+            color 0.2s;
+    }
+    .prose :global(a:hover) {
+        box-shadow: 0 2px 0 var(--accent);
+    }
+    .prose :global(em) {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        color: var(--text);
+    }
+
+    /* Project Cards Styling */
+    .prose :global(.project-cards) {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0 4rem;
+    }
+    .prose :global(.project-card) {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-top: 4px solid var(--accent);
+        border-radius: 8px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        transition:
+            transform 0.2s,
+            box-shadow 0.2s,
+            border-color 0.2s;
+    }
+    .prose :global(.project-card:hover) {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-color: var(--accent);
+    }
+    html.dark .prose :global(.project-card:hover) {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .prose :global(.project-card h4) {
+        font-family: "Spectral", serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--text);
+        margin: 0 0 1.5rem 0;
+        line-height: 1.4;
+    }
+    .prose :global(.project-card h4 a) {
+        box-shadow: none;
+        color: var(--text);
+    }
+    .prose :global(.project-card h4 a:hover) {
+        color: var(--accent);
+    }
+    .prose :global(.project-card ul) {
+        list-style: none;
+        padding: 0;
+        margin: auto 0 0 0;
+        font-size: 0.95rem;
+    }
+    .prose :global(.project-card li) {
+        margin-bottom: 0.8rem;
+        color: var(--muted);
+        line-height: 1.5;
+        background: transparent;
+        padding: 0;
+    }
+    .prose :global(.project-card li strong) {
+        color: var(--text);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-right: 0.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    /* Clearfix for floating images */
+    .prose::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Sidebar Styling */
+    .toc-sidebar {
+        position: sticky;
+        top: 140px;
+        background: var(--bg2);
+        padding: 2rem;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+    }
+    .toc-sticky h3 {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid var(--border);
+    }
+    .toc-sticky nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .toc-sticky nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        transition: color 0.2s;
+        display: block;
+    }
+    .toc-sticky nav a:hover {
+        color: var(--accent);
+    }
+
+    @media (max-width: 900px) {
+        .page-header {
+            padding: 7rem 3rem 2rem;
+        }
+        .research-container {
+            grid-template-columns: 1fr;
+            padding: 0 3rem 4rem;
+        }
+        .toc-sidebar {
+            position: relative;
+            top: 0;
+            margin-bottom: 2rem;
+            order: -1;
+        }
+        .prose :global(img) {
+            float: none !important;
+            display: block;
+            margin: 2rem auto;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .page-header {
+            padding: 6rem 1.5rem 1.5rem;
+        }
+        .research-container {
+            padding: 0 1.5rem 3rem;
+        }
+    }
+</style>
+
+<script is:inline>
+    // Smooth scrolling for TOC links
+    document.addEventListener("DOMContentLoaded", () => {
+        const tocLinks = document.querySelectorAll(".toc-sticky nav a");
+        tocLinks.forEach((link) => {
+            link.addEventListener("click", (e) => {
+                const targetId = link.getAttribute("href").split("#")[1];
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    const y =
+                        targetElement.getBoundingClientRect().top +
+                        window.scrollY -
+                        140;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                    history.pushState(null, "", `#${targetId}`);
+                }
+            });
+        });
+    });
+</script>

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import projectsData from "../data/projects.json";
 
 const allNews = await getCollection("news");
 
@@ -227,38 +228,16 @@ const topNews = sortedNews.slice(0, 3);
         <!-- Funded projects -->
         <p class="projects-label">Active &amp; Recent Funded Projects</p>
         <div class="projects-list stagger">
-            <div class="project-item">
-                <span class="project-funder">RAEng / Canon</span>
-                <span class="project-name">Healthcare AI Research Chair</span>
-            </div>
-            <div class="project-item">
-                <span class="project-funder">EPSRC</span>
-                <span class="project-name"
-                    >Real-time Digital Twin Assisted Surgery</span
-                >
-            </div>
-            <div class="project-item">
-                <span class="project-funder">EPSRC CHAI</span>
-                <span class="project-name">Causality in Healthcare AI Hub</span>
-            </div>
-            <div class="project-item">
-                <span class="project-funder">EPSRC</span>
-                <span class="project-name"
-                    >Virtual Power Plant with AI for Resilience</span
-                >
-            </div>
-            <div class="project-item">
-                <span class="project-funder">BBSRC</span>
-                <span class="project-name"
-                    >PhenomUK Research Infrastructure</span
-                >
-            </div>
-            <div class="project-item">
-                <span class="project-funder">NIH</span>
-                <span class="project-name"
-                    >MRI-based Cardiac Disease Detection</span
-                >
-            </div>
+            {
+                projectsData.ongoing.map((project: any) => (
+                    <div class="project-item">
+                        <span class="project-funder">
+                            {project.short_funder}
+                        </span>
+                        <span class="project-name">{project.title}</span>
+                    </div>
+                ))
+            }
         </div>
     </section>
 

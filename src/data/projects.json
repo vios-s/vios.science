@@ -1,0 +1,134 @@
+{
+    "ongoing": [
+        {
+            "title": "Real-time Digital Twin Assisted Surgery",
+            "funder": "EPSRC (EP/X033686/1)",
+            "short_funder": "EPSRC",
+            "team": "School of Engineering PI, PI: Shu, Strathclyd",
+            "timeline": "09/23 - 08/27",
+            "url": ""
+        }
+    ],
+    "completed": [
+        {
+            "title": "Redefining hemodialysis with data-driven materials innovation: towards miniaturization and the wearable artificial kidney",
+            "funder": "Kidney Research (KS_RP_012_20221129)",
+            "short_funder": "Kidney Research",
+            "team": "co-I, PI: De Angelis, UoE",
+            "timeline": "08/23 - 07/25",
+            "url": ""
+        },
+        {
+            "title": "Virtual Power Plant with Artificial Intelligence for Resilience and Decarbonisation (VPP-WARD)",
+            "funder": "EPSRC (EP/Y005376/1)",
+            "short_funder": "EPSRC",
+            "team": "co-I, SoE PI: Kiprakis, PI: Sun, Durham",
+            "timeline": "05/23 - 04/25",
+            "url": ""
+        },
+        {
+            "title": "PhenomUK Research Infrastructure",
+            "funder": "BBSRC",
+            "short_funder": "BBSRC",
+            "team": "School of Engineering PI, PI: Pridmore, Nottingham",
+            "timeline": "02/23 - 01/25",
+            "url": "https://phenomuk.org/"
+        },
+        {
+            "title": "Accurate, Needle-Free, MRI-based Detection of Ischemic Heart Disease with Contrast Agents",
+            "funder": "National Institutes of Health (USA) (R01HL148788-03)",
+            "short_funder": "NIH",
+            "team": "Edinburgh PI; PI: Dharmakumar, USA",
+            "timeline": "06/20 - 08/24",
+            "url": "https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R01HL148788&arg_ProgOfficeCode=130"
+        },
+        {
+            "title": "Canon Medical / Royal Academy of Engineering Research Chair in Healthcare AI",
+            "funder": "Royal Academy of Engineering (RCSRF1819\\8\\25)",
+            "short_funder": "RAEng / Canon",
+            "team": "PI",
+            "timeline": "04/19 - 03/24",
+            "url": "/vios.science/projects/raeng"
+        },
+        {
+            "title": "From trivial representations to learning concepts in AI by exploiting unique data",
+            "funder": "EPSRC (EP/X017680/1)",
+            "short_funder": "EPSRC",
+            "team": "PI",
+            "timeline": "02/23 - 01/24",
+            "url": "https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/X017680/1"
+        },
+        {
+            "title": "University Defense Research Collaboration [UDRC] 3: Signal Processing in the Information Age",
+            "funder": "EPSRC-Dstl (EP/S000631/1)",
+            "short_funder": "EPSRC-Dstl",
+            "team": "co-I; Overall PI: Davies, UoE",
+            "timeline": "07/18 - 06/23",
+            "url": "https://udrc.eng.ed.ac.uk/"
+        },
+        {
+            "title": "PhenomUK - Crop Phenotyping: from Sensors to Knowledge [A technology touching life network]",
+            "funder": "MRC (MR/R025746/1)",
+            "short_funder": "MRC",
+            "team": "Edinburgh PI; Overall PI: Pridmore, Nottingham",
+            "timeline": "09/18 - 08/22",
+            "url": "https://www.phenomuk.net/"
+        },
+        {
+            "title": "An Accurate Non-Contrast-Enhanced Cardiac MRI Method for Imaging Chronic Myocardial Infarctions: Technical Developments to Rapid Clinical Validation",
+            "funder": "National Institutes of Health (USA) (R01HL136578)",
+            "short_funder": "NIH",
+            "team": "Edinburgh PI; Overall PI: Dharmakumar, USA",
+            "timeline": "06/17 - 06/22",
+            "url": "https://app.dimensions.ai/details/grant/grant.6803445"
+        },
+        {
+            "title": "Industrial Centre for Artificial Intelligence Research in Digital Diagnostics (iCAIRD)",
+            "funder": "Innovate UK",
+            "short_funder": "Innovate UK",
+            "team": "Engineering PI; Edinburgh PI: Parsons, UoE EPCC; Overall PI: Grossman, CSO Scottish Government",
+            "timeline": "01/19 - 12/21",
+            "url": "https://icaird.com/"
+        },
+        {
+            "title": "Improving root system architecture for enhanced drought tolerance and nutrient use efficiency in semi-arid agriculture of chickpea",
+            "funder": "BBSRC GCRF (BB/P023487/1)",
+            "short_funder": "BBSRC GCRF",
+            "team": "Engineering PI; Overall PI: Doerner, UoE Biology",
+            "timeline": "05/17 - 10/19",
+            "url": "http://chickpearoots.org/"
+        },
+        {
+            "title": "CardiacA.I.: Machine learning for the analysis of multimodal cardiac MR images used in the diagnosis of coronary heart disease",
+            "funder": "EPSRC First grant (EP/P022928/1)",
+            "short_funder": "EPSRC",
+            "team": "PI",
+            "timeline": "09/17 - 01/19",
+            "url": "/vios.science/projects/cardiacai"
+        },
+        {
+            "title": "An affordable active photometric system for capturing real-time 3D responses to vegetation dense environments",
+            "funder": "BBSRC TRDF (BB/N02334X/1)",
+            "short_funder": "BBSRC TRDF",
+            "team": "Engineering PI; Overall PI: McCormick, UoE Biology",
+            "timeline": "09/17 - 01/19",
+            "url": "https://gtr.ukri.org/projects?ref=BB/N02334X/1"
+        },
+        {
+            "title": "Reliable Evaluation of Coronary Artery Disease using Myocardial BOLD MRI with CO2",
+            "funder": "National Institutes of Health (USA)",
+            "short_funder": "NIH",
+            "team": "Edinburgh PI, Overall PI: Dharmakumar",
+            "timeline": "09/13 - 09/17",
+            "url": "https://app.dimensions.ai/details/grant/grant.2541996"
+        },
+        {
+            "title": "PHIDIAS: Phenotyping with a High-throughput, Intelligent, Distributed, and Interactive Analysis System",
+            "funder": "Marie Curie International Reintegration Grant (EU-FP7)",
+            "short_funder": "Marie Curie",
+            "team": "PI",
+            "timeline": "09/11 - 09/15",
+            "url": "http://phenotiki.com/"
+        }
+    ]
+}
