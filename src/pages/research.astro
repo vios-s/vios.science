@@ -96,17 +96,7 @@ const { Content, headings } = await researchEntry.render();
     html.dark .prose :global(img) {
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
-    .prose :global(a) {
-        color: var(--accent);
-        text-decoration: none;
-        box-shadow: 0 1px 0 rgba(0, 212, 170, 0.4);
-        transition:
-            box-shadow 0.2s,
-            color 0.2s;
-    }
-    .prose :global(a:hover) {
-        box-shadow: 0 2px 0 var(--accent);
-    }
+
     .prose :global(em) {
         font-family: "Spectral", serif;
         font-style: italic;

@@ -171,7 +171,8 @@ const { title } = Astro.props;
                     <li><a href="/vios.science/join">Join the Lab</a></li>
                     <li>
                         <a href="https://twitter.com/SotiriosA" target="_blank"
-                            >Twitter / X</a>
+                            >Twitter / X</a
+                        >
                     </li>
                     <li><a href="mailto:vios@ed.ac.uk">Contact Us</a></li>
                 </ul>
@@ -264,11 +265,12 @@ const { title } = Astro.props;
         --bg3: #112240;
         --accent: #00d4aa;
         --accent2: #5b8ef0;
+        --accent-alpha: rgba(0, 212, 170, 0.4);
         --text: #dde8f5;
-        --muted: #7a90a8;
-        --dim: #334d66;
-        --border: rgba(0, 212, 170, 0.1);
-        --border2: rgba(255, 255, 255, 0.07);
+        --muted: #8ca3bc;
+        --dim: #547393;
+        --border: rgba(0, 212, 170, 0.2);
+        --border2: rgba(255, 255, 255, 0.1);
         --shadow: rgba(0, 0, 0, 0.4);
         --hero-bg: #060d1a;
         --btn-text: #060d1a;
@@ -278,13 +280,14 @@ const { title } = Astro.props;
         --bg: #f4f7fc;
         --bg2: #e6eef8;
         --bg3: #d8e6f4;
-        --accent: #00896a;
-        --accent2: #2d6fe8;
+        --accent: #006f56;
+        --accent2: #1e51b3;
+        --accent-alpha: rgba(0, 111, 86, 0.4);
         --text: #0d1b2e;
-        --muted: #3d5c7a;
-        --dim: #8099b8;
-        --border: rgba(0, 137, 106, 0.14);
-        --border2: rgba(0, 0, 0, 0.07);
+        --muted: #344c66;
+        --dim: #5c799a;
+        --border: rgba(0, 111, 86, 0.2);
+        --border2: rgba(0, 0, 0, 0.12);
         --shadow: rgba(0, 0, 0, 0.1);
         --hero-bg: #e8f0fb;
         --btn-text: #f4f7fc;
@@ -313,6 +316,18 @@ const { title } = Astro.props;
         transition:
             background 0.35s ease,
             color 0.35s ease;
+    }
+
+    .prose a {
+        color: var(--accent);
+        text-decoration: none;
+        box-shadow: 0 1px 0 var(--accent-alpha);
+        transition:
+            box-shadow 0.2s,
+            color 0.2s;
+    }
+    .prose a:hover {
+        box-shadow: 0 2px 0 var(--accent);
     }
 
     /* ═══════════════════════════════════════════════
