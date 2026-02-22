@@ -293,6 +293,35 @@ const sectionTitles = {
         color: var(--accent2);
         text-decoration: none;
     }
+
+    @media (max-width: 900px) {
+        .team-header {
+            padding: 7rem 3rem 2rem;
+        }
+        .team-container {
+            padding: 0 3rem 4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .team-header {
+            padding: 6rem 1.5rem 1.5rem;
+        }
+        .team-container {
+            padding: 0 1.5rem 3rem;
+        }
+        .team-grid {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+        .modal-inner {
+            padding: 2rem 1.5rem;
+        }
+        :global(.modal-header-info) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 </style>
 
 <script is:inline>

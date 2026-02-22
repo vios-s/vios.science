@@ -20,7 +20,7 @@ const pubs = await getCollection('publications');
             {pubs.map(pub => (
                 <div class="pub-card">
                     {pub.data.image ? (
-                        <img class="pub-card-img" src={pub.data.image} alt="Paper Teaser" loading="lazy" />
+                        <img class="pub-card-img" src={import.meta.env.BASE_URL + pub.data.image.replace(/^\//, '')} alt="Paper Teaser" loading="lazy" />
                     ) : (
                         <div class="pub-card-img-placeholder"></div>
                     )}
@@ -122,5 +122,26 @@ const pubs = await getCollection('publications');
     }
     .pub-card-link:hover {
         color: var(--accent);
+    }
+
+    @media (max-width: 900px) {
+        .page-header {
+            padding: 7rem 3rem 2rem;
+        }
+        .pub-container {
+            padding: 0 3rem 4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .page-header {
+            padding: 6rem 1.5rem 1.5rem;
+        }
+        .pub-container {
+            padding: 0 1.5rem 3rem;
+        }
+        .pub-cards {
+            grid-template-columns: 1fr;
+        }
     }
 </style>

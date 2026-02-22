@@ -61,18 +61,18 @@ const { title } = Astro.props;
         ════════════════════════════════════════════ -->
         <nav id="nav">
             <a href="/vios.science/" class="nav-logo">VIOS<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/vios.science/research">Research</a></li>
+                <li><a href="/vios.science/team">Team</a></li>
+                <li>
+                    <a href="/vios.science/publications">Publications</a>
+                </li>
+                <li><a href="/vios.science/code">Code &amp; Data</a></li>
+                <li><a href="/vios.science/news">News</a></li>
+                <li><a href="/vios.science/tutorials">Tutorials</a></li>
+                <li><a href="/vios.science/join">Join Us</a></li>
+            </ul>
             <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="/vios.science/research">Research</a></li>
-                    <li><a href="/vios.science/team">Team</a></li>
-                    <li>
-                        <a href="/vios.science/publications">Publications</a>
-                    </li>
-                    <li><a href="/vios.science/code">Code &amp; Data</a></li>
-                    <li><a href="/vios.science/news">News</a></li>
-                    <li><a href="/vios.science/tutorials">Tutorials</a></li>
-                    <li><a href="/vios.science/join">Join Us</a></li>
-                </ul>
                 <button
                     class="theme-toggle"
                     id="theme-toggle"
@@ -113,6 +113,16 @@ const { title } = Astro.props;
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
+                </button>
+                <button
+                    class="nav-menu-btn"
+                    id="nav-menu-btn"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </nav>
@@ -223,6 +233,24 @@ const { title } = Astro.props;
                     .querySelectorAll(".reveal, .stagger")
                     .forEach((el) => io.observe(el));
             });
+
+            // Mobile nav toggle
+            const menuBtn = document.getElementById("nav-menu-btn");
+            const navEl = document.getElementById("nav");
+            if (menuBtn && navEl) {
+                menuBtn.addEventListener("click", () => {
+                    const isOpen = navEl.classList.toggle("nav-open");
+                    menuBtn.classList.toggle("open", isOpen);
+                    menuBtn.setAttribute("aria-expanded", String(isOpen));
+                });
+                document.querySelectorAll(".nav-links a").forEach((link) => {
+                    link.addEventListener("click", () => {
+                        navEl.classList.remove("nav-open");
+                        menuBtn.classList.remove("open");
+                        menuBtn.setAttribute("aria-expanded", "false");
+                    });
+                });
+            }
         </script>
     </body>
 </html>
@@ -328,12 +356,50 @@ const { title } = Astro.props;
     .nav-right {
         display: flex;
         align-items: center;
-        gap: 2.5rem;
+        gap: 1rem;
     }
     .nav-links {
         display: flex;
         gap: 2.2rem;
         list-style: none;
+    }
+
+    /* Hamburger button */
+    .nav-menu-btn {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        background: none;
+        border: 1px solid var(--border2);
+        color: var(--muted);
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        border-radius: 2px;
+        padding: 4px;
+        transition: border-color 0.2s;
+    }
+    .nav-menu-btn:hover {
+        border-color: var(--accent);
+    }
+    .nav-menu-btn span {
+        display: block;
+        width: 18px;
+        height: 1.5px;
+        background: var(--text);
+        transition: all 0.3s ease;
+        margin: 0 auto;
+    }
+    .nav-menu-btn.open span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+    }
+    .nav-menu-btn.open span:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    .nav-menu-btn.open span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
     }
     .nav-links a {
         font-size: 0.72rem;
@@ -1175,5 +1241,151 @@ const { title } = Astro.props;
         opacity: 1;
         transform: translateY(0);
         transition-delay: 0.4s;
+    }
+
+    /* ═══════════════════════════════════════════════
+           RESPONSIVE — TABLET (≤ 900px)
+        ═══════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+        #nav {
+            padding: 1.2rem 3rem;
+        }
+        #nav.scrolled {
+            padding: 0.8rem 3rem;
+        }
+        section {
+            padding: 5rem 3rem;
+        }
+        #mission {
+            padding: 5rem 3rem;
+        }
+        .hero-content {
+            padding: 0 3rem;
+        }
+        .scroll-cue {
+            left: 3rem;
+        }
+        .affil-bar {
+            padding: 2rem 3rem;
+        }
+        footer {
+            padding: 4rem 3rem 2.5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .news-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .pub-cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* ═══════════════════════════════════════════════
+           RESPONSIVE — MOBILE (≤ 600px)
+        ═══════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+        html {
+            font-size: 16px;
+        }
+
+        /* Nav */
+        #nav {
+            padding: 1rem 1.5rem;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        #nav.scrolled {
+            padding: 0.8rem 1.5rem;
+        }
+        .nav-logo {
+            flex: 1;
+        }
+        .nav-menu-btn {
+            display: flex;
+        }
+        .nav-links {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            gap: 0;
+            order: 3;
+            padding: 0.5rem 0 0.8rem;
+            border-top: 1px solid var(--border);
+            margin-top: 0.75rem;
+        }
+        .nav-links li {
+            border-bottom: 1px solid var(--border2);
+        }
+        .nav-links a {
+            display: block;
+            padding: 0.9rem 0;
+            font-size: 0.78rem;
+        }
+        #nav.nav-open .nav-links {
+            display: flex;
+        }
+        #nav.nav-open,
+        #nav.nav-open.scrolled {
+            background: var(--bg);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            border-bottom: 1px solid var(--border);
+        }
+        html.light #nav.nav-open,
+        html.light #nav.nav-open.scrolled {
+            background: var(--bg);
+        }
+
+        /* Sections & hero */
+        section {
+            padding: 4rem 1.5rem;
+        }
+        #mission {
+            padding: 4rem 1.5rem;
+        }
+        .hero-content {
+            padding: 0 1.5rem;
+            max-width: 100%;
+        }
+        .scroll-cue {
+            left: 1.5rem;
+        }
+        .hero-ctas {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Grids */
+        .news-grid {
+            grid-template-columns: 1fr;
+        }
+        .research-grid {
+            grid-template-columns: 1fr;
+        }
+        .projects-list {
+            grid-template-columns: 1fr;
+        }
+        .pub-cards {
+            grid-template-columns: 1fr;
+        }
+
+        /* Affiliations */
+        .affil-bar {
+            padding: 2rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .affil-list {
+            gap: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 1.5rem 2rem;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
     }
 </style>
