@@ -50,9 +50,19 @@ const pages = defineCollection({
     }).catchall(z.any())
 });
 
+const news = defineCollection({
+    type: 'content',
+    schema: z.object({
+        title: z.string(),
+        date: z.coerce.date().optional(),
+        permalink: z.string().optional(),
+    }).catchall(z.any())
+});
+
 export const collections = {
     team,
     tutorials,
     publications,
-    pages
+    pages,
+    news
 };
