@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "e77d0c8eb87b9bffe4234d8bdbd805f5be1da6f054bfa4fecfc006e054f59d66"
+    }
+  }
+}

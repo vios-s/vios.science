@@ -5,65 +5,152 @@ permalink: /research/
 sidebar:
   nav: "research"
 ---
-The population increase exerts tremendous pressure on our healthcare systems and
-agricultural needs. Imaging methodologies are increasingly used to aid diagnoses
-and to build image-driven physiological models in the natural and life sciences.
-However, the explosion of the amount of data cannot be met by the current
-approaches used to analyse the generated images/volumes/movies and unravel the
-complicated patterns that exist. Our mission, is to address these limitations by
-integrating the state of the art in computer vision, AI, and large language models. 
-Our unique approach has the potential to provide efficient and
-affordable solutions towards sustainable healthcare systems and agriculture, of
-immense benefit and importance to society.
+## Our Research: The Pillars of our Research
 
-## Overview
-### Challenge 1: Population increase puts pressure on our healthcare systems
-<img style={{float: "right"}} src="/vios.science/assets/images/cardiacAI.png" />
+Our research is at the forefront of AI, focusing on several key pillars
+that drive progress in machine learning, computer vision, and their
+applications in the natural and life sciences. We highlight core
+applications in **healthcare, health, and agriculture** to showcase the
+tangible impact of our work.
 
-Every day thousands of people are born in the under-developed world without
-access to basic healthcare, while at the same time in the developed world, the
-population is ageing with an increasing cost of access to good healthcare. We
-need new imaging and image analysis methods to help bring down the cost of diagnostics, help unravel the mysteries behind several killer
-diseases, and eventually predict onset of disease.
+### 1. Representation Learning, Multimodal AI, and Self-Supervised Learning
 
-We work on several aspects of medical image analysis, but central to our
-approach is the problem of representation learning and trying to *do more with
-less*, by building algorithms that can leverage unsupervised data
-(semi-supervised learning), extract the relationship between different tasks
-(multi-task learning) and can integrate various sources of information (multi-modal learning).  
-This is epitomised in our vision that we should move from narrow AI to a *"Big AI"*, which lately has been popularised by foundation models.
+This pillar is all about teaching AI models to understand the world in a
+more holistic way. Instead of just learning from a single type of data,
+our work focuses on **multimodal AI**, where we build models that learn
+from multiple data types at once, like combining medical images with
+patient reports. The goal is to create a richer, more comprehensive
+understanding.
 
-More recently, we have embarked on work to create well-defined, robust, and fair prediction systems. 
-This has led to considerable innovations in *causal AI* by our team, both in how we discover causal links between variables but also in how we jointly learn data representations within a causal prior. This extends considerable activity by our team in disentangled representation learning.
+A key challenge is that labeled data is often scarce, especially in
+specialized fields like medicine. To overcome this, we
+develop **self-supervised learning** techniques that allow models to
+learn from unlabeled data by finding patterns and structures on their
+own. This approach helps AI learn more efficiently and effectively. We
+also explore how to disentangle the different aspects of data, such as
+separating a disease from an organ's anatomy, which is critical for
+medical image analysis. Importantly, we recognise that different
+modalities bring distinct representational challenges, and thus we must
+develop approaches that account for modality-specific characteristics,
+while effectively leveraging complementary information and uncertainty
+quantification, rather than relying solely on model-agnostic strategies.
 
-Our interests in health and medicine have recently span towards using AI to better design experiments, improve data collection, the guidance of biomechanical model simulations and even the design of better molecules. We are married into the idea that *AI will radically change how we do science in the future*. 
+Our foundational research in this area has been applied to:
 
-### Challenge 2: Sustainability and netzero
-<img style={{float: "right"}} src="/vios.science/assets/images/plant_pheno.png" />
+- **Healthcare:** We use these methods for multimodal cardiac
+  segmentation, ophthalmological triaging and to create disentangled
+  representations for domain-generalized medical image analysis and
+  further video-understanding tasks.
 
-Remarkably we seem to worry so much about our well being and health, but we are
-forgetting that without access to food and water, we cannot survive. The rapidly
-increasing human population combined with the "threat" of global warming,
-necessitate that we increase food production, reduce our carbon footprint,
-decrease waste and chemical pollution, and discover alternative sources of
-energy and materials.
+- **Agriculture:** We have developed deep learning architectures for
+  counting leaves in plants and used adversarial unsupervised domain
+  adaptation to count leaves without needing extensive annotations.
 
-Plants have always been a crucial source of food, feed, fiber, and fuel and thus
-the *agriculture industry* reflects a large portion of economic output.
-Together with the breeding industry, researchers try to identify, improve, and
-breed key traits to satisfy the growing demands, increase resistance to
-parasites and diseases, reduce environmental impact (less water, less
-fertilizer), always striving for a more sustained agriculture.
+### 2. Learning from Simulations, Synthetic Data, and Digital Twins
 
-Our group has consistently contributed with [open
-data](https://www.plant-phenotyping.org/datasets-home), open software and
-hardware frameworks ([Phenotiki](http://phenotiki.com/)), and robust and
-innovative [algorithms](http://tsaftaris.com/publications.html) to the problem
-of estimating phenotypic traits from images. We have also been central to the development of digital research infrastructures that enable data sharing and data reuse.  Even here we believe in the role of AI in enabling easier *user-to-data* cooperation, which can be leveraged to change how AI can help us do better science
+In many fields, real-world data is limited, expensive, or sensitive.
+This pillar of our research addresses this challenge by generating
+high-quality **synthetic data** to train AI models. We create realistic,
+simulated datasets that mimic real-world scenarios, allowing us to build
+more robust and generalizable AI systems.
 
-Sustainable production of food links well with another recent interest of ours in the use of AI to better predict future energy and food needs.  This links well with our activity in better prediction systems and our activity in causal AI.
+A significant focus of this work is on **digital twins**---virtual
+models of real-world systems, such as a patient's body or a surgical
+procedure. We use these digital twins to run simulations, predict
+outcomes, and test interventions in a safe, controlled environment. This
+technology has the potential to revolutionize personalized medicine and
+surgical planning.
 
- 
+Our research in this area includes:
+
+- **Healthcare:** We create synthetic aging brains from cross-sectional
+  data and develop "pseudo-healthy" syntheses to aid in the detection
+  of diseases and anomalies in medical images. We are also working on
+  digital twins for real-time assisted surgery.
+
+- **Plant Sciences:** We have used Generative Adversarial Networks
+  (**GANs**) to synthesize realistic images of plants, which helps in
+  developing automated phenotyping systems.
+
+### 3. Causal AI
+
+While traditional AI models are excellent at finding **correlations** in
+data, they often struggle to identify the underlying **causes**. Our
+work in **causal AI** goes beyond correlation to understand
+cause-and-effect relationships. This is crucial for making reliable
+predictions and decisions, especially in high-stakes fields like
+medicine. By uncovering the causal links between different factors, we
+can develop AI systems that are more trustworthy and less prone to
+making spurious conclusions based on misleading data patterns.
+
+Our projects in this area are aimed at building AI that can reason more
+like a human, leading to more transparent and reliable outcomes. We are
+exploring how to use diffusion models for causal discovery, which is a
+powerful technique for understanding the structure of complex systems.
+
+Key applications of our causal AI research are in:
+
+- **Healthcare:** We are developing AI models that can better understand
+  the causal factors in medical imaging, such as the relationship
+  between a patient's condition and features in an MRI scan. This
+  includes research into causal machine learning for precision medicine.
+
+- **General AI:** We are working on projects related to causal concept
+  learning and causally steered diffusion for automated video
+  counterfactual generation.
+
+### 4. Value of Data, Privacy, and Leakage
+
+The incredible power of AI comes with significant responsibility,
+particularly regarding data privacy and security. This research pillar
+is dedicated to understanding and controlling how AI models handle
+sensitive information. We investigate **data leakage**, which occurs
+when private data used for training is unintentionally revealed by the
+model. We also work on **privacy-preserving** techniques to ensure that
+AI can be developed and deployed without compromising an individual's
+personal information.
+
+Our goal is to build AI systems that not only perform well but are also
+ethically sound and safe to use with sensitive data. Our research
+focuses on measuring unintended memorization of unique private features
+in neural networks.
+
+Applications for this work include:
+
+- **Healthcare:** We explore how to assess if a machine learning model
+  has "forgotten" data and develop methods to mitigate memorization in
+  medical diffusion models. We also work on understanding fairness
+  biases in MRI reconstruction.
+
+- **General AI:** This research has broad implications for all
+  foundation models, as it seeks to define methods for controlling and
+  mitigating memorization and privacy risks. We also study the role of
+  privacy in AI for healthcare.
+
+### 5. Foundation Models and Agentic AI
+
+Our research leverages the power of foundation models to tackle complex
+challenges in both healthcare and agriculture. We explore **vision
+foundation models** and their adaptation for tasks like plant
+phenotyping and human emotion recognition allowing us to apply a single,
+powerful model to diverse applications with minimal additional training.
+We also investigate **vision language models** to benchmark their
+spatial reasoning capabilities, aiming to create more contextually aware
+and accurate systems for tasks like analyzing medical images.
+Furthermore, our work with **diffusion models**---a type of generative
+foundation model---is applied to tasks such as analyzing chest X-rays
+and generating synthetic data.
+
+Simultaneously, our work on **Agentic AI** focuses on creating
+intelligent systems capable of performing specific tasks and interacting
+with their environment. We've developed a **conversational multi-agent
+AI system** called "PhenoAssistant" for the automation of plant
+phenotyping. In this system, multiple AI agents collaborate to
+streamline complex agricultural tasks. In the medical field, we are
+applying **actor-critic frameworks** and self-supervised imitation
+learning to automate surgical procedures. This research aims to create
+robust, autonomous systems that can assist human experts, improving
+efficiency and outcomes in high-stakes applications.
 
 ## Projects
 
