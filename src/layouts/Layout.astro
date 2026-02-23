@@ -68,8 +68,8 @@ const { title } = Astro.props;
                     <a href="/vios.science/publications">Publications</a>
                 </li>
                 <li><a href="/vios.science/code">Code &amp; Data</a></li>
-                <li><a href="/vios.science/news">News</a></li>
                 <li><a href="/vios.science/tutorials">Tutorials</a></li>
+                <li><a href="/vios.science/news">News</a></li>
                 <li><a href="/vios.science/join">Join Us</a></li>
             </ul>
             <div class="nav-right">
@@ -135,11 +135,10 @@ const { title } = Astro.props;
         <div class="affil-bar">
             <span class="affil-label">Affiliations</span>
             <div class="affil-list">
-                <a href="#" class="affil-name">University of Edinburgh</a>
-                <a href="#" class="affil-name">CHAI AI Hub</a>
-                <a href="#" class="affil-name">phenomUK</a>
-                <a href="#" class="affil-name">School of Engineering</a>
-                <a href="#" class="affil-name">Canon Medical Research</a>
+                <a href="https://www.ed.ac.uk/" class="affil-name" target="_blank" rel="noopener noreferrer">The University of Edinburgh</a>
+                <a href="https://www.chai.ac.uk/" class="affil-name" target="_blank" rel="noopener noreferrer">CHAI AI Hub</a>
+                <a href="https://research.eu.medical.canon/" class="affil-name" target="_blank" rel="noopener noreferrer">Canon Medical Research</a>
+                <a href="https://phenomuk.org/" class="affil-name" target="_blank" rel="noopener noreferrer">PhenomUK</a>
             </div>
         </div>
 
@@ -179,8 +178,9 @@ const { title } = Astro.props;
             </div>
             <div class="f-bottom">
                 <span class="f-copy"
-                    >© 2026 VIOS Collaboratory. All rights reserved.</span
+                    >© 2026 VIOS Collaboratory.<br />Institute for Digital Communications<br />The School of Engineering<br />The University of Edinburgh</span
                 >
+                <img src="/vios.science/assets/images/edinburgh.svg" alt="The University of Edinburgh" class="f-uoe-logo" />
             </div>
         </footer>
 
@@ -672,7 +672,8 @@ const { title } = Astro.props;
     .scroll-cue {
         position: absolute;
         bottom: 2.5rem;
-        left: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
         display: flex;
         flex-direction: column;
@@ -795,7 +796,7 @@ const { title } = Astro.props;
     }
 
     /* ═══════════════════════════════════════════════
-           NEWS (appears before research)
+           NEWS
         ═══════════════════════════════════════════════ */
     #news {
         background: var(--bg);
@@ -1175,6 +1176,10 @@ const { title } = Astro.props;
         color: var(--dim);
         letter-spacing: 0.09em;
     }
+    .f-uoe-logo {
+        height: 48px;
+        width: auto;
+    }
 
     /* ═══════════════════════════════════════════════
            ANIMATIONS
@@ -1227,6 +1232,10 @@ const { title } = Astro.props;
             opacity 0.6s ease,
             transform 0.6s ease;
     }
+    .stagger.vis > * {
+        opacity: 1;
+        transform: translateY(0);
+    }
     .stagger.vis > *:nth-child(1) {
         opacity: 1;
         transform: translateY(0);
@@ -1276,9 +1285,6 @@ const { title } = Astro.props;
         }
         .hero-content {
             padding: 0 3rem;
-        }
-        .scroll-cue {
-            left: 3rem;
         }
         .affil-bar {
             padding: 2rem 3rem;
@@ -1362,9 +1368,6 @@ const { title } = Astro.props;
         .hero-content {
             padding: 0 1.5rem;
             max-width: 100%;
-        }
-        .scroll-cue {
-            left: 1.5rem;
         }
         .hero-ctas {
             flex-direction: column;

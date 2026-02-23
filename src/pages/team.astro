@@ -14,10 +14,6 @@ const grouped = {
         const r = (m.data.role || '').toLowerCase();
         return ['staff', 'director'].includes(r);
     }),
-    sdes: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['sde'].includes(r);
-    }),
     postdocs: teamMembers.filter(m => {
         const r = (m.data.role || '').toLowerCase();
         return ['postdoc', 'researcher'].includes(r);
@@ -25,6 +21,10 @@ const grouped = {
     phds: teamMembers.filter(m => {
         const r = (m.data.role || '').toLowerCase();
         return ['phd', 'student'].includes(r);
+    }),
+    sdes: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['sde'].includes(r);
     }),
     visiting: teamMembers.filter(m => {
         const r = (m.data.role || '').toLowerCase();
