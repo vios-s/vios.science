@@ -6,7 +6,7 @@ profile: "sotos.jpg"
 
 order: 1
 
-CV: "https://vios.science/assets/pdfs/SA_Tsaftaris_CV.pdf"
+CV: "/assets/pdfs/SA_Tsaftaris_CV.pdf"
 linkedin: "https://www.linkedin.com/in/sotost/"
 scholar: "https://scholar.google.co.uk/citations?user=jC1uFnYAAAAJ&hl=en"
 twitter: "https://twitter.com/stsaftaris"
@@ -37,7 +37,7 @@ He maintained an adjunct appointment with EECS (2011-2015), and an
 affiliation with the [Image and Video Processing Laboratory
 (IVPL)](https://sites.northwestern.edu/ivpl), at Northwestern University, upon his return to Europe.
 
-He has [published extensively](/vios.science/publications/), particularly in
+He has [published extensively](/publications/), particularly in
 interdisciplinary fields, with more than 200 journal and conference papers in
 his active record, with a variety of co-authors and collaborators.
 
@@ -69,4 +69,4 @@ Fellow](http://www.mccormick.northwestern.edu/students/graduate/fellowships-inte
 and a [Fellow of the Alexander S. Onassis](https://www.onassis.org) Public
 Beneﬁt Foundation.
 
-Short bio for media engagements and seminars including high res photographs in docx format [here](https://vios.science/assets/pdfs/SA_Tsaftaris_bio.docx) (it will download a file directly).
+Short bio for media engagements and seminars including high res photographs in docx format [here](/assets/pdfs/SA_Tsaftaris_bio.docx) (it will download a file directly).

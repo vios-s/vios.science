@@ -1,27 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { getSortedNews } from "../utils/news";
 
 const allNews = await getCollection("news");
+const sortedNews = getSortedNews(allNews);
 
-const newsItems = allNews.map((item) => {
-    let dateObj = item.data.date;
-    if (!dateObj) {
-        const match = item.id.match(/^(\d{4}-\d{2}-\d{2})/);
-        if (match) {
-            dateObj = new Date(match[1]);
-        } else {
-            dateObj = new Date(0);
-        }
-    }
-    return { ...item, parsedDate: dateObj };
-});
-
-const sortedNews = newsItems.sort(
-    (a, b) => b.parsedDate.valueOf() - a.parsedDate.valueOf(),
-);
-
-// Group by year
 const newsByYear = sortedNews.reduce(
     (acc, current) => {
         const year = current.parsedDate.getFullYear();

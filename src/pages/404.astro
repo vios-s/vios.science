@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { base } from "../utils/base";
+---
+
+<Layout title="Page Not Found — VIOS Collaboratory">
+    <section class="not-found">
+        <div class="nf-content">
+            <span class="nf-code">404</span>
+            <h1 class="nf-title">Page not found</h1>
+            <p class="nf-desc">
+                The page you're looking for doesn't exist or has been moved.
+            </p>
+            <a href={base("/")} class="btn-primary">
+                Back to Home
+                <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                    <path
+                        d="M1 7H13M7 1L13 7L7 13"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .not-found {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 6rem 2rem 2rem;
+    }
+    .nf-content {
+        max-width: 480px;
+    }
+    .nf-code {
+        font-family: "Spectral", serif;
+        font-size: clamp(6rem, 15vw, 12rem);
+        font-weight: 300;
+        line-height: 1;
+        color: var(--accent);
+        opacity: 0.2;
+        display: block;
+        margin-bottom: 1rem;
+    }
+    .nf-title {
+        font-family: "Spectral", serif;
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: var(--text);
+        margin-bottom: 1rem;
+    }
+    .nf-desc {
+        font-size: 1.05rem;
+        color: var(--muted);
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+    }
+</style>

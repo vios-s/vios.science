@@ -54,7 +54,7 @@ const { Content, headings } = await researchEntry.render();
     }
     .research-container {
         padding: 0 8rem 8rem;
-        max-width: none; /* Removed to allow full width */
+        max-width: none;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 300px;
@@ -103,7 +103,6 @@ const { Content, headings } = await researchEntry.render();
         color: var(--text);
     }
 
-    /* Project Cards Styling */
     .prose :global(.project-cards) {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -168,14 +167,12 @@ const { Content, headings } = await researchEntry.render();
         letter-spacing: 0.05em;
     }
 
-    /* Clearfix for floating images */
     .prose::after {
         content: "";
         display: table;
         clear: both;
     }
 
-    /* Sidebar Styling */
     .toc-sidebar {
         position: sticky;
         top: 140px;
@@ -247,7 +244,6 @@ const { Content, headings } = await researchEntry.render();
 </style>
 
 <script is:inline>
-    // Smooth scrolling for TOC links
     document.addEventListener("DOMContentLoaded", () => {
         const tocLinks = document.querySelectorAll(".toc-sticky nav a");
         tocLinks.forEach((link) => {

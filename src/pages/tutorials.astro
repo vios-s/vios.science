@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { base } from "../utils/base";
 
 const allTutorials = await getCollection("tutorials");
 allTutorials.sort((a, b) => {
-    // try formatting by date if available
     const aDate = a.data.date ? new Date(a.data.date).getTime() : 0;
     const bDate = b.data.date ? new Date(b.data.date).getTime() : 0;
     return bDate - aDate;
@@ -32,7 +32,7 @@ allTutorials.sort((a, b) => {
             {
                 allTutorials.map((tutorial) => (
                     <a
-                        href={`/vios.science/tutorials/${tutorial.slug || tutorial.id.replace(/\.(md|mdx)$/, "")}`}
+                        href={base(`/tutorials/${tutorial.slug || tutorial.id.replace(/\.(md|mdx)$/, "")}`)}
                         class="tutorial-card"
                     >
                         {tutorial.data.teaser && (
@@ -145,7 +145,6 @@ allTutorials.sort((a, b) => {
         transform: scaleX(1);
     }
 
-    /* Teaser image */
     .tc-img {
         width: 100%;
         aspect-ratio: 16/9;
@@ -158,7 +157,6 @@ allTutorials.sort((a, b) => {
         transform: scale(1.04);
     }
 
-    /* Card body */
     .tc-body {
         padding: 2rem 2.2rem 2rem;
         position: relative;
@@ -167,7 +165,6 @@ allTutorials.sort((a, b) => {
         flex-direction: column;
     }
 
-    /* Year badge — upper right corner */
     .tc-year {
         position: absolute;
         top: 1.8rem;
@@ -193,7 +190,7 @@ allTutorials.sort((a, b) => {
         color: var(--text);
         line-height: 1.25;
         margin-bottom: 0.9rem;
-        padding-right: 4rem; /* avoid overlapping the year badge */
+        padding-right: 4rem;
     }
 
     .tc-desc {

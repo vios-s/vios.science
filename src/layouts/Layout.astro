@@ -1,9 +1,22 @@
 ---
+import { base } from '../utils/base';
+
 interface Props {
     title: string;
+    description?: string;
+    image?: string;
 }
 
-const { title } = Astro.props;
+const {
+    title,
+    description = 'VIOS Collaboratory — AI for Life Sciences. University of Edinburgh.',
+    image,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = image
+    ? new URL(image, Astro.site).href
+    : undefined;
 ---
 
 <!doctype html>
@@ -12,16 +25,28 @@ const { title } = Astro.props;
         <meta charset="UTF-8" />
         <meta
             name="description"
-            content="VIOS Collaboratory — AI for Life Sciences"
+            content={description}
         />
         <meta name="viewport" content="width=device-width" />
         <link
             rel="icon"
             type="image/svg+xml"
-            href="/vios.science/favicon.svg"
+            href={base('/favicon.svg')}
         />
+        <link rel="canonical" href={canonicalURL} />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        {ogImage && <meta property="og:image" content={ogImage} />}
+
+        <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        {ogImage && <meta name="twitter:image" content={ogImage} />}
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,21 +81,17 @@ const { title } = Astro.props;
         </script>
     </head>
     <body>
-        <!-- ════════════════════════════════════════════
-             NAV
-        ════════════════════════════════════════════ -->
         <nav id="nav">
-            <a href="/vios.science/" class="nav-logo">VIOS<span>.</span></a>
+            <a href={base('/')} class="nav-logo">VIOS<span>.</span></a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="/vios.science/research">Research</a></li>
-                <li><a href="/vios.science/team">Team</a></li>
+                <li><a href={base('/research')}>Research</a></li>
+                <li><a href={base('/team')}>Team</a></li>
                 <li>
-                    <a href="/vios.science/publications">Publications</a>
+                    <a href={base('/publications')}>Publications</a>
                 </li>
-                <li><a href="/vios.science/code">Code &amp; Data</a></li>
-                <li><a href="/vios.science/tutorials">Tutorials</a></li>
-                <li><a href="/vios.science/news">News</a></li>
-                <li><a href="/vios.science/join">Join Us</a></li>
+                <li><a href={base('/tutorials')}>Tutorials</a></li>
+                <li><a href={base('/news')}>News</a></li>
+                <li><a href={base('/join')}>Join Us</a></li>
             </ul>
             <div class="nav-right">
                 <button
@@ -78,7 +99,6 @@ const { title } = Astro.props;
                     id="theme-toggle"
                     aria-label="Toggle light/dark theme"
                 >
-                    <!-- Moon icon (shown in dark mode) -->
                     <svg
                         class="icon-moon"
                         viewBox="0 0 24 24"
@@ -92,7 +112,6 @@ const { title } = Astro.props;
                             d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"
                         ></path>
                     </svg>
-                    <!-- Sun icon (shown in light mode) -->
                     <svg
                         class="icon-sun"
                         viewBox="0 0 24 24"
@@ -129,9 +148,6 @@ const { title } = Astro.props;
 
         <slot />
 
-        <!-- ════════════════════════════════════════════
-             AFFILIATIONS
-        ════════════════════════════════════════════ -->
         <div class="affil-bar">
             <span class="affil-label">Affiliations</span>
             <div class="affil-list">
@@ -142,12 +158,9 @@ const { title } = Astro.props;
             </div>
         </div>
 
-        <!-- ════════════════════════════════════════════
-             FOOTER
-        ════════════════════════════════════════════ -->
         <footer>
             <div>
-                <a href="/vios.science/" class="f-logo">VIOS<span>.</span></a>
+                <a href={base('/')} class="f-logo">VIOS<span>.</span></a>
                 <p class="f-tagline">
                     AI for Life Sciences.<br />
                     University of Edinburgh.
@@ -156,18 +169,18 @@ const { title } = Astro.props;
             <div>
                 <h4 class="f-col-label">Explore</h4>
                 <ul class="f-links">
-                    <li><a href="/vios.science/research">Research</a></li>
-                    <li><a href="/vios.science/team">Team</a></li>
+                    <li><a href={base('/research')}>Research</a></li>
+                    <li><a href={base('/team')}>Team</a></li>
                     <li>
-                        <a href="/vios.science/publications">Publications</a>
+                        <a href={base('/publications')}>Publications</a>
                     </li>
-                    <li><a href="/vios.science/tutorials">Tutorials</a></li>
+                    <li><a href={base('/tutorials')}>Tutorials</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="f-col-label">Connect</h4>
                 <ul class="f-links">
-                    <li><a href="/vios.science/join">Join the Lab</a></li>
+                    <li><a href={base('/join')}>Join the Lab</a></li>
                     <li>
                         <a href="https://twitter.com/SotiriosA" target="_blank"
                             >Twitter / X</a
@@ -180,39 +193,33 @@ const { title } = Astro.props;
                 <span class="f-copy"
                     >© 2026 VIOS Collaboratory.<br />Institute for Digital Communications<br />The School of Engineering<br />The University of Edinburgh</span
                 >
-                <img src="/vios.science/assets/images/edinburgh.svg" alt="The University of Edinburgh" class="f-uoe-logo" />
+                <img src={base('/assets/images/edinburgh.svg')} alt="The University of Edinburgh" class="f-uoe-logo" />
             </div>
         </footer>
 
         <script is:inline>
-            // Nav scroll
             const nav = document.getElementById("nav");
             window.addEventListener("scroll", () => {
                 nav.classList.toggle("scrolled", window.scrollY > 60);
             });
 
-            // Theme toggle logic
             document
                 .getElementById("theme-toggle")
                 .addEventListener("click", () => {
                     const isDark =
-                        document.documentElement.classList.contains("light"); // If light class is present, we are turning dark
+                        document.documentElement.classList.contains("light");
 
                     if (isDark) {
-                        // Switch to dark
                         document.documentElement.classList.remove("light");
                         window.localStorage.setItem("vios-theme", "dark");
                     } else {
-                        // Switch to light
                         document.documentElement.classList.add("light");
                         window.localStorage.setItem("vios-theme", "light");
                     }
 
-                    // Dispatch event so ThreeJS or others can listen
                     window.dispatchEvent(new Event("theme-changed"));
                 });
 
-            // Scroll reveal
             const io = new IntersectionObserver(
                 (entries) => {
                     entries.forEach((e) => {
@@ -228,14 +235,12 @@ const { title } = Astro.props;
                     .forEach((el) => io.observe(el));
             }, 100);
 
-            // Re-run observer after Astro view transitions
             document.addEventListener("astro:page-load", () => {
                 document
                     .querySelectorAll(".reveal, .stagger")
                     .forEach((el) => io.observe(el));
             });
 
-            // Mobile nav toggle
             const menuBtn = document.getElementById("nav-menu-btn");
             const navEl = document.getElementById("nav");
             if (menuBtn && navEl) {
@@ -256,9 +261,7 @@ const { title } = Astro.props;
     </body>
 </html>
 <style is:global>
-    /* ═══════════════════════════════════════════════
-           THEME TOKENS
-        ═══════════════════════════════════════════════ */
+    /* THEME TOKENS */
     :root {
         --bg: #060d1a;
         --bg2: #0c1d34;
@@ -293,9 +296,7 @@ const { title } = Astro.props;
         --btn-text: #f4f7fc;
     }
 
-    /* ═══════════════════════════════════════════════
-           RESET & BASE
-        ═══════════════════════════════════════════════ */
+    /* RESET & BASE */
     *,
     *::before,
     *::after {
@@ -330,9 +331,7 @@ const { title } = Astro.props;
         box-shadow: 0 2px 0 var(--accent);
     }
 
-    /* ═══════════════════════════════════════════════
-           NAV
-        ═══════════════════════════════════════════════ */
+    /* NAV */
     #nav {
         position: fixed;
         top: 0;
@@ -379,7 +378,6 @@ const { title } = Astro.props;
         list-style: none;
     }
 
-    /* Hamburger button */
     .nav-menu-btn {
         display: none;
         flex-direction: column;
@@ -429,7 +427,6 @@ const { title } = Astro.props;
         color: var(--accent);
     }
 
-    /* Theme toggle */
     .theme-toggle {
         background: none;
         border: 1px solid var(--border2);
@@ -463,9 +460,7 @@ const { title } = Astro.props;
         display: block;
     }
 
-    /* ═══════════════════════════════════════════════
-           HERO
-        ═══════════════════════════════════════════════ */
+    /* HERO */
     #hero {
         position: relative;
         height: 100vh;
@@ -697,9 +692,7 @@ const { title } = Astro.props;
         writing-mode: vertical-rl;
     }
 
-    /* ═══════════════════════════════════════════════
-           MISSION INTERLUDE
-        ═══════════════════════════════════════════════ */
+    /* MISSION INTERLUDE */
     #mission {
         padding: 8rem;
         background: var(--bg2);
@@ -751,9 +744,7 @@ const { title } = Astro.props;
         text-transform: uppercase;
     }
 
-    /* ═══════════════════════════════════════════════
-           SECTION COMMON
-        ═══════════════════════════════════════════════ */
+    /* SECTION COMMON */
     section {
         padding: 6.5rem 8rem;
     }
@@ -795,9 +786,7 @@ const { title } = Astro.props;
         font-style: italic;
     }
 
-    /* ═══════════════════════════════════════════════
-           NEWS
-        ═══════════════════════════════════════════════ */
+    /* NEWS */
     #news {
         background: var(--bg);
         transition: background 0.35s ease;
@@ -851,9 +840,7 @@ const { title } = Astro.props;
         line-height: 1.65;
     }
 
-    /* ═══════════════════════════════════════════════
-           RESEARCH
-        ═══════════════════════════════════════════════ */
+    /* RESEARCH */
     #research {
         background: var(--bg2);
         transition: background 0.35s ease;
@@ -934,7 +921,6 @@ const { title } = Astro.props;
         text-transform: uppercase;
     }
 
-    /* Active projects list */
     .projects-label {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.62rem;
@@ -978,9 +964,7 @@ const { title } = Astro.props;
         line-height: 1.4;
     }
 
-    /* ═══════════════════════════════════════════════
-           PUBLICATIONS (cards with teaser images)
-        ═══════════════════════════════════════════════ */
+    /* PUBLICATIONS */
     #publications {
         background: var(--bg);
         transition: background 0.35s ease;
@@ -1074,9 +1058,7 @@ const { title } = Astro.props;
         margin-top: 2.8rem;
     }
 
-    /* ═══════════════════════════════════════════════
-           AFFILIATIONS
-        ═══════════════════════════════════════════════ */
+    /* AFFILIATIONS */
     .affil-bar {
         padding: 2.4rem 8rem;
         background: var(--bg2);
@@ -1112,9 +1094,7 @@ const { title } = Astro.props;
         color: var(--text);
     }
 
-    /* ═══════════════════════════════════════════════
-           FOOTER
-        ═══════════════════════════════════════════════ */
+    /* FOOTER */
     footer {
         background: var(--bg);
         padding: 4.5rem 8rem 3rem;
@@ -1181,9 +1161,7 @@ const { title } = Astro.props;
         width: auto;
     }
 
-    /* ═══════════════════════════════════════════════
-           ANIMATIONS
-        ═══════════════════════════════════════════════ */
+    /* ANIMATIONS */
     @keyframes fadeUp {
         from {
             opacity: 0;
@@ -1212,7 +1190,6 @@ const { title } = Astro.props;
         }
     }
 
-    /* Scroll reveal */
     .reveal {
         opacity: 0;
         transform: translateY(26px);
@@ -1267,9 +1244,7 @@ const { title } = Astro.props;
         transition-delay: 0.4s;
     }
 
-    /* ═══════════════════════════════════════════════
-           RESPONSIVE — TABLET (≤ 900px)
-        ═══════════════════════════════════════════════ */
+    /* RESPONSIVE — TABLET (≤ 900px) */
     @media (max-width: 900px) {
         #nav {
             padding: 1.2rem 3rem;
@@ -1302,15 +1277,12 @@ const { title } = Astro.props;
         }
     }
 
-    /* ═══════════════════════════════════════════════
-           RESPONSIVE — MOBILE (≤ 600px)
-        ═══════════════════════════════════════════════ */
+    /* RESPONSIVE — MOBILE (≤ 600px) */
     @media (max-width: 600px) {
         html {
             font-size: 16px;
         }
 
-        /* Nav */
         #nav {
             padding: 1rem 1.5rem;
             flex-wrap: wrap;
@@ -1358,7 +1330,6 @@ const { title } = Astro.props;
             background: var(--bg);
         }
 
-        /* Sections & hero */
         section {
             padding: 4rem 1.5rem;
         }
@@ -1374,7 +1345,6 @@ const { title } = Astro.props;
             align-items: flex-start;
         }
 
-        /* Grids */
         .news-grid {
             grid-template-columns: 1fr;
         }
@@ -1388,7 +1358,6 @@ const { title } = Astro.props;
             grid-template-columns: 1fr;
         }
 
-        /* Affiliations */
         .affil-bar {
             padding: 2rem 1.5rem;
             flex-direction: column;
@@ -1399,7 +1368,6 @@ const { title } = Astro.props;
             gap: 1.2rem;
         }
 
-        /* Footer */
         footer {
             padding: 3rem 1.5rem 2rem;
             grid-template-columns: 1fr;

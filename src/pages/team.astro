@@ -2,13 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { Content as AlumniContent } from '../content/pages/alumni.mdx';
+import { base } from '../utils/base';
 
 const teamMembers = await getCollection('team');
 
-// Sort by order
 teamMembers.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 
-// Group by role
 const grouped = {
     staff: teamMembers.filter(m => {
         const r = (m.data.role || '').toLowerCase();
@@ -38,7 +37,6 @@ const grouped = {
     alumni: teamMembers.filter(m => (m.data.role || '').toLowerCase() === 'alumni')
 };
 
-// Map nicely formatted titles
 const sectionTitles = {
     staff: "Principal Investigators & Staff",
     sdes: "Engineers",
@@ -63,7 +61,7 @@ const sectionTitles = {
 
     <div class="team-container">
         {Object.entries(grouped).map(([key, members]) => {
-            if (members.length === 0 || key === 'alumni') return null; // We are handling alumni separately now
+            if (members.length === 0 || key === 'alumni') return null;
             return (
                 <div class="team-tier">
                     <h2 class="tier-title">{sectionTitles[key as keyof typeof sectionTitles]}</h2>
@@ -75,7 +73,7 @@ const sectionTitles = {
                                 <div class="card-inner">
                                     {member.data.profile ? (
                                         <div class="profile-img-wrap">
-                                            <img src={"/vios.science/assets/images/team/" + member.data.profile} alt={member.data.title} loading="lazy" />
+                                            <img src={base("/assets/images/team/" + member.data.profile)} alt={member.data.title} loading="lazy" />
                                         </div>
                                     ) : (
                                         <div class="profile-placeholder"></div>
@@ -85,11 +83,10 @@ const sectionTitles = {
                                         {member.data.subtitle && <p class="member-role">{member.data.subtitle}</p>}
                                     </div>
                                 </div>
-                                <!-- Hidden content for the modal -->
                                 <template class="member-bios">
                                     <div class="modal-content-wrap">
                                         <div class="modal-header-info">
-                                            {member.data.profile && <img class="modal-img" src={"/vios.science/assets/images/team/" + member.data.profile} alt={member.data.title}/>}
+                                            {member.data.profile && <img class="modal-img" src={base("/assets/images/team/" + member.data.profile)} alt={member.data.title}/>}
                                             <div class="modal-titles">
                                                 <h2>{member.data.title}</h2>
                                                 {member.data.subtitle && <h3>{member.data.subtitle}</h3>}
@@ -97,6 +94,7 @@ const sectionTitles = {
                                                     {member.data.linkedin && <a href={member.data.linkedin} target="_blank">LinkedIn</a>}
                                                     {member.data.scholar && <a href={member.data.scholar} target="_blank">Google Scholar</a>}
                                                     {member.data.twitter && <a href={member.data.twitter} target="_blank">Twitter</a>}
+                                                    {member.data.CV && <a href={base(member.data.CV)} target="_blank">CV</a>}
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +118,6 @@ const sectionTitles = {
         </div>
     </div>
 
-    <!-- The floating modal -->
     <dialog id="teamModal" class="team-modal">
         <div class="modal-inner">
             <button id="closeModal" class="close-btn">&times;</button>
@@ -210,8 +207,7 @@ const sectionTitles = {
         color: var(--muted);
         line-height: 1.4;
     }
-    
-    /* Modal Styles */
+
     .team-modal {
         margin: auto;
         padding: 0;
@@ -254,8 +250,7 @@ const sectionTitles = {
     .close-btn:hover {
         color: var(--accent);
     }
-    
-    /* Global classes injected into modal content */
+
     :global(.modal-content-wrap) {
         display: flex;
         flex-direction: column;
@@ -349,7 +344,7 @@ const sectionTitles = {
     }
     
     .alumni-wrapper :global(h2) {
-        display: none; /* Hide the in-markdown header as we render it in the wrapper */
+        display: none;
     }
 
     @media (max-width: 900px) {
@@ -383,7 +378,6 @@ const sectionTitles = {
 </style>
 
 <script is:inline>
-    // Modal interaction logic
     const teamCards = document.querySelectorAll('.team-card');
     const modal = document.getElementById('teamModal');
     const modalBody = document.getElementById('modalBody');
@@ -396,7 +390,7 @@ const sectionTitles = {
                     modalBody.innerHTML = '';
                     modalBody.appendChild(template.content.cloneNode(true));
                     modal.showModal();
-                    document.body.style.overflow = 'hidden'; // prevent bg scroll
+                    document.body.style.overflow = 'hidden';
                 }
             });
         });
@@ -408,8 +402,7 @@ const sectionTitles = {
         modal.addEventListener('close', () => {
             document.body.style.overflow = '';
         });
-        
-        // Close when clicking outside
+
         modal.addEventListener('click', (e) => {
             const dialogDimensions = modal.getBoundingClientRect();
             if (

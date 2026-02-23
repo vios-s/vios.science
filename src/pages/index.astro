@@ -1,27 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { base } from "../utils/base";
+import { getSortedNews } from "../utils/news";
 import projectsData from "../data/projects.json";
 
 const allNews = await getCollection("news");
+const topNews = getSortedNews(allNews).slice(0, 3);
 
-const newsItems = allNews.map((item) => {
-    let dateObj = item.data.date;
-    if (!dateObj) {
-        const match = item.id.match(/^(\d{4}-\d{2}-\d{2})/);
-        if (match) {
-            dateObj = new Date(match[1]);
-        } else {
-            dateObj = new Date(0);
-        }
-    }
-    return { ...item, parsedDate: dateObj };
-});
-
-const sortedNews = newsItems.sort(
-    (a, b) => b.parsedDate.valueOf() - a.parsedDate.valueOf(),
-);
-const topNews = sortedNews.slice(0, 3);
+const allPublications = await getCollection("publications");
+const recentPublications = allPublications
+    .sort((a, b) => {
+        const da = a.data.date ? new Date(a.data.date).getTime() : 0;
+        const db = b.data.date ? new Date(b.data.date).getTime() : 0;
+        return db - da;
+    })
+    .slice(0, 3);
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">
@@ -57,7 +51,7 @@ const topNews = sortedNews.slice(0, 3);
             </p>
 
             <div class="hero-ctas">
-                <a href="/vios.science/research" class="btn-primary">
+                <a href={base('/research')} class="btn-primary">
                     Explore Research
                     <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
                         <path
@@ -68,7 +62,7 @@ const topNews = sortedNews.slice(0, 3);
                             stroke-linejoin="round"></path>
                     </svg>
                 </a>
-                <a href="/vios.science/team" class="btn-secondary"
+                <a href={base('/team')} class="btn-secondary"
                     >Meet the Team</a
                 >
             </div>
@@ -80,9 +74,6 @@ const topNews = sortedNews.slice(0, 3);
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════
-     MISSION
-════════════════════════════════════════════ -->
     <div id="mission">
         <p class="mission-quote reveal">
             "Life is central to our mission — with advances in AI, computer
@@ -95,9 +86,6 @@ const topNews = sortedNews.slice(0, 3);
         </p>
     </div>
 
-    <!-- ════════════════════════════════════════════
-     NEWS (before research)
-════════════════════════════════════════════ -->
     <section id="news">
         <div class="s-head reveal">
             <div class="s-eyebrow">
@@ -134,10 +122,9 @@ const topNews = sortedNews.slice(0, 3);
             class="pub-more"
             style="margin-top: 3rem; margin-bottom: 4rem; display: flex; justify-content: center;"
         >
-            <a href="/vios.science/news" class="btn-secondary">View All News</a>
+            <a href={base('/news')} class="btn-secondary">View All News</a>
         </div>
 
-        <!-- Elfsight LinkedIn Feed | Sotos Linkedin Feed -->
         <div
             class="social-feed reveal"
             style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box;"
@@ -151,9 +138,6 @@ const topNews = sortedNews.slice(0, 3);
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════
-     RESEARCH
-════════════════════════════════════════════ -->
     <section id="research">
         <div class="s-head reveal">
             <div class="s-eyebrow">
@@ -238,7 +222,6 @@ const topNews = sortedNews.slice(0, 3);
             </div>
         </div>
 
-        <!-- Funded projects -->
         <p class="projects-label">Active &amp; Recent Funded Projects</p>
         <div class="projects-list stagger">
             {
@@ -254,9 +237,6 @@ const topNews = sortedNews.slice(0, 3);
         </div>
     </section>
 
-    <!-- ════════════════════════════════════════════
-     PUBLICATIONS (cards with teaser images)
-════════════════════════════════════════════ -->
     <section id="publications">
         <div class="s-head reveal">
             <div class="s-eyebrow">
@@ -267,91 +247,38 @@ const topNews = sortedNews.slice(0, 3);
         </div>
 
         <div class="pub-cards stagger">
-            <div class="pub-card">
-                <img
-                    class="pub-card-img"
-                    src="https://vios.science/assets/images/papers/yuyang_2025_bmvc.png"
-                    alt="CRCE paper teaser"
-                    loading="lazy"
-                    onerror="this.style.minHeight='160px'"
-                />
-                <div class="pub-card-body">
-                    <span class="pub-card-venue">BMVC 2025</span>
-                    <p class="pub-card-title">
-                        CRCE: Coreference-Retention Concept Erasure in
-                        Text-to-Image Diffusion Models
-                    </p>
-                    <p class="pub-card-authors">
-                        Yuyang Xue, Edward Moroshko, Feng Chen, Steven McDonagh,
-                        Sotirios A. Tsaftaris
-                    </p>
-                </div>
-                <div class="pub-card-footer">
-                    <a href="#" class="pub-card-link">Read paper →</a>
-                </div>
-            </div>
-
-            <div class="pub-card">
-                <img
-                    class="pub-card-img"
-                    src="https://vios.science/assets/images/papers/jun_2025_melba.png"
-                    alt="SWiFT paper teaser"
-                    loading="lazy"
-                    onerror="this.style.minHeight='160px'"
-                />
-                <div class="pub-card-body">
-                    <span class="pub-card-venue"
-                        >ML for Biomedical Imaging, Vol. 3 · 2025</span
-                    >
-                    <p class="pub-card-title">
-                        SWiFT: Soft-Mask Weight Fine-tuning for Bias Mitigation
-                    </p>
-                    <p class="pub-card-authors">
-                        Junyu Yan, Feng Chen, Yuyang Xue, Yuning Du,
-                        Konstantinos Vilouras, Sotirios A. Tsaftaris, Steven
-                        McDonagh
-                    </p>
-                </div>
-                <div class="pub-card-footer">
-                    <a href="#" class="pub-card-link">Read paper →</a>
-                </div>
-            </div>
-
-            <div class="pub-card">
-                <img
-                    class="pub-card-img"
-                    src="https://vios.science/assets/images/papers/feng_2025_wacv.png"
-                    alt="GMT paper teaser"
-                    loading="lazy"
-                    onerror="this.style.minHeight='160px'"
-                />
-                <div class="pub-card-body">
-                    <span class="pub-card-venue">WACV 2025</span>
-                    <p class="pub-card-title">
-                        GMT: Guided Mask Transformer for Leaf Instance
-                        Segmentation
-                    </p>
-                    <p class="pub-card-authors">
-                        Feng Chen, Sotirios A. Tsaftaris, Mario Valerio
-                        Giuffrida
-                    </p>
-                </div>
-                <div class="pub-card-footer">
-                    <a href="#" class="pub-card-link">Read paper →</a>
-                </div>
-            </div>
+            {
+                recentPublications.map((publication) => (
+                    <div class="pub-card">
+                        {publication.data.image ? (
+                            <img
+                                class="pub-card-img"
+                                src={base(publication.data.image)}
+                                alt={`${publication.data.title} teaser`}
+                                loading="lazy"
+                            />
+                        ) : (
+                            <div class="pub-card-img" style="min-height:160px;background:var(--bg3)" />
+                        )}
+                        <div class="pub-card-body">
+                            <span class="pub-card-venue">{publication.data.venue}</span>
+                            <p class="pub-card-title">{publication.data.title}</p>
+                            <p class="pub-card-authors">{publication.data.authors}</p>
+                        </div>
+                        <div class="pub-card-footer">
+                            <a href={publication.data.link || '#'} class="pub-card-link">Read paper →</a>
+                        </div>
+                    </div>
+                ))
+            }
         </div>
 
         <div class="pub-more">
-            <a href="/vios.science/publications" class="btn-secondary"
+            <a href={base('/publications')} class="btn-secondary"
                 >View All Publications</a
             >
         </div>
     </section>
 
-    <script
-        is:inline
-        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
-    ></script>
-    <script is:inline src="/vios.science/assets/js/viosAnimation.js"></script>
+    <script src="../scripts/heroLoader.ts"></script>
 </Layout>

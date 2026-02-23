@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import { base } from "../../utils/base";
 
 export async function getStaticPaths() {
     const tutorials = await getCollection("tutorials");
@@ -34,7 +35,7 @@ const { Content } = await tutorial.render();
                     <p class="th-desc">{tutorial.data.summary}</p>
                 )
             }
-            <a href="/vios.science/tutorials" class="th-back"
+            <a href={base('/tutorials')} class="th-back"
                 >← Back to Tutorials</a
             >
         </header>
@@ -100,7 +101,6 @@ const { Content } = await tutorial.render();
         color: var(--accent);
     }
 
-    /* Markdown Content Styling */
     .tutorial-content :global(h1),
     .tutorial-content :global(h2),
     .tutorial-content :global(h3) {

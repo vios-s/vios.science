@@ -12,6 +12,7 @@ const team = defineCollection({
         scholar: z.string().url().optional().or(z.literal('')),
         twitter: z.string().url().optional().or(z.literal('')),
         github: z.string().url().optional().or(z.literal('')),
+        CV: z.string().optional(),
         collection: z.string().optional(),
         permalink: z.string().optional(),
     })
