@@ -1,6 +1,6 @@
 ---
 title: "Christopher Boland"
-role: "phd"
+role: "none"
 subtitle: "PhD Student"
 profile: "chris.jpg"
 

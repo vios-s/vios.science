@@ -10,17 +10,42 @@ teamMembers.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 
 // Group by role
 const grouped = {
-    staff: teamMembers.filter(m => m.data.role === 'staff' || m.data.role === 'director'),
-    postdocs: teamMembers.filter(m => m.data.role === 'postdoc' || m.data.role === 'researcher'),
-    phds: teamMembers.filter(m => m.data.role === 'phd' || m.data.role === 'student'),
-    alumni: teamMembers.filter(m => m.data.role === 'alumni')
+    staff: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['staff', 'director'].includes(r);
+    }),
+    sdes: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['sde'].includes(r);
+    }),
+    postdocs: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['postdoc', 'researcher'].includes(r);
+    }),
+    phds: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['phd', 'student'].includes(r);
+    }),
+    visiting: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        return ['visiting'].includes(r);
+    }),
+    others: teamMembers.filter(m => {
+        const r = (m.data.role || '').toLowerCase();
+        const existing = ['staff', 'director', 'sde', 'postdoc', 'researcher', 'phd', 'student', 'visiting', 'none', 'alumni'];
+        return !existing.includes(r);
+    }),
+    alumni: teamMembers.filter(m => (m.data.role || '').toLowerCase() === 'alumni')
 };
 
 // Map nicely formatted titles
 const sectionTitles = {
     staff: "Principal Investigators & Staff",
+    sdes: "Engineers",
     postdocs: "Postdoctoral Researchers",
     phds: "PhD Researchers",
+    visiting: "Visiting Researchers & Students",
+    others: "Other Members",
     alumni: "Alumni"
 };
 ---
@@ -115,11 +140,10 @@ const sectionTitles = {
         margin-bottom: 4rem;
     }
     .tier-title {
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 0.8rem;
-        color: var(--accent);
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
+        font-family: 'Spectral', serif;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: var(--text);
         margin-bottom: 2rem;
         border-bottom: 1px solid var(--border);
         padding-bottom: 1rem;
