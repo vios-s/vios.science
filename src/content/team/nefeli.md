@@ -1,6 +1,6 @@
 ---
 title: "Nefeli Gkouti"
-role: "phd"
+role: "none"
 subtitle: "PhD Student"
 profile: "nefeli.jpg"
 

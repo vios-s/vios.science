@@ -1,6 +1,6 @@
 ---
 title: "Edward Moroshko"
-role: "postdoc"
+role: "none"
 subtitle: "Post-doctoral Researcher"
 profile: "edward.jpg"
 
