@@ -3,19 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { base } from "../utils/base";
 import { getSortedNews } from "../utils/news";
+import { getSortedPublications } from "../utils/publications";
 import projectsData from "../data/projects.json";
 
 const allNews = await getCollection("news");
 const topNews = getSortedNews(allNews).slice(0, 3);
 
 const allPublications = await getCollection("publications");
-const recentPublications = allPublications
-    .sort((a, b) => {
-        const da = a.data.date ? new Date(a.data.date).getTime() : 0;
-        const db = b.data.date ? new Date(b.data.date).getTime() : 0;
-        return db - da;
-    })
-    .slice(0, 3);
+const recentPublications = getSortedPublications(allPublications).slice(0, 3);
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">

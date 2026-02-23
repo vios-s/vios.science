@@ -1,21 +1,19 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import { base } from "../utils/base";
-import { getSortedPublications } from "../utils/publications";
+import { getSortedPublications } from "../../utils/publications";
 
-const allPublications = await getCollection("publications");
-const publications = getSortedPublications(allPublications).slice(0, 6);
+const publications = getSortedPublications(await getCollection("publications"));
 ---
 
-<Layout title="Publications - VIOS Collaboratory">
+<Layout title="All Publications - VIOS Collaboratory">
     <section class="page-header">
         <div class="s-head">
             <div class="s-eyebrow">
                 <div class="s-eyebrow-line"></div>
                 <span class="s-eyebrow-text">Our Output</span>
             </div>
-            <h1 class="s-title">Latest <em>publications</em></h1>
+            <h1 class="s-title">All <em>publications</em></h1>
         </div>
     </section>
 
@@ -64,12 +62,6 @@ const publications = getSortedPublications(allPublications).slice(0, 6);
                     </div>
                 ))
             }
-        </div>
-
-        <div class="pub-more">
-            <a href={base('/publications/all')} class="btn-secondary"
-                >View All Publications</a
-            >
         </div>
     </div>
 </Layout>

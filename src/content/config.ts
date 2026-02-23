@@ -40,6 +40,8 @@ const publications = defineCollection({
         date: z.coerce.date().optional(),
         image: z.string().optional(),
         link: z.string().url().optional(),
+        code: z.string().url().optional(),
+        website: z.string().url().optional(),
     })
 });
 

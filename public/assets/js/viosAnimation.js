@@ -338,13 +338,14 @@
                 mainGroup.position.x = window.innerWidth > 768 ? 300 : 0;
             });
 
-            const clock = new THREE.Clock();
+            const clock = new THREE.Timer();
             const highlightColor = new THREE.Color(0x00d4aa);
             const diseaseColor = new THREE.Color(0xff0055);
 
             function animate() {
                 requestAnimationFrame(animate);
-                const time = clock.getElapsedTime();
+                clock.update();
+                const time = clock.getElapsed();
 
                 // 鼠标视差平滑转动
                 mainGroup.rotation.y +=
@@ -565,4 +566,4 @@
 
         // Let's bind 'initViosAnimation' to window since it is declared inside a script tag
         window.initViosAnimation = initViosAnimation;
-        tryInitAnimation();
+        tryInitAnimation();
