@@ -261,7 +261,26 @@ const recentPublications = getSortedPublications(allPublications).slice(0, 3);
                             <p class="pub-card-authors">{publication.data.authors}</p>
                         </div>
                         <div class="pub-card-footer">
-                            <a href={publication.data.link || '#'} class="pub-card-link">Read paper →</a>
+                            {publication.data.code && (
+                                <a
+                                    href={publication.data.code}
+                                    class="pub-card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Code →
+                                </a>
+                            )}
+                            {publication.data.website && (
+                                <a
+                                    href={publication.data.website}
+                                    class="pub-card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Website →
+                                </a>
+                            )}
                         </div>
                     </div>
                 ))

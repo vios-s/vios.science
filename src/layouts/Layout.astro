@@ -30,8 +30,8 @@ const ogImage = image
         <meta name="viewport" content="width=device-width" />
         <link
             rel="icon"
-            type="image/svg+xml"
-            href={base('/favicon.svg')}
+            type="image/x-ico"
+            href={base('/favicon.ico')}
         />
         <link rel="canonical" href={canonicalURL} />
         <meta name="generator" content={Astro.generator} />
@@ -1037,6 +1037,7 @@ const ogImage = image
         border-top: 1px solid var(--border);
         display: flex;
         justify-content: flex-end;
+        gap: 1.25rem;
     }
     .pub-card-link {
         font-family: "JetBrains Mono", monospace;
