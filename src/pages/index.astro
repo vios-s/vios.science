@@ -3,14 +3,14 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { base } from "../utils/base";
 import { getSortedNews } from "../utils/news";
-import { getSortedPublications } from "../utils/publications";
+import { getSortedPublications, type Publication } from "../utils/publications";
 import projectsData from "../data/projects.json";
+import publicationsData from "../data/publications.yaml";
 
 const allNews = await getCollection("news");
 const topNews = getSortedNews(allNews).slice(0, 3);
 
-const allPublications = await getCollection("publications");
-const recentPublications = getSortedPublications(allPublications).slice(0, 3);
+const recentPublications = getSortedPublications(publicationsData as Publication[]).slice(0, 3);
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">
@@ -245,25 +245,25 @@ const recentPublications = getSortedPublications(allPublications).slice(0, 3);
             {
                 recentPublications.map((publication) => (
                     <div class="pub-card">
-                        {publication.data.image ? (
+                        {publication.image ? (
                             <img
                                 class="pub-card-img"
-                                src={base(publication.data.image)}
-                                alt={`${publication.data.title} teaser`}
+                                src={base(publication.image)}
+                                alt={`${publication.title} teaser`}
                                 loading="lazy"
                             />
                         ) : (
                             <div class="pub-card-img" style="min-height:160px;background:var(--bg3)" />
                         )}
                         <div class="pub-card-body">
-                            <span class="pub-card-venue">{publication.data.venue}</span>
-                            <p class="pub-card-title">{publication.data.title}</p>
-                            <p class="pub-card-authors">{publication.data.authors}</p>
+                            <span class="pub-card-venue">{publication.venue}</span>
+                            <p class="pub-card-title">{publication.title}</p>
+                            <p class="pub-card-authors">{publication.authors}</p>
                         </div>
                         <div class="pub-card-footer">
-                            {publication.data.code && (
+                            {publication.code && (
                                 <a
-                                    href={publication.data.code}
+                                    href={publication.code}
                                     class="pub-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -271,9 +271,9 @@ const recentPublications = getSortedPublications(allPublications).slice(0, 3);
                                     Code →
                                 </a>
                             )}
-                            {publication.data.website && (
+                            {publication.website && (
                                 <a
-                                    href={publication.data.website}
+                                    href={publication.website}
                                     class="pub-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"

@@ -31,20 +31,6 @@ const tutorials = defineCollection({
     }).catchall(z.any())
 });
 
-const publications = defineCollection({
-    type: 'content',
-    schema: z.object({
-        title: z.string(),
-        authors: z.string(),
-        venue: z.string(),
-        date: z.coerce.date().optional(),
-        image: z.string().optional(),
-        link: z.string().url().optional(),
-        code: z.string().url().optional(),
-        website: z.string().url().optional(),
-    })
-});
-
 const pages = defineCollection({
     type: 'content',
     schema: z.object({
@@ -65,7 +51,6 @@ const news = defineCollection({
 export const collections = {
     team,
     tutorials,
-    publications,
     pages,
     news
 };

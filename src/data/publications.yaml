@@ -1,0 +1,266 @@
+- title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
+  authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
+  venue: ArXiv.org
+  date: '2026-02-14'
+  image: null
+  code: null
+  website: https://openalex.org/W7130236575
+- title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
+  authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Daguang Xu
+  venue: ArXiv.org
+  date: '2026-02-12'
+  image: null
+  code: null
+  website: https://openalex.org/W7128865271
+- title: Exocentric-to-Egocentric Adaptation for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs
+  authors: Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida, Giovanni Maria Farinella
+  venue: International Journal of Computer Vision
+  date: '2026-02-06'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/s11263-025-02675-1
+- title: A Conversational Multi-Agent AI System for Automated Plant Phenotyping Author Information
+  authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Reilly Lawson, Tony Pridmore, Daguang Xu, Mario Valerio Giuffrida
+  venue: Repository@Nottingham (University of Nottingham)
+  date: '2026-01-07'
+  image: null
+  code: null
+  website: https://openalex.org/W7127796872
+- title: A Conversational Multi-Agent AI System for Automated Plant Phenotyping
+  authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Reilly Lawson, Tony Pridmore, Daguang Xu, Mario Valerio Giuffrida
+  venue: Repository@Nottingham (University of Nottingham)
+  date: '2026-01-07'
+  image: null
+  code: null
+  website: https://openalex.org/W7130493655
+- title: Temporally-aware diffusion model for brain progression modelling with bidirectional temporal regularisation
+  authors: Mattia Litrico, Francesco Guarnera, Mario Valerio Giuffrida, Daniele Ravì, Sebastiano Battiato
+  venue: Computerized Medical Imaging and Graphics
+  date: '2025-12-16'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.compmedimag.2025.102688
+- title: 'GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting'
+  authors: Madhav Agarwal, Ming‐Tian Zhang, Laura Sevilla-Lara, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2025-12-11'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2512.10939
+- title: 'A model predictive control framework with customer-priority tiers for virtual power plant resilience during extreme weather: A UK heatwave case study'
+  authors: Edward Moroshko, Wenxing Qin, Desen Kırlı, Mohammed H. Qais, Sotirios A. Tsaftaris, Aristides Kiprakis
+  venue: arXiv (Cornell University)
+  date: '2025-11-27'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2511.22528
+- title: Preventing Shortcut Learning in Medical Image Analysis through Intermediate Layer Knowledge Distillation from Specialist Teachers
+  authors: C. Boland, Sotirios A. Tsaftaris, Sonia Dahdouh
+  venue: The Journal of Machine Learning for Biomedical Imaging
+  date: '2025-11-20'
+  image: null
+  code: null
+  website: https://doi.org/10.59275/j.melba.2025-8888
+- title: Do generative models learn rare generative factors?
+  authors: Fasih Haider, Edward Moroshko, Yuyang Xue, Sotirios A. Tsaftaris
+  venue: Frontiers in Artificial Intelligence
+  date: '2025-11-19'
+  image: null
+  code: null
+  website: https://doi.org/10.3389/frai.2025.1697139
+- title: 'A large dataset of brain imaging linked to health systems data: the curation and access to a whole system national cohort from NHS Scotland'
+  authors: Michael P. J. Camilleri, Dorian Gouzou, Salim Al‐Wasity, Muthu Rama Krishnan Mookiah, Parminder Singh Reel, María Valdés Hernández, Beatrice Alex, Sotirios A. Tsaftaris, Andrew Brooks, Ruairidh MacLeod, Honghan Wu, Brenda S. Bauer, Claire Grover, Susan Krueger, Richard Tobin, J. Douglas Steele, Grant Mair, Joanna M. Wardlaw, Alex S. F. Doney, Emanuele Trucco, William Whiteley
+  venue: null
+  date: '2025-10-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1101/2025.10.21.25338469
+- title: 'Towards Surgical Task Automation: Actor-Critic Models Meet Self-Supervised Imitation Learning <sup>*</sup>'
+  authors: Jingshuai Liu, Alain Andrés, Yonghang Jiang, Yuning Du, Xichun Luo, Wenmiao Shu, Can Pu, Sotirios A. Tsaftaris
+  venue: 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  date: '2025-10-19'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/iros60139.2025.11247723
+- title: 'Causal-Adapter: Taming Text-to-Image Diffusion for Faithful Counterfactual Generation'
+  authors: Lei Tong, Zhihua Liu, Chaochao Lu, Dino Oglić, Tom Diethe, Philip Teare, Sotirios A. Tsaftaris, Chen Jin
+  venue: null
+  date: '2025-09-29'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2509.24798
+- title: 'Rethinking Inter-LoRA Orthogonality in Adapter Merging: Insights from Orthogonal Monte Carlo Dropout'
+  authors: Andi Zhang, X. X. Ding, Haofan Wang, Steven McDonagh, Samuel Kaski
+  venue: arXiv (Cornell University)
+  date: '2025-09-26'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2510.03262
+- title: 'When Pigs Fly: Evaluating Semantic Overconfidence in Deep Neural Network Classifiers'
+  authors: Panagiotis Dimitrakopoulos, Paraskevas Pegios, Steven McDonagh, Daguang Xu
+  venue: 2025 IEEE International Conference on Image Processing Workshops (ICIPW)
+  date: '2025-09-14'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icipw68931.2025.11385949
+- title: 'Count2Density: Crowd Density Estimation without Location-level Annotations'
+  authors: Mattia Litrico, Feng Chen, Michael P. Pound, Sotirios A. Tsaftaris, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: arXiv (Cornell University)
+  date: '2025-09-03'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2509.03170
+- title: A Shift in Perspective on Causality in Domain Generalization
+  authors: Damian Machlanski, Sarah Riley, Edward Moroshko, Kurt Butler, Panagiotis Dimitrakopoulos, Θωμάς Μελίστας, Akchunya Chanchal, Steven McDonagh, Ricardo Silva, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2025-08-18'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2508.12798
+- title: 'SWiFT: Soft-Mask Weight Fine-tuning for Bias Mitigation'
+  authors: Junyu Yan, Feng Chen, Yuyang Xue, Yuning Du, Konstantinos Vilouras, Sotirios A. Tsaftaris, Steven McDonagh
+  venue: The Journal of Machine Learning for Biomedical Imaging
+  date: '2025-08-14'
+  image: '/assets/images/papers/jun_2025_melba.png'
+  code: 'https://github.com/vios-s/SWiFT'
+  website: https://doi.org/10.59275/j.melba.2025-de23
+- title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
+  authors: Mattia Litrico, Mario Valerio Giuffrida, Sebastiano Battiato, Devis Tuia
+  venue: arXiv (Cornell University)
+  date: '2025-08-08'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2508.06452
+- title: No time to train! Training-Free Reference-Based Instance Segmentation
+  authors: Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley
+  venue: arXiv (Cornell University)
+  date: '2025-07-03'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2507.02798
+- title: 'Concept-based Adversarial Attack: a Probabilistic Perspective'
+  authors: Andi Zhang, X. X. Ding, Steven McDonagh, Samuel Kaski
+  venue: ArXiv.org
+  date: '2025-06-30'
+  image: null
+  code: null
+  website: https://openalex.org/W4415343510
+- title: Causally Steered Diffusion for Automated Video Counterfactual Generation
+  authors: N. M. Spyrou, Athanasios Vlontzos, Paraskevas Pegios, Θωμάς Μελίστας, Nefeli Gkouti, Yannis Panagakis, Giorgos Papanastasiou, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2025-06-17'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2506.14404
+- title: Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models
+  authors: Konstantinos Vilouras, Ilias Stogiannidis, Junyu Yan, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2025-06-12'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2506.10633
+- title: Antipsychotic-induced weight gain in psychosis – a causal mediation analysis and feasibility study of casual actionable prediction model development using counterfactuals to target obesity
+  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
+  venue: null
+  date: '2025-05-21'
+  image: null
+  code: null
+  website: https://doi.org/10.31234/osf.io/zfhx3_v2
+- title: Benchmarking computer vision architectures for cloud detection from lidar ceilometer backscatter data
+  authors: Alessio Barbaro Chisari, Luca Guarnera, Alessandro Ortis, Wladimiro Carlo Patatu, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: The Visual Computer
+  date: '2025-05-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/s00371-025-03960-3
+- title: 'CheXGenBench: A Unified Benchmark For Fidelity, Privacy and Utility of Synthetic Chest Radiographs'
+  authors: Raman Dutt, Pedro L. Sánchez, Yao Yao, Steven McDonagh, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  venue: arXiv (Cornell University)
+  date: '2025-05-15'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2505.10496
+- title: 'PhenoAssistant: A Conversational Multi-Agent AI System for Automated Plant Phenotyping'
+  authors: Mario Valerio Giuffrida, Feng Chen, Ilias Stogiannidis, Andrew Wood, Daniel Sierra, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris
+  venue: null
+  date: '2025-05-13'
+  image: null
+  code: null
+  website: https://doi.org/10.21203/rs.3.rs-6430233/v1
+- title: Active Sampling for MRI-based Sequential Decision Making
+  authors: Yuning Du, Jingshuai Liu, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2025-05-07'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2505.04586
+- title: Exploiting Mixture-of-Experts Redundancy Unlocks Multimodal Generative Abilities
+  authors: Raman Dutt, Harleen Hanspal, Guoxuan Xia, Petru-Daniel Tudosiu, Alexander Black, Yongxin Yang, Steven McDonagh, Sarah Parisot
+  venue: arXiv (Cornell University)
+  date: '2025-03-28'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2503.22517
+- title: 'GMT: Guided Mask Transformer for Leaf Instance Segmentation'
+  authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
+  venue: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+  date: '2025-02-26'
+  image: '/assets/images/papers/feng_2025_wacv.png'
+  code: 'https://github.com/vios-s/gmt-leaf-ins-seg'
+  website: https://doi.org/10.1109/wacv61041.2025.00126
+- title: 'MemControl: Mitigating Memorization in Diffusion Models via Automated Parameter Selection'
+  authors: Raman Dutt, Ondrej Bohdal, Pedro P. Sanchez, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  venue: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+  date: '2025-02-26'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/wacv61041.2025.00441
+- title: A problem at the heart of precision medicine – are current clinical prediction models fully actionable for individuals?
+  authors: Samuel Leighton, Fani Deligianni, Damian Machlanski, Benjamin I. Perry, Stephen M. Lawrie, Sotirios A. Tsaftaris, Rajeev Krishnadas
+  venue: null
+  date: '2025-02-24'
+  image: null
+  code: null
+  website: https://doi.org/10.31234/osf.io/jw37c_v1
+- title: Multimodal machine learning to predict surgical site infection with healthcare workload impact assessment
+  authors: Kenneth A McLean, A Sgrò, Leo R. Brown, Louis F. Buijs, Katie E. Mountain, Catherine A. Shaw, Thomas M Drake, Riinu Pius, Stephen R Knight, Cameron J Fairfield, Richard J. E. Skipworth, Sotirios A. Tsaftaris, Stephen J. Wigmore, Mark A. Potter, Matt-Mouley Bouamrane, Ewen M. Harrison, K. Baweja, William Cambridge, Vinod K. Chauhan, K. Czyzykowska, Monisha Edirisooriya, Anna Forsyth, Brent I. Fox, J. Fretwell, Courtney Gent, Amfiana Gherman, L. Green, Julia Grewar, Sean Heelan, David Henshall, C. Iiuoma, S. Jayasangaran, Chris Johnston, Ewan D. Kennedy, Darja Kremel, Janice Y. Kung, Joey S.W. Kwong, C. Leavy, J. Liu, Seonaid Mackay, A F MacNamara, S. Mowitt, E. Musenga, Nathan Ng, Zhan Herr Ng, Sinéad M. O’Neill, Mark Ramage, J Reed, Aya Riad, Catherine M. Scott, Vinay Sehgal, A Sgrò, L. Steven, Ben M. Stutchfield, Shauna L. Tominey, Wendy Wilson, Mark Wojtowicz, James Chih‐Hsin Yang, J. Yang
+  venue: npj Digital Medicine
+  date: '2025-02-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s41746-024-01419-8
+- title: Digital twin assisted surgery, concept, opportunities, and challenges
+  authors: Lisa Asciak, Justicia Kyeremeh, Xichun Luo, Asimina Kazakidi, Patricia Connolly, F. Picard, Kevin O’Neill, Sotirios A. Tsaftaris, Grant D. Stewart, Wenmiao Shu
+  venue: npj Digital Medicine
+  date: '2025-01-15'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s41746-024-01413-0
+- title: Cloud Detection Challenge-Methods and Results
+  authors: Alessio Barbaro Chisari, Luca Guarnera, Alessandro Ortis, Wladimiro Carlo Patatu, Bruno Casella, L. Naso, Giuseppe Puglisi, Vincenzo Del Zoppo, Mario Valerio Giuffrida, Sebastiano Battiato
+  venue: IEEE Access
+  date: '2025-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/access.2025.3553422
+- title: A Simple Approach to Pavement Cell Segmentation
+  authors: Rostislav Shepel, Andrés Romanowski, Mario Valerio Giuffrida
+  venue: Lecture notes in computer science
+  date: '2025-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-91835-3_16
+- title: 'CRCE: Coreference-Retention Concept Erasure in Text-to-Image Diffusion Models'
+  authors: Yuyang Xue, Edward Moroshko, Feng Chen, Steven McDonagh, Sotirios A Tsaftaris
+  venue: BMVC
+  date: '2025-01-01'
+  image: '/assets/images/papers/yuyang_2025_bmvc.png'
+  code: 'https://github.com/vios-s/CRCE'
+  website: https://arxiv.org/abs/2503.14232
+- title: 'There are no shortcuts to anywhere worth going: identifying shortcuts in deep learning models for medical image analysis'
+  authors: Christopher Boland, Keith A Goatman, Sotirios A Tsaftaris, Sonia Dahdouh
+  venue: MIDL
+  date: '2025-01-01'
+  image: null
+  code: null
+  website: https://openreview.net/pdf?id=3UMzxqDcpY

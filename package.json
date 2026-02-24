@@ -11,6 +11,7 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/sitemap": "^3.7.0",
+    "@modyfi/vite-plugin-yaml": "^1.1.1",
     "astro": "^5.17.1",
     "rehype-external-links": "^3.0.0",
     "three": "^0.183.1"
