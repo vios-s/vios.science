@@ -4,10 +4,10 @@ import { getCollection } from "astro:content";
 import { base } from "../utils/base";
 
 const allTutorials = await getCollection("tutorials");
-allTutorials.sort((a, b) => {
-    const aDate = a.data.date ? new Date(a.data.date).getTime() : 0;
-    const bDate = b.data.date ? new Date(b.data.date).getTime() : 0;
-    return bDate - aDate;
+allTutorials.sort((leftTutorial, rightTutorial) => {
+    const leftDateMs = leftTutorial.data.date ? new Date(leftTutorial.data.date).getTime() : 0;
+    const rightDateMs = rightTutorial.data.date ? new Date(rightTutorial.data.date).getTime() : 0;
+    return rightDateMs - leftDateMs;
 });
 ---
 

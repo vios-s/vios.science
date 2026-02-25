@@ -10,9 +10,9 @@ export interface Publication {
 }
 
 export function getSortedPublications(items: Publication[]): Publication[] {
-    return [...items].sort((a, b) => {
-        const da = a.date ? new Date(a.date).getTime() : 0;
-        const db = b.date ? new Date(b.date).getTime() : 0;
-        return db - da;
+    return [...items].sort((leftPublication, rightPublication) => {
+        const leftDateMs = leftPublication.date ? new Date(leftPublication.date).getTime() : 0;
+        const rightDateMs = rightPublication.date ? new Date(rightPublication.date).getTime() : 0;
+        return rightDateMs - leftDateMs;
     });
 }

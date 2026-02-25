@@ -14,5 +14,5 @@ export function parseNewsDate(item: CollectionEntry<'news'>): Date {
 export function getSortedNews(items: CollectionEntry<'news'>[]): NewsItemWithDate[] {
     return items
         .map((item) => ({ ...item, parsedDate: parseNewsDate(item) }))
-        .sort((a, b) => b.parsedDate.valueOf() - a.parsedDate.valueOf());
+        .sort((leftItem, rightItem) => rightItem.parsedDate.valueOf() - leftItem.parsedDate.valueOf());
 }

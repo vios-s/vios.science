@@ -30,8 +30,8 @@ const { Content, headings } = await joinPage.render();
                     <ul>
                         {
                             headings
-                                .filter((h) => {
-                                    return h.depth === 2;
+                                .filter((headingItem) => {
+                                    return headingItem.depth === 2;
                                 })
                                 .map((heading) => (
                                     <li>
@@ -239,16 +239,16 @@ const { Content, headings } = await joinPage.render();
     document.addEventListener("DOMContentLoaded", () => {
         const tocLinks = document.querySelectorAll(".toc-sticky nav a");
         tocLinks.forEach((link) => {
-            link.addEventListener("click", (e) => {
+            link.addEventListener("click", (event) => {
                 const targetId = link.getAttribute("href").split("#")[1];
                 const targetElement = document.getElementById(targetId);
                 if (targetElement) {
-                    e.preventDefault();
-                    const y =
+                    event.preventDefault();
+                    const scrollTargetY =
                         targetElement.getBoundingClientRect().top +
                         window.scrollY -
                         140;
-                    window.scrollTo({ top: y, behavior: "smooth" });
+                    window.scrollTo({ top: scrollTargetY, behavior: "smooth" });
                     history.pushState(null, "", `#${targetId}`);
                 }
             });

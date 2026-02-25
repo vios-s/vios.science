@@ -18,7 +18,7 @@ const newsByYear = sortedNews.reduce(
 
 const years = Object.keys(newsByYear)
     .map(Number)
-    .sort((a, b) => b - a);
+    .sort((leftYear, rightYear) => rightYear - leftYear);
 ---
 
 <Layout title="News - VIOS Collaboratory">

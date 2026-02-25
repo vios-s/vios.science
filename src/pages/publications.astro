@@ -8,9 +8,9 @@ const publications = getSortedPublications(publicationsData as Publication[]);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const publicationsJson = JSON.stringify(
-    publications.map((p) => ({
-        ...p,
-        image: p.image ? `${baseUrl}/${p.image.replace(/^\//, "")}` : null,
+    publications.map((publication) => ({
+        ...publication,
+        image: publication.image ? `${baseUrl}/${publication.image.replace(/^\//, "")}` : null,
     }))
 );
 ---
@@ -58,8 +58,8 @@ const publicationsJson = JSON.stringify(
     const sentinel = document.getElementById("pub-sentinel");
 
     function escape(str) {
-        return (str ?? "").replace(/[&<>"']/g, (c) =>
-            ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+        return (str ?? "").replace(/[&<>"']/g, (character) =>
+            ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character])
         );
     }
 
@@ -69,30 +69,30 @@ const publicationsJson = JSON.stringify(
         return parts.slice(0, max).join(", ") + ", …";
     }
 
-    function publicationYear(p) {
-        if (!p?.date) return "Unknown";
-        const year = new Date(p.date).getFullYear();
+    function publicationYear(publication) {
+        if (!publication?.date) return "Unknown";
+        const year = new Date(publication.date).getFullYear();
         return Number.isNaN(year) ? "Unknown" : String(year);
     }
 
     const PLACEHOLDER_LIGHT = publicationPlaceholderLightSvg;
 
-    function cardHTML(p) {
-        const media = p.image
-            ? `<img class="pub-card-img" src="${escape(p.image)}" alt="Paper Teaser" loading="lazy" />`
+    function cardHTML(publication) {
+        const media = publication.image
+            ? `<img class="pub-card-img" src="${escape(publication.image)}" alt="Paper Teaser" loading="lazy" />`
             : `<div class="pub-card-img-placeholder" role="img" aria-label="No preview available">${PLACEHOLDER_LIGHT}</div>`;
         const links = [
-            p.code    ? `<a href="${escape(p.code)}"    class="pub-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
-            p.website ? `<a href="${escape(p.website)}" class="pub-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
+            publication.code    ? `<a href="${escape(publication.code)}"    class="pub-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
+            publication.website ? `<a href="${escape(publication.website)}" class="pub-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
         ].join("");
         const footer = links ? `<div class="pub-card-footer">${links}</div>` : "";
         return `
             <div class="pub-card pub-card-new">
                 ${media}
                 <div class="pub-card-body">
-                    <span class="pub-card-venue">${escape(p.venue)}</span>
-                    <p class="pub-card-title">${escape(p.title)}</p>
-                    <p class="pub-card-authors">${escape(truncateAuthors(p.authors))}</p>
+                    <span class="pub-card-venue">${escape(publication.venue)}</span>
+                    <p class="pub-card-title">${escape(publication.title)}</p>
+                    <p class="pub-card-authors">${escape(truncateAuthors(publication.authors))}</p>
                 </div>
                 ${footer}
             </div>`;
@@ -102,8 +102,8 @@ const publicationsJson = JSON.stringify(
         const chunk = filtered.slice(offset, offset + PAGE_SIZE);
         if (chunk.length === 0) return;
         const frag = document.createDocumentFragment();
-        chunk.forEach((p) => {
-            const year = publicationYear(p);
+        chunk.forEach((publication) => {
+            const year = publicationYear(publication);
             if (year !== lastRenderedYear) {
                 const heading = document.createElement("h2");
                 heading.className = "pub-year-heading";
@@ -111,9 +111,9 @@ const publicationsJson = JSON.stringify(
                 frag.appendChild(heading);
                 lastRenderedYear = year;
             }
-            const tmp = document.createElement("div");
-            tmp.innerHTML = cardHTML(p);
-            frag.appendChild(tmp.firstElementChild);
+            const cardContainer = document.createElement("div");
+            cardContainer.innerHTML = cardHTML(publication);
+            frag.appendChild(cardContainer.firstElementChild);
         });
         grid.appendChild(frag);
         // Trigger fade-in on next frame
@@ -137,16 +137,16 @@ const publicationsJson = JSON.stringify(
     reset();
 
     // Search
-    document.getElementById("pub-search").addEventListener("input", (e) => {
-        const q = e.target.value.trim().toLowerCase();
-        if (!q) {
+    document.getElementById("pub-search").addEventListener("input", (event) => {
+        const searchQuery = event.target.value.trim().toLowerCase();
+        if (!searchQuery) {
             filtered = ALL_PUBLICATIONS;
         } else {
             filtered = ALL_PUBLICATIONS.filter(
-                (p) =>
-                    (p.title   ?? "").toLowerCase().includes(q) ||
-                    (p.authors ?? "").toLowerCase().includes(q) ||
-                    (p.venue   ?? "").toLowerCase().includes(q)
+                (publication) =>
+                    (publication.title   ?? "").toLowerCase().includes(searchQuery) ||
+                    (publication.authors ?? "").toLowerCase().includes(searchQuery) ||
+                    (publication.venue   ?? "").toLowerCase().includes(searchQuery)
             );
         }
         reset();

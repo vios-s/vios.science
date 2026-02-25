@@ -222,8 +222,8 @@ const ogImage = image
 
             const io = new IntersectionObserver(
                 (entries) => {
-                    entries.forEach((e) => {
-                        if (e.isIntersecting) e.target.classList.add("vis");
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) entry.target.classList.add("vis");
                     });
                 },
                 { threshold: 0 },

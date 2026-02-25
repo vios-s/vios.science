@@ -6,35 +6,35 @@ import { base } from '../utils/base';
 
 const teamMembers = await getCollection('team');
 
-teamMembers.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
+teamMembers.sort((leftMember, rightMember) => (leftMember.data.order || 999) - (rightMember.data.order || 999));
 
 const grouped = {
-    staff: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['staff', 'director'].includes(r);
+    staff: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
+        return ['staff', 'director'].includes(role);
     }),
-    postdocs: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['postdoc', 'researcher'].includes(r);
+    postdocs: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
+        return ['postdoc', 'researcher'].includes(role);
     }),
-    phds: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['phd', 'student'].includes(r);
+    phds: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
+        return ['phd', 'student'].includes(role);
     }),
-    sdes: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['sde'].includes(r);
+    sdes: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
+        return ['sde'].includes(role);
     }),
-    visiting: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
-        return ['visiting'].includes(r);
+    visiting: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
+        return ['visiting'].includes(role);
     }),
-    others: teamMembers.filter(m => {
-        const r = (m.data.role || '').toLowerCase();
+    others: teamMembers.filter(member => {
+        const role = (member.data.role || '').toLowerCase();
         const existing = ['staff', 'director', 'sde', 'postdoc', 'researcher', 'phd', 'student', 'visiting', 'none', 'alumni'];
-        return !existing.includes(r);
+        return !existing.includes(role);
     }),
-    alumni: teamMembers.filter(m => (m.data.role || '').toLowerCase() === 'alumni')
+    alumni: teamMembers.filter(member => (member.data.role || '').toLowerCase() === 'alumni')
 };
 
 const sectionTitles = {
@@ -404,13 +404,13 @@ const sectionTitles = {
             document.body.style.overflow = '';
         });
 
-        modal.addEventListener('click', (e) => {
+        modal.addEventListener('click', (event) => {
             const dialogDimensions = modal.getBoundingClientRect();
             if (
-                e.clientX < dialogDimensions.left ||
-                e.clientX > dialogDimensions.right ||
-                e.clientY < dialogDimensions.top ||
-                e.clientY > dialogDimensions.bottom
+                event.clientX < dialogDimensions.left ||
+                event.clientX > dialogDimensions.right ||
+                event.clientY < dialogDimensions.top ||
+                event.clientY > dialogDimensions.bottom
             ) {
                 modal.close();
             }
