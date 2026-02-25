@@ -27,3 +27,4 @@ pnpm-debug.log*
 .idea/
 .old_site/
 node_modules/
+skills-lock.json

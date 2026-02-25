@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { getSortedPublications, type Publication } from "../utils/publications";
 import publicationsData from "../data/publications.yaml";
+import publicationPlaceholderLightSvg from "../assets/placeholders/publication-placeholder-light.svg?raw";
 
 const publications = getSortedPublications(publicationsData as Publication[]);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -44,15 +45,16 @@ const publicationsJson = JSON.stringify(
     </div>
 </Layout>
 
-<script define:vars={{ publicationsJson }}>
+<script define:vars={{ publicationsJson, publicationPlaceholderLightSvg }}>
     const PAGE_SIZE = 20;
     const ALL_PUBLICATIONS = JSON.parse(publicationsJson);
 
     let filtered = ALL_PUBLICATIONS;
     let offset = 0;
+    let lastRenderedYear = null;
 
-    const grid    = document.getElementById("pub-cards");
-    const empty   = document.getElementById("pub-empty");
+    const grid = document.getElementById("pub-cards");
+    const empty = document.getElementById("pub-empty");
     const sentinel = document.getElementById("pub-sentinel");
 
     function escape(str) {
@@ -61,10 +63,24 @@ const publicationsJson = JSON.stringify(
         );
     }
 
+    function truncateAuthors(authors, max = 8) {
+        const parts = (authors ?? "").split(",").map((author) => author.trim()).filter(Boolean);
+        if (parts.length <= max) return authors ?? "";
+        return parts.slice(0, max).join(", ") + ", …";
+    }
+
+    function publicationYear(p) {
+        if (!p?.date) return "Unknown";
+        const year = new Date(p.date).getFullYear();
+        return Number.isNaN(year) ? "Unknown" : String(year);
+    }
+
+    const PLACEHOLDER_LIGHT = publicationPlaceholderLightSvg;
+
     function cardHTML(p) {
         const media = p.image
             ? `<img class="pub-card-img" src="${escape(p.image)}" alt="Paper Teaser" loading="lazy" />`
-            : `<div class="pub-card-img-placeholder"></div>`;
+            : `<div class="pub-card-img-placeholder" role="img" aria-label="No preview available">${PLACEHOLDER_LIGHT}</div>`;
         const links = [
             p.code    ? `<a href="${escape(p.code)}"    class="pub-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
             p.website ? `<a href="${escape(p.website)}" class="pub-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
@@ -76,7 +92,7 @@ const publicationsJson = JSON.stringify(
                 <div class="pub-card-body">
                     <span class="pub-card-venue">${escape(p.venue)}</span>
                     <p class="pub-card-title">${escape(p.title)}</p>
-                    <p class="pub-card-authors">${escape(p.authors)}</p>
+                    <p class="pub-card-authors">${escape(truncateAuthors(p.authors))}</p>
                 </div>
                 ${footer}
             </div>`;
@@ -87,6 +103,14 @@ const publicationsJson = JSON.stringify(
         if (chunk.length === 0) return;
         const frag = document.createDocumentFragment();
         chunk.forEach((p) => {
+            const year = publicationYear(p);
+            if (year !== lastRenderedYear) {
+                const heading = document.createElement("h2");
+                heading.className = "pub-year-heading";
+                heading.textContent = year;
+                frag.appendChild(heading);
+                lastRenderedYear = year;
+            }
             const tmp = document.createElement("div");
             tmp.innerHTML = cardHTML(p);
             frag.appendChild(tmp.firstElementChild);
@@ -104,6 +128,7 @@ const publicationsJson = JSON.stringify(
     function reset() {
         grid.innerHTML = "";
         offset = 0;
+        lastRenderedYear = null;
         empty.hidden = filtered.length > 0;
         renderChunk();
     }
@@ -184,11 +209,25 @@ const publicationsJson = JSON.stringify(
         from { opacity: 0; transform: translateY(12px); }
         to   { opacity: 1; transform: translateY(0); }
     }
-    .pub-card-new {
+    :global(.pub-card-new) {
         opacity: 0;
     }
-    .pub-card:not(.pub-card-new) {
+    :global(.pub-card:not(.pub-card-new)) {
         animation: fadeUp 0.3s ease both;
+    }
+    :global(.pub-year-heading) {
+        grid-column: 1 / -1;
+        margin: 1.5rem 0 0.25rem;
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text);
+        letter-spacing: 0.02em;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.45rem;
+    }
+    :global(.pub-year-heading:first-child) {
+        margin-top: 0;
     }
 
     .pub-empty {
@@ -202,7 +241,7 @@ const publicationsJson = JSON.stringify(
         height: 1px;
     }
 
-    .pub-card {
+    :global(.pub-card) {
         background: var(--bg2);
         border: 1px solid var(--border);
         display: flex;
@@ -213,59 +252,66 @@ const publicationsJson = JSON.stringify(
             background 0.35s ease;
         overflow: hidden;
     }
-    .pub-card:hover {
+    :global(.pub-card:hover) {
         transform: translateY(-4px);
         border-color: rgba(0, 212, 170, 0.4);
         background: var(--bg3);
     }
-    .pub-card-img {
+    :global(.pub-card-img) {
         width: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
         border-bottom: 1px solid var(--border);
     }
-    .pub-card-img-placeholder {
+    :global(.pub-card-img-placeholder) {
         width: 100%;
         aspect-ratio: 16/9;
-        background: var(--bg3);
         border-bottom: 1px solid var(--border);
+        overflow: hidden;
+        display: block;
+        line-height: 0;
     }
-    .pub-card-body {
+    :global(.pub-card-img-placeholder svg) {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    :global(.pub-card-body) {
         padding: 1.5rem;
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
     }
-    .pub-card-venue {
+    :global(.pub-card-venue) {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.7rem;
         color: var(--accent);
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
-    .pub-card-title {
+    :global(.pub-card-title) {
         font-family: "Outfit", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
         color: var(--text);
         line-height: 1.35;
     }
-    .pub-card-authors {
+    :global(.pub-card-authors) {
         font-size: 0.85rem;
         color: var(--muted);
         line-height: 1.4;
         margin-top: auto;
         padding-top: 0.5rem;
     }
-    .pub-card-footer {
+    :global(.pub-card-footer) {
         padding: 0.85rem 1.5rem;
         border-top: 1px solid var(--border);
         display: flex;
         justify-content: flex-end;
         gap: 1.25rem;
     }
-    .pub-card-link {
+    :global(.pub-card-link) {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.75rem;
         color: var(--muted);
@@ -276,7 +322,7 @@ const publicationsJson = JSON.stringify(
         gap: 0.4rem;
         transition: color 0.2s;
     }
-    .pub-card-link:hover {
+    :global(.pub-card-link:hover) {
         color: var(--accent);
     }
 

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+  <rect width="320" height="180" fill="#e6eef8" />
+  <rect width="320" height="180" fill="#d8e6f4" opacity="0.5" />
+  <g fill="#006f56" opacity="0.1">
+    <circle cx="40" cy="36" r="1.5" /><circle cx="80" cy="36" r="1.5" /><circle cx="120" cy="36" r="1.5" /><circle cx="160" cy="36" r="1.5" /><circle cx="200" cy="36" r="1.5" /><circle cx="240" cy="36" r="1.5" /><circle cx="280" cy="36" r="1.5" />
+    <circle cx="40" cy="72" r="1.5" /><circle cx="80" cy="72" r="1.5" /><circle cx="120" cy="72" r="1.5" /><circle cx="160" cy="72" r="1.5" /><circle cx="200" cy="72" r="1.5" /><circle cx="240" cy="72" r="1.5" /><circle cx="280" cy="72" r="1.5" />
+    <circle cx="40" cy="108" r="1.5" /><circle cx="80" cy="108" r="1.5" /><circle cx="120" cy="108" r="1.5" /><circle cx="160" cy="108" r="1.5" /><circle cx="200" cy="108" r="1.5" /><circle cx="240" cy="108" r="1.5" /><circle cx="280" cy="108" r="1.5" />
+    <circle cx="40" cy="144" r="1.5" /><circle cx="80" cy="144" r="1.5" /><circle cx="120" cy="144" r="1.5" /><circle cx="160" cy="144" r="1.5" /><circle cx="200" cy="144" r="1.5" /><circle cx="240" cy="144" r="1.5" /><circle cx="280" cy="144" r="1.5" />
+  </g>
+  <g transform="translate(113, 28)">
+    <rect x="0" y="0" width="58" height="74" rx="3" fill="none" stroke="#006f56" stroke-width="1.5" opacity="0.4" />
+    <polygon points="40,0 58,18 40,18" fill="#006f56" opacity="0.12" />
+    <line x1="40" y1="0" x2="40" y2="18" stroke="#006f56" stroke-width="1.5" opacity="0.4" />
+    <line x1="40" y1="18" x2="58" y2="18" stroke="#006f56" stroke-width="1.5" opacity="0.4" />
+    <rect x="9" y="30" width="40" height="3" rx="1.5" fill="#006f56" opacity="0.45" />
+    <rect x="9" y="40" width="32" height="2.5" rx="1.25" fill="#006f56" opacity="0.18" />
+    <rect x="9" y="49" width="36" height="2.5" rx="1.25" fill="#006f56" opacity="0.18" />
+    <rect x="9" y="58" width="24" height="2.5" rx="1.25" fill="#006f56" opacity="0.12" />
+  </g>
+  <text x="142" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#006f56" opacity="0.45" letter-spacing="2">NO PREVIEW</text>
+</svg>
