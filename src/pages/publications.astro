@@ -4,6 +4,14 @@ import { getSortedPublications, type Publication } from "../utils/publications";
 import publicationsData from "../data/publications.yaml";
 
 const publications = getSortedPublications(publicationsData as Publication[]);
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const publicationsJson = JSON.stringify(
+    publications.map((p) => ({
+        ...p,
+        image: p.image ? `${baseUrl}/${p.image.replace(/^\//, "")}` : null,
+    }))
+);
 ---
 
 <Layout title="Publications - VIOS Collaboratory">
@@ -18,54 +26,118 @@ const publications = getSortedPublications(publicationsData as Publication[]);
     </section>
 
     <div class="pub-container">
-        <div class="pub-cards stagger">
-            {
-                publications.map((publication) => (
-                    <div class="pub-card">
-                        {publication.image ? (
-                            <img
-                                class="pub-card-img"
-                                src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/${publication.image.replace(/^\//, "")}`}
-                                alt="Paper Teaser"
-                                loading="lazy"
-                            />
-                        ) : (
-                            <div class="pub-card-img-placeholder" />
-                        )}
-                        <div class="pub-card-body">
-                            <span class="pub-card-venue">{publication.venue}</span>
-                            <p class="pub-card-title">{publication.title}</p>
-                            <p class="pub-card-authors">{publication.authors}</p>
-                        </div>
-                        <div class="pub-card-footer">
-                            {publication.code && (
-                                <a
-                                    href={publication.code}
-                                    class="pub-card-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Code →
-                                </a>
-                            )}
-                            {publication.website && (
-                                <a
-                                    href={publication.website}
-                                    class="pub-card-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Website →
-                                </a>
-                            )}
-                        </div>
-                    </div>
-                ))
-            }
+        <div class="pub-search-wrap">
+            <input
+                id="pub-search"
+                class="pub-search"
+                type="search"
+                placeholder="Search by title, author, or venue…"
+                aria-label="Search publications"
+            />
         </div>
 
+        <div id="pub-cards" class="pub-cards"></div>
+
+        <p id="pub-empty" class="pub-empty" hidden>No publications match your search.</p>
+
+        <div id="pub-sentinel" class="pub-sentinel"></div>
     </div>
 </Layout>
+
+<script define:vars={{ publicationsJson }}>
+    const PAGE_SIZE = 20;
+    const ALL_PUBLICATIONS = JSON.parse(publicationsJson);
+
+    let filtered = ALL_PUBLICATIONS;
+    let offset = 0;
+
+    const grid    = document.getElementById("pub-cards");
+    const empty   = document.getElementById("pub-empty");
+    const sentinel = document.getElementById("pub-sentinel");
+
+    function escape(str) {
+        return (str ?? "").replace(/[&<>"']/g, (c) =>
+            ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+        );
+    }
+
+    function cardHTML(p) {
+        const media = p.image
+            ? `<img class="pub-card-img" src="${escape(p.image)}" alt="Paper Teaser" loading="lazy" />`
+            : `<div class="pub-card-img-placeholder"></div>`;
+        const links = [
+            p.code    ? `<a href="${escape(p.code)}"    class="pub-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
+            p.website ? `<a href="${escape(p.website)}" class="pub-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
+        ].join("");
+        const footer = links ? `<div class="pub-card-footer">${links}</div>` : "";
+        return `
+            <div class="pub-card pub-card-new">
+                ${media}
+                <div class="pub-card-body">
+                    <span class="pub-card-venue">${escape(p.venue)}</span>
+                    <p class="pub-card-title">${escape(p.title)}</p>
+                    <p class="pub-card-authors">${escape(p.authors)}</p>
+                </div>
+                ${footer}
+            </div>`;
+    }
+
+    function renderChunk() {
+        const chunk = filtered.slice(offset, offset + PAGE_SIZE);
+        if (chunk.length === 0) return;
+        const frag = document.createDocumentFragment();
+        chunk.forEach((p) => {
+            const tmp = document.createElement("div");
+            tmp.innerHTML = cardHTML(p);
+            frag.appendChild(tmp.firstElementChild);
+        });
+        grid.appendChild(frag);
+        // Trigger fade-in on next frame
+        requestAnimationFrame(() => {
+            grid.querySelectorAll(".pub-card-new").forEach((el) => {
+                el.classList.remove("pub-card-new");
+            });
+        });
+        offset += chunk.length;
+    }
+
+    function reset() {
+        grid.innerHTML = "";
+        offset = 0;
+        empty.hidden = filtered.length > 0;
+        renderChunk();
+    }
+
+    // Initial render
+    reset();
+
+    // Search
+    document.getElementById("pub-search").addEventListener("input", (e) => {
+        const q = e.target.value.trim().toLowerCase();
+        if (!q) {
+            filtered = ALL_PUBLICATIONS;
+        } else {
+            filtered = ALL_PUBLICATIONS.filter(
+                (p) =>
+                    (p.title   ?? "").toLowerCase().includes(q) ||
+                    (p.authors ?? "").toLowerCase().includes(q) ||
+                    (p.venue   ?? "").toLowerCase().includes(q)
+            );
+        }
+        reset();
+    });
+
+    // Infinite scroll
+    const observer = new IntersectionObserver(
+        (entries) => {
+            if (entries[0].isIntersecting && offset < filtered.length) {
+                renderChunk();
+            }
+        },
+        { rootMargin: "200px" }
+    );
+    observer.observe(sentinel);
+</script>
 
 <style>
     .page-header {
@@ -74,11 +146,62 @@ const publications = getSortedPublications(publicationsData as Publication[]);
     .pub-container {
         padding: 0 8rem 6rem;
     }
+
+    .pub-search-wrap {
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto 1.5rem;
+    }
+    .pub-search {
+        flex: 1;
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+        padding: 0.65rem 1rem;
+        outline: none;
+        transition: border-color 0.2s, background 0.2s;
+    }
+    .pub-search::placeholder {
+        color: var(--muted);
+    }
+    .pub-search:focus {
+        border-color: rgba(0, 212, 170, 0.5);
+        background: var(--bg3);
+    }
+    /* hide the browser's built-in × button so style stays consistent */
+    .pub-search::-webkit-search-cancel-button { display: none; }
+
     .pub-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 1.5rem;
     }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+    .pub-card-new {
+        opacity: 0;
+    }
+    .pub-card:not(.pub-card-new) {
+        animation: fadeUp 0.3s ease both;
+    }
+
+    .pub-empty {
+        text-align: center;
+        padding: 3rem 0;
+        color: var(--muted);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+    }
+    .pub-sentinel {
+        height: 1px;
+    }
+
     .pub-card {
         background: var(--bg2);
         border: 1px solid var(--border);
@@ -175,6 +298,9 @@ const publications = getSortedPublications(publicationsData as Publication[]);
         }
         .pub-cards {
             grid-template-columns: 1fr;
+        }
+        .pub-search-wrap {
+            max-width: 100%;
         }
     }
 </style>

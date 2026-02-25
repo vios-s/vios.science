@@ -2,21 +2,21 @@
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: ArXiv.org
   date: '2026-02-14'
-  image: null
+  image: '/assets/images/papers/jun_2025_melba.png'
   code: null
   website: https://openalex.org/W7130236575
 - title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
   authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Daguang Xu
   venue: ArXiv.org
   date: '2026-02-12'
-  image: null
+  image: '/assets/images/papers/feng_2025_wacv.png'
   code: null
   website: https://openalex.org/W7128865271
 - title: Exocentric-to-Egocentric Adaptation for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs
   authors: Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida, Giovanni Maria Farinella
   venue: International Journal of Computer Vision
   date: '2026-02-06'
-  image: null
+  image: '/assets/images/papers/yuyang_2025_bmvc.png'
   code: null
   website: https://doi.org/10.1007/s11263-025-02675-1
 - title: A Conversational Multi-Agent AI System for Automated Plant Phenotyping Author Information
@@ -122,7 +122,7 @@
   venue: The Journal of Machine Learning for Biomedical Imaging
   date: '2025-08-14'
   image: '/assets/images/papers/jun_2025_melba.png'
-  code: 'https://github.com/vios-s/SWiFT'
+  code: null
   website: https://doi.org/10.59275/j.melba.2025-de23
 - title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
   authors: Mattia Litrico, Mario Valerio Giuffrida, Sebastiano Battiato, Devis Tuia
@@ -206,7 +206,7 @@
   venue: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
   date: '2025-02-26'
   image: '/assets/images/papers/feng_2025_wacv.png'
-  code: 'https://github.com/vios-s/gmt-leaf-ins-seg'
+  code: null
   website: https://doi.org/10.1109/wacv61041.2025.00126
 - title: 'MemControl: Mitigating Memorization in Diffusion Models via Automated Parameter Selection'
   authors: Raman Dutt, Ondrej Bohdal, Pedro P. Sanchez, Sotirios A. Tsaftaris, Timothy M. Hospedales
@@ -255,7 +255,7 @@
   venue: BMVC
   date: '2025-01-01'
   image: '/assets/images/papers/yuyang_2025_bmvc.png'
-  code: 'https://github.com/vios-s/CRCE'
+  code: null
   website: https://arxiv.org/abs/2503.14232
 - title: 'There are no shortcuts to anywhere worth going: identifying shortcuts in deep learning models for medical image analysis'
   authors: Christopher Boland, Keith A Goatman, Sotirios A Tsaftaris, Sonia Dahdouh
@@ -264,3 +264,2824 @@
   image: null
   code: null
   website: https://openreview.net/pdf?id=3UMzxqDcpY
+- title: 'Unlocking the Potential of Weakly Labeled Data: A Co-Evolutionary Learning Framework for Abnormality Detection and Report Generation'
+  authors: Jinghan Sun, Dong Wei, Zhe Xu, Donghuan Lu, Hong Liu, Hong Wang, Sotirios A. Tsaftaris, Steven McDonagh, Yefeng Zheng, Liansheng Wang
+  venue: IEEE Transactions on Medical Imaging
+  date: '2024-12-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2024.3516954
+- title: A virtual power plant for coordinating batteries and EVs of distributed zero-energy houses considering the distribution system constraints
+  authors: Mohammed H. Qais, Desen Kırlı, Edward Moroshko, Aristides Kiprakis, Sotirios A. Tsaftaris
+  venue: Journal of Energy Storage
+  date: '2024-12-06'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.est.2024.114905
+- title: Evaluating Language Model Vulnerability to Poisoning Attacks in Low-Resource Settings
+  authors: Richard Plant, Mario Valerio Giuffrida, Nikolaos Pitropakis, Dimitra Gkatzia
+  venue: IEEE Transactions on Audio Speech and Language Processing
+  date: '2024-11-28'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/taslp.2024.3507565
+- title: There is no SAMantics! Exploring SAM as a Backbone for Visual Understanding Tasks
+  authors: Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley
+  venue: arXiv (Cornell University)
+  date: '2024-11-22'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2411.15288
+- title: 'You Are What You Write: Author re-identification privacy attacks in the era of pre-trained language models'
+  authors: Richard Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
+  venue: Computer Speech & Language
+  date: '2024-11-16'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.csl.2024.101746
+- title: Zero-Shot Medical Phrase Grounding With Off-the-Shelf Diffusion Models
+  authors: Konstantinos Vilouras, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: IEEE Journal of Biomedical and Health Informatics
+  date: '2024-11-08'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/jbhi.2024.3494246
+- title: 'Synchronization Is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs'
+  authors: Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida, Giovanni Maria Farinella
+  venue: Lecture notes in computer science
+  date: '2024-11-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-73220-1_15
+- title: Capacity Control is an Effective Memorization Mitigation Mechanism in Text-Conditional Diffusion Models
+  authors: Raman Dutt, Pedro P. Sanchez, Ondrej Bohdal, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  venue: arXiv (Cornell University)
+  date: '2024-10-29'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2410.22149
+- title: 'All You Need Is a Guiding Hand: Mitigating Shortcut Bias in Deep Learning Models for Medical Imaging'
+  authors: Christopher Boland, Owen Anderson, Keith A. Goatman, John H. Hipwell, Sotirios A. Tsaftaris, Sonia Dahdouh
+  venue: Lecture notes in computer science
+  date: '2024-10-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-72787-0_7
+- title: 'BMFT: Achieving Fairness via Bias-Based Weight Masking Fine-Tuning'
+  authors: Yuyang Xue, Junyu Yan, Raman Dutt, Fasih Haider, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2024-10-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-72787-0_10
+- title: Improving Object Detection via Local-global Contrastive Learning
+  authors: Danai Triantafyllidou, Sarah Parisot, Aleš Leonardis, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2024-10-07'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2410.05058
+- title: 'CROCODILE: Causality Aids RObustness via COntrastive DIsentangled LEarning'
+  authors: Gianluca Carloni, Sotirios A. Tsaftaris, Sara Colantonio
+  venue: Lecture notes in computer science
+  date: '2024-10-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-73158-7_10
+- title: 'On the Cloud Detection from Backscattered Images Generated from a Lidar-Based Ceilometer: Current State and Opportunities'
+  authors: Alessio Barbaro Chisari, Alessandro Ortis, Luca Guarnera, Wladimiro Carlo Patatu, Rosaria Ausilia Giandolfo, Emanuele Spampinato, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: 2024 IEEE International Conference on Image Processing (ICIP)
+  date: '2024-09-27'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip51287.2024.10647352
+- title: Surgical Task Automation Using Actor-Critic Frameworks and Self-Supervised Imitation Learning
+  authors: Jingshuai Liu, Alain Andrés, Yonghang Jiang, Xichun Luo, Wenmiao Shu, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2024-09-04'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2409.02724
+- title: Unsupervised anomaly detection for pome fruit quality inspection using X-ray radiography
+  authors: Astrid Tempelaere, Jiaqi He, Leen Van Doorselaer, Pieter Verboven, Bart Nicolai, Mario Valerio Giuffrida
+  venue: Computers and Electronics in Agriculture
+  date: '2024-09-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.compag.2024.109364
+- title: 'MULAN: A Multi Layer Annotated Dataset for Controllable Text-to-Image Generation'
+  authors: Petru-Daniel Tudosiu, Yongxin Yang, Shifeng Zhang, Fei Chen, Steven McDonagh, Γεράσιμος Λάμπουρας, Ignacio Iacobacci, Sarah Parisot
+  venue: 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2024-06-16'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr52733.2024.02115
+- title: Inference Stage Denoising for Undersampled MRI Reconstruction
+  authors: Yuyang Xue, Chen Qin, Sotirios A. Tsaftaris
+  venue: 2024 IEEE International Symposium on Biomedical Imaging (ISBI)
+  date: '2024-05-27'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/isbi56570.2024.10635766
+- title: 'Erase to Enhance: Data-Efficient Machine Unlearning in MRI Reconstruction'
+  authors: Yuyang Xue, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2024-05-24'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2405.15517
+- title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
+  authors: Mattia Litrico, Davide Talon, Sebastiano Battiato, Alessio Del Bue, Mario Valerio Giuffrida, Pietro Morerio
+  venue: arXiv (Cornell University)
+  date: '2024-04-16'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2404.10574
+- title: Boosting Few-Shot Learning with Disentangled Self-Supervised Learning and Meta-Learning for Medical Image Classification
+  authors: Eva Pachetti, Sotirios A. Tsaftaris, Sara Colantonio
+  venue: arXiv (Cornell University)
+  date: '2024-03-26'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2403.17530
+- title: Long-short diffeomorphism memory network for weakly-supervised ultrasound landmark tracking
+  authors: Zhihua Liu, Bin Yang, Yan Shen, Xuejun Ni, Sotirios A. Tsaftaris, Huiyu Zhou
+  venue: Medical Image Analysis
+  date: '2024-03-11'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2024.103138
+- title: Label-efficient object detection via region proposal network pre-training
+  authors: Nanqing Dong, Linus Ericsson, Yongxin Yang, Aleš Leonardis, Steven McDonagh
+  venue: Neurocomputing
+  date: '2024-02-07'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.neucom.2024.127376
+- title: 'Metrics reloaded: recommendations for image analysis validation'
+  authors: Lena Maier‐Hein, Annika Reinke, Patrick Godau, Minu D. Tizabi, Florian Buettner, Evangelia Christodoulou, Ben Glocker, Fabian Isensee, Jens Kleesiek, Michal Kozubek, Mauricio Reyes, Michael A. Riegler, Manuel Wiesenfarth, A. Emre Kavur, Carole H. Sudre, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Tim Rädsch, Laura Ación, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Matthew B. Blaschko, M. Jorge Cardoso, Veronika Cheplygina, Beth A. Cimini, Gary S. Collins, Keyvan Farahani, Luciana Ferrer, Adrián Galdrán, Bram van Ginneken, Robert Haase, Daniel A. Hashimoto, Michael M. Hoffman, Merel Huisman, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, Florian Kofler, Annette Kopp‐Schneider, Anna Kreshuk, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier‐Hein, Anne L. Martel, Peter Mattson, Erik Meijering, Bjoern Menze, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Nasir Rajpoot, Nicola Rieke, Julio Sáez-Rodríguez, Clara I. Sá‎nchez, Shravya Shetty, Maarten van Smeden, Ronald M. Summers, Abdel Aziz Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Paul F. Jäger
+  venue: Nature Methods
+  date: '2024-02-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s41592-023-02151-z
+- title: Understanding metric-related pitfalls in image analysis validation
+  authors: Annika Reinke, Minu D. Tizabi, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Ali Emre Kavur, Tim Rädsch, Carole H. Sudre, Laura Ación, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Florian Buettner, M. Jorge Cardoso, Veronika Cheplygina, Jianxu Chen, Evangelia Christodoulou, Beth A. Cimini, Keyvan Farahani, Luciana Ferrer, Adrián Galdrán, Bram van Ginneken, Ben Glocker, Patrick Godau, Daniel A. Hashimoto, Michael M. Hoffman, Merel Huisman, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Jens Kleesiek, Florian Kofler, Thijs Kooi, Annette Kopp‐Schneider, Michal Kozubek, Anna Kreshuk, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier‐Hein, Anne L. Martel, Erik Meijering, Bjoern Menze, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Susanne M. Rafelski, Nasir Rajpoot, Mauricio Reyes, Michael A. Riegler, Nicola Rieke, Julio Sáez-Rodríguez, Clara I. Sá‎nchez, Shravya Shetty, Ronald M. Summers, Abdel Aziz Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Ziv Yaniv, Paul F. Jäger, Lena Maier‐Hein
+  venue: Nature Methods
+  date: '2024-02-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s41592-023-02150-0
+- title: Adoption of AI for Precision Medicine
+  authors: Sotirios A. Tsaftaris, Ben Glocker, Claire Bloomfield, Tal Arbel
+  venue: null
+  date: '2024-01-31'
+  image: null
+  code: null
+  website: https://doi.org/10.52843/cassyni.9zmznr
+- title: Compositionally Equivariant Representation Learning
+  authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2024-01-26'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2024.3358955
+- title: 'Privacy Distillation: Reducing Re-identification Risk of Diffusion Models'
+  authors: Virginia Fernandez, Pedro Sanchez, Walter Hugo Lopez Pinaya, Grzegorz Jacenków, Sotirios A. Tsaftaris, M. Jorge Cardoso
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-53767-7_1
+- title: Cine Cardiac MRI Reconstruction Using a Convolutional Recurrent Network with Refinement
+  authors: Yuyang Xue, Yuning Du, Gianluca Carloni, Eva Pachetti, Connor Jordan, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-52448-6_40
+- title: Benchmarking Counterfactual Image Generation
+  authors: Nefeli Gkouti, Θωμάς Μελίστας, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, N. M. Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
+  venue: Advances in Neural Information Processing Systems 37
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.52202/079017-4233
+- title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
+  authors: Yuning Du, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-72384-1_44
+- title: 'einspace: Searching for Neural Architectures from Fundamental Operations'
+  authors: Antreas Antoniou, Shay B. Cohen, Elliot J. Crowley, Linus Ericsson, Miguel Espinosa, Steven McDonagh, Amos Storkey, Chenhongyi Yang
+  venue: Advances in Neural Information Processing Systems 37
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.52202/079017-0061
+- title: 'TADM: Temporally-Aware Diffusion Model for Neurodegenerative Progression on Brain MRI'
+  authors: Mattia Litrico, Francesco Guarnera, Mario Valerio Giuffrida, Daniele Ravì, Sebastiano Battiato
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-72069-7_42
+- title: Federated Learning in a Semi-Supervised Environment for Earth Observation Data
+  authors: Bruno Casella, Alessio Barbaro Chisari, Marco Aldinucci, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: ESANN 2024 proceesdings
+  date: '2024-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.14428/esann/2024.es2024-214
+- title: Neural networks memorise personal information from one sample
+  authors: John Hartley, Pedro P. Sanchez, Fasih Haider, Sotirios A. Tsaftaris
+  venue: Scientific Reports
+  date: '2023-12-04'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s41598-023-48034-3
+- title: Optimisation-Based Multi-Modal Semantic Image Editing
+  authors: Bowen Li, Yongxin Yang, Steven McDonagh, Shifeng Zhang, Petru-Daniel Tudosiu, Sarah Parisot
+  venue: arXiv (Cornell University)
+  date: '2023-11-28'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2311.16882
+- title: 'TouchEnc: a Novel Behavioural Encoding Technique to Enable Computer Vision for Continuous Smartphone User Authentication'
+  authors: Peter Aaby, Mario Valerio Giuffrida, William J. Buchanan, Zhiyuan Tan
+  venue: 2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)
+  date: '2023-11-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/trustcom60117.2023.00115
+- title: Group Distributionally Robust Knowledge Distillation
+  authors: Konstantinos Vilouras, Xiao Liu, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2023-10-14'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-45676-3_24
+- title: Compositional Representation Learning for Brain Tumour Segmentation
+  authors: Xiao Liu, Antanas Kascenas, Hannah Watson, Sotirios A. Tsaftaris, Alison Q. O’Neil
+  venue: Lecture notes in computer science
+  date: '2023-10-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-45857-6_5
+- title: 'FairTune: Optimizing Parameter Efficient Fine Tuning for Fairness in Medical Image Analysis'
+  authors: Raman Dutt, Ondrej Bohdal, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  venue: arXiv (Cornell University)
+  date: '2023-10-08'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2310.05055
+- title: Adapting Vision Foundation Models for Plant Phenotyping
+  authors: Feng Chen, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: 2023 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)
+  date: '2023-10-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/iccvw60793.2023.00067
+- title: Multi-task Learning with 3D-Aware Regularization
+  authors: Weihong Li, Steven McDonagh, Aleš Leonardis, Hakan Bilen
+  venue: arXiv (Cornell University)
+  date: '2023-10-02'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2310.00986
+- title: The role of noise in denoising models for anomaly detection in medical images
+  authors: Antanas Kascenas, Pedro Sanchez, Patrick Schrempf, Chaoyang Wang, William Clackett, Shadia Mikhael, Jeremy P. Voisey, Keith A. Goatman, Alexander Weir, Nicolas Pugeault, Sotirios A. Tsaftaris, Alison Q. O’Neil
+  venue: Medical Image Analysis
+  date: '2023-09-11'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2023.102963
+- title: 'Generative AI for Medical Imaging: extending the MONAI Framework'
+  authors: Walter Hugo Lopez Pinaya, Mark S. Graham, Eric Kerfoot, Petru-Daniel Tudosiu, Jessica Dafflon, Virginia Fernández, Pedro Sanchez, Julia Wolleb, Pedro F. da Costa, Ashay Patel, Hyungjin Chung, Can Zhao, Peng Wei, Zelong Liu, Xueyan Mei, Oeslle Lucena, Jong Chul Ye, Sotirios A. Tsaftaris, Prerna Dogra, Andrew Feng, Marc Modat, Parashkev Nachev, Sébastien Ourselin, M. Jorge Cardoso
+  venue: arXiv (Cornell University)
+  date: '2023-07-27'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2307.15208
+- title: A Causal Ordering Prior for Unsupervised Representation Learning
+  authors: Avinash Kori, Pedro Sanchez, Konstantinos Vilouras, Ben Glocker, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2023-07-11'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2307.05704
+- title: 'SLX: Similarity Learning for X-Ray Screening and Robust Automated Disassembled Object Detection'
+  authors: Nikolaos Dionelis, Richard M. Jackson, Sotirios A. Tsaftaris, Mehrdad Yaghoobi
+  venue: 2023 International Joint Conference on Neural Networks (IJCNN)
+  date: '2023-06-18'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ijcnn54540.2023.10190997
+- title: 'Privacy Distillation: Reducing Re-identification Risk of Multimodal Diffusion Models'
+  authors: Virginia Fernández, Pedro L. Sánchez, Walter Hugo Lopez Pinaya, Grzegorz Jacenków, Sotirios A. Tsaftaris, M. Jorge Cardoso
+  venue: arXiv (Cornell University)
+  date: '2023-06-02'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2306.01322
+- title: Learning to Name Classes for Vision and Language Models
+  authors: Sarah Parisot, Yongxin Yang, Steven McDonagh
+  venue: 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2023-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr52729.2023.02248
+- title: Tunable Convolutions with Parametric Multi-Loss Optimization
+  authors: Matteo Maggioni, Thomas Tanay, Francesca Babiloni, Steven McDonagh, Aleš Leonardis
+  venue: 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2023-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr52729.2023.01937
+- title: 'GaNDLF: the generally nuanced deep learning framework for scalable end-to-end clinical workflows'
+  authors: Sarthak Pati, Siddhesh Thakur, İbrahim Ethem Hamamcı, Ujjwal Baid, Bhakti Baheti, Megh Bhalerao, Orhun Güley, Sofia Mouchtaris, David Lang, Spyridon Thermos, Karol Gotkowski, Camila González, Caleb M. Grenko, Alexander Getka, Brandon Edwards, Micah Sheller, Junwen Wu, Deepthi Karkada, Ravi Panchumarthy, Vinayak S. Ahluwalia, Chunrui Zou, Vishnu Bashyam, Yuemeng Li, Babak Haghighi, Rhea Chitalia, Shahira Abousamra, Tahsin Kurç, Aimilia Gastounioti, Sezgin Er, Mark Bergman, Joel Saltz, Yong Fan, Prashant Shah, Anirban Mukhopadhyay, Sotirios A. Tsaftaris, Bjoern Menze, Christos Davatzikos, Despina Kontos, Alexandros Karargyris, Renato Umeton, Peter Mattson, Spyridon Bakas
+  venue: Communications Engineering
+  date: '2023-05-16'
+  image: null
+  code: null
+  website: https://doi.org/10.1038/s44172-023-00066-3
+- title: 'Editorial: Computer vision in plant phenotyping and agriculture'
+  authors: Ian Stavness, Mario Valerio Giuffrida, Hanno Scharr
+  venue: Frontiers in Artificial Intelligence
+  date: '2023-05-16'
+  image: null
+  code: null
+  website: https://doi.org/10.3389/frai.2023.1187301
+- title: 'Parameter-Efficient Fine-Tuning for Medical Image Analysis: The Missed Opportunity'
+  authors: Raman Dutt, Linus Ericsson, Pedro Sanchez, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  venue: arXiv (Cornell University)
+  date: '2023-05-14'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2305.08252
+- title: 'MyoPS: A benchmark of myocardial pathology segmentation combining three-sequence cardiac magnetic resonance images'
+  authors: Lei Li, Fuping Wu, Sihan Wang, Xinzhe Luo, Carlos Martín-Isla, Shuwei Zhai, Jianpeng Zhang, Yanfei Liu, Zhen Zhang, Markus J. Ankenbrand, Haochuan Jiang, Xiaoran Zhang, Lınhong Wang, Tewodros Weldebirhan Arega, Elif Altunok, Zhou Zhao, Feiyan Li, Jun Ma, Xiaoping Yang, Élodie Puybareau, İlkay Öksüz, Stéphanie Bricq, Weisheng Li, Kumaradevan Punithakumar, Sotirios A. Tsaftaris, Wolfgang Schreiber, Mingjing Yang, Guocai Liu, Yong Xia, Guotai Wang, Sérgio Escalera, Xiahai Zhuang
+  venue: Medical Image Analysis
+  date: '2023-04-04'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2023.102808
+- title: An omnidirectional approach to touch-based continuous authentication
+  authors: Peter Aaby, Mario Valerio Giuffrida, William J. Buchanan, Zhiyuan Tan
+  venue: Computers & Security
+  date: '2023-02-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.cose.2023.103146
+- title: A Probabilistic U-Net Workflow for Automatically Cell Counting in Digital Pathology
+  authors: Yiming Yang, Mario Valerio Giuffrida, Shufan Yang
+  venue: Research Square (Research Square)
+  date: '2023-02-16'
+  image: null
+  code: null
+  website: https://doi.org/10.21203/rs.3.rs-2582938/v1
+- title: 'CLAD: A realistic Continual Learning benchmark for Autonomous Driving'
+  authors: Eli Verwimp, Kuo Yang, Sarah Parisot, Lanqing Hong, Steven McDonagh, Eduardo Pérez-Pellitero, Matthias De Lange, Tinne Tuytelaars
+  venue: Neural Networks
+  date: '2023-02-09'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.neunet.2023.02.001
+- title: Data management challenges for artificial intelligence in plant and agricultural research
+  authors: Hugh F. Williamson, Julia Brettschneider, Mario Cáccamo, Robert Davey, Carole Goble, Paul Kersey, Sean May, Richard J. Morris, Richard Ostler, Tony Pridmore, Chris Rawlings, David J. Studholme, Sotirios A. Tsaftaris, Sabina Leonelli
+  venue: F1000Research
+  date: '2023-01-17'
+  image: null
+  code: null
+  website: https://doi.org/10.12688/f1000research.52204.2
+- title: Debiasing Counterfactuals in the Presence of Spurious Correlations
+  authors: Amar Kumar, Nima Fathi, Raghav Mehta, Brennan Nichyporuk, Jean-Pierre Falet, Sotirios A. Tsaftaris, Tal Arbel
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-45249-9_27
+- title: Unveiling Fairness Biases in Deep Learning-Based Brain MRI Reconstruction
+  authors: Yuning Du, Yuyang Xue, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-45249-9_10
+- title: 'FROB: Few-Shot ROBust Model for Joint Classification and Out-of-Distribution Detection'
+  authors: Nikolaos Dionelis, Sotirios A. Tsaftaris, Mehrdad Yaghoobi
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-26409-2_9
+- title: Medical Applications with Disentanglements
+  authors: Jana Fragemann, Jianning Li, Xiao Liu, Sotirios A. Tsaftaris, Jan Egger, Jens Kleesiek
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-25046-0
+- title: 'HSIC-InfoGAN: Learning Unsupervised Disentangled Representations by Maximising Approximated Mutual Information'
+  authors: Xiao Liu, Spyridon Thermos, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-25046-0_2
+- title: 'Applying Disentanglement in the Medical Domain: An Introduction for the MAD Workshop'
+  authors: Jana Fragemann, Xiao Liu, Jianning Li, Sotirios A. Tsaftaris, Jan Egger, Jens Kleesiek
+  venue: Lecture notes in computer science
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-25046-0_1
+- title: 'You are What You Write: Preserving Privacy in the Era of Pre-Trained Language Models'
+  authors: Richard Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
+  venue: SSRN Electronic Journal
+  date: '2023-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.2139/ssrn.4417900
+- title: 'Rethinking Generalization: The Impact of Annotation Style on Medical Image Segmentation'
+  authors: Brennan Nichyporuk, Jillian Cardinell, Justin Szeto, Raghav Mehta, Jean-Pierre Falet, Douglas L. Arnold, Sotirios A. Tsaftaris, Tal Arbel
+  venue: The Journal of Machine Learning for Biomedical Imaging
+  date: '2022-12-15'
+  image: null
+  code: null
+  website: https://doi.org/10.59275/j.melba.2022-2d93
+- title: 'Adversarial counterfactual augmentation: application in Alzheimer’s disease classification'
+  authors: Tian Xia, Pedro L. Sánchez, Chen Qin, Sotirios A. Tsaftaris
+  venue: Frontiers in Radiology
+  date: '2022-11-30'
+  image: null
+  code: null
+  website: https://doi.org/10.3389/fradi.2022.1039160
+- title: Label-Efficient Object Detection via Region Proposal Network Pre-Training
+  authors: Nanqing Dong, Linus Ericsson, Yongxin Yang, Aleš Leonardis, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2022-11-16'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2211.09022
+- title: Clinically Plausible Pathology-Anatomy Disentanglement in Patient Brain MRI with Structured Variational Priors
+  authors: Anjun Hu, Jean-Pierre Falet, Brennan S. Nichyporuk, Changjian Shui, Douglas L. Arnold, Sotirios A. Tsaftaris, Tal Arbel
+  venue: arXiv (Cornell University)
+  date: '2022-11-15'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2211.07820
+- title: Content-Diverse Comparisons improve IQA
+  authors: William Thong, José Costa Pereira, Sarah Parisot, Aleš Leonardis, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2022-11-09'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2211.05215
+- title: Diffusion Models for Causal Discovery via Topological Ordering
+  authors: Pedro L. Sánchez, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2022-10-12'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2210.06201
+- title: Cardiac aging synthesis from cross-sectional data with conditional generative adversarial networks
+  authors: Víctor M. Campello, Tian Xia, Xiao Liu, Pedro Sanchez, Carlos Martín-Isla, Steffen E. Petersen, Santi Seguí, Sotirios A. Tsaftaris, Karim Lekadir
+  venue: Frontiers in Cardiovascular Medicine
+  date: '2022-09-23'
+  image: null
+  code: null
+  website: https://doi.org/10.3389/fcvm.2022.983091
+- title: 'OMASGAN: Out-of-distribution Minimum Anomaly Score GAN for Anomaly Detection'
+  authors: Nikolaos Dionelis, Sotirios A. Tsaftaris, Mehrdad Yaghoobi
+  venue: 2022 Sensor Signal Processing for Defence Conference (SSPD)
+  date: '2022-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/sspd54131.2022.9896220
+- title: 'CTR: Contrastive Training Recognition Classifier for Few-Shot Open-World Recognition'
+  authors: Nikolaos Dionelis, Sotirios A. Tsaftaris, Mehrdad Yaghoobi
+  venue: 2022 26th International Conference on Pattern Recognition (ICPR)
+  date: '2022-08-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icpr56361.2022.9956206
+- title: Causal machine learning for healthcare and precision medicine
+  authors: Pedro Sanchez, Jeremy P. Voisey, Tian Xia, Hannah Watson, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Royal Society Open Science
+  date: '2022-08-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1098/rsos.220638
+- title: 'Residual Contrastive Learning for Image Reconstruction: Learning Transferable Representations from Noisy Images'
+  authors: Nanqing Dong, Matteo Maggioni, Yongxin Yang, Eduardo Pérez-Pellitero, Aleš Leonardis, Steven McDonagh
+  venue: Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence
+  date: '2022-07-01'
+  image: null
+  code: null
+  website: https://doi.org/10.24963/ijcai.2022/406
+- title: Meeting computer vision and machine learning challenges in crop phenotyping
+  authors: Hanno Scharr, Sotirios A. Tsaftaris
+  venue: Burleigh Dodds series in agricultural science
+  date: '2022-06-28'
+  image: null
+  code: null
+  website: https://doi.org/10.19103/as.2022.0102.11
+- title: Model-Based Image Signal Processors via Learnable Dictionaries
+  authors: Marcos V. Conde, Steven McDonagh, Matteo Maggioni, Aleš Leonardis, Eduardo Pérez-Pellitero
+  venue: Proceedings of the AAAI Conference on Artificial Intelligence
+  date: '2022-06-28'
+  image: null
+  code: null
+  website: https://doi.org/10.1609/aaai.v36i1.19926
+- title: Learning disentangled representations in the imaging domain
+  authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2022-06-17'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2022.102516
+- title: Out-of-Distribution Detection with Class Ratio Estimation
+  authors: Ming‐Tian Zhang, Andi Zhang, Tim Z. Xiao, Yitong Sun, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2022-06-08'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2206.03955
+- title: 'Metrics reloaded: Recommendations for image analysis validation'
+  authors: Lena Maier‐Hein, Annika Reinke, Patrick Godau, Minu D. Tizabi, Florian Buettner, Evangelia Christodoulou, Ben Glocker, Fabian Isensee, Jens Kleesiek, Michal Kozubek, Mauricio Reyes, Michael A. Riegler, Manuel Wiesenfarth, Ali Emre Kavur, Carole H. Sudre, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Tim Rädsch, Laura Ación, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Matthew B. Blaschko, M. Jorge Cardoso, Veronika Cheplygina, Beth A. Cimini, Gary S. Collins, Keyvan Farahani, Luciana Ferrer, Adrián Galdrán, Bram van Ginneken, Robert Haase, Daniel A. Hashimoto, Michael M. Hoffman, Merel Huisman, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, Hannes Kenngott, Florian Kofler, Annette Kopp‐Schneider, Anna Kreshuk, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier‐Hein, Anne L. Martel, Peter Mattson, Erik Meijering, Bjoern Menze, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Nasir Rajpoot, Nicola Rieke, Julio Sáez-Rodríguez, Clara I. Sá‎nchez, Shravya Shetty, Maarten van Smeden, Ronald M. Summers, Abdel Aziz Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Paul F. Jäger
+  venue: Edinburgh Research Explorer (University of Edinburgh)
+  date: '2022-06-03'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2206.01653
+- title: Long-tail Recognition via Compositional Knowledge Transfer
+  authors: Sarah Parisot, Pedro M. Esperança, Steven McDonagh, Tamás J. Madarász, Yongxin Yang, Zhenguo Li
+  venue: 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2022-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr52688.2022.00681
+- title: 'CroMo: Cross-Modal Learning for Monocular Depth Estimation'
+  authors: Yannick Verdié, Jifei Song, Barnabe Mas, Benjamin Busam, Aleš Leonardis, Steven McDonagh
+  venue: 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2022-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr52688.2022.00391
+- title: Re-using Adversarial Mask Discriminators for Test-time Training under Distribution Shifts
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: The Journal of Machine Learning for Biomedical Imaging
+  date: '2022-05-30'
+  image: null
+  code: null
+  website: https://doi.org/10.59275/j.melba.2022-bd5e
+- title: Unintended memorisation of unique features in neural networks
+  authors: John Hartley, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2022-05-20'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2205.10079
+- title: 'You Are What You Write: Preserving Privacy in the Era of Large Language Models'
+  authors: Richard E. Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
+  venue: arXiv (Cornell University)
+  date: '2022-04-20'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2204.09391
+- title: Re-examining Distillation For Continual Object Detection
+  authors: Eli Verwimp, Kuo Yang, Sarah Parisot, Hong Lanqing, Steven McDonagh, Eduardo Pérez-Pellitero, Matthias De Lange, Tinne Tuytelaars
+  venue: arXiv (Cornell University)
+  date: '2022-04-04'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2204.01407
+- title: Indication as Prior Knowledge for Multimodal Disease Classification in Chest Radiographs with Transformers
+  authors: Grzegorz Jacenków, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: 2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)
+  date: '2022-03-28'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/isbi52829.2022.9761567
+- title: 'Adversarial Counterfactual Augmentation: Application in Alzheimer''s Disease Classification'
+  authors: Tian Xia, Pedro L. Sánchez, Chen Qin, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2022-03-15'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2203.07815
+- title: Diffusion Causal Models for Counterfactual Estimation
+  authors: Pedro L. Sánchez, Sotirios A. Tsaftaris
+  venue: Edinburgh Research Explorer (University of Edinburgh)
+  date: '2022-02-21'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2202.10166
+- title: Measuring Unintended Memorisation of Unique Private Features in Neural Networks
+  authors: John Hartley, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2022-02-16'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2202.08099
+- title: 'Survey: Leakage and Privacy at Inference Time'
+  authors: Marija Jegorova, Chaitanya Kaul, Charlie Mayor, Alison Q. O’Neil, Alexander Weir, Roderick Murray‐Smith, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tpami.2022.3229593
+- title: What is Healthy? Generative Counterfactual Diffusion for Lesion Localization
+  authors: Pedro Sanchez, Antanas Kascenas, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-18576-2_4
+- title: 'vMFNet: Compositionality Meets Domain-Generalised Segmentation'
+  authors: Xiao Liu, Spyridon Thermos, Pedro L. Sánchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-16449-1_67
+- title: Counterfactual Image Synthesis for Discovery of Personalized Predictive Image Markers
+  authors: Amar Kumar, Anjun Hu, Brennan Nichyporuk, Jean-Pierre Falet, Douglas L. Arnold, Sotirios A. Tsaftaris, Tal Arbel
+  venue: Lecture notes in computer science
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-19660-7_11
+- title: Why Patient Data Cannot Be Easily Forgotten?
+  authors: Ruolin Su, Xiao Liu, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-16452-1_60
+- title: Regularizing disentangled representations with anatomical temporal consistency
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: Elsevier eBooks
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/b978-0-12-824349-7.00023-2
+- title: Domain Adaptation and Representation Transfer
+  authors: Konstantinos Kamnitsas, Lisa M. Koch, Mobarakol Islam, Ziyue Xu, M. Jorge Cardoso, Qi Dou, Nicola Rieke, Sotirios A. Tsaftaris, Tsaftaris, Sotirios, International Conference on Medical Image Computing and Computer Assisted Intervention 2022 Singapur; Online
+  venue: Lecture notes in computer science
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-031-16852-9
+- title: Future trends in medical and biomedical image synthesis
+  authors: Ninon Burgos, Sotirios A. Tsaftaris, David Svoboda
+  venue: Elsevier eBooks
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/b978-0-12-824349-7.00034-7
+- title: Transfer Learning via Test-time Neural Networks Aggregation
+  authors: Bruno Casella, Alessio Barbaro Chisari, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: Proceedings of the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications
+  date: '2022-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.5220/0010907900003124
+- title: A local general‐equilibrium emergency response modeling approach for sub‐Saharan Africa
+  authors: Mateusz Filipski, Anubhab Gupta, Justin Kagin, Arif Husain, Alejandro Grinspun, Oscar Maria Caccavale, Silvio Daidone, Mario Valerio Giuffrida, Friederike Greb, Joseph Dalton Hooker, Susanna Sandström, Julian Fletcher‐Taylor, J. Edward Taylor
+  venue: Agricultural Economics
+  date: '2021-12-05'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/agec.12687
+- title: <scp>COVID</scp>‐19 policy responses, mobility, and food prices
+  authors: Stephan Dietrich, Mario Valerio Giuffrida, Bruno Martorano, Georg Schmerzeck
+  venue: American Journal of Agricultural Economics
+  date: '2021-12-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/ajae.12278
+- title: Few-Shot Adaptive Detection of Objects of Concern Using Generative Models with Negative Retraining
+  authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
+  venue: 2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI)
+  date: '2021-11-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ictai52525.2021.00086
+- title: 'OMASGAN: Out-of-Distribution Minimum Anomaly Score GAN for Sample\n Generation on the Boundary'
+  authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2021-10-28'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2110.15273
+- title: Semi-Supervised Domain Adaptation for Holistic Counting under Label Gap
+  authors: Mattia Litrico, Sebastiano Battiato, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
+  venue: Journal of Imaging
+  date: '2021-09-29'
+  image: null
+  code: null
+  website: https://doi.org/10.3390/jimaging7100198
+- title: Flow Based Models For Manifold Data.
+  authors: Ming‐Tian Zhang, Yitong Sun, Steven McDonagh, Chen Zhang
+  venue: arXiv (Cornell University)
+  date: '2021-09-29'
+  image: null
+  code: null
+  website: https://openalex.org/W3204543811
+- title: Spread Flows for Manifold Modelling
+  authors: Ming‐Tian Zhang, Yitong Sun, Chen Zhang, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2021-09-29'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2109.14216
+- title: On the Out-of-distribution Generalization of Probabilistic Image Modelling
+  authors: Ming‐Tian Zhang, Andi Zhang, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2021-09-04'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2109.02639
+- title: A Tutorial on Learning Disentangled Representations in the Imaging Domain.
+  authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2021-08-26'
+  image: null
+  code: null
+  website: https://openalex.org/W3198361414
+- title: Stop Throwing Away Discriminators! Re-using Adversaries for Test-Time\n Training
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2021-08-26'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2108.12280
+- title: Learning to synthesise the ageing brain without longitudinal data
+  authors: Tian Xia, Agisilaos Chartsias, Chengjia Wang, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2021-07-18'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2021.102169
+- title: Residual Contrastive Learning for Joint Demosaicking and Denoising.
+  authors: Nanqing Dong, Matteo Maggioni, Yongxin Yang, Eduardo Pérez-Pellitero, Aleš Leonardis, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2021-06-18'
+  image: null
+  code: null
+  website: https://openalex.org/W3174887108
+- title: 'Multi-Centre, Multi-Vendor and Multi-Disease Cardiac Segmentation: The M&amp;Ms Challenge'
+  authors: Victor M. Campello, Polyxeni Gkontra, Cristian Izquierdo, Carlos Martin-Isla, Alireza Sojoudi, Peter M. Full, Klaus Maier-Hein, Yao Zhang, Zhiqiang He, Jun Ma, Mario Parreno, Alberto Albiol, Fanwei Kong, Shawn C. Shadden, Jorge Corral Acero, Vaanathi Sundaresan, Mina Saber, Mustafa Elattar, Hongwei Li, Bjoern Menze, Firas Khader, Christoph Haarburger, Cian M. Scannell, Mitko Veta, Adam Carscadden, Kumaradevan Punithakumar, Xiao Liu, Sotirios A. Tsaftaris, Xiaoqiong Huang, Xin Yang, Lei Li, Xiahai Zhuang, David Vilades, Martin L. Descalzo, Andrea Guala, Lucia La Mura, Matthias G. Friedrich, Ria Garg, Julie Lebel, Filipe Henriques, Mahir Karakas, Ersin Cavus, Steffen E. Petersen, Sergio Escalera, Santi Segui, Jose F. Rodriguez-Palomares, Karim Lekadir
+  venue: IEEE Transactions on Medical Imaging
+  date: '2021-06-17'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2021.3090082
+- title: NTIRE 2021 Challenge on Perceptual Image Quality Assessment
+  authors: Jinjin Gu, Haoming Cai, Chao Dong, Jimmy Ren, Yu Qiao, Shuhang Gu, Radu Timofte, Manri Cheon, Sungjun Yoon, Byungyeon Kang, JunWoo Lee, Qing Zhang, Haiyang Guo, Yi Bin, Yuqing Hou, Hengliang Luo, Jingyu Guo, Zirui Wang, Hai Wang, Wenming Yang, Qingyan Bai, Shuwei Shi, Weihao Xia, Mingdeng Cao, Jiahao Wang, Yifan Chen, Yujiu Yang, Li Yang, Tao Zhang, Longtao Feng, Yiting Liao, Junlin Li, William Thong, José Costa Pereira, Aleš Leonardis, Steven McDonagh, Kele Xu, Lehan Yang, Hengxing Cai, Pengfei Sun, Seyed Mehdi Ayyoubzadeh, Ali Royat, Sid Ahmed Fezza, Dounia Hammou, Wassim Hamidouche, Sewoong Ahn, Gwangjin Yoon, Koki Tsubota, Hiroaki Akutsu, Kiyoharu Aizawa
+  venue: 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2021-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvprw53098.2021.00077
+- title: 'Fewmatch: Dynamic Prototype Refinement for Semi-Supervised Few-Shot Learning'
+  authors: Lan Xu, Steven McDonagh, Shaogang Gong, Jiali Wang, Zhenguo Li, Sarah Parisot
+  venue: null
+  date: '2021-05-04'
+  image: null
+  code: null
+  website: https://openalex.org/W3128359362
+- title: On the Latent Space of Flow-based Models
+  authors: Ming‐Tian Zhang, Yitong Sun, Steven McDonagh, Chen Zhang
+  venue: null
+  date: '2021-05-04'
+  image: null
+  code: null
+  website: https://openalex.org/W3130263404
+- title: Data management challenges for artificial intelligence in plant and agricultural research
+  authors: Hugh F. Williamson, Julia Brettschneider, Mario Cáccamo, Robert Davey, Carole Goble, Paul Kersey, Sean May, Richard J. Morris, Richard Ostler, Tony Pridmore, Chris Rawlings, David J. Studholme, Sotirios A. Tsaftaris, Sabina Leonelli
+  venue: F1000Research
+  date: '2021-04-27'
+  image: null
+  code: null
+  website: https://doi.org/10.12688/f1000research.52204.1
+- title: 'Common Limitations of Image Processing Metrics: A Picture Story'
+  authors: Annika Reinke, Matthias Eisenmann, Minu D. Tizabi, Carole H. Sudre, Tim Rädsch, Michela Antonelli, Tal Arbel, Spyridon Bakas, M. Jorge Cardoso, Veronika Cheplygina, Keyvan Farahani, Ben Glocker, Doreen Heckmann-Nötzel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Jens Kleesiek, Tahsin Kurç, Michal Kozubek, Bennett A. Landman, Geert Litjens, Klaus Maier‐Hein, Bjoern Menze, Henning Müller, Jens Petersen, Mauricio Reyes, Nicola Rieke, Bram Stieltjes, Ronald M. Summers, Sotirios A. Tsaftaris, Bram van Ginneken, Annette Kopp‐Schneider, Paul F. Jäger, Lena Maier‐Hein, Isensee, Fabian, Jannin, Pierre, Kahn, Charles E., Kainmueller, Dagmar, Kainz, Bernhard, Karargyris, Alexandros, Karthikesalingam, Alan, Kavur, A. Emre, Kenngott, Hannes, Kleesiek, Jens, Kleppe, Andreas, Kohler, Sven, Kofler, Florian, Kopp-Schneider, Annette, Kooi, Thijs, Kozubek, Michal, Kreshuk, Anna, Kurc, Tahsin, Landman, Bennett A., Litjens, Geert, Madani, Amin, Maier-Hein, Klaus, Martel, Anne L., Mattson, Peter, Meijering, Erik, Menze, Bjoern, Moher, David, Moons, Karel G. M., Müller, Henning, Nichyporuk, Brennan, Nickel, Felix, Noyan, M. Alican, Petersen, Jens, Polat, Gorkem, Rafelski, Susanne M., Rajpoot, Nasir, Reyes, Mauricio, Rieke, Nicola, Riegler, Michael, Rivaz, Hassan, Saez-Rodriguez, Julio, Sánchez, Clara I., Schroeter, Julien, Saha, Anindo, Selver, M. Alper, Sharan, Lalith, Shetty, Shravya, van Smeden, Maarten, Stieltjes, Bram, Summers, Ronald M., Taha, Abdel A., Tiulpin, Aleksei, Tsaftaris, Sotirios A., Van Calster, Ben, Varoquaux, Gaël, Wiesenfarth, Manuel, Yaniv, Ziv R., Jäger, Paul, Maier-Hein, Lena
+  venue: arXiv (Cornell University)
+  date: '2021-04-12'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2104.05642
+- title: Common limitations of performance metrics in biomedical image analysis
+  authors: Annika Reinke, Matthias Eisenmann, Minu D. Tizabi, Carole H. Sudre, Tim Rädsch, Michela Antonelli, Tal Arbel, Spyridon Bakas, M. Jorge Cardoso, Veronika Cheplygina, Keyvan Farahani, Ben Glocker, Doreen Heckmann-Nötzel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Jens Kleesiek, Tahsin Kurç, Michal Kozubek, Bennett A. Landman, Geert Litjens, Klaus Maier‐Hein, Anne Lousise Martel, Bjoern Menze, Henning Müller, Jens Petersen, Mauricio Reyes, Nicola Rieke, Bram Stieltjes, Ronald M. Summers, Sotirios A. Tsaftaris, Bram van Ginneken, Annette Kopp‐Schneider, Paul F. Jäger, Lena Maier‐Hein
+  venue: ArODES (HES-SO (https://www.hes-so.ch/))
+  date: '2021-04-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3185216126
+- title: Learning to Segment From Scribbles Using Multi-Scale Adversarial Attention Gates
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2021-03-30'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2021.3069634
+- title: 'DiCyc: Deformation Invariant Cross-Domain Information Fusion for Medical Image Synthesis'
+  authors: Chengjia Wang, Guang Yang, Giorgos Papanastasiou, Sotirios A. Tsaftaris, David E. Newby, Calum Gray, Gillian Macnaught, Tom MacGillivray
+  venue: null
+  date: '2021-03-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3161954597
+- title: 'GaNDLF: A Generally Nuanced Deep Learning Framework for Scalable End-to-End Clinical Workflows in Medical Imaging'
+  authors: Sarthak Pati, Siddhesh Thakur, Megh Bhalerao, Spyridon Thermos, Ujjwal Baid, Karol Gotkowski, Camila González, Orhun Güley, İbrahim Ethem Hamamcı, Sezgin Er, Caleb M. Grenko, Brandon Edwards, Micah Sheller, Jose Agraz, Bhakti Baheti, Vishnu Bashyam, Parth Sharma, Babak Haghighi, Aimilia Gastounioti, Mark Bergman, Anirban Mukhopadhyay, Sotirios A. Tsaftaris, Bjoern Menze, Despina Kontos, Christos Davatzikos, Spyridon Bakas, Kurc, Tahsin M., Gastounioti, Aimilia, Er, Sezgin, Bergman, Mark, Saltz, Joel H., Fan, Yong, Shah, Prashant, Mukhopadhyay, Anirban, Tsaftaris, Sotirios A., Menze, Bjoern, Davatzikos, Christos, Kontos, Despina, Karargyris, Alexandros, Umeton, Renato, Mattson, Peter, Bakas, Spyridon
+  venue: Edinburgh Research Explorer
+  date: '2021-02-26'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2103.01006
+- title: 'CURL: Neural Curve Layers for Global Image Enhancement'
+  authors: Seán Moran, Steven McDonagh, Greg Slabaugh
+  venue: 2020 25th International Conference on Pattern Recognition (ICPR)
+  date: '2021-01-10'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icpr48806.2021.9412677
+- title: Semi-supervised Meta-learning with Disentanglement for Domain-Generalised Medical Image Segmentation
+  authors: Xiao Liu, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87196-3_29
+- title: Disentangled Representations for Domain-Generalized Cardiac Segmentation
+  authors: Xiao Liu, Spyridon Thermos, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-68107-4_19
+- title: Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health
+  authors: Shadi Albarqouni, M. Jorge Cardoso, Qi Dou, Konstantinos Kamnitsas, Bishesh Khanal, Islem Rekik, Nicola Rieke, Debdoot Sheet, Sotirios A. Tsaftaris, Daguang Xu, Ziyue Xu, Xu, Ziyue, FAIR 2021 Straßburg, MICCAI 2021 Online
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87722-4
+- title: Measuring the Biases and Effectiveness of Content-Style Disentanglement
+  authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Proceedings of the British Machine Vision Conference 2021
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.5244/c.35.24
+- title: Data-driven feature learning for myocardial registration and segmentation
+  authors: İlkay Öksüz, Anirban Mukhopadhyay, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Elsevier eBooks
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/b978-0-12-817428-9.00007-3
+- title: Cohort Bias Adaptation in Aggregated Datasets for Lesion Segmentation
+  authors: Brennan Nichyporuk, Jillian Cardinell, Justin Szeto, Raghav Mehta, Sotirios A. Tsaftaris, Douglas L. Arnold, Tal Arbel
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87722-4_10
+- title: Stop Throwing Away Discriminators! Re-using Adversaries for Test-Time Training
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87722-4_7
+- title: Controllable Cardiac Synthesis via Disentangled Anatomy Arithmetic
+  authors: Spyridon Thermos, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87199-4_15
+- title: How Should We Create Algorithms to Do More with Less
+  authors: Sotirios A. Tsaftaris
+  venue: null
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3164768469
+- title: Self-supervised Multi-scale Consistency for Weakly Supervised Segmentation Learning
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-87722-4_2
+- title: 'CAPE: Context-Aware Private Embeddings for Private Language Learning'
+  authors: Richard Plant, Dimitra Gkatzia, Mario Valerio Giuffrida
+  venue: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.18653/v1/2021.emnlp-main.628
+- title: Complementary Time-Frequency Domain Networks for Dynamic Parallel MR Image Reconstruction
+  authors: C. Qin, J. Duan, K. Hammernik, J. Schlemper, T. Küstner, R. Botnar, C. Prieto, A. N. Price, J. V. Hajnal, D. Rueckert
+  venue: Magnetic Resonance in Medicine
+  date: '2021-01-01'
+  image: null
+  code: null
+  website: https://onlinelibrary.wiley.com/doi/10.1002/mrm.28917
+- title: Disentangle, Align and Fuse for Multimodal and Semi-Supervised Image Segmentation
+  authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2020-11-06'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2020.3036584
+- title: 'DiCyc: GAN-based deformation invariant cross-domain information fusion for medical image synthesis'
+  authors: Chengjia Wang, Guang Yang, Giorgos Papanastasiou, Sotirios A. Tsaftaris, David E. Newby, Calum Gray, Gillian Macnaught, Tom MacGillivray
+  venue: Information Fusion
+  date: '2020-10-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.inffus.2020.10.015
+- title: 'Boundary Of Distribution Support Generator (BDSG): Sample Generation On The Boundary'
+  authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
+  venue: 2020 IEEE International Conference on Image Processing (ICIP)
+  date: '2020-09-30'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip40778.2020.9191341
+- title: Chickpea ( <i>Cicer arietinum</i> L.) root system architecture adaptation to initial soil moisture improves seed development in dry-down conditions
+  authors: Thibaut Bontpart, Ingrid Robertson, Mario Valerio Giuffrida, Cristobal Concha, Livia Scorza, Alistair J. McCormick, Asnake Fikre, Sotirios A. Tsaftaris, Peter Doerner
+  venue: null
+  date: '2020-09-25'
+  image: null
+  code: null
+  website: https://doi.org/10.1101/2020.09.24.311753
+- title: 'Tail of Distribution GAN (TailGAN): GenerativeAdversarial-Network-Based Boundary Formation'
+  authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
+  venue: 2020 Sensor Signal Processing for Defence Conference (SSPD)
+  date: '2020-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/sspd47486.2020.9272100
+- title: Metrics for Exposing the Biases of Content-Style Disentanglement
+  authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2020-08-27'
+  image: null
+  code: null
+  website: https://openalex.org/W3082744875
+- title: 'Many-shot from Low-shot: Learning to Annotate using Mixed Supervision\n for Object Detection'
+  authors: Carlo Alberto Biffi, Steven McDonagh, Philip Torr, Aleš Leonardis, Sarah Parisot
+  venue: arXiv (Cornell University)
+  date: '2020-08-21'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2008.09694
+- title: Towards Continuous User Authentication Using Personalised Touch-Based Behaviour
+  authors: Peter Aaby, Mario Valerio Giuffrida, William J. Buchanan, Zhiyuan Tan
+  venue: 2020 IEEE Intl Conf on Dependable, Autonomic and Secure Computing, Intl Conf on Pervasive Intelligence and Computing, Intl Conf on Cloud and Big Data Computing, Intl Conf on Cyber Science and Technology Congress (DASC/PiCom/CBDCom/CyberSciTech)
+  date: '2020-08-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/dasc-picom-cbdcom-cyberscitech49142.2020.00023
+- title: Low Light Video Enhancement using Synthetic Data Produced with an\n Intermediate Domain Mapping
+  authors: Danai Triantafyllidou, Seán Moran, Steven McDonagh, Sarah Parisot, Greg Slabaugh
+  venue: arXiv (Cornell University)
+  date: '2020-07-17'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2007.09187
+- title: Weakly Supervised Segmentation with Multi-scale Adversarial Attention Gates
+  authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2020-07-02'
+  image: null
+  code: null
+  website: https://openalex.org/W3039833797
+- title: Affordable and robust phenotyping framework to analyse root system architecture of soil‐grown plants
+  authors: Thibaut Bontpart, Cristobal Concha, Mario Valerio Giuffrida, Ingrid Robertson, Kassahun Admkie, Tulu Degefu, Nigusie Girma, Kassahun Tesfaye, Teklehaimanot Haileselassie, Asnake Fikre, Masresha Fetene, Sotirios A. Tsaftaris, Peter Doerner
+  venue: The Plant Journal
+  date: '2020-06-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/tpj.14877
+- title: Pseudo-healthy synthesis with pathology disentanglement and adversarial learning
+  authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2020-06-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2020.101719
+- title: 'DeepLPF: Deep Local Parametric Filters for Image Enhancement'
+  authors: Seán Moran, Pierre Marza, Steven McDonagh, Sarah Parisot, Greg Slabaugh
+  venue: 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2020-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr42600.2020.01284
+- title: A Multi-Hypothesis Approach to Color Constancy
+  authors: Daniel Hernandez-Juarez, Sarah Parisot, Benjamin Busam, Aleš Leonardis, Greg Slabaugh, Steven McDonagh
+  venue: 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+  date: '2020-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvpr42600.2020.00234
+- title: 'AI in Medical Imaging Informatics: Current Challenges and Future Directions'
+  authors: Andreas S. Panayides, Amir A. Amini, Nenad Filipović, Ashish Sharma, Sotirios A. Tsaftaris, Alistair A. Young, David J. Foran, Nhan Do, Spyretta Golemati, Tahsin Kurç, Kun Huang, Konstantina S. Nikita, Ben P. Veasey, Michalis Zervakis, Joel Saltz, Constantinos S. Pattichis
+  venue: IEEE Journal of Biomedical and Health Informatics
+  date: '2020-05-29'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/jbhi.2020.2991043
+- title: Teacher-Student chain for efficient semi-supervised histology image classification
+  authors: Shayne Shaw, Maciej Pajak, Aneta Lisowska, Sotirios A. Tsaftaris, Alison Q. O’Neil
+  venue: arXiv (Cornell University)
+  date: '2020-03-17'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.2003.08797
+- title: 'Doing More With Less: A Multitask Deep Learning Approach in Plant Phenotyping'
+  authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: Frontiers in Plant Science
+  date: '2020-02-28'
+  image: null
+  code: null
+  website: https://doi.org/10.3389/fpls.2020.00141
+- title: A Multi-Hypothesis Classification Approach to Color Constancy
+  authors: Daniel Hernandez-Juarez, Sarah Parisot, Benjamin Busam, Aleš Leonardis, Greg Slabaugh, Steven McDonagh
+  venue: arXiv (Cornell University)
+  date: '2020-02-28'
+  image: null
+  code: null
+  website: https://openalex.org/W3008695516
+- title: Have You Forgotten? A Method to Assess if Machine Learning Models Have Forgotten Data
+  authors: Xiao Liu, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-59710-8_10
+- title: Multimodal Cardiac Segmentation Using Disentangled Representation Learning
+  authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Colin Stirrat, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-39074-7_14
+- title: Semi-supervised Pathology Segmentation with Disentangled Representations
+  authors: Haochuan Jiang, Agisilaos Chartsias, Xinheng Zhang, Giorgos Papanastasiou, Scott Semple, Marc R. Dweck, David Semple, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-60548-3_7
+- title: Max-Fusion U-Net for Multi-modal Pathology Segmentation with Attention and Dynamic Resampling
+  authors: Haochuan Jiang, Chengjia Wang, Agisilaos Chartsias, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-65651-5_7
+- title: 'INSIDE: Steering Spatial Attention with Non-imaging Information in CNNs'
+  authors: Grzegorz Jacenków, Alison Q. O’Neil, Brian Mohr, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-59719-1_38
+- title: 'TBI Lesion Segmentation in Head CT: Impact of Preprocessing and Data Augmentation'
+  authors: Miguel Monteiro, Konstantinos Kamnitsas, Enzo Ferrante, François Mathieu, Steven McDonagh, S. Cook, Susan Stevenson, Tilak Das, Aneesh Khetani, Tom Newman, Frederick A. Zeiler, Richard Digby, Jonathan Coles, Daniel Rueckert, David Menon, Virginia Newcombe, Ben Glocker
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-46640-4_2
+- title: Low Light Video Enhancement Using Synthetic Data Produced with an Intermediate Domain Mapping
+  authors: Danai Triantafyllidou, Seán Moran, Steven McDonagh, Sarah Parisot, Greg Slabaugh
+  venue: Lecture notes in computer science
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-58601-0_7
+- title: 'Many-shot from low-shot: learning to annotate using mixed supervision for object detection'
+  authors: Carlo Biffi, Steven McDonagh, Philip Torr, Aleš Leonardis, Sarah Parisot
+  venue: Oxford University Research Archive (ORA) (University of Oxford)
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3108828338
+- title: 'Deep Learning for Cardiac Image Segmentation: A Review'
+  authors: C. Chen, C. Qin, H. Qiu, G. Tarroni, J. Duan, W. Bai, D. Rueckert
+  venue: Frontiers in Cardiovascular Medicine, vol. 7
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2020.00025/full
+- title: Biomechanics-Informed Neural Networks for Myocardial Motion Tracking in MRI
+  authors: C. Qin, S. Wang, C. Chen, H. Qiu, W. Bai, D. Rueckert.
+  venue: MICCAI
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: https://arxiv.org/abs/2006.04725
+- title: 'Tail of Distribution GAN: GAN-Based Boundary of Distribution Formation'
+  authors: N. Dionelis, M. Yaghoobi, S.A. Tsaftaris
+  venue: SSPD
+  date: '2020-01-01'
+  image: null
+  code: null
+  website: null
+- title: Blind Inpainting of Large-scale Masks of Thin Structures with Adversarial and Reinforcement Learning
+  authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2019-12-05'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1912.02470
+- title: Disentangle, align and fuse for multimodal and zero-shot image segmentation
+  authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2019-11-12'
+  image: null
+  code: null
+  website: https://openalex.org/W2985506298
+- title: 'The Proteus composite index: Towards a better metric for global food security'
+  authors: Oscar Maria Caccavale, Mario Valerio Giuffrida
+  venue: World Development
+  date: '2019-11-04'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.worlddev.2019.104709
+- title: Unsupervised Rotation Factorization in Restricted Boltzmann Machines
+  authors: Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Image Processing
+  date: '2019-10-15'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tip.2019.2946455
+- title: 'SteReFo: Efficient Image Refocusing with Stereo Vision'
+  authors: Benjamin Busam, Matthieu Hog, Steven McDonagh, Greg Slabaugh
+  venue: 2019 IEEE/CVF International Conference on Computer Vision Workshop (ICCVW)
+  date: '2019-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/iccvw.2019.00411
+- title: The Generalized Complex Kernel Least-Mean-Square Algorithm
+  authors: Rafael Boloix-Tortosa, Juan José Murillo-Fuentes, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Signal Processing
+  date: '2019-08-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tsp.2019.2937289
+- title: Multimodal cardiac segmentation using disentangled representations
+  authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Colin Stirrat, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: null
+  date: '2019-08-09'
+  image: null
+  code: null
+  website: https://openalex.org/W3009043258
+- title: Disentangled representation learning in cardiac image analysis
+  authors: Agisilaos Chartsias, T. A. Joyce, Giorgos Papanastasiou, Scott Semple, Michelle C. Williams, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2019-07-18'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.media.2019.101535
+- title: 'FIRE: Unsupervised bi-directional inter-modality registration using deep networks'
+  authors: Chengjia Wang, Giorgos Papanastasiou, Agisilaos Chartsias, Grzegorz Jacenków, Sotirios A. Tsaftaris, Heye Zhang
+  venue: arXiv (Cornell University)
+  date: '2019-07-11'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1907.05062
+- title: Understanding Deep Neural Networks for Regression in Leaf Counting
+  authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2019-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvprw.2019.00316
+- title: Leaf Counting Without Annotations Using Adversarial Unsupervised Domain Adaptation
+  authors: Mario Valerio Giuffrida, Andrei Dobrescu, Peter Doerner, Sotirios A. Tsaftaris
+  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2019-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvprw.2019.00315
+- title: Adversarial Large-Scale Root Gap Inpainting
+  authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
+  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2019-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/cvprw.2019.00318
+- title: Accurate needle-free assessment of myocardial oxygenation for ischemic heart disease in canines using magnetic resonance imaging
+  authors: Hsin‐Jung Yang, İlkay Öksüz, Damini Dey, Jane Sykes, Michael A. Klein, John Butler, Michael S. Kovacs, Olivia Sobczyk, Ivan Cokic, Piotr J. Slomka, Xiaoming Bi, Debiao Li, Mourad Tighiouart, Sotirios A. Tsaftaris, Frank S. Prato, Joseph A. Fisher, Rohan Dharmakumar
+  venue: Science Translational Medicine
+  date: '2019-05-29'
+  image: null
+  code: null
+  website: https://doi.org/10.1126/scitranslmed.aat4407
+- title: Conditioning Convolutional Segmentation Architectures with Non-Imaging Data
+  authors: Grzegorz Jacenków, Agisilaos Chartsias, Brian Mohr, Sotirios A. Tsaftaris
+  venue: null
+  date: '2019-04-17'
+  image: null
+  code: null
+  website: https://openalex.org/W3036211085
+- title: Factorised Representation Learning in Cardiac Image Analysis.
+  authors: Agisilaos Chartsias, T. A. Joyce, Giorgos Papanastasiou, Michelle C. Williams, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: null
+  date: '2019-03-22'
+  image: null
+  code: null
+  website: https://openalex.org/W2922871285
+- title: Affordable and robust phenotyping framework to analyse root system architecture of soil-grown plants
+  authors: Thibaut Bontpart, Cristobal Concha, Mario Valerio Giuffrida, Ingrid Robertson, Kassahun Admkie, Tulu Degefu, Nigusie Girma, Kassahun Tesfaye, Teklehaimanot Haileselassie, Asnake Fikre, Masresha Fetene, Sotirios A. Tsaftaris, Peter Doerner
+  venue: null
+  date: '2019-03-11'
+  image: null
+  code: null
+  website: https://doi.org/10.1101/573139
+- title: Consistent Brain Ageing Synthesis
+  authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris, for the Alzheimer’s Disease Neuroimaging Initiative
+  venue: Lecture notes in computer science
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-32251-9_82
+- title: Ontological attention ensembles for capturing semantic concepts in ICD code prediction from clinical text
+  authors: Matúš Falis, Maciej Pajak, Aneta Lisowska, Patrick Schrempf, Lucas Deckers, Shadia Mikhael, Sotirios A. Tsaftaris, Alison Q. O’Neil
+  venue: Proceedings of the Tenth International Workshop on Health Text Mining and Information Analysis (LOUHI 2019)
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.18653/v1/d19-6220
+- title: 'TPSDicyc: Improved Deformation Invariant Cross-domain Medical Image Synthesis'
+  authors: Chengjia Wang, Giorgos Papanastasiou, Sotirios A. Tsaftaris, Guang Yang, Calum Gray, David E. Newby, Gillian Macnaught, Tom MacGillivray
+  venue: Lecture notes in computer science
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-33843-5_23
+- title: Cardiovascular Magnetic Resonance Assessment of Myocardial Oxygenation
+  authors: Rohan Dharmakumar, Sotirios A. Tsaftaris, Hsin‐Jung Yang, Debiao Li
+  venue: Elsevier eBooks
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/b978-0-323-41561-3.00009-4
+- title: Convolutional Recurrent Neural Networks for Dynamic MR Image Reconstruction
+  authors: C. Qin, J. Schlemper, J. Caballero, A.N. Price, J.V. Hajnal, D. Rueckert
+  venue: IEEE Transactions on Medical Imaging, vol. 38
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://ieeexplore.ieee.org/abstract/document/8425639
+- title: Temporal Consistency Objectives Regularize the Learning of Disentangled Representations
+  authors: G. Valvano, A. Chartsias, A. Leo, S.A. Tsaftaris
+  venue: 'MICCAI, DART: Domain Adaptation and Representation Transfer'
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: https://arxiv.org/abs/1908.11330
+- title: 'Doing more with less: semi-supervised cardiac segmentation with a fraction of labeled images'
+  authors: A. Chartsias, T. Joyce, G. Papanastasiou, S. Semple, M. Williams, D. Newby, R. Dharmakumar, S.A. Tsaftaris
+  venue: SCMR
+  date: '2019-01-01'
+  image: null
+  code: null
+  website: null
+- title: Learning to Count Leaves of Plants
+  authors: Mario Valerio Giuffrida
+  venue: 'The Signal Calculus: beyond message based coordination for services (IMT School for Advanced Studies Lucca)'
+  date: '2018-12-18'
+  image: null
+  code: null
+  website: https://openalex.org/W2990457270
+- title: Adversarial Pseudo Healthy Synthesis Needs Pathology Factorization
+  authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris
+  venue: null
+  date: '2018-12-13'
+  image: null
+  code: null
+  website: https://openalex.org/W2964915519
+- title: Meta-Learning for Few-shot Camera-Adaptive Color Constancy.
+  authors: Steven McDonagh, Sarah Parisot, Zhenguo Li, Greg Slabaugh
+  venue: arXiv (Cornell University)
+  date: '2018-11-28'
+  image: null
+  code: null
+  website: https://openalex.org/W2902351455
+- title: Formulating Camera-Adaptive Color Constancy as a Few-shot Meta-Learning Problem
+  authors: Steven McDonagh, Sarah Parisot, Fengwei Zhou, Xing Zhang, Aleš Leonardis, Zhenguo Li, Greg Slabaugh
+  venue: arXiv (Cornell University)
+  date: '2018-11-28'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1811.11788
+- title: 'Sharing the Right Data Right: A Symbiosis with Machine Learning'
+  authors: Sotirios A. Tsaftaris, Hanno Scharr
+  venue: Trends in Plant Science
+  date: '2018-11-26'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.tplants.2018.10.016
+- title: Root Gap Correction with a Deep Inpainting Model
+  authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
+  venue: Edinburgh Napier Research Repository (Edinburgh Napier University)
+  date: '2018-09-06'
+  image: null
+  code: null
+  website: https://openalex.org/W2892466808
+- title: Computer vision problems in plant phenotyping, CVPPP 2018
+  authors: Tony Pridmore, Sotirios A. Tsaftaris, Hanno Scharr
+  venue: Repository@Nottingham (University of Nottingham)
+  date: '2018-09-03'
+  image: null
+  code: null
+  website: https://openalex.org/W3105508479
+- title: 'Pheno‐Deep Counter: a unified and versatile deep learning architecture for leaf counting'
+  authors: Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
+  venue: The Plant Journal
+  date: '2018-08-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/tpj.14064
+- title: Automatic View Planning with Multi-scale Deep Reinforcement Learning\n Agents
+  authors: Amir Alansary, Loïc Le Folgoc, Ghislain Vaillant, Ozan Oktay, Yuanwei Li, Wenjia Bai, Jonathan Passerat‐Palmbach, Ricardo Guerrero, Konstantinos Kamnitsas, Benjamin Hou, Steven McDonagh, Ben Glocker, Bernhard Kainz, Daniel Rueckert
+  venue: arXiv (Cornell University)
+  date: '2018-06-08'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1806.03228
+- title: Editorial for Special Issue on Reproducible Research
+  authors: Ömer Nezih Gerek, B. Boashash, Mikołaj Leszczuk, Sotirios A. Tsaftaris, Wesley Armour, David Wallom
+  venue: Digital Signal Processing
+  date: '2018-04-30'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.dsp.2018.04.007
+- title: Deep Multi-Class Segmentation Without Ground-Truth Labels
+  authors: T. A. Joyce, Agisilaos Chartsias, Sotirios A. Tsaftaris
+  venue: null
+  date: '2018-04-11'
+  image: null
+  code: null
+  website: https://openalex.org/W2907274850
+- title: Unsupervised Lesion Detection in Brain CT using Bayesian Convolutional Autoencoders
+  authors: Nick Pawlowski, Matthew C. H. Lee, Martin Rajchl, Steven McDonagh, Enzo Ferrante, Konstantinos Kamnitsas, Sam F Cooke, Susan Stevenson, Aneesh Khetani, Tom Newman, Frederick A. Zeiler, Richard Digby, Jonathan Coles, Daniel Rueckert, David Menon, Virginia Newcombe, Ben Glocker
+  venue: null
+  date: '2018-04-11'
+  image: null
+  code: null
+  website: https://openalex.org/W2911059780
+- title: Deep Pose Estimation for Image-Based Registration
+  authors: Benjamin Hou, Nina Miolane, Bishesh Khanal, Matthew Lee, Amir Alansary, Steven McDonagh, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: null
+  date: '2018-04-11'
+  image: null
+  code: null
+  website: https://openalex.org/W2906552534
+- title: Image-Based Registration in Canonical Atlas Space
+  authors: Benjamin Hou, Bishesh Khanal, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: null
+  date: '2018-04-11'
+  image: null
+  code: null
+  website: https://openalex.org/W2914746730
+- title: 'Attention U-Net: Learning Where to Look for the Pancreas'
+  authors: Ozan Oktay, Jo Schlemper, Loïc Le Folgoc, Matthew C. H. Lee, Mattias P. Heinrich‬, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Hammerla, Bernhard Kainz, Ben Glocker, Daniel Rueckert
+  venue: ArXiv.org
+  date: '2018-04-11'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1804.03999
+- title: Simulation and Synthesis in Medical Imaging
+  authors: Alejandro F. Frangi, Sotirios A. Tsaftaris, Jerry L. Prince
+  venue: IEEE Transactions on Medical Imaging
+  date: '2018-03-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2018.2800298
+- title: 3-D Reconstruction in Canonical Co-Ordinate Space From Arbitrarily Oriented 2-D Images
+  authors: Benjamin Hou, Bishesh Khanal, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: IEEE Transactions on Medical Imaging
+  date: '2018-02-19'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2018.2798801
+- title: 'Citizen crowds and experts: observer variability in image-based plant phenotyping'
+  authors: Mario Valerio Giuffrida, Feng Chen, Hanno Scharr, Sotirios A. Tsaftaris
+  venue: Plant Methods
+  date: '2018-02-09'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/s13007-018-0278-7
+- title: Joint Myocardial Registration and Segmentation of Cardiac BOLD MRI
+  authors: İlkay Öksüz, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-75541-0_2
+- title: 'Editorial: Computer Vision Problems in Plant Phenotyping, CVPPP 2018'
+  authors: Tony Pridmore, Sotirios A. Tsaftaris, Hanno Scharr
+  venue: JuSER (Forschungszentrum Jülich)
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3033482922
+- title: Ensembles of Multiple Models and Architectures for Robust Brain Tumour Segmentation
+  authors: Konstantinos Kamnitsas, Wenjia Bai, Enzo Ferrante, Steven McDonagh, Matthew Sinclair, Nick Pawlowski, Martin Rajchl, Min Young Lee, Bernhard Kainz, Daniel Rueckert, Ben Glocker
+  venue: Lecture notes in computer science
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-75238-9_38
+- title: Computing CNN Loss and Gradients for Pose Estimation with Riemannian Geometry
+  authors: Benjamin Hou, Nina Miolane, Bishesh Khanal, Matthew C. H. Lee, Amir Alansary, Steven McDonagh, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: Lecture notes in computer science
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-00928-1_85
+- title: Automatic View Planning with Multi-scale Deep Reinforcement Learning Agents
+  authors: Amir Alansary, Loïc Le Folgoc, Ghislain Vaillant, Ozan Oktay, Yuanwei Li, Wenjia Bai, Jonathan Passerat‐Palmbach, Ricardo Guerrero, Konstantinos Kamnitsas, Benjamin Hou, Steven McDonagh, Ben Glocker, Bernhard Kainz, Daniel Rueckert
+  venue: Lecture notes in computer science
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-00928-1_32
+- title: 'EchoFusion: Tracking and Reconstruction of Objects in 4D Freehand Ultrasound Imaging Without External Trackers'
+  authors: Bishesh Khanal, Alberto Gómez, Nicolas Toussaint, Steven McDonagh, Veronika A. Zimmer, Emily Skelton, Jacqueline Matthew, Daniel Grzech, Robert Wright, Chandni Gupta, Benjamin Hou, Daniel Rueckert, Julia A. Schnabel, Bernhard Kainz
+  venue: Lecture notes in computer science
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-030-00807-9_12
+- title: Editorial for Simulation and Synthesis in Medical Imaging
+  authors: A. Frangi, S.A. Tsaftaris, J. Prince
+  venue: IEEE Transactions on Medical Imaging, vol. 37, no. 3, pp. 673-679
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://ieeexplore.ieee.org/document/8305584
+- title: White matter hyperintensity and stroke lesion segmentation and differentiation using convolutional neural networks
+  authors: R. Guerrero, C. Qin, O. Oktay, C. Bowles, L. Chen, R. Joules, R. Wolz, M.C. Valdés-Hernández, D.A. Dickie, J. Wardlaw, D. Rueckert
+  venue: 'NeuroImage: Clinical, vol. 17'
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://www.sciencedirect.com/science/article/pii/S2213158217303273?via%3Dihub
+- title: A large margin algorithm for automated segmentation of white matter hyperintensity
+  authors: C. Qin, R. Guerrero, C. Bowles, L. Chen, D.A. Dickie, M. del C. Valdes-Hernandez, J. Wardlaw, D. Rueckert
+  venue: Pattern Recognition, vol. 77
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://link.springer.com/chapter/10.1007/978-3-031-45857-6_5
+- title: Joint learning of motion estimation and segmentation for cardiac MR image sequences.
+  authors: C. Qin, W. Bai, J. Schlemper, S. E. Petersen, S. K. Piechnik, S. Neubauer, D. Rueckert
+  venue: MICCAI
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://arxiv.org/abs/1806.04066
+- title: 'Factorised spatial representation learning: application in semi-supervised myocardial segmentation'
+  authors: A. Chartsias, T. Joyce, G. Papanastasiou, S. Semple, M. Williams, D. Newby, R. Dharmakumar, S.A. Tsaftaris
+  venue: MICCAI
+  date: '2018-01-01'
+  image: null
+  code: null
+  website: https://arxiv.org/abs/1803.07031
+- title: Feeding the world one open access plant phenotype image at a time
+  authors: Sotirios A. Tsaftaris
+  venue: Edinburgh Research Archive (University of Edinburgh)
+  date: '2017-11-22'
+  image: null
+  code: null
+  website: https://openalex.org/W2785235814
+- title: 'Abstract 16081: Precisely Controlled Arterial CO2 as an Alternative to Pharmacological Stress Agents for Potentiating Myocardial Blood Flow: A Preclinical Study in Canines With and Without Coronary Stenosis'
+  authors: Hsin‐Jung Yang, Damini Dey, Jane Sykes, Michael G. Klein, John M. Butler, Michael S. Kovacs, Olivia Sobczyk, Behzad Sharif, Xiaoming Bi, Avinash Kali, Ivan Cokic, Richard Tang, Roya Yumul, Antonio Hernandez Conte, Sotirios A. Tsaftaris, Mourad Tighiouart, Debiao Li, Piotr J. Slomka, Daniel S. Berman, Frank S. Prato, Joseph A. Fisher, Rohan Dharmakumar
+  venue: Circulation
+  date: '2017-11-14'
+  image: null
+  code: null
+  website: https://openalex.org/W2938574426
+- title: 'A “Do-It-Yourself” phenotyping system: measuring growth and morphology throughout the diel cycle in rosette shaped plants'
+  authors: Andrei Dobrescu, Livia Scorza, Sotirios A. Tsaftaris, Alistair J. McCormick
+  venue: Plant Methods
+  date: '2017-11-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/s13007-017-0247-6
+- title: Multimodal MR Synthesis via Modality-Invariant Latent Representation
+  authors: Agisilaos Chartsias, T. A. Joyce, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2017-10-18'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2017.2764326
+- title: 'ARIGAN: Synthetic Arabidopsis Plants Using Generative Adversarial Network'
+  authors: Mario Valerio Giuffrida, Hanno Scharr, Sotirios A. Tsaftaris
+  venue: 2017 IEEE International Conference on Computer Vision Workshops (ICCVW)
+  date: '2017-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/iccvw.2017.242
+- title: 'Computer Vision Problems in Plant Phenotyping, CVPPP 2017: Introduction to the CVPPP 2017 Workshop Papers'
+  authors: Hanno Scharr, Tony Pridmore, Sotirios A. Tsaftaris
+  venue: 2017 IEEE International Conference on Computer Vision Workshops (ICCVW)
+  date: '2017-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/iccvw.2017.236
+- title: 3D Reconstruction in Canonical Co-ordinate Space from Arbitrarily Oriented 2D Images
+  authors: Benjamin Hou, Bishesh Khanal, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: arXiv (Cornell University)
+  date: '2017-09-19'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1709.06341
+- title: Leveraging Multiple Datasets for Deep Leaf Counting
+  authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: null
+  date: '2017-09-06'
+  image: null
+  code: null
+  website: https://doi.org/10.1101/185173
+- title: 'PVR: Patch-to-Volume Reconstruction for Large Area Motion Correction of Fetal MRI'
+  authors: Amir Alansary, Martin Rajchl, Steven McDonagh, Maria Murgasova, Mellisa Damodaram, David Lloyd, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Bernhard Kainz
+  venue: IEEE Transactions on Medical Imaging
+  date: '2017-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2017.2737081
+- title: Unsupervised Myocardial Segmentation for Cardiac BOLD
+  authors: İlkay Öksüz, Anirban Mukhopadhyay, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2017-07-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2017.2726112
+- title: Noise Reduction on G‐Buffers for Monte Carlo Filtering
+  authors: Bochang Moon, José A. Iglesias-Guitián, Steven McDonagh, Kenny Mitchell
+  venue: Computer Graphics Forum
+  date: '2017-05-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/cgf.13155
+- title: Real-Time Multi-View Facial Capture with Synthetic Training
+  authors: Martin Klaudiny, Steven McDonagh, Derek Bradley, Thabo Beeler, Kenny Mitchell
+  venue: Computer Graphics Forum
+  date: '2017-05-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/cgf.13129
+- title: 'Arterial CO<sub>2</sub> as a Potent Coronary Vasodilator: A Preclinical PET/MR Validation Study with Implications for Cardiac Stress Testing'
+  authors: Hsin‐Jung Yang, Damini Dey, Jane Sykes, Michael A. Klein, John Butler, Michael S. Kovacs, Olivia Sobczyk, Behzad Sharif, Xiaoming Bi, Avinash Kali, Ivan Cokic, Richard Tang, Roya Yumul, Antonio Hernandez Conte, Sotirios A. Tsaftaris, Mourad Tighiouart, Debiao Li, Piotr J. Slomka, Daniel S. Berman, Frank S. Prato, Joseph A. Fisher, Rohan Dharmakumar
+  venue: Journal of Nuclear Medicine
+  date: '2017-03-02'
+  image: null
+  code: null
+  website: https://doi.org/10.2967/jnumed.116.185991
+- title: 'Statistical Shape Modeling of the Left Ventricle: Myocardial Infarct Classification Challenge'
+  authors: Avan Suinesiaputra, Jan D’hooge, Nicolás Duchateau, Jan Ehrhardt, Alejandro F. Frangi, Ali Gooya, Vicente Grau, Karim Lekadir, Allen Lu, Anirban Mukhopadhyay, İlkay Öksüz, Pierre Ablin, Nripesh Parajuli, Xavier Pennec, Marco Pereañez, Catarina Pinto, Paolo Piras, Marc-Michel Rohe, Daniel Rueckert, Dennis Säring, Maxime Sermesant, Kaleem Siddiqi, Xenia Alba, Mahdi Tabassian, Luciano Teresi, Sotirios A. Tsaftaris, Matthias Wilms, Alistair A. Young, Xing-Yu Zhang, Pau Medrano−Gracia, Martino Alessandrini, Jack Allen, Wenjia Bai, Serkan Çimen, Peter Claes, Brett R. Cowan
+  venue: IEEE Journal of Biomedical and Health Informatics
+  date: '2017-01-17'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/jbhi.2017.2652449
+- title: 'Phenotiki: an open software and hardware platform for affordable and easy image‐based phenotyping of rosette‐shaped plants'
+  authors: Massimo Minervini, Mario Valerio Giuffrida, Pierdomenico Perata, Sotirios A. Tsaftaris
+  venue: The Plant Journal
+  date: '2017-01-09'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/tpj.13472
+- title: Adversarial Image Synthesis for Unpaired Multi-modal Cardiac Data
+  authors: Agisilaos Chartsias, T. A. Joyce, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-68127-6_1
+- title: Robust Multi-modal MR Image Synthesis
+  authors: T. A. Joyce, Agisilaos Chartsias, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-66179-7_40
+- title: 'Simulation and synthesis in medical imaging: Second international workshop, SASHIMI 2017 held in conjunction with MICCAI 2017 Québec city, QC, Canada, September 10, 2017 proceedings'
+  authors: Sotirios A. Tsaftaris, Ali Gooya, Alejandro F. Frangi, Jerry L. Prince
+  venue: Research Explorer (The University of Manchester)
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3136531031
+- title: Predicting Slice-to-Volume Transformation in Presence of Arbitrary Subject Motion
+  authors: Benjamin Hou, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  venue: Lecture notes in computer science
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-66185-8_34
+- title: Brain lesion segmentation through image synthesis and outlier detection
+  authors: C. Bowles, C. Qin, R. Guerrero, R. Gunn, A. Hammers, D.A. Dickie, M. Valdés Hernández, J. Wardlaw, D. Rueckert
+  venue: 'NeuroImage: Clinical, vol. 16'
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://www.sciencedirect.com/science/article/pii/S2213158217302164?via%3Dihub
+- title: Arterial CO2 Can Potentiate Myocardial Blood Flow to the Same Extent as Adenosine
+  authors: H.J. Yang, D. Dey, J. Sykes, M. Klein, J. Butler, M. Kovacs, O. Sobczyk, B. Sharif, X. Bi, A. Kali, I. Cokic, R. Tang, R. Yumul, A. Conte, S.A. Tsaftaris, M. Tighiouart, D. Li, P.J. Slomka, D. Berman, F. Prato, J. Fisher, R. Dharmakumar
+  venue: Journal of Nuclear Medicine, vol. 58. no. 6, pp. 953-960
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://jnm.snmjournals.org/content/58/6/953
+- title: 'Simulation and Synthesis in Medical Imaging: Second International Workshop, SASHIMI 2017'
+  authors: S.A. Tsaftaris, A. Gooya, A Frangi, J. Prince
+  venue: SASHIMI, Held in Conjunction with MICCAI, Quebec City, Lecture Notes in Computer Science, vol. 10557
+  date: '2017-01-01'
+  image: null
+  code: null
+  website: https://www.springer.com/la/book/9783319681269
+- title: 'PVR: Patch-to-Volume Reconstruction for Large Area Motion Correction of\n Fetal MRI'
+  authors: Amir Alansary, Bernhard Kainz, Martin Rajchl, Maria Murgasova, Mellisa Damodaram, David Lloyd, Alice E. Davidson, Steven McDonagh, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert
+  venue: arXiv (Cornell University)
+  date: '2016-11-22'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1611.07289
+- title: Machine Learning for Plant Phenotyping Needs Image Processing
+  authors: Sotirios A. Tsaftaris, Massimo Minervini, Hanno Scharr
+  venue: Trends in Plant Science
+  date: '2016-10-31'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.tplants.2016.10.002
+- title: Synthetic Prior Design for Real-Time Face Tracking
+  authors: Steven McDonagh, Martin Klaudiny, Derek Bradley, Thabo Beeler, Iain Matthews, Kenny Mitchell
+  venue: 2016 Fourth International Conference on 3D Vision (3DV)
+  date: '2016-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/3dv.2016.72
+- title: Adaptive polynomial rendering
+  authors: Bochang Moon, Steven McDonagh, Kenny Mitchell, Markus Groß
+  venue: ACM Transactions on Graphics
+  date: '2016-07-11'
+  image: null
+  code: null
+  website: https://doi.org/10.1145/2897824.2925936
+- title: Special issue on computer vision and image analysis in plant phenotyping
+  authors: Hanno Scharr, Hannah Dee, Andrew P. French, Sotirios A. Tsaftaris
+  venue: Machine Vision and Applications
+  date: '2016-06-29'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/s00138-016-0787-1
+- title: 'Theta-RBM: Unfactored Gated Restricted Boltzmann Machine for Rotation-Invariant Representations'
+  authors: Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: arXiv (Cornell University)
+  date: '2016-06-28'
+  image: null
+  code: null
+  website: https://doi.org/10.48550/arxiv.1606.08805
+- title: 'Supporting Autonomic Management of Clouds: Service Clustering With Random Forest'
+  authors: Rafael Brundo Uriarte, Francesco Tiezzi, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Network and Service Management
+  date: '2016-05-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tnsm.2016.2569000
+- title: Semi-automated registration-based anatomical labelling, voxel based morphometry and cortical thickness mapping of the mouse brain
+  authors: Marco Pagani, Mario Damiano, Alberto Galbusera, Sotirios A. Tsaftaris, Alessandro Gozzi
+  venue: Journal of Neuroscience Methods
+  date: '2016-04-11'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.jneumeth.2016.04.007
+- title: Whole Image Synthesis Using a Deep Encoder-Decoder Network
+  authors: Vasileios Sevetlidis, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-46630-9_13
+- title: Simulation and Synthesis in Medical Imaging
+  authors: Sotirios A. Tsaftaris, Ali Gooya, Alejandro F. Frangi, Jerry L. Prince
+  venue: Lecture notes in computer science
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-46630-9
+- title: Supervised Learning of Functional Maps for Infarct Classification
+  authors: Anirban Mukhopadhyay, İlkay Öksüz, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-28712-6_18
+- title: Towards reliable myocardial blood-oxygen-level-dependent (BOLD) CMR using late effects of regadenoson with simultaneous 13n-ammonia pet validation in a whole-body hybrid PET/MR system
+  authors: Hsin‐Jung Yang, Damini Dey, Jane Sykes, John Butler, Behzad Sharif, Debiao Li, Sotirios A. Tsaftaris, Piotr J. Slomka, Frank S. Prato, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-18-s1-o19
+- title: 'BOLD contrast: A challenge for cardiac image analysis'
+  authors: İlkay Öksüz, Marco Bevilacqua, Anirban Mukhopadhyay, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-18-s1-w27
+- title: Towards joint segmentation and registration of the myocardium in CP-BOLD MRI at rest
+  authors: İlkay Öksüz, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-18-s1-w34
+- title: Towards pixel-wise area-at-risk characterization with cardiac BOLD MRI at rest
+  authors: Marco Bevilacqua, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-18-s1-p63
+- title: Fast, heart-rate independent, whole-heart, free-breathing, three-dimensional myocardial BOLD MRI at 3T with simultaneous 13N-ammonia PET validation in canines
+  authors: Hsin‐Jung Yang, Damini Dey, Jane Sykes, John Butler, Behzad Sharif, Debiao Li, Sotirios A. Tsaftaris, Xiaoming Bi, Piotr J. Slomka, Frank S. Prato, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-18-s1-w2
+- title: Fusing 100’s of 3D Point Clouds of Objects
+  authors: Robert B. Fisher, Steven McDonagh
+  venue: Edinburgh Research Explorer
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2788256795
+- title: 'Simulation and Synthesis in Medical Imaging: First International Workshop, SASHIMI 2016'
+  authors: S.A. Tsaftaris, A. Gooya, A Frangi, J. Prince
+  venue: SASHIMI, Held in Conjunction with MICCAI, Athens, Greece, Lecture Notes in Computer Science, vol. 9968
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://www.springer.com/la/book/9783319466293
+- title: A Semi-supervised Large Margin Algorithm for White Matter Hyperintensity Segmentation
+  authors: C. Qin, R. Moreno, C. Bowles, C. Ledig, P. Scheltens, F. Barkhof, H. Rhodius-Meester, B. Tijms, A.W. Lemstra, W.M. van der Flier, B. Glocker, D. Rueckert
+  venue: 'MICCAI, MLMI: Machine Learning in Medical Imaging'
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://link.springer.com/chapter/10.1007/978-3-319-47157-0_13
+- title: Pseudo-healthy Image Synthesis for White Matter Lesion Segmentation
+  authors: C. Bowles, C. Qin, C. Ledig, R. Guerrero, R. Gunn, A. Hammers, E. Sakka, D.A. Dickie, M. Valdés Hernández, N. Royle, J. Wardlaw, H. Rhodius-Meester, B. Tijms, A.W. Lemstra, W. van der Flier, F. Barkhof, P. Scheltens, D. Rueckert
+  venue: 'MICCAI, SASHIMI: Simulation and Synthesis in Medical Imaging'
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://link.springer.com/chapter/10.1007/978-3-319-46630-9_9
+- title: Rotation-Invariant Restricted Boltzmann Machine using Shared Gradient Filters
+  authors: M.V. Giuffrida, S.A. Tsaftaris
+  venue: ICANN
+  date: '2016-01-01'
+  image: null
+  code: null
+  website: https://arxiv.org/abs/1604.07045
+- title: 'Leaf segmentation in plant phenotyping: a collation study'
+  authors: Hanno Scharr, Massimo Minervini, Andrew P. French, Christian Klukas, David Kramer, Xiaoming Liu, Imanol Luengo, Jean-Michel Pape, G. Polder, Danijela Vukadinovic, Xi Yin, Sotirios A. Tsaftaris
+  venue: Machine Vision and Applications
+  date: '2015-12-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/s00138-015-0737-3
+- title: Interactive light source position estimation for augmented reality with an RGB‐D camera
+  authors: Bastiaan J. Boom, Sergio Orts‐Escolano, Xin Ning, Steven McDonagh, Peter Sandilands, Robert B. Fisher
+  venue: Computer Animation and Virtual Worlds
+  date: '2015-12-08'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/cav.1686
+- title: Classification-aware distortion metric for HEVC intra coding
+  authors: Massimo Minervini, Sotirios A. Tsaftaris
+  venue: 2015 Visual Communications and Image Processing (VCIP)
+  date: '2015-12-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/vcip.2015.7457877
+- title: Building models from multiple point sets with kernel density estimation
+  authors: Steven McDonagh
+  venue: Edinburgh Research Archive (University of Edinburgh)
+  date: '2015-11-26'
+  image: null
+  code: null
+  website: https://openalex.org/W2177004142
+- title: Finely-grained annotated datasets for image-based plant phenotyping
+  authors: Massimo Minervini, Andreas Fischbach, Hanno Scharr, Sotirios A. Tsaftaris
+  venue: Pattern Recognition Letters
+  date: '2015-11-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.patrec.2015.10.013
+- title: 'Abstract 19147: Fast, Free-breathing, Heart-rate Independent Quantitative Myocardial Oxygenation MRI at 3T for Detecting Ischemic Heart Disease Without Contrast Agents With Simultaneous 13N-Ammonia PET Validation'
+  authors: Hsin‐Jung Yang, Damini Dey, Jane Syskes, John Butler, Xiaoming Bi, Avinash Kali, Ivan Cokic, Behzad Sharif, Sotirios A. Tsaftaris, Debiao Li, Piotr J. Slomka, Frank S. Prato, Rohan Dharmakumar
+  venue: Circulation
+  date: '2015-11-10'
+  image: null
+  code: null
+  website: https://doi.org/10.1161/circ.132.suppl_3.19147
+- title: A Cortical and Sub-cortical Parcellation Clustering by Intrinsic Functional Connectivity
+  authors: Ying‐Chia Lin, Tommaso Gili, Sotirios A. Tsaftaris, Andrea Gabrielli, Mariangela Iorio, Gianfranco Spalletta, Guido Caldarelli
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2015-11-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2345741445
+- title: Dictionary-Driven Ischemia Detection From Cardiac Phase-Resolved Myocardial BOLD MRI at Rest
+  authors: Marco Bevilacqua, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2015-08-19'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2015.2470075
+- title: 'Image Analysis: The New Bottleneck in Plant Phenotyping [Applications Corner]'
+  authors: Massimo Minervini, Hanno Scharr, Sotirios A. Tsaftaris
+  venue: IEEE Signal Processing Magazine
+  date: '2015-06-12'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/msp.2015.2405111
+- title: Service Clustering for Autonomic Clouds Using Random Forest
+  authors: Rafael Brundo Uriarte, Sotirios A. Tsaftaris, Francesco Tiezzi
+  venue: 2015 15th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+  date: '2015-05-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ccgrid.2015.41
+- title: Exploiting time-multiplexing structured light with picoprojectors
+  authors: Mario Valerio Giuffrida, Giovanni Maria Farinella, Sebastiano Battiato, Mirko Guarnera
+  venue: Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE
+  date: '2015-03-17'
+  image: null
+  code: null
+  website: https://doi.org/10.1117/12.2083031
+- title: Dictionary learning for unsupervised identification of ischemic territories in CP-BOLD Cardiac MRI at rest
+  authors: Marco Bevilacqua, Cristian Rusu, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2015-02-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-17-s1-q13
+- title: Laminar and Dorsoventral Molecular Organization of the Medial Entorhinal Cortex Revealed by Large-scale Anatomical Analysis of Gene Expression
+  authors: Helen L. Ramsden, Gülşen Sürmeli, Steven McDonagh, Matthew F. Nolan
+  venue: PLoS Computational Biology
+  date: '2015-01-23'
+  image: null
+  code: null
+  website: https://doi.org/10.1371/journal.pcbi.1004032
+- title: Learning to Count Leaves in Rosette Plants
+  authors: Mario Valerio Giuffrida, Massimo Minervini, Sotirios A. Tsaftaris
+  venue: Procedings of the Proceedings of the Computer Vision Problems in Plant Phenotyping Workshop 2015
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.5244/c.29.cvppp.1
+- title: Data-Driven Feature Learning for Myocardial Segmentation of CP-BOLD MRI
+  authors: Anirban Mukhopadhyay, İlkay Öksüz, Marco Bevilacqua, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-20309-6_22
+- title: An interactive tool for semi-automated leaf annotation
+  authors: Massimo Minervini, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: Procedings of the Proceedings of the Computer Vision Problems in Plant Phenotyping Workshop 2015
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.5244/c.29.cvppp.6
+- title: Unsupervised Myocardial Segmentation for Cardiac MRI
+  authors: Anirban Mukhopadhyay, İlkay Öksüz, Marco Bevilacqua, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-24574-4_2
+- title: The significance of image compression in plant phenotyping applications
+  authors: Massimo Minervini, Hanno Scharr, Sotirios A. Tsaftaris
+  venue: Functional Plant Biology
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1071/fp15033
+- title: Dictionary Learning Based Image Descriptor for Myocardial Registration of CP-BOLD MR
+  authors: İlkay Öksüz, Anirban Mukhopadhyay, Marco Bevilacqua, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-24571-3_25
+- title: Computationally Efficient Data and Application Driven Color Transforms for the Compression and Enhancement of Images and Video
+  authors: Massimo Minervini, Cristian Rusu, Sotirios A. Tsaftaris
+  venue: Color Image and Video Enhancement
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-09363-5_13
+- title: On Blind Source Camera Identification
+  authors: Giovanni Maria Farinella, Mario Valerio Giuffrida, V. Digiacomo, Sebastiano Battiato
+  venue: Lecture notes in computer science
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-25903-1_40
+- title: 'Image Analysis: the new bottleneck in plant phenotyping'
+  authors: M. Minervini, H. Scharr, S.A. Tsaftaris
+  venue: IEEE Signal Processing Magazine, vol. 32, no. 4, pp. 126-131
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: https://ieeexplore.ieee.org/document/7123050?arnumber=7123050
+- title: Dictionary-based Support Vector Machines for Unsupervised Ischemia Detection at Rest with CP-BOLD Cardiac MRI
+  authors: M. Bevilacqua, A. Mukhopadhyay, I. Oksuz, C. Rusu, R. Dharmakumar, S.A. Tsaftaris
+  venue: ISMRM
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: null
+- title: Data Driven Feature Learning For Representation of Myocardial BOLD MR Images
+  authors: A. Mukhopadhyay, M. Bevilacqua, I. Oksuz, R. Dharmakumar, S.A. Tsaftaris
+  venue: ISMRM
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: null
+- title: Effect of BOLD Contrast on Myocardial Registration
+  authors: I. Oksuz, A. Mukhopadhyay, M. Bevilacqua, H.-J. Yang, R. Dharmakumar, S.A. Tsaftaris
+  venue: ISMRM
+  date: '2015-01-01'
+  image: null
+  code: null
+  website: null
+- title: Unsupervised and supervised approaches to color space transformation for image coding
+  authors: Massimo Minervini, Cristian Rusu, Sotirios A. Tsaftaris
+  venue: 2014 IEEE International Conference on Image Processing (ICIP)
+  date: '2014-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2014.7026128
+- title: Annotated Image Datasets of Rosette Plants
+  authors: Hanno Scharr, Massimo Minervini, Andreas Fischbach, Sotirios A. Tsaftaris
+  venue: null
+  date: '2014-07-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2229420909
+- title: Applying semi-synchronised task farming to large-scale computer vision problems
+  authors: Steven McDonagh, Cigdem Beyan, Phoenix X. Huang, Robert B. Fisher
+  venue: The International Journal of High Performance Computing Applications
+  date: '2014-05-08'
+  image: null
+  code: null
+  website: https://doi.org/10.1177/1094342014532965
+- title: Assessment of Myocardial Reactivity to Controlled Hypercapnia with Free-breathing T2-prepared Cardiac Blood Oxygen Level–Dependent MR Imaging
+  authors: Hsin‐Jung Yang, Roya Yumul, Richard Tang, Ivan Cokic, Michael A. Klein, Avinash Kali, Olivia Sobczyk, Behzad Sharif, Jun Tang, Xiaoming Bi, Sotirios A. Tsaftaris, Debiao Li, Antonio Hernandez Conte, Joseph A. Fisher, Rohan Dharmakumar
+  venue: Radiology
+  date: '2014-04-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1148/radiol.14132549
+- title: COMT Genetic Reduction Produces Sexually Divergent Effects on Cortical Anatomy and Working Memory in Mice and Humans
+  authors: Sara Sannino, Alessandro Gozzi, Antonio Cerasa, Fabrizio Piras, Diego Scheggia, Francesca Managò, Mario Damiano, Alberto Galbusera, Lucy C. Erickson, Davide De Pietri Tonelli, Angelo Bifone, Sotirios A. Tsaftaris, Carlo Caltagirone, Daniel R. Weinberger, Gianfranco Spalletta, Francesco Papaleo
+  venue: Cerebral Cortex
+  date: '2014-03-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1093/cercor/bhu053
+- title: Synthetic Generation of Myocardial Blood–Oxygen-Level-Dependent MRI Time Series Via Structural Sparse Decomposition Modeling
+  authors: Cristian Rusu, Rita Morisi, Davide Boschetto, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2014-03-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tmi.2014.2313000
+- title: Dominant β-catenin mutations cause intellectual disability with recognizable syndromic features
+  authors: Valter Tucci, Tjitske Kleefstra, Andrea Hardy, Ines Heise, Silvia Maggi, Marjolein H. Willemsen, Helen Hilton, Chris Esapa, Michelle Simon, Maria-Teresa Buenavista, Liam J. McGuffin, Lucie Vizor, Luca Dodero, Sotirios A. Tsaftaris, Rosario Romero, Willy N. Nillesen, Lisenka E.L.M. Vissers, Marlies Kempers, Anneke T. Vulto-van Silfhout, Zafar Iqbal, Marta Orlando, Alessandro Maccione, Glenda Lassi, Pasqualina Farisello, Andrea Contestabile, Federico Tinarelli, Thierry Nieus, Andrea Raimondi, Barbara Greco, Daniela Cantatore, Laura Gasparini, Luca Berdondini, Angelo Bifone, Alessandro Gozzi, Sara Wells, Patrick M. Nolan
+  venue: Journal of Clinical Investigation
+  date: '2014-03-09'
+  image: null
+  code: null
+  website: https://doi.org/10.1172/jci70372
+- title: Large-scale analysis of neuroimaging data on commercial clouds with content-aware resource allocation strategies
+  authors: Massimo Minervini, Cristian Rusu, Mario Damiano, Valter Tucci, Angelo Bifone, Alessandro Gozzi, Sotirios A. Tsaftaris
+  venue: The International Journal of High Performance Computing Applications
+  date: '2014-01-17'
+  image: null
+  code: null
+  website: https://doi.org/10.1177/1094342013519483
+- title: A Scientist's Guide to Cloud Computing
+  authors: Sotirios A. Tsaftaris
+  venue: Computing in Science & Engineering
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/mcse.2014.12
+- title: Structured Dictionaries for Ischemia Estimation in Cardiac BOLD MRI at Rest
+  authors: Cristian Rusu, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-319-10470-6_70
+- title: Probing myocardial blood oxygenation reserve with controlled hypercapnia using BOLD CMR
+  authors: Hsin‐Jung Yang, Roya Yumul, Richard Tang, Ivan Cokic, Michael A. Klein, Avinash Kali, Olivia Sobczyk, Behzad Sharif, Jun Tang, Xiaoming Bi, Sotirios A. Tsaftaris, Debiao Li, James K. Min, Daniel S. Berman, Antionio Hernandez Conte, Joseph A. Fisher, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-16-s1-o14
+- title: 'Electrical Characteristics of Chronic Iron-Laden Myocardial Infarcts: Initial Study in Canine Hearts'
+  authors: I. Cokic, A. Kali, X. Wang, H. Yang, R.L. Tang, A. Thajudeen, M. Shehata, A.M. Amorn, E. Liu, B. Stewart, N. Bennett, D. Harlev, S.A. Tsaftaris, W.M. Jackman, S.S. Chugh, R. Dharmakumar
+  venue: ISMRM
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: null
+- title: 'Unsupervised Ischemia Detection at Rest with CP-BOLD Cardiac MRI: A Simulation Study Employing Independent Component Analysis'
+  authors: R. Morisi, R. Dharmakumar, S.A. Tsaftaris
+  venue: ISMRM
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: https://archive.ismrm.org/2014/0248.html
+- title: 'Temporal and Spatial Variation of Baseline Myocardial BOLD Signal Intensity in Cardiac Phase-Resolved BOLD MRI: A Potentially Revealing Insight into Dynamic Changes in Myocardial Oxygenation'
+  authors: D. Boschetto, C. Rusu, R. Dharmakumar, S.A. Tsaftaris
+  venue: ISMRM
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: null
+- title: Impact of Chronic Iron Deposition Following Myocardial Infarction on Gross Electrical Characteristics
+  authors: I. Cokic, Kali A, Yang H, Tang RL, S.A. Tsaftaris, R. Dharmakumar
+  venue: HRS
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: null
+- title: Assessment of Controlled Iso-Oxic Hypercapnic Stimulation of Myocardial Blood Flow using Oxygen Dependent Cardiac Magnetic Resonance Imaging
+  authors: H. Yang, R. Yumul, R.L. Tang, I. Cokic, M. Klein, A. Kali, O. Sobczyk, B. Sharif, J. Tang, X. Bi, S.A. Tsaftaris, D. Li, J. Min, D.S. Berman, A.H. Conte, J. Fisher, R. Dharmakumar
+  venue: ACC
+  date: '2014-01-01'
+  image: null
+  code: null
+  website: https://core.ac.uk/download/pdf/82754605.pdf
+- title: Explicit Shift-Invariant Dictionary Learning
+  authors: Cristian Rusu, Bogdan Dumitrescu, Sotirios A. Tsaftaris
+  venue: IEEE Signal Processing Letters
+  date: '2013-11-05'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/lsp.2013.2288788
+- title: 'A novel visualization tool for art history and conservation: Automated colorization of black and white archival photographs of works of art'
+  authors: Sotirios A. Tsaftaris, Francesca Casadio, Jean-Louis Andral, Aggelos K. Katsaggelos
+  venue: Studies in Conservation
+  date: '2013-10-24'
+  image: null
+  code: null
+  website: https://doi.org/10.1179/2047058413y.0000000104
+- title: 'Iron Deposition following Chronic Myocardial Infarction as a Substrate for Cardiac Electrical Anomalies: Initial Findings in a Canine Model'
+  authors: Ivan Cokic, Avinash Kali, Xunzhang Wang, Hsin-Jung Yang, Richard Tang, Anees Thajudeen, Michael Shehata, Allen M. Amorn, Enzhao Liu, Brian D. Stewart, Nathan Bennett, Doron Harlev, Sotirios A. Tsaftaris, Warren M. Jackman, Sumeet S. Chugh, Rohan Dharmakumar
+  venue: PLoS ONE
+  date: '2013-09-16'
+  image: null
+  code: null
+  website: https://doi.org/10.1371/journal.pone.0073193
+- title: Estimation of scribble placement for painting colorization
+  authors: Cristian Rusu, Sotirios A. Tsaftaris
+  venue: 2013 8th International Symposium on Image and Signal Processing and Analysis (ISPA)
+  date: '2013-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ispa.2013.6703804
+- title: Learning computationally efficient approximations of complex image segmentation metrics
+  authors: Massimo Minervini, Cristian Rusu, Sotirios A. Tsaftaris
+  venue: 2013 8th International Symposium on Image and Signal Processing and Analysis (ISPA)
+  date: '2013-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ispa.2013.6703715
+- title: Image-based plant phenotyping with incremental learning and active contours
+  authors: Massimo Minervini, Mohammed M. Abdelsamea, Sotirios A. Tsaftaris
+  venue: Ecological Informatics
+  date: '2013-08-06'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.ecoinf.2013.07.004
+- title: Active contour model driven by Globally Signed Region Pressure Force
+  authors: Mohammed M. Abdelsamea, Sotirios A. Tsaftaris
+  venue: 2013 18th International Conference on Digital Signal Processing (DSP)
+  date: '2013-07-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icdsp.2013.6622691
+- title: Application-aware image compression for low cost and distributed plant phenotyping
+  authors: Massimo Minervini, Sotirios A. Tsaftaris
+  venue: 2013 18th International Conference on Digital Signal Processing (DSP)
+  date: '2013-07-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icdsp.2013.6622670
+- title: Application-Aware Approach to Compression and Transmission of H.264 Encoded Video for Automated and Centralized Transportation Surveillance
+  authors: Zhaofu Chen, Sotirios A. Tsaftaris, Eren Soyak, Aggelos K. Katsaggelos
+  venue: IEEE Transactions on Intelligent Transportation Systems
+  date: '2013-06-20'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tits.2013.2266861
+- title: Chronic Manifestation of Postreperfusion Intramyocardial Hemorrhage as Regional Iron Deposition
+  authors: Avinash Kali, Andreas Kumar, Ivan Cokic, Richard Tang, Sotirios A. Tsaftaris, Matthias G. Friedrich, Rohan Dharmakumar
+  venue: Circulation Cardiovascular Imaging
+  date: '2013-02-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1161/circimaging.112.000133
+- title: Acute reperfusion intramyocardial hemorrhage leads to regional chronic iron deposition in the heart
+  authors: Avinash Kali, Ivan Cokic, Andreas Kumar, Sotirios A. Tsaftaris, Richard Tang, Matthias G. Friedrich, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-15-s1-p174
+- title: Point Light Source Estimation based on Scenes Recorded by a RGB-D camera
+  authors: Bas Boom, Sergio Orts‐Escolano, Ning Xi, Steven McDonagh, Peter Sandilands, Robert B. Fisher
+  venue: Procedings of the British Machine Vision Conference 2013
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.5244/c.27.105
+- title: Simultaneous registration of multi-view range images with adaptive kernel density estimation
+  authors: Bob Fisher, Steven McDonagh
+  venue: Edinburgh Research Explorer (University of Edinburgh)
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2607852527
+- title: British Machine Vision Conference, Bristol, 2013
+  authors: Bastiaan J. Boom, Sergio Orts‐Escolano, Xin Ning, Steven McDonagh, Peter Sandilands, B. Aubrey Fisher
+  venue: null
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2720768003
+- title: Neuroimaging Evidence of Major Morpho-Anatomical and Functional Abnormalities in the BTBR T+TF/J Mouse Model of Autism
+  authors: L. Dodero, M. Damiano, S.A. Tsaftaris, A. Galbusera, A. Bifone, M. L. Scattoni, A. Gozzi
+  venue: PLoS One, vol. 8, no. 10, pp. 76655
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0076655
+- title: Chronic Manifestation of Post-Reperfusion Intramyocardial Hemorrhage as Regional Iron Deposition - A Cardiovascular MR Study with Ex-vivo Validation
+  authors: A. Kali, A. Kumar, I. Cokic, R. Yang, S.A. Tsaftaris, R. Tang, D. Li, M.G. Friedrich, R. Dharmakumar
+  venue: Circulation Cardiovascular Imaging, vol. 6, no. 2, pp. 218-228
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://www.ahajournals.org/doi/10.1161/circimaging.112.000133
+- title: Detecting Myocardial Ischemia at Rest with Cardiac Phase-Resolved BOLD CMR
+  authors: S.A. Tsaftaris, X. Zhou, R. Tang, D. Li, R. Dharmakumar
+  venue: Circulation Cardiovascular Imaging, vol. 6, no. 2, pp. 311-319
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://www.ahajournals.org/doi/full/10.1161/circimaging.112.976076
+- title: 'Acute Hemorrhagic Myocardial Infarction Leads to Localized Chronic Iron Deposition: A CMR Study'
+  authors: A. Kali, I. Cokic, A. Kumar, S.A. Tsaftaris, R. Tang, M. Friedrich, R. Dharmakumar
+  venue: ISMRM
+  date: '2013-01-01'
+  image: null
+  code: null
+  website: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3559768/
+- title: Detecting Myocardial Ischemia at Rest With Cardiac Phase–Resolved Blood Oxygen Level–Dependent Cardiovascular Magnetic Resonance
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Debiao Li, Rohan Dharmakumar
+  venue: Circulation Cardiovascular Imaging
+  date: '2012-12-19'
+  image: null
+  code: null
+  website: https://doi.org/10.1161/circimaging.112.976076
+- title: 'Chronic Iron Deposition following Acute Hemorrhagic Myocardial Infarction: A Cardiovascular Magnetic Resonance Study'
+  authors: Avinash Kali, Andreas Kumar, Ivan Cokic, Richard Tang, Sotirios A. Tsaftaris, Matthias G. Friedrich, Rohan Dharmakumar
+  venue: Circulation
+  date: '2012-11-20'
+  image: null
+  code: null
+  website: https://openalex.org/W175116518
+- title: 'Abstract 10912: Chronic Iron Deposition following Acute Hemorrhagic Myocardial Infarction: A Cardiovascular Magnetic Resonance Study'
+  authors: Avinash Kali, Andreas Kumar, Ivan Cokic, Richard Tang, Sotirios A. Tsaftaris, Matthias G. Friedrich, Rohan Dharmakumar
+  venue: Circulation
+  date: '2012-11-20'
+  image: null
+  code: null
+  website: https://openalex.org/W2275174001
+- title: Mouse neuroimaging phenotyping in the cloud
+  authors: Massimo Minervini, Mario Damiano, Valter Tucci, Angelo Bifone, Alessandro Gozzi, Sotirios A. Tsaftaris
+  venue: 2012 3rd International Conference on Image Processing Theory, Tools and Applications (IPTA)
+  date: '2012-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/ipta.2012.6469527
+- title: Tracking-Optimal Error Control Schemes For H.264 Compressed Video For Vehicle Surveillance
+  authors: Zhaofu Chen, Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: European Signal Processing Conference
+  date: '2012-08-27'
+  image: null
+  code: null
+  website: https://doi.org/10.5281/zenodo.43203
+- title: Ischemic extent as a biomarker for characterizing severity of coronary artery stenosis with blood oxygen‐sensitive MRI
+  authors: Sotirios A. Tsaftaris, Richard Tang, Xiangzhi Zhou, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Magnetic Resonance Imaging
+  date: '2012-01-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/jmri.23577
+- title: European Signal Processing Conference
+  authors: Zhaofu Chen, Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: European Signal Processing Conference
+  date: '2012-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3143218145
+- title: Myocardial Blood-Oxygen-Level-Dependent Magnetic Resonance Imaging with Balanced Steady-State Free Precession Imaging Approaches
+  authors: R. Dharmakumar, S.A. Tsaftaris, D. Li
+  venue: The Open Medical Imaging Journal, vol. 6, pp. 31-38
+  date: '2012-01-01'
+  image: null
+  code: null
+  website: https://benthamopen.com/ABSTRACT/TOMIJ-6-31
+- title: Detecting ACS and Identifying Acute Ischemic Territories with Cardiac Phase-Resolved BOLD MRI at Rest
+  authors: S.A. Tsaftaris, X. Zhou, R. Tang, J. Min, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2012-01-01'
+  image: null
+  code: null
+  website: https://cds.ismrm.org/protected/12MProceedings/files/0153.pdf
+- title: Detecting Myocardial Ischemic Territories in the Setting of Acute Coronary Obstructions at Rest with Cardiac Phase-Resolved Blood Oxygen Level Dependent (CP-BOLD) MRI
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Debiao Li, Rohan Dharmakumar
+  venue: Circulation
+  date: '2011-11-22'
+  image: null
+  code: null
+  website: https://openalex.org/W128369899
+- title: 'Abstract 9203: Detecting Myocardial Ischemic Territories in the Setting of Acute Coronary Obstructions at Rest with Cardiac Phase-Resolved Blood Oxygen Level Dependent (CP-BOLD) MRI'
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Debiao Li, Rohan Dharmakumar
+  venue: Circulation
+  date: '2011-11-22'
+  image: null
+  code: null
+  website: https://doi.org/10.1161/circ.124.suppl_21.a9203
+- title: Channel protection for H.264 compression in transportation video surveillance applications
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2011 18th IEEE International Conference on Image Processing
+  date: '2011-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2011.6116082
+- title: Tracking-optimized quantization for H.264 compression in transportation video surveillance applications
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2011 18th IEEE International Conference on Image Processing
+  date: '2011-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2011.6115739
+- title: Low-Complexity Tracking-Aware H.264 Video Compression for Transportation Surveillance
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: IEEE Transactions on Circuits and Systems for Video Technology
+  date: '2011-08-15'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tcsvt.2011.2163448
+- title: Colorizing a Masterpiece [Applications Corner]
+  authors: Sotirios A. Tsaftaris, Kristin Lister, Inge Fiedler, Francesca Casadio, Aggelos K. Katsaggelos
+  venue: IEEE Signal Processing Magazine
+  date: '2011-04-26'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/msp.2011.940408
+- title: 'T<sub>2</sub>‐weighted STIR imaging of myocardial edema associated with ischemia‐reperfusion injury: The influence of proton density effect on image contrast'
+  authors: Xiangzhi Zhou, Veronica Rundell, Ying Liu, Richard Tang, Rachel Klein, Saurabh Shah, Sven Zuehlsdorff, Sotirios A. Tsaftaris, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Magnetic Resonance Imaging
+  date: '2011-03-29'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/jmri.22456
+- title: An area-based imaging biomarker for characterizing coronary artery stenosis with myocardial BOLD MRI
+  authors: Sotirios A. Tsaftaris, Richard Tang, Xiangzhi Zhou, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2011-02-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-13-s1-o22
+- title: A fully-automated statistical method for characterization of flow artifact presence in cardiac MRI
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2011-02-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-13-s1-p45
+- title: 2011 18TH IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING (ICIP)
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: International Conference on Image Processing
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W3146151427
+- title: Low-Complexity Video Compression for Automated Transportation Surveillance
+  authors: E. Soyak, S.A. Tsaftaris, A. K. Katsaggelos
+  venue: IEEE Transactions on Circuits and Systems for Video Technology, vol. 21, no. 10, pp. 1378-1389
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5971775&tag=1
+- title: 'T2-weighted STIR Imaging of Myocardial Edema Associated with Ischemia-Reperfusion Injury: The Influence of Proton Density Effect on Image Contrast'
+  authors: X. Zhou, V. Rundell, Y. Liu, R. Tang, R. Klein, S. Shah, S. Zuehlsdorff, S.A. Tsaftaris, D. Li, R. Dharmakumar
+  venue: Journal of Magnetic Resonance Imaging, vol. 33, no. 4, pp. 962-967
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: https://onlinelibrary.wiley.com/doi/full/10.1002/jmri.22456
+- title: 'La Joie De Vivre: The Evolution of a Masterpiece'
+  authors: S.A. Tsaftaris, F. Casadio, G. Gautier, J.-L. Andral, A.K. Katsaggelos
+  venue: Picasso Express, J.L. Andral, -01-01
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: null
+- title: 'PHIDIAS: Plant Phenotyping with a High-throughput, Intelligent, Distributed, and Integrated Analysis System'
+  authors: S.A. Tsaftaris
+  venue: IPPS
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: null
+- title: An Area-based Imaging Biomarker for the Characterization of Coronary Artery Stenosis with Blood Oxygen-Sensitive MRI
+  authors: S.A. Tsaftaris, R. Tang, X. Zhou, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: https://pdfs.semanticscholar.org/7d78/e54123c7fc83f326e1df8de95d2adbc3ee14.pdf
+- title: 'Detecting Myocardial Ischemia at Rest with Cardiac Phase-Resolved BOLD MRI: Early Findings'
+  authors: S.A. Tsaftaris, V. Rundell, X. Zhou, Y. Liu, R. Tang, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2011-01-01'
+  image: null
+  code: null
+  website: https://www.ahajournals.org/doi/reader/10.1161/CIRCIMAGING.112.976076
+- title: Tracking-optimal pre- and post-processing for H.264 compression in traffic video surveillance applications
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2010 17th IEEE International Conference on Electronics, Circuits and Systems
+  date: '2010-12-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icecs.2010.5724531
+- title: Anomalous video event detection using spatiotemporal context
+  authors: Fan Jiang, Junsong Yuan, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: Computer Vision and Image Understanding
+  date: '2010-11-20'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/j.cviu.2010.10.008
+- title: Video anomaly detection in spatiotemporal context
+  authors: Fan Jiang, Junsong Yuan, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2010 IEEE International Conference on Image Processing
+  date: '2010-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2010.5650993
+- title: Quantization optimized H.264 encoding for traffic video tracking applications
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2010 IEEE International Conference on Image Processing
+  date: '2010-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2010.5652364
+- title: 'iTRAC : intelligent video compression for automated traffic surveillance systems.'
+  authors: Sotirios A. Tsaftaris, Aggelos K Katsaggelo, Eren Soyak
+  venue: null
+  date: '2010-08-01'
+  image: null
+  code: null
+  website: https://openalex.org/W777596755
+- title: Artifact‐reduced two‐dimensional cine steady state free precession for myocardial blood‐ oxygen‐level‐dependent imaging
+  authors: Xiangzhi Zhou, Sotirios A. Tsaftaris, Ying Liu, Richard Tang, Rachel Klein, Sven Zuehlsdorff, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Magnetic Resonance Imaging
+  date: '2010-03-29'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/jmri.22116
+- title: Fully automated reconstruction of ungated ghost magnetic resonance angiograms
+  authors: Sotirios A. Tsaftaris, Erik Offerman, Robert R. Edelman, Ioannis Koktzoglou
+  venue: Journal of Magnetic Resonance Imaging
+  date: '2010-02-25'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/jmri.22092
+- title: Content-aware H.264 encoding for traffic video tracking applications
+  authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2010 IEEE International Conference on Acoustics, Speech and Signal Processing
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icassp.2010.5495044
+- title: On the mechanism of myocardial edema contrast in T2-STIR images
+  authors: Xiangzhi Zhou, Veronica Rundell, Ying Liu, Richard Tang, Rachel Klein, Shivraman Giri, Saurabh Shah, Sotirios A. Tsaftaris, Sven Zuehlsdorff, Orlando P. Simonetti, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-12-s1-o19
+- title: Artifacts-reduced 2D cine SSFP with flow compensation for myocardial BOLD imaging
+  authors: Xiangzhi Zhou, Sotirios A. Tsaftaris, Ying Liu, Richard Tang, Rachel Klein, Sven Zuehlsdorff, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-12-s1-p68
+- title: Automated detection and quantification of microcirculatory oxygenation changes in the heart
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Aggelos K. Katsaggelos, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-12-s1-p216
+- title: Video Traffic Analysis for Abnormal Event Detection
+  authors: Aggelos K. Katsaggelos, Sotirios A. Tsaftaris, Yi Wu
+  venue: null
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W608718930
+- title: Automated synchronization of cardiac phases for myocardial BOLD MRI
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Rachel Klein, Aggelos K. Katsaggelos, Rohan Dharmakumar
+  venue: null
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W93145178
+- title: 'Contribution to Matisse: Radical Invention, 1913 - 1917'
+  authors: S.A. Tsaftaris, A.K. Katsaggelos
+  venue: 'Matisse: Radical Invention, S. D''Alessandro, J. Elderfield, Art Institute of Chicago-01-01'
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: https://yalebooks.yale.edu/book/9780300177244/matisse
+- title: On the origin of myocardial edema contrast in T2-STIR images
+  authors: X. Zhou, V. Rundell, Y. Liu, R. Tang, R. Klein, S. Giri, S. Shah, S.A. Tsaftaris, S. Zuehlsdorff, O. Simonetti, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: Myocardial BOLD imaging using flow compensated 2D cine bSSFP
+  authors: X. Zhou, S.A. Tsaftaris, Y. Liu, R. Tang, R. Klein, S. Zuehlsdorff, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: Unsupervised and Reproducible Image-based Identifi-cation of Cardiac Phases in Cine SSFP MRI
+  authors: S.A. Tsaftaris, X. Zhou, R. Tang, R. Dharmakumar
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: Unsupervised reconstruction for ungated ghost angiography by clustering of image features
+  authors: S.A. Tsaftaris, E. Offerman, R. Edelman, I. Koktzoglou
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: Automated Assessment of Ghost Artifacts in MRI
+  authors: S.A. Tsaftaris, X. Zhou, R. Dharmakumar
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: A New Quantitative Imaging Biomarker for Identifying Critical Coronary Artery Stenosis with Myocardial BOLD MRI
+  authors: S.A. Tsaftaris, X. Zhou, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2010-01-01'
+  image: null
+  code: null
+  website: null
+- title: Dual-Contrast Cellular Magnetic Resonance Imaging
+  authors: Rohan Dharmakumar, Zhouli Zhang, Ioannis Koktzoglou, Sotirios A. Tsaftaris, Debiao Li
+  venue: Molecular Imaging
+  date: '2009-09-01'
+  image: null
+  code: null
+  website: https://doi.org/10.2310/7290.2009.00024
+- title: Retrieval Efficiency of DNA-Based Databases of Digital Signals
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: IEEE Transactions on NanoBioscience
+  date: '2009-07-15'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tnb.2009.2026371
+- title: Plant Phenotyping with Low Cost Digital Cameras and Image Analytics
+  authors: Sotirios A. Tsaftaris, Christos Noutsos
+  venue: Environmental science and engineering
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-540-88351-7_18
+- title: Visualizing regional myocardial oxygenation changes with statistically optimal colormaps
+  authors: Sotirios A. Tsaftaris, Richard Tang, Rachel Klein, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-11-s1-p276
+- title: Impact of temporal resolution on cardiac phase-resolved oxygen-sensitive myocardial steady-state free precession imaging
+  authors: Xiangzhi Zhou, Richard Tang, Rachel Klein, Sotirios A. Tsaftaris, Debiao Li, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-11-s1-p178
+- title: An automated method for left ventricular localization and identification of end-systolic and end-diastolic images from cine cardiac MRI
+  authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Rachel Klein, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-11-s1-p222
+- title: Dual Contrast Cellular MRI
+  authors: R. Dharmakumar, Z. Zhang, I. Koktzoglou, S.A. Tsaftaris, D. Li
+  venue: Molecular Imaging, vol. 8, no. 5, pp. 254-63
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://journals.sagepub.com/doi/pdf/10.2310/7290.2009.00024
+- title: 'Visualization and Tracking of a Conventional Guidewire with Low Flip Angle SSFP Imaging: An Initial Study'
+  authors: R. Dharmakumar, I. Koktzoglou, S.A. Tsaftaris, S. Zuehlsdorff, R. Tang, G. Wright, D. Li
+  venue: ISMRM
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://cds.ismrm.org/protected/09MProceedings/files/02571.pdf
+- title: Visualizing and Quantifying Myocardial Oxyge-nation Changes with Statistically Optimal Colormaps
+  authors: S.A. Tsaftaris, R. Tang, R. Klein, D. Li, R. Dharmakumar
+  venue: ISMRM
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: https://cds.ismrm.org/protected/09MProceedings/files/03759.pdf
+- title: An Intensity Based Statistical Approach for Left Ventricular Localization and Identification of End-Systolic and End-Diastolic Images from Cine Cardiac MRI
+  authors: S.A. Tsaftaris, X. Zhou, R. Tang, R. Klein, R. Dharmakumar
+  venue: ISMRM
+  date: '2009-01-01'
+  image: null
+  code: null
+  website: null
+- title: Secure Judicial Communication Exchange Using Soft-computing Methods and Biometric Authentication
+  authors: Mauro Cislaghi, George Eleftherakis, Roberto Mazzilli, François Mohier, Sara Ferri, Mario Valerio Giuffrida, Elisa Negroni
+  venue: Advances in soft computing
+  date: '2008-10-20'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/978-3-540-88181-0_2
+- title: '2097 Automated tracking of a passive intramyocardial needle with off-resonance mri: a feasibility study'
+  authors: Ioannis Koktzoglou, Sotirios A. Tsaftaris, Debiao Li, Aggelos K. Katsaggelos, Rohan Dharmakumar
+  venue: Journal of Cardiovascular Magnetic Resonance
+  date: '2008-10-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1186/1532-429x-10-s1-a366
+- title: Restoration of the cantilever bowing distortion in Atomic Force Microscopy images
+  authors: Sotirios A. Tsaftaris, Jana Zujovic, Aggelos K. Katsaggelos
+  venue: http://ivpl.ece.northwestern.edu/system/files/1569105426 (1).pdf
+  date: '2008-08-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2128621032
+- title: Using 3D information for classification of non-melanoma skin lesions
+  authors: Steven McDonagh, Robert B. Fisher, Jonathan Rees
+  venue: Edinburgh Research Explorer (University of Edinburgh)
+  date: '2008-07-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2788392717
+- title: 'Automated tracking of a passive endomyocardial stiletto catheter with dephased FLAPS MRI: a feasibility study'
+  authors: Ioannis Koktzoglou, Sotirios A. Tsaftaris, Sven Zuehlsdorff, Debiao Li, Aggelos K. Katsaggelos, Rohan Dharmakumar
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2008-05-01'
+  image: null
+  code: null
+  website: https://openalex.org/W77370748
+- title: Local feature extraction for video copy detection in a database
+  authors: Ehsan Maani Miandoab, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: 2008 15th IEEE International Conference on Image Processing
+  date: '2008-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2008.4712105
+- title: A dynamic programming solution to tracking and elastically matching left ventricular walls in cardiac cine MRI
+  authors: Sotirios A. Tsaftaris, V. Andermatt, Alexander Schlegel, Aggelos K. Katsaggelos, D. Li, Rohan Dharmakumar
+  venue: 2008 15th IEEE International Conference on Image Processing
+  date: '2008-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2008.4712421
+- title: Automated line flattening of Atomic Force Microscopy images
+  authors: Sotirios A. Tsaftaris, Jana Zujovic, Aggelos K. Katsaggelos
+  venue: 2008 15th IEEE International Conference on Image Processing
+  date: '2008-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2008.4712418
+- title: The Not So Digital Future of Digital Signal Processing [Point of View]
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: Proceedings of the IEEE
+  date: '2008-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/jproc.2007.913496
+- title: 2008 15TH IEEE INTERNATIONAL CONFERENCE ON IMAGE PROCESSING, VOLS 1-5
+  authors: Elisan Maani, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: International Conference on Image Processing
+  date: '2008-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2710269534
+- title: Retrieval Accuracy Of Very Large Dna-Based Databases Of Digital Signals
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2007-09-03'
+  image: null
+  code: null
+  website: https://doi.org/10.5281/zenodo.40521
+- title: DNA Microarray Image Intensity Extraction using Eigenspots
+  authors: Sotirios A. Tsaftaris, Ramandeep Ahuja, D. Shiell, Aggelos K. Katsaggelos
+  venue: 2007 IEEE International Conference on Image Processing
+  date: '2007-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icip.2007.4379572
+- title: DNA Hybridization as a Similarity Criterion for Querying Digital Signals Stored in DNA Databases
+  authors: Sotirios A. Tsaftaris, Vassily Hatzimanikatis, Aggelos K. Katsaggelos
+  venue: 2006 IEEE International Conference on Acoustics Speed and Signal Processing Proceedings
+  date: '2006-08-02'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icassp.2006.1660535
+- title: DNA as a medium for storing digital signals
+  authors: Sotirios A. Tsaftaris, Vassily Hatzimanikati, Aggelos K. Katsaggelos
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2006-08-01'
+  image: null
+  code: null
+  website: https://openalex.org/W46479768
+- title: Joint source-channel coding for wireless object-based video communications utilizing data hiding
+  authors: Haohong Wang, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: IEEE Transactions on Image Processing
+  date: '2006-07-21'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/tip.2006.875194
+- title: <scp>DNA</scp>Sequencing
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: Encyclopedia of Medical Devices and Instrumentation
+  date: '2006-04-04'
+  image: null
+  code: null
+  website: https://doi.org/10.1002/0471732877.emd273
+- title: 'DNA Sequence: Encyclopedia of Medical Devices and Instrumentation'
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos, John G. Webster
+  venue: null
+  date: '2006-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2745355717
+- title: Digital Watermarking for the Copyright Protection of Compressed Video
+  authors: D. Simitopoulos, Sotirios A. Tsaftaris, Nikolaos V. Boulgouris, Georgios Triantafyllidis, M.G. Strintzis
+  venue: Kluwer Academic Publishers eBooks
+  date: '2005-12-30'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/0-306-48718-7_4
+- title: In Silico Estimation of Annealing Specificity of Query Searches in DNA Databases (小特集 DNAコンピューティングの応用とシミュレーション)
+  authors: Sotirios A. Tsaftaris, Vassily Hatzimanikatis, Aggelos K. Katsaggelos
+  venue: Medical Entomology and Zoology
+  date: '2005-12-15'
+  image: null
+  code: null
+  website: https://openalex.org/W648087873
+- title: In silico estimation of annealing specificity of query searches in DNA databases
+  authors: Sotirios A. Tsaftaris, Vassily Hatzimanikati, Aggelos K. Katsaggelos
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2005-12-01'
+  image: null
+  code: null
+  website: https://openalex.org/W1496886314
+- title: On Designing DNA Databases for the Storage and Retrieval of Digital Signals
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  venue: Lecture notes in computer science
+  date: '2005-01-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1007/11539117_160
+- title: How can DNA computing be applied to digital signal processing?
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos, Thrasyvoulos N. Pappas, Eleftherios T. Papoutsakis
+  venue: IEEE Signal Processing Magazine
+  date: '2004-11-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/msp.2004.1359142
+- title: DNA-based matching of digital signals
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos, Thrasyvoulos N. Pappas, T.E. Papoutsakis
+  venue: 2004 IEEE International Conference on Acoustics, Speech, and Signal Processing
+  date: '2004-09-28'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icassp.2004.1327177
+- title: Life sciences - DNA computing from a signal processing viewpoint
+  authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos, Thrasyvoulos N. Pappas, Eleftherios T. Papoutsakis
+  venue: IEEE Signal Processing Magazine
+  date: '2004-08-31'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/msp.2004.1328093
+- title: Fast Watermarking of MPEG-1/2 Streams Using Compressed-Domain Perceptual Embedding and a Generalized Correlator Detector
+  authors: D. Simitopoulos, Sotirios A. Tsaftaris, Nikolaos V. Boulgouris, Alexia Briassouli, M.G. Strintzis
+  venue: EURASIP Journal on Advances in Signal Processing
+  date: '2004-07-08'
+  image: null
+  code: null
+  website: https://doi.org/10.1155/s1110865704402029
+- title: Compressed-domain video watermarking of MPEG streams
+  authors: D. Simitopoulos, Sotirios A. Tsaftaris, Nikolaos V. Boulgouris, M.G. Strintzis
+  venue: Proceedings. IEEE International Conference on Multimedia and Expo
+  date: '2003-06-25'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/icme.2002.1035845
+- title: Digital watermarking of MPEG-1 and MPEG-2 multiplexed streams for copyright protection
+  authors: S. Simitopoulos, Sotirios A. Tsaftaris, N.V. Boulgouris, M.G. Strintzis
+  venue: Proceedings Second International Workshop on Digital and Computational Video
+  date: '2002-11-13'
+  image: null
+  code: null
+  website: https://doi.org/10.1109/dcv.2001.929953
+- title: Fast MPEG watermarking for copyright protection
+  authors: D. Simitopoulos, Sotirios A. Tsaftaris, Nikos Boulgouris, M.G. Strintzis
+  venue: Research Portal (King's College London)
+  date: '2002-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2611844842
+- title: IEEE INTERNATIONAL CONFERENCE ON MULTIMEDIA AND EXPO, VOL I AND II, PROCEEDINGS
+  authors: D Simitopoulos, Sotirios A. Tsaftaris, NV Boulgouris, M G Strintzis
+  venue: International Conference on Multimedia and Expo
+  date: '2002-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W2649858108
+- title: Fast compressed domain watermarking of MPEG multiplexed streams
+  authors: Simitopoulos, Dimitrios, Sotirios A. Tsaftaris, Nikolaos V. Boulgouris, M.G. Strintzis
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
+  date: '2001-01-01'
+  image: null
+  code: null
+  website: https://openalex.org/W5821827
+- title: Multidisciplinary assessment of transgenic crop plants
+  authors: Heikki Hokkanen, Sotirios A. Tsaftaris
+  venue: Field Crops Research
+  date: '1996-05-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1016/0378-4290(96)00005-6
+- title: Molecular aspects of heterosis in plants
+  authors: Sotirios A. Tsaftaris
+  venue: Physiologia Plantarum
+  date: '1995-06-01'
+  image: null
+  code: null
+  website: https://doi.org/10.1111/j.1399-3054.1995.tb05324.x
