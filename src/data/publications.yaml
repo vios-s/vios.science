@@ -2,21 +2,21 @@
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: ArXiv.org
   date: '2026-02-14'
-  image: '/assets/images/papers/jun_2025_melba.png'
+  image: null
   code: null
   website: https://openalex.org/W7130236575
 - title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
   authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Daguang Xu
   venue: ArXiv.org
   date: '2026-02-12'
-  image: '/assets/images/papers/feng_2025_wacv.png'
+  image: null
   code: null
   website: https://openalex.org/W7128865271
 - title: Exocentric-to-Egocentric Adaptation for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs
   authors: Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida, Giovanni Maria Farinella
   venue: International Journal of Computer Vision
   date: '2026-02-06'
-  image: '/assets/images/papers/yuyang_2025_bmvc.png'
+  image: null
   code: null
   website: https://doi.org/10.1007/s11263-025-02675-1
 - title: A Conversational Multi-Agent AI System for Automated Plant Phenotyping Author Information
@@ -111,7 +111,7 @@
   code: null
   website: https://doi.org/10.48550/arxiv.2509.03170
 - title: A Shift in Perspective on Causality in Domain Generalization
-  authors: Damian Machlanski, Sarah Riley, Edward Moroshko, Kurt Butler, Panagiotis Dimitrakopoulos, Θωμάς Μελίστας, Akchunya Chanchal, Steven McDonagh, Ricardo Silva, Sotirios A. Tsaftaris
+  authors: Damian Machlanski, Stephanie Riley, Edward Moroshko, Kurt Butler, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Steven McDonagh, Ricardo Silva, Sotirios A. Tsaftaris
   venue: arXiv (Cornell University)
   date: '2025-08-18'
   image: null
@@ -146,7 +146,7 @@
   code: null
   website: https://openalex.org/W4415343510
 - title: Causally Steered Diffusion for Automated Video Counterfactual Generation
-  authors: N. M. Spyrou, Athanasios Vlontzos, Paraskevas Pegios, Θωμάς Μελίστας, Nefeli Gkouti, Yannis Panagakis, Giorgos Papanastasiou, Sotirios A. Tsaftaris
+  authors: N. M. Spyrou, Athanasios Vlontzos, Paraskevas Pegios, Thomas Melistas, Nefeli Gkouti, Yannis Panagakis, Giorgos Papanastasiou, Sotirios A. Tsaftaris
   venue: arXiv (Cornell University)
   date: '2025-06-17'
   image: null
@@ -461,7 +461,7 @@
   code: null
   website: https://doi.org/10.1007/978-3-031-52448-6_40
 - title: Benchmarking Counterfactual Image Generation
-  authors: Nefeli Gkouti, Θωμάς Μελίστας, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, N. M. Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
+  authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, N. M. Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
   image: null
