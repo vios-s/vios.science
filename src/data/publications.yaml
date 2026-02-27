@@ -54,6 +54,13 @@
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2512.10939
+- title: Causal Ordering for Structure Learning from Time Series
+  authors: Pedro Sanchez, Damian Machlanski, Steven McDonagh, Sotirios A. Tsaftaris
+  venue: Transactions on Machine Learning Research
+  date: '2025-12-07'
+  image: null
+  code: null
+  website: https://openreview.net/forum?id=hWuTzqggSd
 - title: 'A model predictive control framework with customer-priority tiers for virtual power plant resilience during extreme weather: A UK heatwave case study'
   authors: Edward Moroshko, Wenxing Qin, Desen Kırlı, Mohammed H. Qais, Sotirios A. Tsaftaris, Aristides Kiprakis
   venue: arXiv (Cornell University)
