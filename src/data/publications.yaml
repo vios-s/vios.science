@@ -1,10 +1,3 @@
-- title: Rethinking Chronological Causal Discovery with Signal Processing
-  authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
-  venue: ArXiv.org
-  date: '2026-02-23'
-  image: null
-  code: null
-  website: https://openalex.org/W7131319877
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: ArXiv.org
@@ -478,7 +471,7 @@
   authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
-  image: null
+  image: '/assets/images/papers/thomas_2024_nips.png'
   code: null
   website: https://doi.org/10.52202/079017-4233
 - title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
