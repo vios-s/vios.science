@@ -1,3 +1,10 @@
+- title: Rethinking Chronological Causal Discovery with Signal Processing
+  authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
+  venue: ArXiv.org
+  date: '2026-02-23'
+  image: null
+  code: null
+  website: https://openalex.org/W7131319877
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: ArXiv.org
@@ -128,7 +135,7 @@
   authors: Junyu Yan, Feng Chen, Yuyang Xue, Yuning Du, Konstantinos Vilouras, Sotirios A. Tsaftaris, Steven McDonagh
   venue: The Journal of Machine Learning for Biomedical Imaging
   date: '2025-08-14'
-  image: '/assets/images/papers/jun_2025_melba.png'
+  image: /assets/images/papers/jun_2025_melba.png
   code: null
   website: https://doi.org/10.59275/j.melba.2025-de23
 - title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
@@ -212,7 +219,7 @@
   authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
   date: '2025-02-26'
-  image: '/assets/images/papers/feng_2025_wacv.png'
+  image: /assets/images/papers/feng_2025_wacv.png
   code: null
   website: https://doi.org/10.1109/wacv61041.2025.00126
 - title: 'MemControl: Mitigating Memorization in Diffusion Models via Automated Parameter Selection'
@@ -261,7 +268,7 @@
   authors: Yuyang Xue, Edward Moroshko, Feng Chen, Steven McDonagh, Sotirios A Tsaftaris
   venue: BMVC
   date: '2025-01-01'
-  image: '/assets/images/papers/yuyang_2025_bmvc.png'
+  image: /assets/images/papers/yuyang_2025_bmvc.png
   code: null
   website: https://arxiv.org/abs/2503.14232
 - title: 'There are no shortcuts to anywhere worth going: identifying shortcuts in deep learning models for medical image analysis'
@@ -471,7 +478,7 @@
   authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
-  image: '/assets/images/papers/thomas_2024_nips.png'
+  image: /assets/images/papers/thomas_2024_nips.png
   code: null
   website: https://doi.org/10.52202/079017-4233
 - title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
