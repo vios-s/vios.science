@@ -1,20 +1,20 @@
 - title: Rethinking Chronological Causal Discovery with Signal Processing
   authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
-  venue: ArXiv.org
+  venue: arXiv
   date: '2026-02-23'
   image: null
   code: null
   website: https://openalex.org/W7131319877
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
-  venue: ArXiv.org
+  venue: arXiv
   date: '2026-02-14'
   image: null
   code: null
   website: https://openalex.org/W7130236575
 - title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
   authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Sotirios A. Tsaftaris
-  venue: ArXiv.org
+  venue: arXiv
   date: '2026-02-12'
   image: null
   code: null
@@ -49,7 +49,7 @@
   website: https://doi.org/10.1016/j.compmedimag.2025.102688
 - title: 'GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting'
   authors: Madhav Agarwal, Ming‐Tian Zhang, Laura Sevilla-Lara, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-12-11'
   image: null
   code: null
@@ -63,7 +63,7 @@
   website: https://openreview.net/forum?id=hWuTzqggSd
 - title: 'A model predictive control framework with customer-priority tiers for virtual power plant resilience during extreme weather: A UK heatwave case study'
   authors: Edward Moroshko, Wenxing Qin, Desen Kırlı, Mohammed H. Qais, Sotirios A. Tsaftaris, Aristides Kiprakis
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-11-27'
   image: null
   code: null
@@ -105,7 +105,7 @@
   website: https://doi.org/10.48550/arxiv.2509.24798
 - title: 'Rethinking Inter-LoRA Orthogonality in Adapter Merging: Insights from Orthogonal Monte Carlo Dropout'
   authors: Andi Zhang, X. X. Ding, Haofan Wang, Steven McDonagh, Samuel Kaski
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-09-26'
   image: null
   code: null
@@ -119,14 +119,14 @@
   website: https://doi.org/10.1109/icipw68931.2025.11385949
 - title: 'Count2Density: Crowd Density Estimation without Location-level Annotations'
   authors: Mattia Litrico, Feng Chen, Michael P. Pound, Sotirios A. Tsaftaris, Sebastiano Battiato, Mario Valerio Giuffrida
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-09-03'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2509.03170
 - title: A Shift in Perspective on Causality in Domain Generalization
   authors: Damian Machlanski, Stephanie Riley, Edward Moroshko, Kurt Butler, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Steven McDonagh, Ricardo Silva, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-08-18'
   image: null
   code: null
@@ -140,35 +140,35 @@
   website: https://doi.org/10.59275/j.melba.2025-de23
 - title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
   authors: Mattia Litrico, Mario Valerio Giuffrida, Sebastiano Battiato, Devis Tuia
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-08-08'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2508.06452
 - title: No time to train! Training-Free Reference-Based Instance Segmentation
   authors: Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-07-03'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2507.02798
 - title: 'Concept-based Adversarial Attack: a Probabilistic Perspective'
   authors: Andi Zhang, X. X. Ding, Steven McDonagh, Samuel Kaski
-  venue: ArXiv.org
+  venue: arXiv
   date: '2025-06-30'
   image: null
   code: null
   website: https://openalex.org/W4415343510
 - title: Causally Steered Diffusion for Automated Video Counterfactual Generation
   authors: Nikos Spyrou, Athanasios Vlontzos, Paraskevas Pegios, Thomas Melistas, Nefeli Gkouti, Yannis Panagakis, Giorgos Papanastasiou, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-06-17'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2506.14404
 - title: Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models
   authors: Konstantinos Vilouras, Ilias Stogiannidis, Junyu Yan, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-06-12'
   image: null
   code: null
@@ -189,7 +189,7 @@
   website: https://doi.org/10.1007/s00371-025-03960-3
 - title: 'CheXGenBench: A Unified Benchmark For Fidelity, Privacy and Utility of Synthetic Chest Radiographs'
   authors: Raman Dutt, Pedro L. Sánchez, Yao Yao, Steven McDonagh, Sotirios A. Tsaftaris, Timothy M. Hospedales
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-05-15'
   image: null
   code: null
@@ -203,14 +203,14 @@
   website: https://doi.org/10.21203/rs.3.rs-6430233/v1
 - title: Active Sampling for MRI-based Sequential Decision Making
   authors: Yuning Du, Jingshuai Liu, Rohan Dharmakumar, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-05-07'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2505.04586
 - title: Exploiting Mixture-of-Experts Redundancy Unlocks Multimodal Generative Abilities
   authors: Raman Dutt, Harleen Hanspal, Guoxuan Xia, Petru-Daniel Tudosiu, Alexander Black, Yongxin Yang, Steven McDonagh, Sarah Parisot
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2025-03-28'
   image: null
   code: null
@@ -257,7 +257,7 @@
   image: null
   code: null
   website: https://doi.org/10.1109/access.2025.3553422
-- title: A Simple Approach to Pavement Cell Segmentation
+- title: A Simple Approach to Pavement Cell Segmentation
   authors: Rostislav Shepel, Andrés Romanowski, Mario Valerio Giuffrida
   venue: Lecture notes in computer science
   date: '2025-01-01'
@@ -301,7 +301,7 @@
   website: https://doi.org/10.1109/taslp.2024.3507565
 - title: There is no SAMantics! Exploring SAM as a Backbone for Visual Understanding Tasks
   authors: Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-11-22'
   image: null
   code: null
@@ -320,7 +320,7 @@
   image: /assets/images/papers/kostas_2025_jbhi.png
   code: https://github.com/vios-s/ldm-phrase-grounding
   website: https://doi.org/10.1109/jbhi.2024.3494246
-- title: 'Synchronization Is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs'
+- title: 'Synchronization Is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs'
   authors: Camillo Quattrocchi, Antonino Furnari, Daniele Di Mauro, Mario Valerio Giuffrida, Giovanni Maria Farinella
   venue: Lecture notes in computer science
   date: '2024-11-02'
@@ -329,19 +329,19 @@
   website: https://doi.org/10.1007/978-3-031-73220-1_15
 - title: Capacity Control is an Effective Memorization Mitigation Mechanism in Text-Conditional Diffusion Models
   authors: Raman Dutt, Pedro P. Sanchez, Ondrej Bohdal, Sotirios A. Tsaftaris, Timothy M. Hospedales
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-10-29'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2410.22149
-- title: 'All You Need Is a Guiding Hand: Mitigating Shortcut Bias in Deep Learning Models for Medical Imaging'
+- title: 'All You Need Is a Guiding Hand: Mitigating Shortcut Bias in Deep Learning Models for Medical Imaging'
   authors: Christopher Boland, Owen Anderson, Keith A. Goatman, John H. Hipwell, Sotirios A. Tsaftaris, Sonia Dahdouh
   venue: Lecture notes in computer science
   date: '2024-10-12'
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-72787-0_7
-- title: 'BMFT: Achieving Fairness via Bias-Based Weight Masking Fine-Tuning'
+- title: 'BMFT: Achieving Fairness via Bias-Based Weight Masking Fine-Tuning'
   authors: Yuyang Xue, Junyu Yan, Raman Dutt, Fasih Haider, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2024-10-12'
@@ -350,12 +350,12 @@
   website: https://doi.org/10.1007/978-3-031-72787-0_10
 - title: Improving Object Detection via Local-global Contrastive Learning
   authors: Danai Triantafyllidou, Sarah Parisot, Aleš Leonardis, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-10-07'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2410.05058
-- title: 'CROCODILE: Causality Aids RObustness via COntrastive DIsentangled LEarning'
+- title: 'CROCODILE: Causality Aids RObustness via COntrastive DIsentangled LEarning'
   authors: Gianluca Carloni, Sotirios A. Tsaftaris, Sara Colantonio
   venue: Lecture notes in computer science
   date: '2024-10-02'
@@ -371,7 +371,7 @@
   website: https://doi.org/10.1109/icip51287.2024.10647352
 - title: Surgical Task Automation Using Actor-Critic Frameworks and Self-Supervised Imitation Learning
   authors: Jingshuai Liu, Alain Andrés, Yonghang Jiang, Xichun Luo, Wenmiao Shu, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-09-04'
   image: null
   code: null
@@ -399,21 +399,21 @@
   website: https://doi.org/10.1109/isbi56570.2024.10635766
 - title: 'Erase to Enhance: Data-Efficient Machine Unlearning in MRI Reconstruction'
   authors: Yuyang Xue, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-05-24'
   image: /assets/images/papers/xue_2024_midl.png
   code: https://github.com/vios-s/Erase-to-Enhance-MRI-Recon-Unlearning
   website: https://doi.org/10.48550/arxiv.2405.15517
 - title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
   authors: Mattia Litrico, Davide Talon, Sebastiano Battiato, Alessio Del Bue, Mario Valerio Giuffrida, Pietro Morerio
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-04-16'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2404.10574
 - title: Boosting Few-Shot Learning with Disentangled Self-Supervised Learning and Meta-Learning for Medical Image Classification
   authors: Eva Pachetti, Sotirios A. Tsaftaris, Sara Colantonio
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2024-03-26'
   image: null
   code: null
@@ -460,14 +460,14 @@
   image: null
   code: null
   website: https://doi.org/10.1109/tmi.2024.3358955
-- title: 'Privacy Distillation: Reducing Re-identification Risk of Diffusion Models'
+- title: 'Privacy Distillation: Reducing Re-identification Risk of Diffusion Models'
   authors: Virginia Fernandez, Pedro Sanchez, Walter Hugo Lopez Pinaya, Grzegorz Jacenków, Sotirios A. Tsaftaris, M. Jorge Cardoso
   venue: Lecture notes in computer science
   date: '2024-01-01'
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-53767-7_1
-- title: Cine Cardiac MRI Reconstruction Using a Convolutional Recurrent Network with Refinement
+- title: Cine Cardiac MRI Reconstruction Using a Convolutional Recurrent Network with Refinement
   authors: Yuyang Xue, Yuning Du, Gianluca Carloni, Eva Pachetti, Connor Jordan, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2024-01-01'
@@ -481,7 +481,7 @@
   image: /assets/images/papers/thomas_2024_nips.png
   code: https://github.com/gulnazaki/counterfactual-benchmark
   website: https://doi.org/10.52202/079017-4233
-- title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
+- title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
   authors: Yuning Du, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2024-01-01'
@@ -495,7 +495,7 @@
   image: null
   code: null
   website: https://doi.org/10.52202/079017-0061
-- title: 'TADM: Temporally-Aware Diffusion Model for Neurodegenerative Progression on Brain MRI'
+- title: 'TADM: Temporally-Aware Diffusion Model for Neurodegenerative Progression on Brain MRI'
   authors: Mattia Litrico, Francesco Guarnera, Mario Valerio Giuffrida, Daniele Ravì, Sebastiano Battiato
   venue: Lecture notes in computer science
   date: '2024-01-01'
@@ -518,7 +518,7 @@
   website: https://doi.org/10.1038/s41598-023-48034-3
 - title: Optimisation-Based Multi-Modal Semantic Image Editing
   authors: Bowen Li, Yongxin Yang, Steven McDonagh, Shifeng Zhang, Petru-Daniel Tudosiu, Sarah Parisot
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-11-28'
   image: null
   code: null
@@ -537,7 +537,7 @@
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-45676-3_24
-- title: Compositional Representation Learning for Brain Tumour Segmentation
+- title: Compositional Representation Learning for Brain Tumour Segmentation
   authors: Xiao Liu, Antanas Kascenas, Hannah Watson, Sotirios A. Tsaftaris, Alison Q. O’Neil
   venue: Lecture notes in computer science
   date: '2023-10-13'
@@ -546,7 +546,7 @@
   website: https://doi.org/10.1007/978-3-031-45857-6_5
 - title: 'FairTune: Optimizing Parameter Efficient Fine Tuning for Fairness in Medical Image Analysis'
   authors: Raman Dutt, Ondrej Bohdal, Sotirios A. Tsaftaris, Timothy M. Hospedales
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-10-08'
   image: null
   code: null
@@ -560,7 +560,7 @@
   website: https://doi.org/10.1109/iccvw60793.2023.00067
 - title: Multi-task Learning with 3D-Aware Regularization
   authors: Weihong Li, Steven McDonagh, Aleš Leonardis, Hakan Bilen
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-10-02'
   image: null
   code: null
@@ -574,14 +574,14 @@
   website: https://doi.org/10.1016/j.media.2023.102963
 - title: 'Generative AI for Medical Imaging: extending the MONAI Framework'
   authors: Walter Hugo Lopez Pinaya, Mark S. Graham, Eric Kerfoot, Petru-Daniel Tudosiu, Jessica Dafflon, Virginia Fernández, Pedro Sanchez, Julia Wolleb, Pedro F. da Costa, Ashay Patel, Hyungjin Chung, Can Zhao, Peng Wei, Zelong Liu, Xueyan Mei, Oeslle Lucena, Jong Chul Ye, Sotirios A. Tsaftaris, Prerna Dogra, Andrew Feng, Marc Modat, Parashkev Nachev, Sébastien Ourselin, M. Jorge Cardoso
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-07-27'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2307.15208
 - title: A Causal Ordering Prior for Unsupervised Representation Learning
   authors: Avinash Kori, Pedro Sanchez, Konstantinos Vilouras, Ben Glocker, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-07-11'
   image: null
   code: null
@@ -595,7 +595,7 @@
   website: https://doi.org/10.1109/ijcnn54540.2023.10190997
 - title: 'Privacy Distillation: Reducing Re-identification Risk of Multimodal Diffusion Models'
   authors: Virginia Fernández, Pedro L. Sánchez, Walter Hugo Lopez Pinaya, Grzegorz Jacenków, Sotirios A. Tsaftaris, M. Jorge Cardoso
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-06-02'
   image: null
   code: null
@@ -630,7 +630,7 @@
   website: https://doi.org/10.3389/frai.2023.1187301
 - title: 'Parameter-Efficient Fine-Tuning for Medical Image Analysis: The Missed Opportunity'
   authors: Raman Dutt, Linus Ericsson, Pedro Sanchez, Sotirios A. Tsaftaris, Timothy M. Hospedales
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2023-05-14'
   image: null
   code: null
@@ -670,21 +670,21 @@
   image: null
   code: null
   website: https://doi.org/10.12688/f1000research.52204.2
-- title: Debiasing Counterfactuals in the Presence of Spurious Correlations
+- title: Debiasing Counterfactuals in the Presence of Spurious Correlations
   authors: Amar Kumar, Nima Fathi, Raghav Mehta, Brennan Nichyporuk, Jean-Pierre Falet, Sotirios A. Tsaftaris, Tal Arbel
   venue: Lecture notes in computer science
   date: '2023-01-01'
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-45249-9_27
-- title: Unveiling Fairness Biases in Deep Learning-Based Brain MRI Reconstruction
+- title: Unveiling Fairness Biases in Deep Learning-Based Brain MRI Reconstruction
   authors: Yuning Du, Yuyang Xue, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2023-01-01'
   image: /assets/images/papers/du_2023_unveil.png
   code: https://github.com/ydu0117/ReconFairness
   website: https://doi.org/10.1007/978-3-031-45249-9_10
-- title: 'FROB: Few-Shot ROBust Model for Joint Classification and Out-of-Distribution Detection'
+- title: 'FROB: Few-Shot ROBust Model for Joint Classification and Out-of-Distribution Detection'
   authors: Nikolaos Dionelis, Sotirios A. Tsaftaris, Mehrdad Yaghoobi
   venue: Lecture notes in computer science
   date: '2023-01-01'
@@ -698,14 +698,14 @@
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-25046-0
-- title: 'HSIC-InfoGAN: Learning Unsupervised Disentangled Representations by Maximising Approximated Mutual Information'
+- title: 'HSIC-InfoGAN: Learning Unsupervised Disentangled Representations by Maximising Approximated Mutual Information'
   authors: Xiao Liu, Spyridon Thermos, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2023-01-01'
   image: null
   code: null
   website: https://doi.org/10.1007/978-3-031-25046-0_2
-- title: 'Applying Disentanglement in the Medical Domain: An Introduction for the MAD Workshop'
+- title: 'Applying Disentanglement in the Medical Domain: An Introduction for the MAD Workshop'
   authors: Jana Fragemann, Xiao Liu, Jianning Li, Sotirios A. Tsaftaris, Jan Egger, Jens Kleesiek
   venue: Lecture notes in computer science
   date: '2023-01-01'
@@ -735,28 +735,28 @@
   website: https://doi.org/10.3389/fradi.2022.1039160
 - title: Label-Efficient Object Detection via Region Proposal Network Pre-Training
   authors: Nanqing Dong, Linus Ericsson, Yongxin Yang, Aleš Leonardis, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-11-16'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2211.09022
 - title: Clinically Plausible Pathology-Anatomy Disentanglement in Patient Brain MRI with Structured Variational Priors
   authors: Anjun Hu, Jean-Pierre Falet, Brennan S. Nichyporuk, Changjian Shui, Douglas L. Arnold, Sotirios A. Tsaftaris, Tal Arbel
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-11-15'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2211.07820
 - title: Content-Diverse Comparisons improve IQA
   authors: William Thong, José Costa Pereira, Sarah Parisot, Aleš Leonardis, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-11-09'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2211.05215
 - title: Diffusion Models for Causal Discovery via Topological Ordering
   authors: Pedro L. Sánchez, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-10-12'
   image: /assets/images/papers/sanchez_2022_topological.png
   code: https://github.com/vios-s/DiffAN
@@ -819,7 +819,7 @@
   website: https://doi.org/10.1016/j.media.2022.102516
 - title: Out-of-Distribution Detection with Class Ratio Estimation
   authors: Ming‐Tian Zhang, Andi Zhang, Tim Z. Xiao, Yitong Sun, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-06-08'
   image: null
   code: null
@@ -854,21 +854,21 @@
   website: https://doi.org/10.59275/j.melba.2022-bd5e
 - title: Unintended memorisation of unique features in neural networks
   authors: John Hartley, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-05-20'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2205.10079
 - title: 'You Are What You Write: Preserving Privacy in the Era of Large Language Models'
   authors: Richard E. Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-04-20'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2204.09391
 - title: Re-examining Distillation For Continual Object Detection
   authors: Eli Verwimp, Kuo Yang, Sarah Parisot, Hong Lanqing, Steven McDonagh, Eduardo Pérez-Pellitero, Matthias De Lange, Tinne Tuytelaars
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-04-04'
   image: null
   code: null
@@ -882,7 +882,7 @@
   website: https://doi.org/10.1109/isbi52829.2022.9761567
 - title: 'Adversarial Counterfactual Augmentation: Application in Alzheimer''s Disease Classification'
   authors: Tian Xia, Pedro L. Sánchez, Chen Qin, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-03-15'
   image: null
   code: null
@@ -896,7 +896,7 @@
   website: https://doi.org/10.48550/arxiv.2202.10166
 - title: Measuring Unintended Memorisation of Unique Private Features in Neural Networks
   authors: John Hartley, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2022-02-16'
   image: /assets/images/papers/hartley_2022_measuring.png
   code: https://github.com/jasminium/unintended-memorisation
@@ -922,7 +922,7 @@
   image: /assets/images/papers/liu_2022_vMFnet.png
   code: https://github.com/vios-s/vMFNet
   website: https://doi.org/10.1007/978-3-031-16449-1_67
-- title: Counterfactual Image Synthesis for Discovery of Personalized Predictive Image Markers
+- title: Counterfactual Image Synthesis for Discovery of Personalized Predictive Image Markers
   authors: Amar Kumar, Anjun Hu, Brennan Nichyporuk, Jean-Pierre Falet, Douglas L. Arnold, Sotirios A. Tsaftaris, Tal Arbel
   venue: Lecture notes in computer science
   date: '2022-01-01'
@@ -987,7 +987,7 @@
   website: https://doi.org/10.1109/ictai52525.2021.00086
 - title: 'OMASGAN: Out-of-Distribution Minimum Anomaly Score GAN for Sample\n Generation on the Boundary'
   authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-10-28'
   image: null
   code: null
@@ -1001,35 +1001,35 @@
   website: https://doi.org/10.3390/jimaging7100198
 - title: Flow Based Models For Manifold Data.
   authors: Ming‐Tian Zhang, Yitong Sun, Steven McDonagh, Chen Zhang
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-09-29'
   image: null
   code: null
   website: https://openalex.org/W3204543811
 - title: Spread Flows for Manifold Modelling
   authors: Ming‐Tian Zhang, Yitong Sun, Chen Zhang, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-09-29'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2109.14216
 - title: On the Out-of-distribution Generalization of Probabilistic Image Modelling
   authors: Ming‐Tian Zhang, Andi Zhang, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-09-04'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2109.02639
 - title: A Tutorial on Learning Disentangled Representations in the Imaging Domain.
   authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-08-26'
   image: null
   code: null
   website: https://openalex.org/W3198361414
 - title: Stop Throwing Away Discriminators! Re-using Adversaries for Test-Time\n Training
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-08-26'
   image: null
   code: null
@@ -1043,7 +1043,7 @@
   website: https://doi.org/10.1016/j.media.2021.102169
 - title: Residual Contrastive Learning for Joint Demosaicking and Denoising.
   authors: Nanqing Dong, Matteo Maggioni, Yongxin Yang, Eduardo Pérez-Pellitero, Aleš Leonardis, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-06-18'
   image: null
   code: null
@@ -1085,7 +1085,7 @@
   website: https://doi.org/10.12688/f1000research.52204.1
 - title: 'Common Limitations of Image Processing Metrics: A Picture Story'
   authors: Annika Reinke, Matthias Eisenmann, Minu D. Tizabi, Carole H. Sudre, Tim Rädsch, Michela Antonelli, Tal Arbel, Spyridon Bakas, M. Jorge Cardoso, Veronika Cheplygina, Keyvan Farahani, Ben Glocker, Doreen Heckmann-Nötzel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Jens Kleesiek, Tahsin Kurç, Michal Kozubek, Bennett A. Landman, Geert Litjens, Klaus Maier‐Hein, Bjoern Menze, Henning Müller, Jens Petersen, Ben Glocker, Nicola Rieke, Bram Stieltjes, Ronald M. Summers, Sotirios A. Tsaftaris, Bram van Ginneken, Annette Kopp‐Schneider, Paul F. Jäger, Lena Maier‐Hein, Isensee, Fabian, Jannin, Pierre, Kahn, Charles E., Kainmueller, Dagmar, Kainz, Bernhard, Karargyris, Alexandros, Karthikesalingam, Alan, Kavur, A. Emre, Kenngott, Hannes, Kleesiek, Jens, Kleppe, Andreas, Kohler, Sven, Kofler, Florian, Kopp-Schneider, Annette, Kooi, Thijs, Kozubek, Michal, Kreshuk, Anna, Kurc, Tahsin, Landman, Bennett A., Litjens, Geert, Madani, Amin, Maier-Hein, Klaus, Martel, Anne L., Mattson, Peter, Meijering, Erik, Menze, Bjoern, Moher, David, Moons, Karel G. M., Müller, Henning, Nichyporuk, Brennan, Nickel, Felix, Noyan, M. Alican, Petersen, Jens, Polat, Gorkem, Rafelski, Susanne M., Rajpoot, Nasir, Reyes, Mauricio, Rieke, Nicola, Riegler, Michael, Rivaz, Hassan, Saez-Rodriguez, Julio, Sánchez, Clara I., Schroeter, Julien, Saha, Anindo, Selver, M. Alper, Sharan, Lalith, Shetty, Shravya, van Smeden, Maarten, Stieltjes, Bram, Summers, Ronald M., Taha, Abdel A., Tiulpin, Aleksei, Sotirios A. Tsaftaris, Van Calster, Ben, Varoquaux, Gaël, Wiesenfarth, Manuel, Yaniv, Ziv R., Jäger, Paul, Maier-Hein, Lena
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2021-04-12'
   image: null
   code: null
@@ -1246,14 +1246,14 @@
   website: https://doi.org/10.1109/sspd47486.2020.9272100
 - title: Metrics for Exposing the Biases of Content-Style Disentanglement
   authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-08-27'
   image: null
   code: null
   website: https://openalex.org/W3082744875
 - title: 'Many-shot from Low-shot: Learning to Annotate using Mixed Supervision\n for Object Detection'
   authors: Carlo Alberto Biffi, Steven McDonagh, Philip Torr, Aleš Leonardis, Sarah Parisot
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-08-21'
   image: null
   code: null
@@ -1267,14 +1267,14 @@
   website: https://doi.org/10.1109/dasc-picom-cbdcom-cyberscitech49142.2020.00023
 - title: Low Light Video Enhancement using Synthetic Data Produced with an\n Intermediate Domain Mapping
   authors: Danai Triantafyllidou, Seán Moran, Steven McDonagh, Sarah Parisot, Greg Slabaugh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-07-17'
   image: null
   code: null
   website: https://doi.org/10.48550/arxiv.2007.09187
 - title: Weakly Supervised Segmentation with Multi-scale Adversarial Attention Gates
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-07-02'
   image: null
   code: null
@@ -1316,7 +1316,7 @@
   website: https://doi.org/10.1109/jbhi.2020.2991043
 - title: Teacher-Student chain for efficient semi-supervised histology image classification
   authors: Shayne Shaw, Maciej Pajak, Aneta Lisowska, Sotirios A. Tsaftaris, Alison Q. O’Neil
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-03-17'
   image: null
   code: null
@@ -1330,7 +1330,7 @@
   website: https://doi.org/10.3389/fpls.2020.00141
 - title: A Multi-Hypothesis Classification Approach to Color Constancy
   authors: Daniel Hernandez-Juarez, Sarah Parisot, Benjamin Busam, Aleš Leonardis, Greg Slabaugh, Steven McDonagh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2020-02-28'
   image: null
   code: null
@@ -1414,14 +1414,14 @@
   website: null
 - title: Blind Inpainting of Large-scale Masks of Thin Structures with Adversarial and Reinforcement Learning
   authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2019-12-05'
   image: /assets/images/papers/chen_2019_inpainting.png
   code: https://github.com/Hhhhhhao/Thin-Structure-Inpainting
   website: https://doi.org/10.48550/arxiv.1912.02470
 - title: Disentangle, align and fuse for multimodal and zero-shot image segmentation
   authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2019-11-12'
   image: null
   code: https://github.com/vios-s/multimodal_segmentation
@@ -1470,7 +1470,7 @@
   website: https://doi.org/10.1016/j.media.2019.101535
 - title: 'FIRE: Unsupervised bi-directional inter-modality registration using deep networks'
   authors: Chengjia Wang, Giorgos Papanastasiou, Agisilaos Chartsias, Grzegorz Jacenków, Sotirios A. Tsaftaris, Heye Zhang
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2019-07-11'
   image: null
   code: null
@@ -1525,7 +1525,7 @@
   code: null
   website: https://doi.org/10.1101/573139
 - title: Consistent Brain Ageing Synthesis
-  authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris, for the Alzheimer’s Disease Neuroimaging Initiative
+  authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris, for the Alzheimer’s Disease Neuroimaging Initiative
   venue: Lecture notes in computer science
   date: '2019-01-01'
   image: /assets/images/papers/xia_2019_miccai.png
@@ -1589,14 +1589,14 @@
   website: https://openalex.org/W2964915519
 - title: Meta-Learning for Few-shot Camera-Adaptive Color Constancy.
   authors: Steven McDonagh, Sarah Parisot, Zhenguo Li, Greg Slabaugh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2018-11-28'
   image: null
   code: null
   website: https://openalex.org/W2902351455
 - title: Formulating Camera-Adaptive Color Constancy as a Few-shot Meta-Learning Problem
   authors: Steven McDonagh, Sarah Parisot, Fengwei Zhou, Xing Zhang, Aleš Leonardis, Zhenguo Li, Greg Slabaugh
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2018-11-28'
   image: null
   code: null
@@ -1631,7 +1631,7 @@
   website: https://doi.org/10.1111/tpj.14064
 - title: Automatic View Planning with Multi-scale Deep Reinforcement Learning\n Agents
   authors: Amir Alansary, Loïc Le Folgoc, Ghislain Vaillant, Ozan Oktay, Yuanwei Li, Wenjia Bai, Jonathan Passerat‐Palmbach, Ricardo Guerrero, Konstantinos Kamnitsas, Benjamin Hou, Steven McDonagh, Ben Glocker, Bernhard Kainz, Daniel Rueckert
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2018-06-08'
   image: null
   code: null
@@ -1673,7 +1673,7 @@
   website: https://openalex.org/W2914746730
 - title: 'Attention U-Net: Learning Where to Look for the Pancreas'
   authors: Ozan Oktay, Jo Schlemper, Loïc Le Folgoc, Matthew C. H. Lee, Mattias P. Heinrich‬, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Hammerla, Bernhard Kainz, Ben Glocker, Daniel Rueckert
-  venue: ArXiv.org
+  venue: arXiv
   date: '2018-04-11'
   image: null
   code: null
@@ -1699,7 +1699,7 @@
   image: null
   code: null
   website: https://doi.org/10.1186/s13007-018-0278-7
-- title: Joint Myocardial Registration and Segmentation of Cardiac BOLD MRI
+- title: Joint Myocardial Registration and Segmentation of Cardiac BOLD MRI
   authors: İlkay Öksüz, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2018-01-01'
@@ -1778,7 +1778,7 @@
   website: https://arxiv.org/abs/1803.07031
 - title: Feeding the world one open access plant phenotype image at a time
   authors: Sotirios A. Tsaftaris
-  venue: Edinburgh Research Archive (University of Edinburgh)
+  venue: ERA
   date: '2017-11-22'
   image: null
   code: null
@@ -1820,7 +1820,7 @@
   website: https://doi.org/10.1109/iccvw.2017.236
 - title: 3D Reconstruction in Canonical Co-ordinate Space from Arbitrarily Oriented 2D Images
   authors: Benjamin Hou, Bishesh Khanal, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2017-09-19'
   image: null
   code: null
@@ -1902,7 +1902,7 @@
   image: null
   code: null
   website: https://openalex.org/W3136531031
-- title: Predicting Slice-to-Volume Transformation in Presence of Arbitrary Subject Motion
+- title: Predicting Slice-to-Volume Transformation in Presence of Arbitrary Subject Motion
   authors: Benjamin Hou, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
   venue: Lecture notes in computer science
   date: '2017-01-01'
@@ -1932,7 +1932,7 @@
   website: https://www.springer.com/la/book/9783319681269
 - title: 'PVR: Patch-to-Volume Reconstruction for Large Area Motion Correction of\n Fetal MRI'
   authors: Amir Alansary, Bernhard Kainz, Martin Rajchl, Maria Murgasova, Mellisa Damodaram, David Lloyd, Alice E. Davidson, Steven McDonagh, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2016-11-22'
   image: null
   code: null
@@ -1967,7 +1967,7 @@
   website: https://doi.org/10.1007/s00138-016-0787-1
 - title: 'Theta-RBM: Unfactored Gated Restricted Boltzmann Machine for Rotation-Invariant Representations'
   authors: Mario Valerio Giuffrida, Sotirios A. Tsaftaris
-  venue: arXiv (Cornell University)
+  venue: arXiv
   date: '2016-06-28'
   image: null
   code: null
@@ -2100,7 +2100,7 @@
   website: https://doi.org/10.1109/vcip.2015.7457877
 - title: Building models from multiple point sets with kernel density estimation
   authors: Steven McDonagh
-  venue: Edinburgh Research Archive (University of Edinburgh)
+  venue: ERA
   date: '2015-11-26'
   image: null
   code: null
