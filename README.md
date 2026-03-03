@@ -56,7 +56,7 @@ This file is generated from the separate [**Publication Lists**](https://github.
 The cross-repo workflow:
 - runs manually or on schedule (on the 1st and 16th of each month),
 - updates `src/data/publications.yaml` in this repo via a PR on branch `publications-update`,
-- preserves existing non-null `image` and `code` values.
+- preserves existing extra fields (for example `image`, `code`, `pdf`).
 
 Each item supports:
 ```yaml
@@ -65,6 +65,7 @@ Each item supports:
   venue: Conference/Journal Name
   date: 'YYYY-MM-DD'
   image: /assets/images/publications/example.png # optional
+  pdf: /assets/pdfs/example.pdf                  # optional
   code: https://github.com/org/repo              # optional
   website: https://doi.org/...                   # optional
 ```
