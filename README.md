@@ -25,7 +25,7 @@ npm run preview
 
 ## 📝 How to Maintain Content
 
-The site uses Astro Content Collections for typed, easily maintainable data. All the main site content is located in the `src/content/` directory. 
+The site uses Astro Content Collections plus data files to keep content maintainable.
 
 ### 👥 Team Members (`src/content/team/`)
 To add or update a team member, create/edit a `.md` file in the `src/content/team/` directory.
@@ -48,26 +48,35 @@ Biographical text goes here...
 ### 🗞️ News (`src/content/news/`)
 Add Markdown files for news updates. Include `title` and `date` in the frontmatter.
 
-### 📚 Publications (`src/content/publications/`)
-Add Markdown files for papers. Ensure the frontmatter includes:
+### 📚 Publications (`src/data/publications.yaml`)
+Publications are stored as a YAML list in `src/data/publications.yaml`.
+
+This file is generated from the separate [**Publication Lists**](https://github.com/vios-s/publication-lists) repository using OpenAlex data, then synced into this website repo via automation.
+
+The cross-repo workflow:
+- runs manually or on schedule (on the 1st and 16th of each month),
+- updates `src/data/publications.yaml` in this repo via a PR on branch `publications-update`,
+- preserves existing non-null `image` and `code` values.
+
+Each item supports:
 ```yaml
----
-title: "Paper Title"
-authors: "Author A, Author B"
-venue: "Conference/Journal Name"
-date: "YYYY-MM-DD"
-link: "https://link-to-paper..."
----
+- title: Paper Title
+  authors: Author A, Author B
+  venue: Conference/Journal Name
+  date: 'YYYY-MM-DD'
+  image: /assets/images/publications/example.png # optional
+  code: https://github.com/org/repo              # optional
+  website: https://doi.org/...                   # optional
 ```
 
 ### 💻 Tutorials (`src/content/tutorials/`)
 Add Markdown files for tutorials. Useful frontmatter properties: `title`, `description`, `date`, `author`.
 
 ### 📄 Static Pages (`src/content/pages/`)
-Markdown and Markdown (MDX) content for standalone pages. E.g., `alumni.mdx`. Uses `title` in frontmatter.
+Markdown and MDX content for standalone pages. E.g., `alumni.mdx`. Uses `title` in frontmatter.
 
 ### 🔬 Projects (`src/data/projects.json`)
-The projects (both ongoing and completed) are listed in `src/data/projects.json`. Edit this JSON file to add new projects. 
+The projects (both ongoing and completed) are listed in `src/data/projects.json`. Edit this JSON file to add new projects.
 ```json
 {
     "title": "Project Title",
@@ -88,10 +97,10 @@ Static assets such as images and PDFs should be placed inside the `public/` dire
 /
 ├── public/                 # Static assets (images, icons)
 ├── src/
-│   ├── components/         # Reusable UI components
 │   ├── content/            # Markdown data collections (team, news, etc.)
-│   ├── data/               # JSON data (like projects.json)
+│   ├── data/               # Data files (projects.json, publications.yaml)
 │   ├── layouts/            # Page layouts
+│   ├── utils/              # Helper utilities
 │   └── pages/              # Astro routing (.astro pages)
 ├── astro.config.mjs        # Astro configuration
 └── package.json            # Dependencies and scripts
