@@ -178,7 +178,7 @@
   authors: Andi Zhang, X. X. Ding, Steven McDonagh, Samuel Kaski
   venue: arXiv
   date: '2025-06-30'
-  website: https://openalex.org/W4415343510
+  website: https://doi.org/10.48550/arxiv.2507.02965
   image: null
   code: null
   pdf: null
@@ -534,14 +534,6 @@
   image: null
   code: null
   pdf: null
-- title: Cine Cardiac MRI Reconstruction Using a Convolutional Recurrent Network with Refinement
-  authors: Yuyang Xue, Yuning Du, Gianluca Carloni, Eva Pachetti, Connor Jordan, Sotirios A. Tsaftaris
-  venue: Lecture notes in computer science
-  date: '2024-01-01'
-  website: https://doi.org/10.1007/978-3-031-52448-6_40
-  image: null
-  code: null
-  pdf: null
 - title: Benchmarking Counterfactual Image Generation
   authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
@@ -549,6 +541,14 @@
   website: https://doi.org/10.52202/079017-4233
   image: /assets/images/publications/thomas_2024_nips.png
   code: https://github.com/gulnazaki/counterfactual-benchmark
+  pdf: null
+- title: Cine Cardiac MRI Reconstruction Using a Convolutional Recurrent Network with Refinement
+  authors: Yuyang Xue, Yuning Du, Gianluca Carloni, Eva Pachetti, Connor Jordan, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  website: https://doi.org/10.1007/978-3-031-52448-6_40
+  image: null
+  code: null
   pdf: null
 - title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
   authors: Yuning Du, Rohan Dharmakumar, Sotirios A. Tsaftaris
