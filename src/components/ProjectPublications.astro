@@ -2,6 +2,7 @@
 import publicationsData from "../data/publications.yaml";
 import { getSortedPublications, type Publication } from "../utils/publications";
 import { projectPublicationTitles } from "../data/project-publications";
+import { base } from "../utils/base";
 
 interface Props {
     slug: string;
@@ -26,19 +27,30 @@ const truncateAuthors = (authors: string, max = 8) => {
     if (parts.length <= max) return authors ?? "";
     return `${parts.slice(0, max).join(", ")}, ...`;
 };
+const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
 ---
 
 {
     projectPublications.length > 0 && (
         <section class="project-publications">
             <h2>{title}</h2>
-            <div class="pub-cards">
+            <div class="publication-cards">
                 {projectPublications.map((publication) => {
                     const publicationLinks = [
+                        publication.pdf ? (
+                            <a
+                                href={resolvePdfHref(publication.pdf)}
+                                class="publication-card-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                PDF →
+                            </a>
+                        ) : null,
                         publication.code ? (
                             <a
                                 href={publication.code}
-                                class="pub-card-link"
+                                class="publication-card-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -48,7 +60,7 @@ const truncateAuthors = (authors: string, max = 8) => {
                         publication.website ? (
                             <a
                                 href={publication.website}
-                                class="pub-card-link"
+                                class="publication-card-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -58,16 +70,16 @@ const truncateAuthors = (authors: string, max = 8) => {
                     ].filter(Boolean);
 
                     return (
-                        <div class="pub-card">
-                            <div class="pub-card-body">
-                                <span class="pub-card-venue">{publication.venue}</span>
-                                <p class="pub-card-title">{publication.title}</p>
-                                <p class="pub-card-authors">
+                        <div class="publication-card">
+                            <div class="publication-card-body">
+                                <span class="publication-card-venue">{publication.venue}</span>
+                                <p class="publication-card-title">{publication.title}</p>
+                                <p class="publication-card-authors">
                                     {truncateAuthors(publication.authors)}
                                 </p>
                             </div>
                             {publicationLinks.length > 0 && (
-                                <div class="pub-card-footer">{publicationLinks}</div>
+                                <div class="publication-card-footer">{publicationLinks}</div>
                             )}
                         </div>
                     );
@@ -86,13 +98,13 @@ const truncateAuthors = (authors: string, max = 8) => {
         font-size: 2rem;
     }
 
-    .pub-cards {
+    .publication-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 1.5rem;
     }
 
-    .pub-card {
+    .publication-card {
         background: var(--bg2);
         border: 1px solid var(--border);
         display: flex;
@@ -104,13 +116,13 @@ const truncateAuthors = (authors: string, max = 8) => {
         overflow: hidden;
     }
 
-    .pub-card:hover {
+    .publication-card:hover {
         transform: translateY(-4px);
         border-color: rgba(0, 212, 170, 0.4);
         background: var(--bg3);
     }
 
-    .pub-card-body {
+    .publication-card-body {
         padding: 1.5rem;
         flex: 1;
         display: flex;
@@ -118,7 +130,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         gap: 0.5rem;
     }
 
-    .pub-card-venue {
+    .publication-card-venue {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.7rem;
         color: var(--accent);
@@ -126,7 +138,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         text-transform: uppercase;
     }
 
-    .pub-card-title {
+    .publication-card-title {
         font-family: "Outfit", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
@@ -135,7 +147,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         margin: 0;
     }
 
-    .pub-card-authors {
+    .publication-card-authors {
         font-size: 0.85rem;
         color: var(--muted);
         line-height: 1.4;
@@ -144,7 +156,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         margin-bottom: 0;
     }
 
-    .pub-card-footer {
+    .publication-card-footer {
         padding: 0.85rem 1.5rem;
         border-top: 1px solid var(--border);
         display: flex;
@@ -152,7 +164,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         gap: 1.25rem;
     }
 
-    .pub-card-link {
+    .publication-card-link {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.75rem;
         color: var(--muted);
@@ -162,7 +174,7 @@ const truncateAuthors = (authors: string, max = 8) => {
         align-items: center;
     }
 
-    .pub-card-link:hover {
+    .publication-card-link:hover {
         color: var(--accent);
         border-bottom: none;
     }

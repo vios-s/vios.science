@@ -11,6 +11,7 @@ const allNews = await getCollection("news");
 const topNews = getSortedNews(allNews).slice(0, 3);
 
 const recentPublications = getSortedPublications(publicationsData as Publication[]).slice(0, 3);
+const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">
@@ -114,7 +115,7 @@ const recentPublications = getSortedPublications(publicationsData as Publication
         </div>
 
         <div
-            class="pub-more"
+            class="publication-more"
             style="margin-top: 3rem; margin-bottom: 4rem; display: flex; justify-content: center;"
         >
             <a href={base('/news')} class="btn-secondary">View All News</a>
@@ -241,30 +242,40 @@ const recentPublications = getSortedPublications(publicationsData as Publication
             <h2 class="s-title">Recent <em>publications</em></h2>
         </div>
 
-        <div class="pub-cards stagger">
+        <div class="publication-cards stagger">
             {
                 recentPublications.map((publication) => (
-                    <div class="pub-card">
+                    <div class="publication-card">
                         {publication.image ? (
                             <img
-                                class="pub-card-img"
+                                class="publication-card-img"
                                 src={base(publication.image)}
                                 alt={`${publication.title} teaser`}
                                 loading="lazy"
                             />
                         ) : (
-                            <div class="pub-card-img" style="min-height:160px;background:var(--bg3)" />
+                            <div class="publication-card-img" style="min-height:160px;background:var(--bg3)" />
                         )}
-                        <div class="pub-card-body">
-                            <span class="pub-card-venue">{publication.venue}</span>
-                            <p class="pub-card-title">{publication.title}</p>
-                            <p class="pub-card-authors">{publication.authors}</p>
+                        <div class="publication-card-body">
+                            <span class="publication-card-venue">{publication.venue}</span>
+                            <p class="publication-card-title">{publication.title}</p>
+                            <p class="publication-card-authors">{publication.authors}</p>
                         </div>
-                        <div class="pub-card-footer">
+                        <div class="publication-card-footer">
+                            {publication.pdf && (
+                                <a
+                                    href={resolvePdfHref(publication.pdf)}
+                                    class="publication-card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    PDF →
+                                </a>
+                            )}
                             {publication.code && (
                                 <a
                                     href={publication.code}
-                                    class="pub-card-link"
+                                    class="publication-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -274,7 +285,7 @@ const recentPublications = getSortedPublications(publicationsData as Publication
                             {publication.website && (
                                 <a
                                     href={publication.website}
-                                    class="pub-card-link"
+                                    class="publication-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -287,7 +298,7 @@ const recentPublications = getSortedPublications(publicationsData as Publication
             }
         </div>
 
-        <div class="pub-more">
+        <div class="publication-more">
             <a href={base('/publications')} class="btn-secondary"
                 >View All Publications</a
             >

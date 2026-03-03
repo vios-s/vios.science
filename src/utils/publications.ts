@@ -7,6 +7,7 @@ export interface Publication {
     link?: string;
     code?: string;
     website?: string;
+    pdf?: string;
 }
 
 export function getSortedPublications(items: Publication[]): Publication[] {

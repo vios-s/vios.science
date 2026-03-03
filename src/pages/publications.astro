@@ -11,6 +11,11 @@ const publicationsJson = JSON.stringify(
     publications.map((publication) => ({
         ...publication,
         image: publication.image ? `${baseUrl}/${publication.image.replace(/^\//, "")}` : null,
+        pdf: publication.pdf
+            ? publication.pdf.startsWith("/")
+                ? `${baseUrl}/${publication.pdf.replace(/^\//, "")}`
+                : publication.pdf
+            : null,
     }))
 );
 ---
@@ -26,22 +31,22 @@ const publicationsJson = JSON.stringify(
         </div>
     </section>
 
-    <div class="pub-container">
-        <div class="pub-search-wrap">
+    <div class="publication-container">
+        <div class="publication-search-wrap">
             <input
-                id="pub-search"
-                class="pub-search"
+                id="publication-search"
+                class="publication-search"
                 type="search"
                 placeholder="Search by title, author, or venue…"
                 aria-label="Search publications"
             />
         </div>
 
-        <div id="pub-cards" class="pub-cards"></div>
+        <div id="publication-cards" class="publication-cards"></div>
 
-        <p id="pub-empty" class="pub-empty" hidden>No publications match your search.</p>
+        <p id="publication-empty" class="publication-empty" hidden>No publications match your search.</p>
 
-        <div id="pub-sentinel" class="pub-sentinel"></div>
+        <div id="publication-sentinel" class="publication-sentinel"></div>
     </div>
 </Layout>
 
@@ -53,9 +58,9 @@ const publicationsJson = JSON.stringify(
     let offset = 0;
     let lastRenderedYear = null;
 
-    const grid = document.getElementById("pub-cards");
-    const empty = document.getElementById("pub-empty");
-    const sentinel = document.getElementById("pub-sentinel");
+    const grid = document.getElementById("publication-cards");
+    const empty = document.getElementById("publication-empty");
+    const sentinel = document.getElementById("publication-sentinel");
 
     function escape(str) {
         return (str ?? "").replace(/[&<>"']/g, (character) =>
@@ -79,20 +84,21 @@ const publicationsJson = JSON.stringify(
 
     function cardHTML(publication) {
         const media = publication.image
-            ? `<img class="pub-card-img" src="${escape(publication.image)}" alt="Paper Teaser" loading="lazy" />`
-            : `<div class="pub-card-img-placeholder" role="img" aria-label="No preview available">${PLACEHOLDER_LIGHT}</div>`;
+            ? `<img class="publication-card-img" src="${escape(publication.image)}" alt="Paper Teaser" loading="lazy" />`
+            : `<div class="publication-card-img-placeholder" role="img" aria-label="No preview available">${PLACEHOLDER_LIGHT}</div>`;
         const links = [
-            publication.code    ? `<a href="${escape(publication.code)}"    class="pub-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
-            publication.website ? `<a href="${escape(publication.website)}" class="pub-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
+            publication.pdf ? `<a href="${escape(publication.pdf)}" class="publication-card-link" target="_blank" rel="noopener noreferrer">PDF →</a>` : "",
+            publication.code    ? `<a href="${escape(publication.code)}"    class="publication-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
+            publication.website ? `<a href="${escape(publication.website)}" class="publication-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
         ].join("");
-        const footer = links ? `<div class="pub-card-footer">${links}</div>` : "";
+        const footer = links ? `<div class="publication-card-footer">${links}</div>` : "";
         return `
-            <div class="pub-card pub-card-new">
+            <div class="publication-card publication-card-new">
                 ${media}
-                <div class="pub-card-body">
-                    <span class="pub-card-venue">${escape(publication.venue)}</span>
-                    <p class="pub-card-title">${escape(publication.title)}</p>
-                    <p class="pub-card-authors">${escape(truncateAuthors(publication.authors))}</p>
+                <div class="publication-card-body">
+                    <span class="publication-card-venue">${escape(publication.venue)}</span>
+                    <p class="publication-card-title">${escape(publication.title)}</p>
+                    <p class="publication-card-authors">${escape(truncateAuthors(publication.authors))}</p>
                 </div>
                 ${footer}
             </div>`;
@@ -106,7 +112,7 @@ const publicationsJson = JSON.stringify(
             const year = publicationYear(publication);
             if (year !== lastRenderedYear) {
                 const heading = document.createElement("h2");
-                heading.className = "pub-year-heading";
+                heading.className = "publication-year-heading";
                 heading.textContent = year;
                 frag.appendChild(heading);
                 lastRenderedYear = year;
@@ -118,8 +124,8 @@ const publicationsJson = JSON.stringify(
         grid.appendChild(frag);
         // Trigger fade-in on next frame
         requestAnimationFrame(() => {
-            grid.querySelectorAll(".pub-card-new").forEach((el) => {
-                el.classList.remove("pub-card-new");
+            grid.querySelectorAll(".publication-card-new").forEach((el) => {
+                el.classList.remove("publication-card-new");
             });
         });
         offset += chunk.length;
@@ -137,7 +143,7 @@ const publicationsJson = JSON.stringify(
     reset();
 
     // Search
-    document.getElementById("pub-search").addEventListener("input", (event) => {
+    document.getElementById("publication-search").addEventListener("input", (event) => {
         const searchQuery = event.target.value.trim().toLowerCase();
         if (!searchQuery) {
             filtered = ALL_PUBLICATIONS;
@@ -168,17 +174,17 @@ const publicationsJson = JSON.stringify(
     .page-header {
         padding: 8rem 8rem 2rem;
     }
-    .pub-container {
+    .publication-container {
         padding: 0 8rem 6rem;
     }
 
-    .pub-search-wrap {
+    .publication-search-wrap {
         display: flex;
         align-items: center;
         max-width: 800px;
         margin: 0 auto 1.5rem;
     }
-    .pub-search {
+    .publication-search {
         flex: 1;
         background: var(--bg2);
         border: 1px solid var(--border);
@@ -189,17 +195,17 @@ const publicationsJson = JSON.stringify(
         outline: none;
         transition: border-color 0.2s, background 0.2s;
     }
-    .pub-search::placeholder {
+    .publication-search::placeholder {
         color: var(--muted);
     }
-    .pub-search:focus {
+    .publication-search:focus {
         border-color: rgba(0, 212, 170, 0.5);
         background: var(--bg3);
     }
     /* hide the browser's built-in × button so style stays consistent */
-    .pub-search::-webkit-search-cancel-button { display: none; }
+    .publication-search::-webkit-search-cancel-button { display: none; }
 
-    .pub-cards {
+    .publication-cards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 1.5rem;
@@ -209,13 +215,13 @@ const publicationsJson = JSON.stringify(
         from { opacity: 0; transform: translateY(12px); }
         to   { opacity: 1; transform: translateY(0); }
     }
-    :global(.pub-card-new) {
+    :global(.publication-card-new) {
         opacity: 0;
     }
-    :global(.pub-card:not(.pub-card-new)) {
+    :global(.publication-card:not(.publication-card-new)) {
         animation: fadeUp 0.3s ease both;
     }
-    :global(.pub-year-heading) {
+    :global(.publication-year-heading) {
         grid-column: 1 / -1;
         margin: 1.5rem 0 0.25rem;
         font-family: "Outfit", sans-serif;
@@ -226,22 +232,22 @@ const publicationsJson = JSON.stringify(
         border-bottom: 1px solid var(--border);
         padding-bottom: 0.45rem;
     }
-    :global(.pub-year-heading:first-child) {
+    :global(.publication-year-heading:first-child) {
         margin-top: 0;
     }
 
-    .pub-empty {
+    .publication-empty {
         text-align: center;
         padding: 3rem 0;
         color: var(--muted);
         font-family: "JetBrains Mono", monospace;
         font-size: 0.85rem;
     }
-    .pub-sentinel {
+    .publication-sentinel {
         height: 1px;
     }
 
-    :global(.pub-card) {
+    :global(.publication-card) {
         background: var(--bg2);
         border: 1px solid var(--border);
         display: flex;
@@ -252,18 +258,18 @@ const publicationsJson = JSON.stringify(
             background 0.35s ease;
         overflow: hidden;
     }
-    :global(.pub-card:hover) {
+    :global(.publication-card:hover) {
         transform: translateY(-4px);
         border-color: rgba(0, 212, 170, 0.4);
         background: var(--bg3);
     }
-    :global(.pub-card-img) {
+    :global(.publication-card-img) {
         width: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
         border-bottom: 1px solid var(--border);
     }
-    :global(.pub-card-img-placeholder) {
+    :global(.publication-card-img-placeholder) {
         width: 100%;
         aspect-ratio: 16/9;
         border-bottom: 1px solid var(--border);
@@ -271,47 +277,47 @@ const publicationsJson = JSON.stringify(
         display: block;
         line-height: 0;
     }
-    :global(.pub-card-img-placeholder svg) {
+    :global(.publication-card-img-placeholder svg) {
         width: 100%;
         height: 100%;
         display: block;
     }
-    :global(.pub-card-body) {
+    :global(.publication-card-body) {
         padding: 1.5rem;
         flex: 1;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
     }
-    :global(.pub-card-venue) {
+    :global(.publication-card-venue) {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.7rem;
         color: var(--accent);
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
-    :global(.pub-card-title) {
+    :global(.publication-card-title) {
         font-family: "Outfit", sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
         color: var(--text);
         line-height: 1.35;
     }
-    :global(.pub-card-authors) {
+    :global(.publication-card-authors) {
         font-size: 0.85rem;
         color: var(--muted);
         line-height: 1.4;
         margin-top: auto;
         padding-top: 0.5rem;
     }
-    :global(.pub-card-footer) {
+    :global(.publication-card-footer) {
         padding: 0.85rem 1.5rem;
         border-top: 1px solid var(--border);
         display: flex;
         justify-content: flex-end;
         gap: 1.25rem;
     }
-    :global(.pub-card-link) {
+    :global(.publication-card-link) {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.75rem;
         color: var(--muted);
@@ -322,7 +328,7 @@ const publicationsJson = JSON.stringify(
         gap: 0.4rem;
         transition: color 0.2s;
     }
-    :global(.pub-card-link:hover) {
+    :global(.publication-card-link:hover) {
         color: var(--accent);
     }
 
@@ -330,7 +336,7 @@ const publicationsJson = JSON.stringify(
         .page-header {
             padding: 7rem 3rem 2rem;
         }
-        .pub-container {
+        .publication-container {
             padding: 0 3rem 4rem;
         }
     }
@@ -339,13 +345,13 @@ const publicationsJson = JSON.stringify(
         .page-header {
             padding: 6rem 1.5rem 1.5rem;
         }
-        .pub-container {
+        .publication-container {
             padding: 0 1.5rem 3rem;
         }
-        .pub-cards {
+        .publication-cards {
             grid-template-columns: 1fr;
         }
-        .pub-search-wrap {
+        .publication-search-wrap {
             max-width: 100%;
         }
     }
