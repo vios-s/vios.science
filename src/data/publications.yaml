@@ -135,7 +135,7 @@
   authors: Junyu Yan, Feng Chen, Yuyang Xue, Yuning Du, Konstantinos Vilouras, Sotirios A. Tsaftaris, Steven McDonagh
   venue: The Journal of Machine Learning for Biomedical Imaging
   date: '2025-08-14'
-  image: /assets/images/papers/jun_2025_melba.png
+  image: /assets/images/publications/jun_2025_melba.png
   code: https://github.com/vios-s/SWiFT
   website: https://doi.org/10.59275/j.melba.2025-de23
 - title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
@@ -219,7 +219,7 @@
   authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
   date: '2025-02-26'
-  image: /assets/images/papers/feng_2025_wacv.png
+  image: /assets/images/publications/feng_2025_wacv.png
   code: https://github.com/vios-s/gmt-leaf-ins-seg
   website: https://doi.org/10.1109/wacv61041.2025.00126
 - title: 'MemControl: Mitigating Memorization in Diffusion Models via Automated Parameter Selection'
@@ -268,7 +268,7 @@
   authors: Yuyang Xue, Edward Moroshko, Feng Chen, Steven McDonagh, Sotirios A Tsaftaris
   venue: BMVC
   date: '2025-01-01'
-  image: /assets/images/papers/yuyang_2025_bmvc.png
+  image: /assets/images/publications/yuyang_2025_bmvc.png
   code: https://github.com/vios-s/CRCE
   website: https://arxiv.org/abs/2503.14232
 - title: 'There are no shortcuts to anywhere worth going: identifying shortcuts in deep learning models for medical image analysis'
@@ -282,7 +282,7 @@
   authors: Jinghan Sun, Dong Wei, Zhe Xu, Donghuan Lu, Hong Liu, Hong Wang, Sotirios A. Tsaftaris, Steven McDonagh, Yefeng Zheng, Liansheng Wang
   venue: IEEE Transactions on Medical Imaging
   date: '2024-12-13'
-  image: /assets/images/papers/jinghan_2024_tmi.png
+  image: /assets/images/publications/jinghan_2024_tmi.png
   code: https://github.com/jinghanSunn/CoE-DG
   website: https://doi.org/10.1109/tmi.2024.3516954
 - title: A virtual power plant for coordinating batteries and EVs of distributed zero-energy houses considering the distribution system constraints
@@ -317,7 +317,7 @@
   authors: Konstantinos Vilouras, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: IEEE Journal of Biomedical and Health Informatics
   date: '2024-11-08'
-  image: /assets/images/papers/kostas_2025_jbhi.png
+  image: /assets/images/publications/kostas_2025_jbhi.png
   code: https://github.com/vios-s/ldm-phrase-grounding
   website: https://doi.org/10.1109/jbhi.2024.3494246
 - title: 'Synchronization Is All You Need: Exocentric-to-Egocentric Transfer for Temporal Action Segmentation with Unlabeled Synchronized Video Pairs'
@@ -345,7 +345,7 @@
   authors: Yuyang Xue, Junyu Yan, Raman Dutt, Fasih Haider, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2024-10-12'
-  image: /assets/images/papers/xue_bmft_miccai.png
+  image: /assets/images/publications/xue_bmft_miccai.png
   code: https://github.com/vios-s/BMFT
   website: https://doi.org/10.1007/978-3-031-72787-0_10
 - title: Improving Object Detection via Local-global Contrastive Learning
@@ -394,14 +394,14 @@
   authors: Yuyang Xue, Chen Qin, Sotirios A. Tsaftaris
   venue: 2024 IEEE International Symposium on Biomedical Imaging (ISBI)
   date: '2024-05-27'
-  image: /assets/images/papers/xue_2024_isbi.png
+  image: /assets/images/publications/xue_2024_isbi.png
   code: https://github.com/vios-s/Inference_Denoising_MRI_Recon
   website: https://doi.org/10.1109/isbi56570.2024.10635766
 - title: 'Erase to Enhance: Data-Efficient Machine Unlearning in MRI Reconstruction'
   authors: Yuyang Xue, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2024-05-24'
-  image: /assets/images/papers/xue_2024_midl.png
+  image: /assets/images/publications/xue_2024_midl.png
   code: https://github.com/vios-s/Erase-to-Enhance-MRI-Recon-Unlearning
   website: https://doi.org/10.48550/arxiv.2405.15517
 - title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
@@ -478,7 +478,7 @@
   authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
-  image: /assets/images/papers/thomas_2024_nips.png
+  image: /assets/images/publications/thomas_2024_nips.png
   code: https://github.com/gulnazaki/counterfactual-benchmark
   website: https://doi.org/10.52202/079017-4233
 - title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
@@ -618,7 +618,7 @@
   authors: Sarthak Pati, Siddhesh Thakur, İbrahim Ethem Hamamcı, Ujjwal Baid, Bhakti Baheti, Megh Bhalerao, Orhun Güley, Sofia Mouchtaris, David Lang, Spyridon Thermos, Karol Gotkowski, Camila González, Caleb M. Grenko, Alexander Getka, Brandon Edwards, Micah Sheller, Junwen Wu, Deepthi Karkada, Ravi Panchumarthy, Vinayak S. Ahluwalia, Chunrui Zou, Vishnu Bashyam, Yuemeng Li, Babak Haghighi, Rhea Chitalia, Shahira Abousamra, Tahsin Kurç, Aimilia Gastounioti, Sezgin Er, Mark Bergman, Joel Saltz, Yong Fan, Prashant Shah, Anirban Mukhopadhyay, Sotirios A. Tsaftaris, Bjoern Menze, Christos Davatzikos, Despina Kontos, Alexandros Karargyris, Renato Umeton, Peter Mattson, Spyridon Bakas
   venue: Communications Engineering
   date: '2023-05-16'
-  image: /assets/images/papers/pati_2023_ce.png
+  image: /assets/images/publications/pati_2023_ce.png
   code: https://github.com/CBICA/GaNDLF
   website: https://doi.org/10.1038/s44172-023-00066-3
 - title: 'Editorial: Computer vision in plant phenotyping and agriculture'
@@ -681,7 +681,7 @@
   authors: Yuning Du, Yuyang Xue, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2023-01-01'
-  image: /assets/images/papers/du_2023_unveil.png
+  image: /assets/images/publications/du_2023_unveil.png
   code: https://github.com/ydu0117/ReconFairness
   website: https://doi.org/10.1007/978-3-031-45249-9_10
 - title: 'FROB: Few-Shot ROBust Model for Joint Classification and Out-of-Distribution Detection'
@@ -730,7 +730,7 @@
   authors: Tian Xia, Pedro L. Sánchez, Chen Qin, Sotirios A. Tsaftaris
   venue: Frontiers in Radiology
   date: '2022-11-30'
-  image: /assets/images/papers/xia_2022_counterfactual.jpg
+  image: /assets/images/publications/xia_2022_counterfactual.jpg
   code: https://www.frontiersin.org/articles/10.3389/fradi.2022.1039160/full
   website: https://doi.org/10.3389/fradi.2022.1039160
 - title: Label-Efficient Object Detection via Region Proposal Network Pre-Training
@@ -758,14 +758,14 @@
   authors: Pedro L. Sánchez, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2022-10-12'
-  image: /assets/images/papers/sanchez_2022_topological.png
+  image: /assets/images/publications/sanchez_2022_topological.png
   code: https://github.com/vios-s/DiffAN
   website: https://doi.org/10.48550/arxiv.2210.06201
 - title: Cardiac aging synthesis from cross-sectional data with conditional generative adversarial networks
   authors: Víctor M. Campello, Tian Xia, Xiao Liu, Pedro Sanchez, Carlos Martín-Isla, Steffen E. Petersen, Santi Seguí, Sotirios A. Tsaftaris, Karim Lekadir
   venue: Frontiers in Cardiovascular Medicine
   date: '2022-09-23'
-  image: /assets/images/papers/campello_2022_cardiac_age.jpg
+  image: /assets/images/publications/campello_2022_cardiac_age.jpg
   code: https://github.com/vicmancr/CardiacAging
   website: https://doi.org/10.3389/fcvm.2022.983091
 - title: 'OMASGAN: Out-of-distribution Minimum Anomaly Score GAN for Anomaly Detection'
@@ -877,7 +877,7 @@
   authors: Grzegorz Jacenków, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: 2022 IEEE 19th International Symposium on Biomedical Imaging (ISBI)
   date: '2022-03-28'
-  image: /assets/images/papers/jacen_2022_indication.gif
+  image: /assets/images/publications/jacen_2022_indication.gif
   code: https://github.com/jacenkow/mmbt
   website: https://doi.org/10.1109/isbi52829.2022.9761567
 - title: 'Adversarial Counterfactual Augmentation: Application in Alzheimer''s Disease Classification'
@@ -891,14 +891,14 @@
   authors: Pedro L. Sánchez, Sotirios A. Tsaftaris
   venue: Edinburgh Research Explorer (University of Edinburgh)
   date: '2022-02-21'
-  image: /assets/images/papers/sanchez_2022_causal_diffusion.png
+  image: /assets/images/publications/sanchez_2022_causal_diffusion.png
   code: https://github.com/vios-s/Diff-SCM
   website: https://doi.org/10.48550/arxiv.2202.10166
 - title: Measuring Unintended Memorisation of Unique Private Features in Neural Networks
   authors: John Hartley, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2022-02-16'
-  image: /assets/images/papers/hartley_2022_measuring.png
+  image: /assets/images/publications/hartley_2022_measuring.png
   code: https://github.com/jasminium/unintended-memorisation
   website: https://doi.org/10.48550/arxiv.2202.08099
 - title: 'Survey: Leakage and Privacy at Inference Time'
@@ -912,14 +912,14 @@
   authors: Pedro Sanchez, Antanas Kascenas, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2022-01-01'
-  image: /assets/images/papers/sanchez_2022_healthy.png
+  image: /assets/images/publications/sanchez_2022_healthy.png
   code: https://github.com/vios-s/Diff-SCM
   website: https://doi.org/10.1007/978-3-031-18576-2_4
 - title: 'vMFNet: Compositionality Meets Domain-Generalised Segmentation'
   authors: Xiao Liu, Spyridon Thermos, Pedro L. Sánchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2022-01-01'
-  image: /assets/images/papers/liu_2022_vMFnet.png
+  image: /assets/images/publications/liu_2022_vMFnet.png
   code: https://github.com/vios-s/vMFNet
   website: https://doi.org/10.1007/978-3-031-16449-1_67
 - title: Counterfactual Image Synthesis for Discovery of Personalized Predictive Image Markers
@@ -933,7 +933,7 @@
   authors: Ruolin Su, Xiao Liu, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2022-01-01'
-  image: /assets/images/papers/su_2022_forgotten.png
+  image: /assets/images/publications/su_2022_forgotten.png
   code: null
   website: https://doi.org/10.1007/978-3-031-16452-1_60
 - title: Regularizing disentangled representations with anatomical temporal consistency
@@ -1038,7 +1038,7 @@
   authors: Tian Xia, Agisilaos Chartsias, Chengjia Wang, Sotirios A. Tsaftaris
   venue: Medical Image Analysis
   date: '2021-07-18'
-  image: /assets/images/papers/xia_2019_journal.png
+  image: /assets/images/publications/xia_2019_journal.png
   code: https://github.com/vios-s/BrainAgeing
   website: https://doi.org/10.1016/j.media.2021.102169
 - title: Residual Contrastive Learning for Joint Demosaicking and Denoising.
@@ -1101,7 +1101,7 @@
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
   venue: IEEE Transactions on Medical Imaging
   date: '2021-03-30'
-  image: /assets/images/papers/valvano_2021_TMI.png
+  image: /assets/images/publications/valvano_2021_TMI.png
   code: https://vios-s.github.io/multiscale-adversarial-attention-gates/
   website: https://doi.org/10.1109/tmi.2021.3069634
 - title: 'DiCyc: Deformation Invariant Cross-Domain Information Fusion for Medical Image Synthesis'
@@ -1129,14 +1129,14 @@
   authors: Xiao Liu, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2021-01-01'
-  image: /assets/images/papers/liu_2021_metalearning.png
+  image: /assets/images/publications/liu_2021_metalearning.png
   code: https://github.com/vios-s/DGNet
   website: https://doi.org/10.1007/978-3-030-87196-3_29
 - title: Disentangled Representations for Domain-Generalized Cardiac Segmentation
   authors: Xiao Liu, Spyridon Thermos, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2021-01-01'
-  image: /assets/images/papers/liu_2020_miccai.png
+  image: /assets/images/publications/liu_2020_miccai.png
   code: https://github.com/vios-s/RA_FA_Cardiac
   website: https://doi.org/10.1007/978-3-030-68107-4_19
 - title: Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health
@@ -1150,7 +1150,7 @@
   authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Proceedings of the British Machine Vision Conference 2021
   date: '2021-01-01'
-  image: /assets/images/papers/liu_2020_metrics.png
+  image: /assets/images/publications/liu_2020_metrics.png
   code: https://github.com/vios-s/CSDisentanglement_Metrics_Library
   website: https://doi.org/10.5244/c.35.24
 - title: Data-driven feature learning for myocardial registration and segmentation
@@ -1171,14 +1171,14 @@
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2021-01-01'
-  image: /assets/images/papers/valvano_2021_stop.png
+  image: /assets/images/publications/valvano_2021_stop.png
   code: https://vios-s.github.io/adversarial-test-time-training/
   website: https://doi.org/10.1007/978-3-030-87722-4_7
 - title: Controllable Cardiac Synthesis via Disentangled Anatomy Arithmetic
   authors: Spyridon Thermos, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2021-01-01'
-  image: /assets/images/papers/thermos_2021_daa_gan.png
+  image: /assets/images/publications/thermos_2021_daa_gan.png
   code: https://github.com/spthermo/DAA-GAN
   website: https://doi.org/10.1007/978-3-030-87199-4_15
 - title: How Should We Create Algorithms to Do More with Less
@@ -1192,7 +1192,7 @@
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2021-01-01'
-  image: /assets/images/papers/valvano_2021_selfsupervision.png
+  image: /assets/images/publications/valvano_2021_selfsupervision.png
   code: https://vios-s.github.io/multiscale-pyag
   website: https://doi.org/10.1007/978-3-030-87722-4_2
 - title: 'CAPE: Context-Aware Private Embeddings for Private Language Learning'
@@ -1206,14 +1206,14 @@
   authors: C. Qin, J. Duan, K. Hammernik, J. Schlemper, T. Küstner, R. Botnar, C. Prieto, A. N. Price, J. V. Hajnal, D. Rueckert
   venue: Magnetic Resonance in Medicine
   date: '2021-01-01'
-  image: /assets/images/papers/qin_2020_MRI_rec.png
+  image: /assets/images/publications/qin_2020_MRI_rec.png
   code: https://github.com/cq615/kt-Dynamic-MRI-Reconstruction
   website: https://onlinelibrary.wiley.com/doi/10.1002/mrm.28917
 - title: Disentangle, Align and Fuse for Multimodal and Semi-Supervised Image Segmentation
   authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: IEEE Transactions on Medical Imaging
   date: '2020-11-06'
-  image: /assets/images/papers/chartsias_2019_journal.png
+  image: /assets/images/publications/chartsias_2019_journal.png
   code: https://github.com/vios-s/multimodal_segmentation
   website: https://doi.org/10.1109/tmi.2020.3036584
 - title: 'DiCyc: GAN-based deformation invariant cross-domain information fusion for medical image synthesis'
@@ -1290,7 +1290,7 @@
   authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: Medical Image Analysis
   date: '2020-06-12'
-  image: /assets/images/papers/xia_2020_media.png
+  image: /assets/images/publications/xia_2020_media.png
   code: https://github.com/vios-s/pseudo-healthy-synthesis
   website: https://doi.org/10.1016/j.media.2020.101719
 - title: 'DeepLPF: Deep Local Parametric Filters for Image Enhancement'
@@ -1325,7 +1325,7 @@
   authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
   venue: Frontiers in Plant Science
   date: '2020-02-28'
-  image: /assets/images/papers/dobrescu_2020_frontiers.png
+  image: /assets/images/publications/dobrescu_2020_frontiers.png
   code: https://github.com/vios-s/Multi_task_plant_phenotyping
   website: https://doi.org/10.3389/fpls.2020.00141
 - title: A Multi-Hypothesis Classification Approach to Color Constancy
@@ -1346,28 +1346,28 @@
   authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Colin Stirrat, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2020-01-01'
-  image: /assets/images/papers/chartsias_2019_miccai.png
+  image: /assets/images/publications/chartsias_2019_miccai.png
   code: https://github.com/vios-s/multimodal_segmentation
   website: https://doi.org/10.1007/978-3-030-39074-7_14
 - title: Semi-supervised Pathology Segmentation with Disentangled Representations
   authors: Haochuan Jiang, Agisilaos Chartsias, Xinheng Zhang, Giorgos Papanastasiou, Scott Semple, Marc R. Dweck, David Semple, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2020-01-01'
-  image: /assets/images/papers/jiang_2020_dart.png
+  image: /assets/images/publications/jiang_2020_dart.png
   code: https://github.com/vios-s/APDNet
   website: https://doi.org/10.1007/978-3-030-60548-3_7
 - title: Max-Fusion U-Net for Multi-modal Pathology Segmentation with Attention and Dynamic Resampling
   authors: Haochuan Jiang, Chengjia Wang, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2020-01-01'
-  image: /assets/images/papers/jiang_2020_myops.png
+  image: /assets/images/publications/jiang_2020_myops.png
   code: https://github.com/vios-s/MFU-Net
   website: https://doi.org/10.1007/978-3-030-65651-5_7
 - title: 'INSIDE: Steering Spatial Attention with Non-imaging Information in CNNs'
   authors: Grzegorz Jacenków, Alison Q. O’Neil, Brian Mohr, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2020-01-01'
-  image: /assets/images/papers/jacenkow_2020_miccai.png
+  image: /assets/images/publications/jacenkow_2020_miccai.png
   code: https://github.com/vios-s/inside
   website: https://doi.org/10.1007/978-3-030-59719-1_38
 - title: 'TBI Lesion Segmentation in Head CT: Impact of Preprocessing and Data Augmentation'
@@ -1402,7 +1402,7 @@
   authors: C. Qin, S. Wang, C. Chen, H. Qiu, W. Bai, D. Rueckert.
   venue: MICCAI
   date: '2020-01-01'
-  image: /assets/images/papers/qin_2020_biomecha_tracking.png
+  image: /assets/images/publications/qin_2020_biomecha_tracking.png
   code: https://github.com/cq615/Biomechanics-informed-motion-tracking
   website: https://arxiv.org/abs/2006.04725
 - title: 'Tail of Distribution GAN: GAN-Based Boundary of Distribution Formation'
@@ -1416,7 +1416,7 @@
   authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2019-12-05'
-  image: /assets/images/papers/chen_2019_inpainting.png
+  image: /assets/images/publications/chen_2019_inpainting.png
   code: https://github.com/Hhhhhhao/Thin-Structure-Inpainting
   website: https://doi.org/10.48550/arxiv.1912.02470
 - title: Disentangle, align and fuse for multimodal and zero-shot image segmentation
@@ -1437,7 +1437,7 @@
   authors: Mario Valerio Giuffrida, Sotirios A. Tsaftaris
   venue: IEEE Transactions on Image Processing
   date: '2019-10-15'
-  image: /assets/images/papers/giuffrida_2020_tip.png
+  image: /assets/images/publications/giuffrida_2020_tip.png
   code: https://bitbucket.org/tuttoweb/rotinvrbm/src/master/
   website: https://doi.org/10.1109/tip.2019.2946455
 - title: 'SteReFo: Efficient Image Refocusing with Stereo Vision'
@@ -1465,7 +1465,7 @@
   authors: Agisilaos Chartsias, T. A. Joyce, Giorgos Papanastasiou, Scott Semple, Michelle C. Williams, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: Medical Image Analysis
   date: '2019-07-18'
-  image: /assets/images/papers/chartsias_2019_media.png
+  image: /assets/images/publications/chartsias_2019_media.png
   code: https://github.com/vios-s/anatomy_modality_decomposition
   website: https://doi.org/10.1016/j.media.2019.101535
 - title: 'FIRE: Unsupervised bi-directional inter-modality registration using deep networks'
@@ -1528,7 +1528,7 @@
   authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris, for the Alzheimer’s Disease Neuroimaging Initiative
   venue: Lecture notes in computer science
   date: '2019-01-01'
-  image: /assets/images/papers/xia_2019_miccai.png
+  image: /assets/images/publications/xia_2019_miccai.png
   code: https://github.com/vios-s/BrainAgeing
   website: https://doi.org/10.1007/978-3-030-32251-9_82
 - title: Ontological attention ensembles for capturing semantic concepts in ICD code prediction from clinical text
@@ -1556,14 +1556,14 @@
   authors: C. Qin, J. Schlemper, J. Caballero, A.N. Price, J.V. Hajnal, D. Rueckert
   venue: IEEE Transactions on Medical Imaging, vol. 38
   date: '2019-01-01'
-  image: /assets/images/papers/qin_2017_crnn_mri.png
+  image: /assets/images/publications/qin_2017_crnn_mri.png
   code: https://github.com/cq615/Deep-MRI-Reconstruction
   website: https://ieeexplore.ieee.org/abstract/document/8425639
 - title: Temporal Consistency Objectives Regularize the Learning of Disentangled Representations
   authors: G. Valvano, A. Chartsias, A. Leo, S.A. Tsaftaris
   venue: 'MICCAI, DART: Domain Adaptation and Representation Transfer'
   date: '2019-01-01'
-  image: /assets/images/papers/valvano_2019_miccai.png
+  image: /assets/images/publications/valvano_2019_miccai.png
   code: https://github.com/vios-s/sdtnet
   website: https://arxiv.org/abs/1908.11330
 - title: 'Doing more with less: semi-supervised cardiac segmentation with a fraction of labeled images'
@@ -1584,7 +1584,7 @@
   authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: null
   date: '2018-12-13'
-  image: /assets/images/papers/xia_2019_midl.png
+  image: /assets/images/publications/xia_2019_midl.png
   code: https://github.com/vios-s/pseudo-healthy-synthesis
   website: https://openalex.org/W2964915519
 - title: Meta-Learning for Few-shot Camera-Adaptive Color Constancy.
@@ -1766,14 +1766,14 @@
   authors: C. Qin, W. Bai, J. Schlemper, S. E. Petersen, S. K. Piechnik, S. Neubauer, D. Rueckert
   venue: MICCAI
   date: '2018-01-01'
-  image: /assets/images/papers/qin_2018_motion_seg.png
+  image: /assets/images/publications/qin_2018_motion_seg.png
   code: https://github.com/cq615/Biomechanics-informed-motion-tracking
   website: https://arxiv.org/abs/1806.04066
 - title: 'Factorised spatial representation learning: application in semi-supervised myocardial segmentation'
   authors: A. Chartsias, T. Joyce, G. Papanastasiou, S. Semple, M. Williams, D. Newby, R. Dharmakumar, S.A. Tsaftaris
   venue: MICCAI
   date: '2018-01-01'
-  image: /assets/images/papers/chartsias_2018_miccai.png
+  image: /assets/images/publications/chartsias_2018_miccai.png
   code: https://github.com/vios-s/spatial_factorisation
   website: https://arxiv.org/abs/1803.07031
 - title: Feeding the world one open access plant phenotype image at a time
@@ -1801,7 +1801,7 @@
   authors: Agisilaos Chartsias, T. A. Joyce, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
   venue: IEEE Transactions on Medical Imaging
   date: '2017-10-18'
-  image: /assets/images/papers/chartsias_2017_tmi.png
+  image: /assets/images/publications/chartsias_2017_tmi.png
   code: https://github.com/vios-s/multimodal_brain_synthesis
   website: https://doi.org/10.1109/tmi.2017.2764326
 - title: 'ARIGAN: Synthetic Arabidopsis Plants Using Generative Adversarial Network'
@@ -1829,7 +1829,7 @@
   authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
   venue: null
   date: '2017-09-06'
-  image: /assets/images/papers/dobrescu_2017_cvppp.png
+  image: /assets/images/publications/dobrescu_2017_cvppp.png
   code: https://github.com/vios-s/Leaf-Counting
   website: https://doi.org/10.1101/185173
 - title: 'PVR: Patch-to-Volume Reconstruction for Large Area Motion Correction of Fetal MRI'
@@ -1892,7 +1892,7 @@
   authors: T. A. Joyce, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2017-01-01'
-  image: /assets/images/papers/joyce_2017_miccai.png
+  image: /assets/images/publications/joyce_2017_miccai.png
   code: https://github.com/vios-s/multimodal_brain_synthesis
   website: https://doi.org/10.1007/978-3-319-66179-7_40
 - title: 'Simulation and synthesis in medical imaging: Second international workshop, SASHIMI 2017 held in conjunction with MICCAI 2017 Québec city, QC, Canada, September 10, 2017 proceedings'
