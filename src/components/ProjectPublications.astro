@@ -1,0 +1,169 @@
+---
+import publicationsData from "../data/publications.yaml";
+import { getSortedPublications, type Publication } from "../utils/publications";
+import { projectPublicationTitles } from "../data/project-publications";
+
+interface Props {
+    slug: string;
+    title?: string;
+}
+
+const { slug, title = "Publications" } = Astro.props as Props;
+const allPublications = getSortedPublications(publicationsData as Publication[]);
+const publicationByTitle = new Map(
+    allPublications.map((publication) => [publication.title, publication])
+);
+const configuredPublicationTitles = projectPublicationTitles[slug] ?? [];
+const projectPublications = configuredPublicationTitles
+    .map((publicationTitle) => publicationByTitle.get(publicationTitle))
+    .filter(Boolean) as Publication[];
+
+const truncateAuthors = (authors: string, max = 8) => {
+    const parts = (authors ?? "")
+        .split(",")
+        .map((author) => author.trim())
+        .filter(Boolean);
+    if (parts.length <= max) return authors ?? "";
+    return `${parts.slice(0, max).join(", ")}, ...`;
+};
+---
+
+{
+    projectPublications.length > 0 && (
+        <section class="project-publications">
+            <h2>{title}</h2>
+            <div class="pub-cards">
+                {projectPublications.map((publication) => {
+                    const publicationLinks = [
+                        publication.code ? (
+                            <a
+                                href={publication.code}
+                                class="pub-card-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Code →
+                            </a>
+                        ) : null,
+                        publication.website ? (
+                            <a
+                                href={publication.website}
+                                class="pub-card-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Website →
+                            </a>
+                        ) : null,
+                    ].filter(Boolean);
+
+                    return (
+                        <div class="pub-card">
+                            <div class="pub-card-body">
+                                <span class="pub-card-venue">{publication.venue}</span>
+                                <p class="pub-card-title">{publication.title}</p>
+                                <p class="pub-card-authors">
+                                    {truncateAuthors(publication.authors)}
+                                </p>
+                            </div>
+                            {publicationLinks.length > 0 && (
+                                <div class="pub-card-footer">{publicationLinks}</div>
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+    )
+}
+
+<style>
+    .project-publications h2 {
+        font-family: "Spectral", serif;
+        color: var(--text);
+        margin: 0 0 1.5rem;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    .pub-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .pub-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        transition:
+            transform 0.3s,
+            border-color 0.3s,
+            background 0.35s ease;
+        overflow: hidden;
+    }
+
+    .pub-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(0, 212, 170, 0.4);
+        background: var(--bg3);
+    }
+
+    .pub-card-body {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .pub-card-venue {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.7rem;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .pub-card-title {
+        font-family: "Outfit", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--text);
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .pub-card-authors {
+        font-size: 0.85rem;
+        color: var(--muted);
+        line-height: 1.4;
+        margin-top: auto;
+        padding-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .pub-card-footer {
+        padding: 0.85rem 1.5rem;
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.25rem;
+    }
+
+    .pub-card-link {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.75rem;
+        color: var(--muted);
+        text-decoration: none;
+        letter-spacing: 0.08em;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .pub-card-link:hover {
+        color: var(--accent);
+        border-bottom: none;
+    }
+</style>

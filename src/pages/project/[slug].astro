@@ -1,0 +1,217 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { base } from "../../utils/base";
+
+export async function getStaticPaths() {
+    const projects = await getCollection("projects");
+    return projects.map((project) => ({
+        params: { slug: project.slug || project.id.replace(/\.(md|mdx)$/, "") },
+        props: { project },
+    }));
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+---
+
+<Layout
+    title={`${project.data.title} - VIOS Collaboratory`}
+    description={project.data.summary}
+    image={project.data.heroImage}
+>
+    <article class="project-wrapper">
+        <header class="project-header">
+            <div class="project-eyebrow">{project.data.eyebrow || "Project"}</div>
+            <h1 class="project-title">{project.data.title}</h1>
+        </header>
+        <div class="project-content">
+            <Content />
+        </div>
+    </article>
+</Layout>
+
+<style>
+    .project-wrapper {
+        padding: 10rem 8rem 8rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-header {
+        margin-bottom: 5rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 3rem;
+    }
+
+    .project-eyebrow {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.8rem;
+        color: var(--accent);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-title {
+        font-family: "Spectral", serif;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 400;
+        color: var(--text);
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-desc {
+        font-size: 1.2rem;
+        color: var(--muted);
+        line-height: 1.6;
+        max-width: 700px;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-meta-inline {
+        list-style: none;
+        margin: 0 0 2rem;
+        padding: 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .project-meta-inline li {
+        margin-bottom: 0.15rem;
+    }
+
+    .project-meta-inline strong {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    .project-back {
+        display: inline-flex;
+        align-items: center;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+        color: var(--dim);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+    }
+
+    .project-back:hover {
+        color: var(--accent);
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        max-height: 180px;
+        border-radius: 4px;
+        margin: 2rem 0;
+        border: 1px solid var(--border);
+        background: var(--bg2);
+        padding: 1rem;
+    }
+
+    .project-content :global(h1),
+    .project-content :global(h2),
+    .project-content :global(h3) {
+        font-family: "Spectral", serif;
+        color: var(--text);
+        margin: 3rem 0 1.5rem;
+        font-weight: 400;
+    }
+
+    .project-content :global(h1) {
+        font-size: 2.5rem;
+    }
+    .project-content :global(h2) {
+        font-size: 2rem;
+    }
+    .project-content :global(h3) {
+        font-size: 1.5rem;
+    }
+
+    .project-content :global(p) {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+    }
+
+    .project-content :global(a) {
+        color: var(--accent2);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+
+    .project-content :global(a:hover) {
+        border-color: var(--accent2);
+    }
+
+    .project-content :global(ul),
+    .project-content :global(ol) {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .project-content :global(li) {
+        margin-bottom: 0.5rem;
+    }
+
+    .project-content :global(img) {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin: 2rem 0;
+        border: 1px solid var(--border);
+    }
+
+    .project-content :global(strong) {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    .project-content :global(.funding-logos) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .project-content :global(.funding-logos img) {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #fff;
+        padding: 0.8rem;
+    }
+
+    .project-content :global(blockquote) {
+        border-left: 4px solid var(--accent);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        font-style: italic;
+        color: var(--dim);
+    }
+
+    @media (max-width: 900px) {
+        .project-wrapper {
+            padding: 10rem 3rem 4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .project-wrapper {
+            padding: 8rem 1.5rem 3rem;
+        }
+    }
+</style>

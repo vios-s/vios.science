@@ -48,9 +48,20 @@ const news = defineCollection({
     }).catchall(z.any())
 });
 
+const projects = defineCollection({
+    type: 'content',
+    schema: z.object({
+        title: z.string(),
+        summary: z.string().optional(),
+        eyebrow: z.string().optional(),
+        heroImage: z.string().optional(),
+    }).catchall(z.any())
+});
+
 export const collections = {
     team,
     tutorials,
     pages,
-    news
+    news,
+    projects
 };

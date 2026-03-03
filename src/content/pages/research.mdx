@@ -155,6 +155,7 @@ efficiency and outcomes in high-stakes applications.
 ## Projects
 
 import projectsData from "../../data/projects.json";
+import { base } from "../../utils/base";
 
 <div className="project-grid">
 
@@ -164,7 +165,7 @@ import projectsData from "../../data/projects.json";
 {projectsData.ongoing.map(project => (
 <div className="project-card" key={project.title}>
 <h4>
-{project.url ? <a href={project.url}>{project.title}</a> : project.title}
+{project.url ? <a href={project.url.startsWith("/") ? base(project.url) : project.url}>{project.title}</a> : project.title}
 </h4>
 <ul>
 <li><strong>Funder:</strong> {project.funder}</li>
@@ -181,7 +182,7 @@ import projectsData from "../../data/projects.json";
 {projectsData.completed.map(project => (
 <div className="project-card" key={project.title}>
 <h4>
-{project.url ? <a href={project.url}>{project.title}</a> : project.title}
+{project.url ? <a href={project.url.startsWith("/") ? base(project.url) : project.url}>{project.title}</a> : project.title}
 </h4>
 <ul>
 <li><strong>Funder:</strong> {project.funder}</li>
