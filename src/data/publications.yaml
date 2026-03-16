@@ -1,3 +1,23 @@
+- title: Arabidopsis Thaliana Data for A Conversational Multi-Agent AI System for Automated Plant Phenotyping
+  authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
+  venue: Zenodo (CERN European Organization for Nuclear Research)
+  date: '2026-03-10'
+  website: https://doi.org/10.5281/zenodo.18940282
+- title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
+  authors: Mattia Litrico, Davide Talon, Sebastiano Battiato, Alessio Del Bue, Mario Valerio Giuffrida, Pietro Morerio
+  venue: International Journal of Computer Vision
+  date: '2026-03-09'
+  website: https://doi.org/10.1007/s11263-025-02683-1
+- title: 'Antipsychotic-induced weight gain in psychosis: causal mediation analysis and feasibility study of causal actionable prediction model development using counterfactuals to target obesity'
+  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, SM Lawrie, Rajeev Krishnadas
+  venue: The British Journal of Psychiatry
+  date: '2026-03-09'
+  website: https://doi.org/10.1192/bjp.2026.10561
+- title: 'Beyond Pixel Histories: World Models with Persistent 3D State'
+  authors: Samuel Garcin, Thomas Walker, Steven McDonagh, Tim Pearce, Hakan Bilen, Tianyu He, Kaixin Wang, Jiang Bian
+  venue: arXiv
+  date: '2026-03-03'
+  website: https://openalex.org/W7134017219
 - title: Rethinking Chronological Causal Discovery with Signal Processing
   authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
   venue: arXiv
@@ -112,7 +132,7 @@
   pdf: null
 - title: 'Causal-Adapter: Taming Text-to-Image Diffusion for Faithful Counterfactual Generation'
   authors: Lei Tong, Zhihua Liu, Chaochao Lu, Dino Oglić, Tom Diethe, Philip Teare, Sotirios A. Tsaftaris, Chen Jin
-  venue: null
+  venue: arXiv
   date: '2025-09-29'
   website: https://doi.org/10.48550/arxiv.2509.24798
   image: null
@@ -286,6 +306,11 @@
   image: null
   code: null
   pdf: null
+- title: Benchmarking Self-Supervised Learning Methods for Accelerated MRI Reconstruction
+  authors: Andrew Wang, Steven McDonagh, Mike Davies
+  venue: Open MIND
+  date: '2025-01-01'
+  website: https://openalex.org/W7133591913
 - title: Cloud Detection Challenge-Methods and Results
   authors: Alessio Barbaro Chisari, Luca Guarnera, Alessandro Ortis, Wladimiro Carlo Patatu, Bruno Casella, L. Naso, Giuseppe Puglisi, Vincenzo Del Zoppo, Mario Valerio Giuffrida, Sebastiano Battiato
   venue: IEEE Access
@@ -944,7 +969,7 @@
   pdf: null
 - title: 'Metrics reloaded: Recommendations for image analysis validation'
   authors: Lena Maier‐Hein, Annika Reinke, Patrick Godau, Minu D. Tizabi, Florian Buettner, Evangelia Christodoulou, Ben Glocker, Fabian Isensee, Jens Kleesiek, Michal Kozubek, Mauricio Reyes, Michael A. Riegler, Manuel Wiesenfarth, Ali Emre Kavur, Carole H. Sudre, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Tim Rädsch, Laura Ación, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Matthew B. Blaschko, M. Jorge Cardoso, Veronika Cheplygina, Beth A. Cimini, Gary S. Collins, Keyvan Farahani, Luciana Ferrer, Adrián Galdrán, Bram van Ginneken, Robert Haase, Daniel A. Hashimoto, Michael M. Hoffman, Merel Huisman, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, Hannes Kenngott, Florian Kofler, Annette Kopp‐Schneider, Anna Kreshuk, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier‐Hein, Anne L. Martel, Peter Mattson, Erik Meijering, Bjoern Menze, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Nasir Rajpoot, Nicola Rieke, Julio Sáez-Rodríguez, Clara I. Sá‎nchez, Shravya Shetty, Maarten van Smeden, Ronald M. Summers, Abdel Aziz Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Paul F. Jäger
-  venue: Edinburgh Research Explorer (University of Edinburgh)
+  venue: arXiv
   date: '2022-06-03'
   website: https://doi.org/10.48550/arxiv.2206.01653
   image: null
@@ -1118,6 +1143,11 @@
   image: null
   code: null
   pdf: null
+- title: 'FROB: Few-shot ROBust Model for Classification and Out-of-Distribution\n Detection'
+  authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
+  venue: arXiv
+  date: '2021-11-30'
+  website: https://doi.org/10.48550/arxiv.2111.15487
 - title: Few-Shot Adaptive Detection of Objects of Concern Using Generative Models with Negative Retraining
   authors: Nikolaos Dionelis, Mehrdad Yaghoobi, Sotirios A. Tsaftaris
   venue: 2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI)
@@ -1686,19 +1716,19 @@
   image: null
   code: null
   pdf: null
-- title: Understanding Deep Neural Networks for Regression in Leaf Counting
-  authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
-  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
-  date: '2019-06-01'
-  website: https://doi.org/10.1109/cvprw.2019.00316
-  image: null
-  code: null
-  pdf: null
 - title: Leaf Counting Without Annotations Using Adversarial Unsupervised Domain Adaptation
   authors: Mario Valerio Giuffrida, Andrei Dobrescu, Peter Doerner, Sotirios A. Tsaftaris
   venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
   date: '2019-06-01'
   website: https://doi.org/10.1109/cvprw.2019.00315
+  image: null
+  code: null
+  pdf: null
+- title: Understanding Deep Neural Networks for Regression in Leaf Counting
+  authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2019-06-01'
+  website: https://doi.org/10.1109/cvprw.2019.00316
   image: null
   code: null
   pdf: null
@@ -1862,6 +1892,11 @@
   image: null
   code: null
   pdf: /assets/pdfs/Giuffrida_et_al-2018-The_Plant_Journal.pdf
+- title: 'EchoFusion: Tracking and Reconstruction of Objects in 4D Freehand\n Ultrasound Imaging without External Trackers'
+  authors: Bishesh Khanal, Alberto Gómez, Nicolas Toussaint, Steven McDonagh, Veronika A. Zimmer, Emily Skelton, Jacqueline Matthew, Daniel Grzech, Robert Wright, Chandni Gupta, Benjamin Hou, Daniel Rueckert, Julia A. Schnabel, Bernhard Kainz
+  venue: arXiv
+  date: '2018-07-19'
+  website: https://doi.org/10.48550/arxiv.1807.10583
 - title: Automatic View Planning with Multi-scale Deep Reinforcement Learning\n Agents
   authors: Amir Alansary, Loïc Le Folgoc, Ghislain Vaillant, Ozan Oktay, Yuanwei Li, Wenjia Bai, Jonathan Passerat‐Palmbach, Ricardo Guerrero, Konstantinos Kamnitsas, Benjamin Hou, Steven McDonagh, Ben Glocker, Bernhard Kainz, Daniel Rueckert
   venue: arXiv
