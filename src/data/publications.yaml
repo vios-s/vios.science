@@ -1,3 +1,8 @@
+- title: A Causal Framework for Mitigating Data Shifts in Healthcare
+  authors: Kurt Butler, Stephanie Riley, Damian Machlanski, Edward Moroshko, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Konstantinos Vilouras, Zhihua Liu, Steven McDonagh, Hana Chockler, Ben Glocker, Niccolo Tempini, Matthew Sperrin, Sotirios Tsaftaris, Ricardo Silva
+  venue: arXiv
+  date: '2026-03-13'
+  website: https://openalex.org/W7139146393
 - title: Arabidopsis Thaliana Data for A Conversational Multi-Agent AI System for Automated Plant Phenotyping
   authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: Zenodo (CERN European Organization for Nuclear Research)
@@ -115,8 +120,8 @@
   code: null
   pdf: null
 - title: 'A large dataset of brain imaging linked to health systems data: the curation and access to a whole system national cohort from NHS Scotland'
-  authors: Michael P. J. Camilleri, Dorian Gouzou, Salim Al‐Wasity, Muthu Rama Krishnan Mookiah, Parminder Singh Reel, María Valdés Hernández, Sotirios A. Tsaftaris, Sotirios A. Tsaftaris, Andrew Brooks, Ruairidh MacLeod, Honghan Wu, Brenda S. Bauer, Claire Grover, Susan Krueger, Richard Tobin, J. Douglas Steele, Grant Mair, Joanna M. Wardlaw, Alex S. F. Doney, Emanuele Trucco, William Whiteley
-  venue: null
+  authors: Michael P. J. Camilleri, Dorian Gouzou, Salim Al‐Wasity, Muthu Rama Krishnan Mookiah, María Valdes Hernandez, Bea Alex, Sotirios A. Tsaftaris, Andrew Brooks, Ruairidh MacLeod, Honghan Wu, Brenda S. Bauer, Claire Grover, Parminder Singh Reel, Susan Krueger, Richard Tobin, J. Douglas Steele, Grant Mair, Joanna M. Wardlaw, Alex S. F. Doney, Emanuele Trucco, William Whiteley
+  venue: medRxiv
   date: '2025-10-23'
   website: https://doi.org/10.1101/2025.10.21.25338469
   image: null
@@ -219,10 +224,10 @@
   code: null
   pdf: null
 - title: Antipsychotic-induced weight gain in psychosis – a causal mediation analysis and feasibility study of casual actionable prediction model development using counterfactuals to target obesity
-  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
+  authors: Samuel Leighton, Ivan Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
   venue: null
   date: '2025-05-21'
-  website: https://doi.org/10.31234/osf.io/zfhx3_v2
+  website: https://doi.org/10.31234/osf.io/zfhx3_v1
   image: null
   code: null
   pdf: null
@@ -244,7 +249,7 @@
   pdf: null
 - title: 'PhenoAssistant: A Conversational Multi-Agent AI System for Automated Plant Phenotyping'
   authors: Mario Valerio Giuffrida, Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris
-  venue: null
+  venue: Research Square
   date: '2025-05-13'
   website: https://doi.org/10.21203/rs.3.rs-6430233/v1
   image: null
@@ -291,7 +296,7 @@
   code: null
   pdf: null
 - title: Multimodal machine learning to predict surgical site infection with healthcare workload impact assessment
-  authors: Kenneth A McLean, A Sgrò, Leo R. Brown, Louis F. Buijs, Katie E. Mountain, Catherine A. Shaw, Thomas M Drake, Riinu Pius, Stephen R Knight, Cameron J Fairfield, Richard J. E. Skipworth, Sotirios A. Tsaftaris, Stephen J. Wigmore, Mark A. Potter, Matt-Mouley Bouamrane, Ewen M. Harrison, K. Baweja, William Cambridge, Vinod K. Chauhan, K. Czyzykowska, Monisha Edirisooriya, Anna Forsyth, Brent I. Fox, J. Fretwell, Courtney Gent, Amfiana Gherman, L. Green, Julia Grewar, Sean Heelan, David Henshall, C. Iiuoma, S. Jayasangaran, Chris Johnston, Ewan D. Kennedy, Darja Kremel, Janice Y. Kung, Joey S.W. Kwong, C. Leavy, J. Liu, Seonaid Mackay, A F MacNamara, S. Mowitt, E. Musenga, Nathan Ng, Zhan Herr Ng, Sinéad M. O’Neill, Mark Ramage, J Reed, Aya Riad, Catherine M. Scott, Vinay Sehgal, A Sgrò, L. Steven, Ben M. Stutchfield, Shauna L. Tominey, Wendy Wilson, Mark Wojtowicz, James Chih‐Hsin Yang, J. Yang
+  authors: Kenneth A McLean, A Sgrò, Leo R. Brown, Louis F. Buijs, Katie E. Mountain, Catherine A. Shaw, Thomas M Drake, Riinu Pius, Stephen R Knight, Cameron J Fairfield, Richard J. E. Skipworth, Sotirios A. Tsaftaris, Stephen J. Wigmore, Mark A. Potter, Matt-Mouley Bouamrane, Ewen M. Harrison, TWIST Collaborators, K. Baweja, William Cambridge, Vinod K. Chauhan, K. Czyzykowska, Monisha Edirisooriya, Anna Forsyth, Brent I. Fox, J. Fretwell, Courtney Gent, Amfiana Gherman, L. Green, Julia Grewar, Sean Heelan, David Henshall, C. Iiuoma, S. Jayasangaran, Chris Johnston, Ewan D. Kennedy, Darja Kremel, Janice Y. Kung, Joey S.W. Kwong, C. Leavy, J. Liu, Seonaid Mackay, A F MacNamara, S. Mowitt, E. Musenga, Nathan Ng, Zhan Herr Ng, Sinéad M. O’Neill, Mark Ramage, J Reed, Aya Riad, Catherine M. Scott, Vinay Sehgal, A Sgrò, L. Steven, Ben M. Stutchfield, Shauna L. Tominey, Wendy Wilson, Mark Wojtowicz, James Chih‐Hsin Yang
   venue: npj Digital Medicine
   date: '2025-02-23'
   website: https://doi.org/10.1038/s41746-024-01419-8
@@ -639,6 +644,11 @@
   image: null
   code: null
   pdf: null
+- title: Domain Adaptation and Representation Transfer
+  authors: Lisa M. Koch, M. Jorge Cardoso, Enzo Ferrante, Konstantinos Kamnitsas, Mobarakol Islam, Meirui Jiang, Nicola Rieke, Sotirios A. Tsaftaris, Dong Yang
+  venue: Lecture notes in computer science
+  date: '2023-10-13'
+  website: https://doi.org/10.1007/978-3-031-45857-6
 - title: Compositional Representation Learning for Brain Tumour Segmentation
   authors: Xiao Liu, Antanas Kascenas, Hannah Watson, Sotirios A. Tsaftaris, Alison Q. O’Neil
   venue: Lecture notes in computer science
@@ -769,7 +779,7 @@
   pdf: null
 - title: A Probabilistic U-Net Workflow for Automatically Cell Counting in Digital Pathology
   authors: Yiming Yang, Mario Valerio Giuffrida, Shufan Yang
-  venue: Research Square (Research Square)
+  venue: Research Square
   date: '2023-02-16'
   website: https://doi.org/10.21203/rs.3.rs-2582938/v1
   image: null
@@ -1103,14 +1113,6 @@
   image: null
   code: null
   pdf: null
-- title: Domain Adaptation and Representation Transfer
-  authors: Konstantinos Kamnitsas, Lisa M. Koch, Mobarakol Islam, Ziyue Xu, M. Jorge Cardoso, Qi Dou, Nicola Rieke, Sotirios A. Tsaftaris, Tsaftaris, Sotirios, International Conference on Medical Image Computing and Computer Assisted Intervention 2022 Singapur; Online
-  venue: Lecture notes in computer science
-  date: '2022-01-01'
-  website: https://doi.org/10.1007/978-3-031-16852-9
-  image: null
-  code: null
-  pdf: null
 - title: Future trends in medical and biomedical image synthesis
   authors: Ninon Burgos, Sotirios A. Tsaftaris, David Svoboda
   venue: Elsevier eBooks
@@ -1269,7 +1271,7 @@
   code: null
   pdf: null
 - title: 'Common Limitations of Image Processing Metrics: A Picture Story'
-  authors: Annika Reinke, Matthias Eisenmann, Minu D. Tizabi, Carole H. Sudre, Tim Rädsch, Michela Antonelli, Tal Arbel, Spyridon Bakas, M. Jorge Cardoso, Veronika Cheplygina, Keyvan Farahani, Ben Glocker, Doreen Heckmann-Nötzel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Jens Kleesiek, Tahsin Kurç, Michal Kozubek, Bennett A. Landman, Geert Litjens, Klaus Maier‐Hein, Bjoern Menze, Henning Müller, Jens Petersen, Ben Glocker, Nicola Rieke, Bram Stieltjes, Ronald M. Summers, Sotirios A. Tsaftaris, Bram van Ginneken, Annette Kopp‐Schneider, Paul F. Jäger, Lena Maier‐Hein, Isensee, Fabian, Jannin, Pierre, Kahn, Charles E., Kainmueller, Dagmar, Kainz, Bernhard, Karargyris, Alexandros, Karthikesalingam, Alan, Kavur, A. Emre, Kenngott, Hannes, Kleesiek, Jens, Kleppe, Andreas, Kohler, Sven, Kofler, Florian, Kopp-Schneider, Annette, Kooi, Thijs, Kozubek, Michal, Kreshuk, Anna, Kurc, Tahsin, Landman, Bennett A., Litjens, Geert, Madani, Amin, Maier-Hein, Klaus, Martel, Anne L., Mattson, Peter, Meijering, Erik, Menze, Bjoern, Moher, David, Moons, Karel G. M., Müller, Henning, Nichyporuk, Brennan, Nickel, Felix, Noyan, M. Alican, Petersen, Jens, Polat, Gorkem, Rafelski, Susanne M., Rajpoot, Nasir, Reyes, Mauricio, Rieke, Nicola, Riegler, Michael, Rivaz, Hassan, Saez-Rodriguez, Julio, Sánchez, Clara I., Schroeter, Julien, Saha, Anindo, Selver, M. Alper, Sharan, Lalith, Shetty, Shravya, van Smeden, Maarten, Stieltjes, Bram, Summers, Ronald M., Taha, Abdel A., Tiulpin, Aleksei, Sotirios A. Tsaftaris, Van Calster, Ben, Varoquaux, Gaël, Wiesenfarth, Manuel, Yaniv, Ziv R., Jäger, Paul, Maier-Hein, Lena
+  authors: Annika Reinke, Minu D. Tizabi, Carole H. Sudre, Matthias Eisenmann, Tim Rädsch, Baumgartner, Michael, Acion, Laura, Michela Antonelli, Tal Arbel, Spyridon Bakas, Bankhead, Peter, Benis, Arriel, Blaschko, Matthew, Buettner, Florian, M. Jorge Cardoso, Chen, Jianxu, Veronika Cheplygina, Christodoulou, Evangelia, Cimini, Beth, Collins, Gary S., Engelhardt, Sandy, Keyvan Farahani, Ferrer, Luciana, Galdran, Adrian, Bram van Ginneken, Ben Glocker, Godau, Patrick, Haase, Robert, Hamprecht, Fred, Hashimoto, Daniel A., Doreen Heckmann-Nötzel, Hirsch, Peter, Hoffman, Michael M., Huisman, Merel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Kainmueller, Dagmar, Kainz, Bernhard, Karargyris, Alexandros, Karthikesalingam, Alan, Kavur, A. Emre, Kenngott, Hannes, Jens Kleesiek, Kleppe, Andreas, Kohler, Sven, Kofler, Florian, Annette Kopp‐Schneider, Kooi, Thijs, Michal Kozubek, Kreshuk, Anna, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Madani, Amin, Klaus Maier‐Hein, Martel, Anne L., Mattson, Peter, Meijering, Erik, Bjoern Menze, Moher, David, Moons, Karel G. M., Henning Müller, Nichyporuk, Brennan, Nickel, Felix, Noyan, M. Alican, Jens Petersen, Polat, Gorkem, Rafelski, Susanne M., Rajpoot, Nasir, Mauricio Reyes, Nicola Rieke, Riegler, Michael, Rivaz, Hassan, Saez-Rodriguez, Julio, Sánchez, Clara I., Schroeter, Julien, Saha, Anindo, Selver, M. Alper, Sharan, Lalith, Shetty, Shravya, van Smeden, Maarten, Bram Stieltjes, Ronald M. Summers, Taha, Abdel A., Tiulpin, Aleksei, Sotirios A. Tsaftaris, Van Calster, Ben, Varoquaux, Gaël, Wiesenfarth, Manuel, Yaniv, Ziv R., Paul F. Jäger, Lena Maier‐Hein
   venue: arXiv
   date: '2021-04-12'
   website: https://doi.org/10.48550/arxiv.2104.05642
@@ -1300,14 +1302,6 @@
   image: null
   code: null
   pdf: null
-- title: 'GaNDLF: A Generally Nuanced Deep Learning Framework for Scalable End-to-End Clinical Workflows in Medical Imaging'
-  authors: Sarthak Pati, Siddhesh Thakur, Megh Bhalerao, Spyridon Thermos, Ujjwal Baid, Karol Gotkowski, Camila González, Orhun Güley, İbrahim Ethem Hamamcı, Sezgin Er, Caleb M. Grenko, Brandon Edwards, Micah Sheller, Jose Agraz, Bhakti Baheti, Vishnu Bashyam, Parth Sharma, Babak Haghighi, Aimilia Gastounioti, Mark Bergman, Anirban Mukhopadhyay, Sotirios A. Tsaftaris, Bjoern Menze, Despina Kontos, Christos Davatzikos, Spyridon Bakas, Kurc, Tahsin M., Gastounioti, Aimilia, Er, Sezgin, Bergman, Mark, Saltz, Joel H., Fan, Yong, Shah, Prashant, Mukhopadhyay, Anirban, Sotirios A. Tsaftaris, Menze, Bjoern, Davatzikos, Christos, Kontos, Despina, Karargyris, Alexandros, Umeton, Renato, Mattson, Peter, Bakas, Spyridon
-  venue: Edinburgh Research Explorer
-  date: '2021-02-26'
-  website: https://doi.org/10.48550/arxiv.2103.01006
-  image: null
-  code: null
-  pdf: null
 - title: 'CURL: Neural Curve Layers for Global Image Enhancement'
   authors: Seán Moran, Steven McDonagh, Greg Slabaugh
   venue: 2020 25th International Conference on Pattern Recognition (ICPR)
@@ -1333,7 +1327,7 @@
   code: https://github.com/vios-s/RA_FA_Cardiac
   pdf: null
 - title: Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health
-  authors: Shadi Albarqouni, M. Jorge Cardoso, Qi Dou, Konstantinos Kamnitsas, Bishesh Khanal, Islem Rekik, Nicola Rieke, Debdoot Sheet, Sotirios A. Tsaftaris, Daguang Xu, Ziyue Xu, Xu, Ziyue, FAIR 2021 Straßburg, MICCAI 2021 Online
+  authors: Albarqouni, Shadi, Shadi Albarqouni, M. Jorge Cardoso, Qi Dou, Konstantinos Kamnitsas, Bishesh Khanal, Islem Rekik, Nicola Rieke, Debdoot Sheet, Sotirios A. Tsaftaris, Daguang Xu
   venue: Lecture notes in computer science
   date: '2021-01-01'
   website: https://doi.org/10.1007/978-3-030-87722-4
@@ -1438,7 +1432,7 @@
   pdf: null
 - title: Chickpea ( <i>Cicer arietinum</i> L.) root system architecture adaptation to initial soil moisture improves seed development in dry-down conditions
   authors: Thibaut Bontpart, Ingrid Robertson, Mario Valerio Giuffrida, Cristobal Concha, Livia Scorza, Alistair J. McCormick, Asnake Fikre, Sotirios A. Tsaftaris, Peter Doerner
-  venue: null
+  venue: bioRxiv (Cold Spring Harbor Laboratory)
   date: '2020-09-25'
   website: https://doi.org/10.1101/2020.09.24.311753
   image: null
@@ -1612,11 +1606,11 @@
   image: null
   code: null
   pdf: null
-- title: 'Many-shot from low-shot: learning to annotate using mixed supervision for object detection'
-  authors: Carlo Biffi, Steven McDonagh, Philip Torr, Aleš Leonardis, Sarah Parisot
-  venue: Oxford University Research Archive (ORA) (University of Oxford)
+- title: 'Many-Shot from Low-Shot: Learning to Annotate Using Mixed Supervision for Object Detection'
+  authors: Carlo Biffi, Steven McDonagh, Philip H. S. Torr, Aleš Leonardis, Sarah Parisot
+  venue: Lecture notes in computer science
   date: '2020-01-01'
-  website: https://openalex.org/W3108828338
+  website: https://doi.org/10.1007/978-3-030-58598-3_3
   image: null
   code: null
   pdf: null
@@ -1766,7 +1760,7 @@
   pdf: null
 - title: Affordable and robust phenotyping framework to analyse root system architecture of soil-grown plants
   authors: Thibaut Bontpart, Cristobal Concha, Mario Valerio Giuffrida, Ingrid Robertson, Kassahun Admkie, Tulu Degefu, Nigusie Girma, Kassahun Tesfaye, Teklehaimanot Haileselassie, Asnake Fikre, Masresha Fetene, Sotirios A. Tsaftaris, Peter Doerner
-  venue: null
+  venue: bioRxiv (Cold Spring Harbor Laboratory)
   date: '2019-03-11'
   website: https://doi.org/10.1101/573139
   image: null
@@ -2123,7 +2117,7 @@
   pdf: null
 - title: Leveraging Multiple Datasets for Deep Leaf Counting
   authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
-  venue: null
+  venue: bioRxiv (Cold Spring Harbor Laboratory)
   date: '2017-09-06'
   website: https://doi.org/10.1101/185173
   image: /assets/images/publications/dobrescu_2017_cvppp.png
@@ -2314,7 +2308,7 @@
   code: null
   pdf: /assets/pdfs/Vasilis_SASHMI2016.pdf
 - title: Simulation and Synthesis in Medical Imaging
-  authors: Sotirios A. Tsaftaris, Ali Gooya, Alejandro F. Frangi, Jerry L. Prince
+  authors: Jerry L. Prince, Alejandro F. Frangi, Ali Gooya, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
   date: '2016-01-01'
   website: https://doi.org/10.1007/978-3-319-46630-9
@@ -2914,8 +2908,8 @@
   code: null
   pdf: null
 - title: Tracking-Optimal Error Control Schemes For H.264 Compressed Video For Vehicle Surveillance
-  authors: Zhaofu Chen, Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
-  venue: European Signal Processing Conference
+  authors: Zhaofu Chen, Katsaggelos, A., Eren Soyak, Sotirios A. Tsaftaris
+  venue: Zenodo (CERN European Organization for Nuclear Research)
   date: '2012-08-27'
   website: https://doi.org/10.5281/zenodo.43203
   image: null
