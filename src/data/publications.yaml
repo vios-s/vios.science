@@ -1,3 +1,8 @@
+- title: A conversational multi-agent AI system for automated plant phenotyping
+  authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
+  venue: Nature Communications
+  date: '2026-04-03'
+  website: https://doi.org/10.1038/s41467-026-71090-y
 - title: A Causal Framework for Mitigating Data Shifts in Healthcare
   authors: Kurt Butler, Stephanie Riley, Damian Machlanski, Edward Moroshko, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Konstantinos Vilouras, Zhihua Liu, Steven McDonagh, Hana Chockler, Ben Glocker, Niccolo Tempini, Matthew Sperrin, Sotirios Tsaftaris, Ricardo Silva
   venue: arXiv
@@ -5,7 +10,7 @@
   website: https://openalex.org/W7139146393
 - title: Arabidopsis Thaliana Data for A Conversational Multi-Agent AI System for Automated Plant Phenotyping
   authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
-  venue: Zenodo (CERN European Organization for Nuclear Research)
+  venue: Open MIND
   date: '2026-03-10'
   website: https://doi.org/10.5281/zenodo.18940282
 - title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
@@ -23,14 +28,6 @@
   venue: arXiv
   date: '2026-03-03'
   website: https://openalex.org/W7134017219
-- title: Rethinking Chronological Causal Discovery with Signal Processing
-  authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
-  venue: arXiv
-  date: '2026-02-23'
-  website: https://openalex.org/W7131319877
-  image: null
-  code: null
-  pdf: null
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: arXiv
@@ -63,14 +60,11 @@
   image: null
   code: null
   pdf: null
-- title: A Conversational Multi-Agent AI System for Automated Plant Phenotyping
-  authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Reilly Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
-  venue: Repository@Nottingham (University of Nottingham)
-  date: '2026-01-07'
-  website: https://openalex.org/W7130493655
-  image: null
-  code: null
-  pdf: null
+- title: Rethinking Chronological Causal Discovery with Signal Processing
+  authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
+  venue: Open MIND
+  date: '2026-01-01'
+  website: https://openalex.org/W7131319877
 - title: Temporally-aware diffusion model for brain progression modelling with bidirectional temporal regularisation
   authors: Mattia Litrico, Francesco Guarnera, Mario Valerio Giuffrida, Daniele Ravì, Sebastiano Battiato
   venue: Computerized Medical Imaging and Graphics
@@ -159,11 +153,11 @@
   image: null
   code: null
   pdf: null
-- title: 'Count2Density: Crowd Density Estimation without Location-level Annotations'
+- title: 'Count2Density: Crowd density estimation without location-level annotations'
   authors: Mattia Litrico, Feng Chen, Michael P. Pound, Sotirios A. Tsaftaris, Sebastiano Battiato, Mario Valerio Giuffrida
-  venue: arXiv
+  venue: Pattern Recognition
   date: '2025-09-03'
-  website: https://doi.org/10.48550/arxiv.2509.03170
+  website: https://doi.org/10.1016/j.patcog.2026.113755
   image: null
   code: null
   pdf: null
@@ -224,10 +218,10 @@
   code: null
   pdf: null
 - title: Antipsychotic-induced weight gain in psychosis – a causal mediation analysis and feasibility study of casual actionable prediction model development using counterfactuals to target obesity
-  authors: Samuel Leighton, Ivan Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
+  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
   venue: null
   date: '2025-05-21'
-  website: https://doi.org/10.31234/osf.io/zfhx3_v1
+  website: https://doi.org/10.31234/osf.io/zfhx3_v2
   image: null
   code: null
   pdf: null
@@ -1027,7 +1021,7 @@
   pdf: null
 - title: Re-examining Distillation For Continual Object Detection
   authors: Eli Verwimp, Kuo Yang, Sarah Parisot, Hong Lanqing, Steven McDonagh, Eduardo Pérez-Pellitero, Matthias De Lange, Tinne Tuytelaars
-  venue: arXiv
+  venue: Lirias (KU Leuven)
   date: '2022-04-04'
   website: https://doi.org/10.48550/arxiv.2204.01407
   image: null
@@ -1710,19 +1704,19 @@
   image: null
   code: null
   pdf: null
-- title: Leaf Counting Without Annotations Using Adversarial Unsupervised Domain Adaptation
-  authors: Mario Valerio Giuffrida, Andrei Dobrescu, Peter Doerner, Sotirios A. Tsaftaris
-  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
-  date: '2019-06-01'
-  website: https://doi.org/10.1109/cvprw.2019.00315
-  image: null
-  code: null
-  pdf: null
 - title: Understanding Deep Neural Networks for Regression in Leaf Counting
   authors: Andrei Dobrescu, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
   venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
   date: '2019-06-01'
   website: https://doi.org/10.1109/cvprw.2019.00316
+  image: null
+  code: null
+  pdf: null
+- title: Leaf Counting Without Annotations Using Adversarial Unsupervised Domain Adaptation
+  authors: Mario Valerio Giuffrida, Andrei Dobrescu, Peter Doerner, Sotirios A. Tsaftaris
+  venue: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)
+  date: '2019-06-01'
+  website: https://doi.org/10.1109/cvprw.2019.00315
   image: null
   code: null
   pdf: null
@@ -1819,14 +1813,6 @@
   venue: SCMR
   date: '2019-01-01'
   website: null
-  image: null
-  code: null
-  pdf: null
-- title: Learning to Count Leaves of Plants
-  authors: Mario Valerio Giuffrida
-  venue: 'The Signal Calculus: beyond message based coordination for services (IMT School for Advanced Studies Lucca)'
-  date: '2018-12-18'
-  website: https://openalex.org/W2990457270
   image: null
   code: null
   pdf: null
@@ -2019,6 +2005,11 @@
   image: null
   code: null
   pdf: null
+- title: Learning to Count Leaves of Plants
+  authors: Mario Valerio Giuffrida
+  venue: 'The Signal Calculus: beyond message based coordination for services (IMT School for Advanced Studies Lucca)'
+  date: '2018-01-01'
+  website: https://doi.org/10.13118/giuffrida-mario-valerio_phd2018
 - title: Editorial for Simulation and Synthesis in Medical Imaging
   authors: A. Frangi, S.A. Tsaftaris, J. Prince
   venue: IEEE Transactions on Medical Imaging, vol. 37, no. 3, pp. 673-679
@@ -2909,7 +2900,7 @@
   pdf: null
 - title: Tracking-Optimal Error Control Schemes For H.264 Compressed Video For Vehicle Surveillance
   authors: Zhaofu Chen, Katsaggelos, A., Eren Soyak, Sotirios A. Tsaftaris
-  venue: Zenodo (CERN European Organization for Nuclear Research)
+  venue: http://ivpl.ece.northwestern.edu/system/files/EUSIPCO12.pdf
   date: '2012-08-27'
   website: https://doi.org/10.5281/zenodo.43203
   image: null
