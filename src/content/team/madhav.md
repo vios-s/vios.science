@@ -4,7 +4,7 @@ role: "phd"
 subtitle: "PhD Student"
 profile: "madhav.jpg"
 
-github: " https://github.com/madhav1ag"
+github: "https://github.com/madhav1ag"
 linkedin: "https://www.linkedin.com/in/madhav1ag/"
 scholar: "https://scholar.google.com/citations?user=t8VdoRYAAAAJ&hl=en"
 

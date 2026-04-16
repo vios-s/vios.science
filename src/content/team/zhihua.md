@@ -15,4 +15,4 @@ collection: team
 permalink: /team/zhihua
 ---
 
-Zhihua Liu is a Postdoc Research Associate in Causal AI at the University of Edinburgh under the supervision of Prof. Sotirios Tsaftaris. His research focuses on computer vision and machine learning, with recent interests in causal learning models for visiual reasoning, generating and understanding. For more details, please visit his [personal website](https://zhihualiued.github.io/).
+Zhihua Liu is a Postdoc Research Associate in Causal AI at the University of Edinburgh under the supervision of Prof. Sotirios Tsaftaris. His research focuses on computer vision and machine learning, with recent interests in causal learning models for visual reasoning, generating and understanding. For more details, please visit his [personal website](https://zhihualiued.github.io/).

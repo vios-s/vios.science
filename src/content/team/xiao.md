@@ -7,7 +7,7 @@ profile: "xiao.jpg"
 collection: team
 permalink: /team/liu
 ---
-Xiao Liu is currently a PhD student in IDCOM of the School of Engineering at the University of Edinburgh. His principle supervisor is Prof. Sotirios Tsaftaris.
+Xiao Liu is currently a PhD student in IDCOM of the School of Engineering at the University of Edinburgh. His principal supervisor is Prof. Sotirios Tsaftaris.
 
 He received a MSc degree in Signal Processing and
 Communications from the University of Edinburgh. Before that, he was a 2+2

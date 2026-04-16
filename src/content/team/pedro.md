@@ -21,6 +21,6 @@ causality and machine learning. He is especially interested in applications rela
 He holds a Master's degree in Biomedical Engineering from the University of Strasbourg / France and 
 a double degree in electrical engineering and biomedical engineering from the University of Brasilia / Brazil and the University of Strasbourg / France.
 Before starting his PhD, he worked as a research engineer at Canon Medical Research Europe. 
-Previously, he did internships at General Electric Healthcare, Samsumg Research Brazil and ICube laboratory.
+Previously, he did internships at General Electric Healthcare, Samsung Research Brazil and ICube laboratory.
 
 Please visit [his personal website](https://www.ppsanchez.com/) for more information.

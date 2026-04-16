@@ -9,7 +9,7 @@ order: 4
 collection: team
 permalink: /team/giuffrida
 ---
-Valerio Giuffrida is a  Assistant Professor in Computer Vision  at The University of Nottingham. 
+Valerio Giuffrida is an Assistant Professor in Computer Vision at The University of Nottingham.
 
 He obtained the Ph.D. from IMT School For Advanced Studies Lucca (supervisor
 Prof. Sotirios A. Tsaftaris based at the University of Edinburgh). He has
