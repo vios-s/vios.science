@@ -14,6 +14,6 @@ collection: team
 permalink: /team/ilias
 ---
 
-Ilias Stogiannidis is a PhD student at the University of Edinburgh, under the supervision of Professor Sotirios Tsaftaris and Dr. Steven McDonagh. His research focuses on Computer Vision and general Machine Learning. For more details, visit his [website](https://stogiannidis.github.io/).
+Ilias Stogiannidis is a PhD student at the University of Edinburgh, supervised by Prof. Sotirios A. Tsaftaris and Dr. Steven McDonagh. His research focuses on 3D/4D Understanding in Foundation Models, Multimodal Learning, and Self-Supervised Learning. For more details, visit his [website](https://stogiannidis.github.io/).
 
-He previously earned an MSc in Computer Science from the Department of Informatics at the Athens University of Economics and Business (AUEB), specializing in machine learning and natural language processing. He also holds a Bachelor's degree from the same department at AUEB.
+He holds an MSc and BSc in Computer Science from the Department of Informatics at the Athens University of Economics and Business (AUEB), working on Natural Language Processing and Machine Learning. He maintains an active affiliation with AUEB’s NLP Group.
