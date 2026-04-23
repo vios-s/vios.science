@@ -5,10 +5,11 @@ import rehypeExternalLinks from 'rehype-external-links';
 import { rehypeBasePath } from './src/plugins/rehype-base-path.mjs';
 import yaml from '@modyfi/vite-plugin-yaml';
 
-const BASE_PATH = '/vios.science';
+const SITE_URL = 'https://vios.science';
+const BASE_PATH = '/';
 
 export default defineConfig({
-    site: 'https://vios-s.github.io',
+    site: SITE_URL,
     base: BASE_PATH,
     integrations: [mdx(), sitemap()],
     vite: {
