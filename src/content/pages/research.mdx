@@ -7,150 +7,102 @@ sidebar:
 ---
 ## The Pillars of our Research
 
-Our research is at the forefront of AI, focusing on several key pillars
-that drive progress in machine learning, computer vision, and their
-applications in the natural and life sciences. We highlight core
-applications in **healthcare, health, and agriculture** to showcase the
-tangible impact of our work.
+VIOS develops machine learning and computer vision methods for
+high-impact problems in the life sciences. Our work spans core AI
+methodology and domain-driven applications, with particular emphasis on
+healthcare, agriculture, and scientific infrastructure.
 
 ### 1. Representation Learning, Multimodal AI, and Self-Supervised Learning
 
-This pillar is all about teaching AI models to understand the world in a
-more holistic way. Instead of just learning from a single type of data,
-our work focuses on **multimodal AI**, where we build models that learn
-from multiple data types at once, like combining medical images with
-patient reports. The goal is to create a richer, more comprehensive
-understanding.
+We study how to learn strong representations from limited, heterogeneous,
+and partially labeled data. This includes **multimodal learning**,
+**self-supervised learning**, and disentangled representations that can
+separate clinically or scientifically meaningful factors from nuisance
+variation.
 
-A key challenge is that labeled data is often scarce, especially in
-specialized fields like medicine. To overcome this, we
-develop **self-supervised learning** techniques that allow models to
-learn from unlabeled data by finding patterns and structures on their
-own. This approach helps AI learn more efficiently and effectively. We
-also explore how to disentangle the different aspects of data, such as
-separating a disease from an organ's anatomy, which is critical for
-medical image analysis. Importantly, we recognise that different
-modalities bring distinct representational challenges, and thus we must
-develop approaches that account for modality-specific characteristics,
-while effectively leveraging complementary information and uncertainty
-quantification, rather than relying solely on model-agnostic strategies.
+Many of our application domains offer limited annotations and substantial
+distribution shift. We therefore focus on methods that can learn from
+unlabeled data, transfer across settings, and retain useful structure
+across modalities rather than relying on large labeled datasets alone.
 
 Our foundational research in this area has been applied to:
 
-- **Healthcare:** We use these methods for multimodal cardiac
-  segmentation, ophthalmological triaging and to create disentangled
-  representations for domain-generalized medical image analysis and
-  further video-understanding tasks.
+- **Healthcare:** multimodal cardiac segmentation, ophthalmological
+  triaging, domain-generalized medical image analysis, and video
+  understanding.
 
-- **Agriculture:** We have developed deep learning architectures for
-  counting leaves in plants and used adversarial unsupervised domain
-  adaptation to count leaves without needing extensive annotations.
+- **Agriculture:** leaf counting, phenotyping, and domain adaptation
+  methods that reduce annotation requirements.
 
 ### 2. Learning from Simulations, Synthetic Data, and Digital Twins
 
-In many fields, real-world data is limited, expensive, or sensitive.
-This pillar of our research addresses this challenge by generating
-high-quality **synthetic data** to train AI models. We create realistic,
-simulated datasets that mimic real-world scenarios, allowing us to build
-more robust and generalizable AI systems.
+In several application areas, real data are expensive to obtain, sparse,
+or difficult to share. We address this through **synthetic data**,
+simulation, and **digital twins** that support model development,
+evaluation, and decision support.
 
-A significant focus of this work is on **digital twins**---virtual
-models of real-world systems, such as a patient's body or a surgical
-procedure. We use these digital twins to run simulations, predict
-outcomes, and test interventions in a safe, controlled environment. This
-technology has the potential to revolutionize personalized medicine and
-surgical planning.
+Our work asks when synthetic data are genuinely useful, how simulation
+and learned models can be coupled, and how digital twins can be made
+credible enough to support real-world workflows such as assisted surgery
+and scientific experimentation.
 
 Our research in this area includes:
 
-- **Healthcare:** We create synthetic aging brains from cross-sectional
-  data and develop "pseudo-healthy" syntheses to aid in the detection
-  of diseases and anomalies in medical images. We are also working on
-  digital twins for real-time assisted surgery.
+- **Healthcare:** synthetic aging brains, "pseudo-healthy" image
+  synthesis, anomaly detection support, and digital twins for
+  real-time-assisted surgery.
 
-- **Plant Sciences:** We have used Generative Adversarial Networks
-  (**GANs**) to synthesize realistic images of plants, which helps in
-  developing automated phenotyping systems.
+- **Plant sciences:** simulated and generative plant imagery for robust
+  automated phenotyping.
 
 ### 3. Causal AI
 
-While traditional AI models are excellent at finding **correlations** in
-data, they often struggle to identify the underlying **causes**. Our
-work in **causal AI** goes beyond correlation to understand
-cause-and-effect relationships. This is crucial for making reliable
-predictions and decisions, especially in high-stakes fields like
-medicine. By uncovering the causal links between different factors, we
-can develop AI systems that are more trustworthy and less prone to
-making spurious conclusions based on misleading data patterns.
+We investigate **causal AI** to move beyond pattern matching and towards
+models that can support robust reasoning, reliable prediction, and
+better intervention design. A central question in this line of work is
+how to reduce shortcut learning and spurious associations in
+high-stakes settings.
 
-Our projects in this area are aimed at building AI that can reason more
-like a human, leading to more transparent and reliable outcomes. We are
-exploring how to use diffusion models for causal discovery, which is a
-powerful technique for understanding the structure of complex systems.
+This includes work on causal discovery, causal representation learning,
+and the use of generative models in counterfactual or causally informed
+settings.
 
 Key applications of our causal AI research are in:
 
-- **Healthcare:** We are developing AI models that can better understand
-  the causal factors in medical imaging, such as the relationship
-  between a patient's condition and features in an MRI scan. This
-  includes research into causal machine learning for precision medicine.
+- **Healthcare:** causally informed medical imaging models and methods
+  for precision medicine.
 
-- **General AI:** We are working on projects related to causal concept
-  learning and causally steered diffusion for automated video
-  counterfactual generation.
+- **General AI:** causal concept learning and causally steered diffusion
+  for counterfactual generation.
 
 ### 4. Value of Data, Privacy, and Leakage
 
-The incredible power of AI comes with significant responsibility,
-particularly regarding data privacy and security. This research pillar
-is dedicated to understanding and controlling how AI models handle
-sensitive information. We investigate **data leakage**, which occurs
-when private data used for training is unintentionally revealed by the
-model. We also work on **privacy-preserving** techniques to ensure that
-AI can be developed and deployed without compromising an individual's
-personal information.
+We study the **value of data** alongside the risks that come with using
+it. This includes privacy, memorization, fairness, and unintended
+leakage from trained models, especially in domains where data are
+sensitive and data governance matters.
 
-Our goal is to build AI systems that not only perform well but are also
-ethically sound and safe to use with sensitive data. Our research
-focuses on measuring unintended memorization of unique private features
-in neural networks.
+Our goal is to understand what models retain, what they expose, and how
+to design systems that are both useful and safe to deploy.
 
 Applications for this work include:
 
-- **Healthcare:** We explore how to assess if a machine learning model
-  has "forgotten" data and develop methods to mitigate memorization in
-  medical diffusion models. We also work on understanding fairness
-  biases in MRI reconstruction.
+- **Healthcare:** machine unlearning, memorization analysis in medical
+  diffusion models, and fairness in MRI reconstruction.
 
-- **General AI:** This research has broad implications for all
-  foundation models, as it seeks to define methods for controlling and
-  mitigating memorization and privacy risks. We also study the role of
-  privacy in AI for healthcare.
+- **General AI:** methods for measuring and mitigating memorization,
+  leakage, and privacy risk in foundation models.
 
 ### 5. Foundation Models and Agentic AI
 
-Our research leverages the power of foundation models to tackle complex
-challenges in both healthcare and agriculture. We explore **vision
-foundation models** and their adaptation for tasks like plant
-phenotyping and human emotion recognition allowing us to apply a single,
-powerful model to diverse applications with minimal additional training.
-We also investigate **vision language models** to benchmark their
-spatial reasoning capabilities, aiming to create more contextually aware
-and accurate systems for tasks like analyzing medical images.
-Furthermore, our work with **diffusion models**---a type of generative
-foundation model---is applied to tasks such as analyzing chest X-rays
-and generating synthetic data.
+We work with **foundation models** as both users and method developers.
+This includes adapting vision and vision-language models to specialist
+domains, testing their reasoning and robustness, and using diffusion
+models for synthesis, reconstruction, and analysis.
 
-Simultaneously, our work on **Agentic AI** focuses on creating
-intelligent systems capable of performing specific tasks and interacting
-with their environment. We've developed a **conversational multi-agent
-AI system** called "PhenoAssistant" for the automation of plant
-phenotyping. In this system, multiple AI agents collaborate to
-streamline complex agricultural tasks. In the medical field, we are
-applying **actor-critic frameworks** and self-supervised imitation
-learning to automate surgical procedures. This research aims to create
-robust, autonomous systems that can assist human experts, improving
-efficiency and outcomes in high-stakes applications.
+We also study **agentic AI** for scientific and clinical workflows. That
+includes multi-agent systems for plant phenotyping and autonomous or
+semi-autonomous methods for complex tasks such as surgical assistance.
 
 ## Projects
 

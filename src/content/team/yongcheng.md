@@ -13,6 +13,6 @@ collection: team
 permalink: /team/yongcheng
 ---
 
-Yongcheng is currently a PhD student at the UKRI CDT in Biomedical AI, School of Informatics, University of Edinburgh (UoE), supervised by Prof. Timothy Hospedales and Prof. Sotirios A. Tsaftari. His research mainly focuses on computer vision, vision language models, and trustworthy AI in healthcare. 
+Yongcheng is currently a PhD student at the UKRI CDT in Biomedical AI, School of Informatics, University of Edinburgh (UoE), supervised by Prof. Timothy Hospedales and Prof. Sotirios A. Tsaftaris. His research mainly focuses on computer vision, vision language models, and trustworthy AI in healthcare.
 
 Please visit [his personal website](https://yongchengyao.github.io/) for more information.

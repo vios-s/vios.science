@@ -31,7 +31,7 @@ const grouped = {
     }),
     others: teamMembers.filter(member => {
         const role = (member.data.role || '').toLowerCase();
-        const existing = ['staff', 'director', 'sde', 'postdoc', 'researcher', 'phd', 'student', 'visiting', 'none', 'alumni'];
+        const existing = ['staff', 'director', 'sde', 'postdoc', 'researcher', 'phd', 'student', 'visiting', 'none', 'alumni', 'advert'];
         return !existing.includes(role);
     }),
     alumni: teamMembers.filter(member => (member.data.role || '').toLowerCase() === 'alumni')

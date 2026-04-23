@@ -27,7 +27,7 @@ Communications and Signal Processing Group in the Department of Electrical and
 Electronic Engineering at ICL. He was awarded with the Engineering and Physical
 Sciences Research Council (EPSRC) Doctoral Training Award when he was working
 towards his PhD degree at ICL. Nikolaos received his Masters MEng degree
-(including Batchelors) with First Class Honours in Electrical and Electronic
+(including Bachelor's) with First Class Honours in Electrical and Electronic
 Engineering from ICL in 2015. He completed the International Baccalaureate (IB)
 Diploma Programme at the Hellenic-American Educational Foundation (HAEF) Athens
 College – Psychico College, Athens, Greece in 2011. His current research

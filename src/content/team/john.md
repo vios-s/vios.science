@@ -19,5 +19,5 @@ He holds a PhD in Engineering from The University of Edinburgh, and an MSci in P
 University College London (UCL). He wrote his PhD thesis on sub-gridding methods for
 finite-difference time-domain method (FDTD) with application to ground-penetrating radar. He
 was an RA at Northumbria University researching novel methods for drone formation control
-and drone detection. He is a co-author gprMax: an open source electromagnetic simulation
+and drone detection. He is a co-author of gprMax: an open source electromagnetic simulation
 package.

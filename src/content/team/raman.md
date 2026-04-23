@@ -5,7 +5,7 @@ subtitle: "PhD Student"
 profile: "raman.jpeg"
 
 linkedin: "https://www.linkedin.com/in/raman-dutt"
-scholar: " https://scholar.google.com/citations?user=kLosFWIAAAAJ&hl=en"
+scholar: "https://scholar.google.com/citations?user=kLosFWIAAAAJ&hl=en"
 twitter: "https://twitter.com/RamanDutt4"
 
 
