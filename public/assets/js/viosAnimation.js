@@ -38,31 +38,61 @@
                 canvas.width = 512;
                 canvas.height = 128;
                 const ctx = canvas.getContext("2d");
+                const texture = new THREE.Texture(canvas);
 
-                ctx.font = 'bold 32px "IBM Plex Mono", monospace';
-                ctx.textAlign = "center";
-                ctx.textBaseline = "middle";
+                function drawLabel(isLight = false) {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.globalCompositeOperation = "source-over";
+                    ctx.font = 'bold 32px "IBM Plex Mono", monospace';
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
 
-                // 绘制发光层
-                ctx.shadowColor = colorHex;
-                ctx.shadowBlur = 20;
-                ctx.fillStyle = colorHex;
-                ctx.fillText(text, 256, 64);
+                    if (isLight) {
+                        // Light mode needs ink, not glow, so the labels remain readable on pale animation areas.
+                        ctx.shadowColor = "rgba(255, 255, 255, 0.95)";
+                        ctx.shadowBlur = 14;
+                        ctx.lineWidth = 10;
+                        ctx.strokeStyle = "rgba(255, 255, 255, 0.88)";
+                        ctx.strokeText(text, 256, 64);
 
-                // 核心高亮白字
-                ctx.shadowBlur = 40;
-                ctx.fillStyle = "#ffffff";
-                ctx.fillText(text, 256, 64);
+                        ctx.shadowColor = colorHex;
+                        ctx.shadowBlur = 8;
+                        ctx.lineWidth = 3;
+                        ctx.strokeStyle = colorHex;
+                        ctx.strokeText(text, 256, 64);
 
-                // 扫描线纹理 (Scanlines)
-                ctx.globalCompositeOperation = "source-atop";
-                ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
-                for (let i = 0; i < 128; i += 4) {
-                    ctx.fillRect(0, i, 512, 2);
+                        ctx.shadowBlur = 0;
+                        ctx.fillStyle = "#071526";
+                        ctx.fillText(text, 256, 64);
+
+                        ctx.globalCompositeOperation = "source-atop";
+                        ctx.fillStyle = "rgba(255, 255, 255, 0.24)";
+                    } else {
+                        // 绘制发光层
+                        ctx.shadowColor = colorHex;
+                        ctx.shadowBlur = 20;
+                        ctx.fillStyle = colorHex;
+                        ctx.fillText(text, 256, 64);
+
+                        // 核心高亮白字
+                        ctx.shadowBlur = 40;
+                        ctx.fillStyle = "#ffffff";
+                        ctx.fillText(text, 256, 64);
+
+                        // 扫描线纹理 (Scanlines)
+                        ctx.globalCompositeOperation = "source-atop";
+                        ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
+                    }
+
+                    for (let i = 0; i < 128; i += 4) {
+                        ctx.fillRect(0, i, 512, 2);
+                    }
+
+                    ctx.globalCompositeOperation = "source-over";
+                    texture.needsUpdate = true;
                 }
 
-                const texture = new THREE.Texture(canvas);
-                texture.needsUpdate = true;
+                drawLabel(false);
 
                 const material = new THREE.SpriteMaterial({
                     map: texture,
@@ -75,7 +105,11 @@
                 sprite.scale.set(120, 30, 1);
 
                 // 保存材质引用以便主题切换
-                return { sprite, material };
+                return {
+                    sprite,
+                    material,
+                    setTheme: (theme) => drawLabel(theme === "light"),
+                };
             }
 
             // 1. Causality 标签 (顶部)
@@ -106,6 +140,7 @@
                 holoMedical.material,
                 holoCV.material,
             ];
+            const holoTexts = [holoCausality, holoMedical, holoCV];
 
             // ==========================================
             // 构建 Medical Imaging (器官点云)
@@ -515,6 +550,7 @@
 
                     haloMaterials.forEach((mat) => (mat.blending = blendMode));
                     spritesToTheme.forEach((mat) => (mat.blending = blendMode));
+                    holoTexts.forEach((holoText) => holoText.setTheme(theme));
 
                     boxes.forEach((box) => (box.material.blending = blendMode));
                     edgeMaterials.forEach((mat) => {
