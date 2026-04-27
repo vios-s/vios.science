@@ -21,6 +21,16 @@ const isDefaultLogo = image === defaultImage;
 const imageAlt = isDefaultLogo
     ? 'VIOS logo'
     : 'VIOS Collaboratory — AI for Life Sciences. University of Edinburgh.';
+
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const navItems = [
+    { href: base('/research'), path: '/research', label: 'Research' },
+    { href: base('/team'), path: '/team', label: 'Team' },
+    { href: base('/publications'), path: '/publications', label: 'Publications' },
+    { href: base('/tutorials'), path: '/tutorials', label: 'Tutorials' },
+    { href: base('/news'), path: '/news', label: 'News' },
+    { href: base('/join'), path: '/join', label: 'Join Us' },
+];
 ---
 
 <!doctype html>
@@ -93,14 +103,22 @@ const imageAlt = isDefaultLogo
         <nav id="nav">
             <a href={base('/')} class="nav-logo">VIOS<span>.</span></a>
             <ul class="nav-links" id="nav-links">
-                <li><a href={base('/research')}>Research</a></li>
-                <li><a href={base('/team')}>Team</a></li>
-                <li>
-                    <a href={base('/publications')}>Publications</a>
-                </li>
-                <li><a href={base('/tutorials')}>Tutorials</a></li>
-                <li><a href={base('/news')}>News</a></li>
-                <li><a href={base('/join')}>Join Us</a></li>
+                {
+                    navItems.map((item) => {
+                        const isActive = currentPath === item.path || currentPath.startsWith(`${item.path}/`);
+                        return (
+                            <li>
+                                <a
+                                    href={item.href}
+                                    class:list={{ active: isActive }}
+                                    aria-current={isActive ? "page" : undefined}
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        );
+                    })
+                }
             </ul>
             <div class="nav-right">
                 <button
@@ -199,18 +217,25 @@ const imageAlt = isDefaultLogo
                 </ul>
             </div>
             <div class="f-bottom">
-                <span class="f-copy"
-                    >© 2026 VIOS Collaboratory.<br />Institute for Digital Communications<br />The School of Engineering<br />The University of Edinburgh</span
-                >
+                <div class="f-institution">
+                    <span class="f-copy">© 2026 VIOS Collaboratory</span>
+                    <address class="f-address">
+                        Institute for Digital Communications<br />
+                        School of Engineering<br />
+                        The University of Edinburgh
+                    </address>
+                </div>
                 <img src={base('/assets/images/edinburgh.svg')} alt="The University of Edinburgh" class="f-uoe-logo" />
             </div>
         </footer>
 
         <script is:inline>
             const nav = document.getElementById("nav");
-            window.addEventListener("scroll", () => {
-                nav.classList.toggle("scrolled", window.scrollY > 60);
-            });
+            if (nav) {
+                window.addEventListener("scroll", () => {
+                    nav.classList.toggle("scrolled", window.scrollY > 60);
+                });
+            }
 
             document
                 .getElementById("theme-toggle")
@@ -328,6 +353,19 @@ const imageAlt = isDefaultLogo
             color 0.35s ease;
     }
 
+    a {
+        color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    [role="button"]:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+    }
+
     .prose a {
         color: var(--accent);
         text-decoration: none;
@@ -432,8 +470,21 @@ const imageAlt = isDefaultLogo
         text-transform: uppercase;
         transition: color 0.2s;
     }
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a.active {
         color: var(--accent);
+    }
+    .nav-links a.active {
+        position: relative;
+    }
+    .nav-links a.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.45rem;
+        height: 1px;
+        background: var(--accent);
     }
 
     .theme-toggle {
@@ -489,7 +540,6 @@ const imageAlt = isDefaultLogo
         height: 100%;
         z-index: 0;
     }
-
     .hero-veil {
         position: absolute;
         inset: 0;
@@ -641,11 +691,24 @@ const imageAlt = isDefaultLogo
             0 100%
         );
         transition: all 0.25s ease;
+        will-change: transform;
     }
-    .btn-primary:hover {
+    .btn-primary svg {
+        transition: transform 0.25s ease;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
         filter: brightness(1.12);
-        transform: translateY(-2px);
+        transform: translateY(-3px);
         box-shadow: 0 10px 32px rgba(0, 212, 170, 0.32);
+    }
+    .btn-primary:hover svg,
+    .btn-primary:focus-visible svg {
+        transform: translateX(3px);
+    }
+    .btn-primary:active,
+    .btn-secondary:active {
+        transform: translateY(0);
     }
     html.light .btn-primary:hover {
         box-shadow: 0 10px 32px rgba(0, 137, 106, 0.28);
@@ -666,11 +729,18 @@ const imageAlt = isDefaultLogo
         text-decoration: none;
         border: 1px solid var(--border2);
         transition: all 0.25s ease;
+        will-change: transform;
     }
-    .btn-secondary:hover {
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
         border-color: var(--accent);
         color: var(--accent);
-        transform: translateY(-2px);
+        transform: translateY(-3px);
+        background: rgba(0, 212, 170, 0.04);
+    }
+    html.light .btn-secondary:hover,
+    html.light .btn-secondary:focus-visible {
+        background: rgba(0, 137, 106, 0.04);
     }
 
     .scroll-cue {
@@ -929,6 +999,12 @@ const imageAlt = isDefaultLogo
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
+    .r-icon svg {
+        width: 2.1rem;
+        height: 2.1rem;
+        color: var(--card-color, var(--accent));
+        stroke-width: 1.7;
+    }
 
     .projects-label {
         font-family: "JetBrains Mono", monospace;
@@ -1163,8 +1239,22 @@ const imageAlt = isDefaultLogo
     .f-copy {
         font-family: "JetBrains Mono", monospace;
         font-size: 0.58rem;
-        color: var(--dim);
+        color: var(--accent);
         letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+    .f-institution {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+    .f-address {
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.58rem;
+        font-style: normal;
+        letter-spacing: 0.06em;
+        line-height: 1.55;
     }
     .f-uoe-logo {
         height: 48px;
@@ -1308,25 +1398,47 @@ const imageAlt = isDefaultLogo
             display: flex;
         }
         .nav-links {
-            display: none;
+            display: flex;
             width: 100%;
             flex-direction: column;
             gap: 0;
             order: 3;
-            padding: 0.5rem 0 0.8rem;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            padding: 0;
             border-top: 1px solid var(--border);
             margin-top: 0.75rem;
+            pointer-events: none;
+            transform: translateY(-0.35rem);
+            transition:
+                max-height 0.3s ease,
+                opacity 0.25s ease,
+                padding 0.25s ease,
+                transform 0.25s ease;
         }
         .nav-links li {
             border-bottom: 1px solid var(--border2);
         }
         .nav-links a {
+            position: relative;
             display: block;
             padding: 0.9rem 0;
             font-size: 0.78rem;
         }
+        .nav-links a.active::after {
+            left: auto;
+            right: 0;
+            bottom: 50%;
+            width: 18px;
+            height: 1px;
+        }
         #nav.nav-open .nav-links {
-            display: flex;
+            max-height: 420px;
+            opacity: 1;
+            padding: 0.5rem 0 0.8rem;
+            pointer-events: auto;
+            transform: translateY(0);
         }
         #nav.nav-open,
         #nav.nav-open.scrolled {
@@ -1349,6 +1461,9 @@ const imageAlt = isDefaultLogo
         .hero-content {
             padding: 0 1.5rem;
             max-width: 100%;
+        }
+        #hero-3d {
+            display: none;
         }
         .hero-ctas {
             flex-direction: column;
@@ -1383,5 +1498,11 @@ const imageAlt = isDefaultLogo
             grid-template-columns: 1fr;
             gap: 2.5rem;
         }
+        .f-bottom {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
     }
+
 </style>

@@ -49,10 +49,10 @@
 
                     if (isLight) {
                         // Light mode needs ink, not glow, so the labels remain readable on pale animation areas.
-                        ctx.shadowColor = "rgba(255, 255, 255, 0.95)";
+                        ctx.shadowColor = "rgb(230, 238, 248)";
                         ctx.shadowBlur = 14;
                         ctx.lineWidth = 10;
-                        ctx.strokeStyle = "rgba(255, 255, 255, 0.88)";
+                        ctx.strokeStyle = "rgb(230, 238, 248)";
                         ctx.strokeText(text, 256, 64);
 
                         ctx.shadowColor = colorHex;

@@ -145,8 +145,12 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
 
         <div class="research-grid stagger">
             <div class="r-card" style="--card-color:#00d4aa">
-                <span class="r-num">01</span>
-                <span class="r-icon">🫀</span>
+                <span class="r-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 20s-7-4.6-7-10.2A4.4 4.4 0 0 1 12 6a4.4 4.4 0 0 1 7 3.8C19 15.4 12 20 12 20Z" />
+                        <path d="M8.5 10.5h2l1 2.5 1.8-5 1.2 2.5h2" />
+                    </svg>
+                </span>
                 <h3 class="r-title">Healthcare Systems</h3>
                 <p class="r-desc">
                     Medical imaging, representation learning, and decision
@@ -163,8 +167,14 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
             </div>
 
             <div class="r-card" style="--card-color:#5b8ef0">
-                <span class="r-num">02</span>
-                <span class="r-icon">⚛️</span>
+                <span class="r-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1.8" />
+                        <ellipse cx="12" cy="12" rx="8.5" ry="3.2" />
+                        <ellipse cx="12" cy="12" rx="8.5" ry="3.2" transform="rotate(60 12 12)" />
+                        <ellipse cx="12" cy="12" rx="8.5" ry="3.2" transform="rotate(120 12 12)" />
+                    </svg>
+                </span>
                 <h3 class="r-title">Causal AI &amp; Fair Representations</h3>
                 <p class="r-desc">
                     Causal discovery, disentangled representation learning, and
@@ -180,8 +190,13 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
             </div>
 
             <div class="r-card" style="--card-color:#a78bfa">
-                <span class="r-num">03</span>
-                <span class="r-icon">🌿</span>
+                <span class="r-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21V9" />
+                        <path d="M12 13c-4.5 0-7-2.5-7-7 4.5 0 7 2.5 7 7Z" />
+                        <path d="M12 16c4.5 0 7-2.5 7-7-4.5 0-7 2.5-7 7Z" />
+                    </svg>
+                </span>
                 <h3 class="r-title">Sustainability &amp; Agriculture</h3>
                 <p class="r-desc">
                     Computer vision and digital infrastructure for plant
@@ -198,8 +213,11 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
             </div>
 
             <div class="r-card" style="--card-color:#f59e0b">
-                <span class="r-num">04</span>
-                <span class="r-icon">⚡</span>
+                <span class="r-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 2 5 13h6l-1 9 9-13h-6l1-7Z" />
+                    </svg>
+                </span>
                 <h3 class="r-title">AI for Energy &amp; Inverse Problems</h3>
                 <p class="r-desc">
                     AI for virtual power plants, grid resilience, and
@@ -244,16 +262,6 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
             {
                 recentPublications.map((publication) => (
                     <div class="publication-card">
-                        {publication.image ? (
-                            <img
-                                class="publication-card-img"
-                                src={base(publication.image)}
-                                alt={`${publication.title} teaser`}
-                                loading="lazy"
-                            />
-                        ) : (
-                            <div class="publication-card-img" style="min-height:160px;background:var(--bg3)" />
-                        )}
                         <div class="publication-card-body">
                             <span class="publication-card-venue">{publication.venue}</span>
                             <p class="publication-card-title">{publication.title}</p>

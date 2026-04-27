@@ -4,11 +4,15 @@
  */
 import * as THREE from 'three';
 
+const isMobile = window.matchMedia('(max-width: 600px)').matches;
+
+if (!isMobile) {
 // Expose for the legacy viosAnimation.js script
-(window as any).THREE = THREE;
+    (window as any).THREE = THREE;
 
 // Dynamically load the animation after THREE is available
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const script = document.createElement('script');
-script.src = `${base}/assets/js/viosAnimation.js`;
-document.body.appendChild(script);
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+    const script = document.createElement('script');
+    script.src = `${base}/assets/js/viosAnimation.js`;
+    document.body.appendChild(script);
+}
