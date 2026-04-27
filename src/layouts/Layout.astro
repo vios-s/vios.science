@@ -7,16 +7,20 @@ interface Props {
     image?: string;
 }
 
+const defaultImage = '/assets/images/vios-logo.png';
+
 const {
     title,
     description = 'VIOS Collaboratory — AI for Life Sciences. University of Edinburgh.',
-    image,
+    image = defaultImage,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = image
-    ? new URL(image, Astro.site).href
-    : undefined;
+const ogImage = new URL(image, Astro.site).href;
+const isDefaultLogo = image === defaultImage;
+const imageAlt = isDefaultLogo
+    ? 'VIOS logo'
+    : 'VIOS Collaboratory — AI for Life Sciences. University of Edinburgh.';
 ---
 
 <!doctype html>
@@ -41,12 +45,17 @@ const ogImage = image
         <meta property="og:url" content={canonicalURL} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        {ogImage && <meta property="og:image" content={ogImage} />}
+        <meta property="og:image" content={ogImage} />
+        {isDefaultLogo && <meta property="og:image:width" content="128" />}
+        {isDefaultLogo && <meta property="og:image:height" content="128" />}
+        <meta property="og:image:alt" content={imageAlt} />
+        <meta property="og:site_name" content="VIOS Collaboratory" />
 
-        <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+        <meta name="twitter:card" content={isDefaultLogo ? 'summary' : 'summary_large_image'} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        {ogImage && <meta name="twitter:image" content={ogImage} />}
+        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image:alt" content={imageAlt} />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
