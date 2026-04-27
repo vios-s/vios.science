@@ -1,3 +1,18 @@
+- title: Identifiable Estimation of Causal Concept Effects under Visual Latent Confounding
+  authors: Thomas Melistas, Damian Machlanski, Kurt; id_orcid 0000-0002-1520-4909 Butler, Angelos Korakitis, Nikos Spyrou, Athanasios Vlontzos, Yannis Panagakis, Sotirios A. Tsaftaris, Giorgos Papanastasiou
+  venue: Edinburgh Research Explorer (University of Edinburgh)
+  date: '2026-04-23'
+  website: https://www.research.ed.ac.uk/en/publications/c8f21fda-c574-44aa-8843-abec73bf2a8e
+- title: Why Do Vision Language Models Struggle To Recognize Human Emotions?
+  authors: Madhav Agarwal, Sotirios A. Tsaftaris, Laura Sevilla-Lara, Steven McDonagh
+  venue: arXiv
+  date: '2026-04-16'
+  website: https://arxiv.org/abs/2604.15280
+- title: 'Count2Density: Crowd density estimation without location-level annotations'
+  authors: Mattia Litrico, Feng Chen, Michael P. Pound, Sotirios A. Tsaftaris, Sebastiano Battiato, Mario Valerio Giuffrida
+  venue: Pattern Recognition
+  date: '2026-04-14'
+  website: https://doi.org/10.1016/j.patcog.2026.113755
 - title: A conversational multi-agent AI system for automated plant phenotyping
   authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: Nature Communications
@@ -7,7 +22,7 @@
   authors: Kurt Butler, Stephanie Riley, Damian Machlanski, Edward Moroshko, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Konstantinos Vilouras, Zhihua Liu, Steven McDonagh, Hana Chockler, Ben Glocker, Niccolo Tempini, Matthew Sperrin, Sotirios Tsaftaris, Ricardo Silva
   venue: arXiv
   date: '2026-03-13'
-  website: https://openalex.org/W7139146393
+  website: http://arxiv.org/abs/2603.13595
 - title: Arabidopsis Thaliana Data for A Conversational Multi-Agent AI System for Automated Plant Phenotyping
   authors: Feng Chen, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: Open MIND
@@ -27,12 +42,12 @@
   authors: Samuel Garcin, Thomas Walker, Steven McDonagh, Tim Pearce, Hakan Bilen, Tianyu He, Kaixin Wang, Jiang Bian
   venue: arXiv
   date: '2026-03-03'
-  website: https://openalex.org/W7134017219
+  website: http://arxiv.org/abs/2603.03482
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
   venue: arXiv
   date: '2026-02-14'
-  website: https://openalex.org/W7130236575
+  website: http://arxiv.org/abs/2602.13873
   image: null
   code: null
   pdf: null
@@ -40,7 +55,7 @@
   authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2026-02-12'
-  website: https://openalex.org/W7128865271
+  website: http://arxiv.org/abs/2602.12004
   image: null
   code: null
   pdf: null
@@ -56,7 +71,7 @@
   authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Reilly Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: Repository@Nottingham (University of Nottingham)
   date: '2026-01-07'
-  website: https://openalex.org/W7127796872
+  website: https://nottingham-repository.worktribe.com/file/59901747/1/A%20Conversational%20Multi-Agent%20AI%20System%20for%20Automated%20Plant%20Phenotyping
   image: null
   code: null
   pdf: null
@@ -64,7 +79,7 @@
   authors: Kurt Butler, Damian Machlanski, Panagiotis Dimitrakopoulos, Sotirios A. Tsaftaris
   venue: Open MIND
   date: '2026-01-01'
-  website: https://openalex.org/W7131319877
+  website: http://arxiv.org/abs/2602.19903
 - title: Temporally-aware diffusion model for brain progression modelling with bidirectional temporal regularisation
   authors: Mattia Litrico, Francesco Guarnera, Mario Valerio Giuffrida, Daniele Ravì, Sebastiano Battiato
   venue: Computerized Medical Imaging and Graphics
@@ -90,7 +105,7 @@
   code: null
   pdf: null
 - title: 'A model predictive control framework with customer-priority tiers for virtual power plant resilience during extreme weather: A UK heatwave case study'
-  authors: Edward Moroshko, Wenxing Qin, Desen Kırlı, Mohammed H. Qais, Sotirios A. Tsaftaris, Aristides Kiprakis
+  authors: Edward Moroshko, Qin, Weizhe, Desen Kırlı, Qais, Mohammed, Sotirios A. Tsaftaris, Aristides Kiprakis
   venue: arXiv
   date: '2025-11-27'
   website: https://doi.org/10.48550/arxiv.2511.22528
@@ -153,14 +168,6 @@
   image: null
   code: null
   pdf: null
-- title: 'Count2Density: Crowd density estimation without location-level annotations'
-  authors: Mattia Litrico, Feng Chen, Michael P. Pound, Sotirios A. Tsaftaris, Sebastiano Battiato, Mario Valerio Giuffrida
-  venue: Pattern Recognition
-  date: '2025-09-03'
-  website: https://doi.org/10.1016/j.patcog.2026.113755
-  image: null
-  code: null
-  pdf: null
 - title: A Shift in Perspective on Causality in Domain Generalization
   authors: Damian Machlanski, Stephanie Riley, Edward Moroshko, Kurt Butler, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Steven McDonagh, Ricardo Silva, Sotirios A. Tsaftaris
   venue: arXiv
@@ -218,7 +225,7 @@
   code: null
   pdf: null
 - title: Antipsychotic-induced weight gain in psychosis – a causal mediation analysis and feasibility study of casual actionable prediction model development using counterfactuals to target obesity
-  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stephen M. Lawrie, Rajeev Krishnadas
+  authors: Samuel Leighton, I Lam Leong, Damian Machlanski, Benjamin I. Perry, Sotirios A. Tsaftaris, Fani Deligianni, Stehpen Lawrie, Rajeev Krishnadas
   venue: null
   date: '2025-05-21'
   website: https://doi.org/10.31234/osf.io/zfhx3_v2
@@ -234,7 +241,7 @@
   code: null
   pdf: null
 - title: 'CheXGenBench: A Unified Benchmark For Fidelity, Privacy and Utility of Synthetic Chest Radiographs'
-  authors: Raman Dutt, Pedro L. Sánchez, Yao Yao, Steven McDonagh, Sotirios A. Tsaftaris, Timothy M. Hospedales
+  authors: Raman Dutt, Pedro L. Sánchez, Yao, Yongchen, Steven McDonagh, Sotirios A. Tsaftaris, Timothy M. Hospedales
   venue: arXiv
   date: '2025-05-15'
   website: https://doi.org/10.48550/arxiv.2505.10496
@@ -282,7 +289,7 @@
   code: null
   pdf: null
 - title: A problem at the heart of precision medicine – are current clinical prediction models fully actionable for individuals?
-  authors: Samuel Leighton, Fani Deligianni, Damian Machlanski, Benjamin I. Perry, Stephen M. Lawrie, Sotirios A. Tsaftaris, Rajeev Krishnadas
+  authors: Samuel Leighton, Fani Deligianni, Damian Machlanski, Benjamin I. Perry, Stehpen Lawrie, Sotirios A. Tsaftaris, Rajeev Krishnadas
   venue: null
   date: '2025-02-24'
   website: https://doi.org/10.31234/osf.io/jw37c_v1
@@ -351,7 +358,7 @@
   code: https://github.com/jinghanSunn/CoE-DG
   pdf: null
 - title: A virtual power plant for coordinating batteries and EVs of distributed zero-energy houses considering the distribution system constraints
-  authors: Mohammed H. Qais, Desen Kırlı, Edward Moroshko, Aristides Kiprakis, Sotirios A. Tsaftaris
+  authors: Mohammed Qais, Desen Kırlı, Edward Moroshko, Aristides Kiprakis, Sotirios A. Tsaftaris
   venue: Journal of Energy Storage
   date: '2024-12-06'
   website: https://doi.org/10.1016/j.est.2024.114905
@@ -371,14 +378,6 @@
   venue: arXiv
   date: '2024-11-22'
   website: https://doi.org/10.48550/arxiv.2411.15288
-  image: null
-  code: null
-  pdf: null
-- title: 'You Are What You Write: Author re-identification privacy attacks in the era of pre-trained language models'
-  authors: Richard Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
-  venue: Computer Speech & Language
-  date: '2024-11-16'
-  website: https://doi.org/10.1016/j.csl.2024.101746
   image: null
   code: null
   pdf: null
@@ -892,7 +891,7 @@
   code: null
   pdf: null
 - title: Diffusion Models for Causal Discovery via Topological Ordering
-  authors: Pedro L. Sánchez, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  authors: Pedro L. Sánchez, Xiao Liu, O'Neil, Alison Q, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2022-10-12'
   website: https://doi.org/10.48550/arxiv.2210.06201
@@ -1008,14 +1007,6 @@
   venue: arXiv
   date: '2022-05-20'
   website: https://doi.org/10.48550/arxiv.2205.10079
-  image: null
-  code: null
-  pdf: null
-- title: 'You Are What You Write: Preserving Privacy in the Era of Large Language Models'
-  authors: Richard E. Plant, Mario Valerio Giuffrida, Dimitra Gkatzia
-  venue: arXiv
-  date: '2022-04-20'
-  website: https://doi.org/10.48550/arxiv.2204.09391
   image: null
   code: null
   pdf: null
@@ -1172,7 +1163,7 @@
   authors: Ming‐Tian Zhang, Yitong Sun, Steven McDonagh, Chen Zhang
   venue: arXiv
   date: '2021-09-29'
-  website: https://openalex.org/W3204543811
+  website: https://arxiv.org/pdf/2109.14216
   image: null
   code: null
   pdf: null
@@ -1196,7 +1187,7 @@
   authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2021-08-26'
-  website: https://openalex.org/W3198361414
+  website: http://export.arxiv.org/pdf/2108.12043
   image: null
   code: null
   pdf: null
@@ -1220,7 +1211,7 @@
   authors: Nanqing Dong, Matteo Maggioni, Yongxin Yang, Eduardo Pérez-Pellitero, Aleš Leonardis, Steven McDonagh
   venue: arXiv
   date: '2021-06-18'
-  website: https://openalex.org/W3174887108
+  website: https://arxiv.org/pdf/2106.10070.pdf
   image: null
   code: null
   pdf: null
@@ -1276,7 +1267,7 @@
   authors: Annika Reinke, Matthias Eisenmann, Minu D. Tizabi, Carole H. Sudre, Tim Rädsch, Michela Antonelli, Tal Arbel, Spyridon Bakas, M. Jorge Cardoso, Veronika Cheplygina, Keyvan Farahani, Ben Glocker, Doreen Heckmann-Nötzel, Fabian Isensee, Pierre Jannin, Charles E. Kahn, Jens Kleesiek, Tahsin Kurç, Michal Kozubek, Bennett A. Landman, Geert Litjens, Klaus Maier‐Hein, Anne Lousise Martel, Bjoern Menze, Henning Müller, Jens Petersen, Mauricio Reyes, Nicola Rieke, Bram Stieltjes, Ronald M. Summers, Sotirios A. Tsaftaris, Bram van Ginneken, Annette Kopp‐Schneider, Paul F. Jäger, Lena Maier‐Hein
   venue: ArODES (HES-SO (https://www.hes-so.ch/))
   date: '2021-04-01'
-  website: https://openalex.org/W3185216126
+  website: http://arodes.hes-so.ch/record/9315
   image: null
   code: null
   pdf: null
@@ -1292,7 +1283,7 @@
   authors: Chengjia Wang, Guang Yang, Giorgos Papanastasiou, Sotirios A. Tsaftaris, David E. Newby, Calum Gray, Gillian Macnaught, Tom MacGillivray
   venue: null
   date: '2021-03-01'
-  website: https://openalex.org/W3161954597
+  website: http://repository.essex.ac.uk/28936/
   image: null
   code: null
   pdf: null
@@ -1329,7 +1320,7 @@
   code: null
   pdf: null
 - title: Measuring the Biases and Effectiveness of Content-Style Disentanglement
-  authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q O'Neil, Sotirios A. Tsaftaris
   venue: Proceedings of the British Machine Vision Conference 2021
   date: '2021-01-01'
   website: https://doi.org/10.5244/c.35.24
@@ -1372,7 +1363,7 @@
   authors: Sotirios A. Tsaftaris
   venue: null
   date: '2021-01-01'
-  website: https://openalex.org/W3164768469
+  website: http://dblp.uni-trier.de/db/conf/improve/improve2021.html#Tsaftaris21
   image: null
   code: null
   pdf: null
@@ -1444,7 +1435,7 @@
   authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2020-08-27'
-  website: https://openalex.org/W3082744875
+  website: https://arxiv.org/pdf/2008.12378
   image: null
   code: null
   pdf: null
@@ -1476,7 +1467,7 @@
   authors: Gabriele Valvano, Andrea Leo, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2020-07-02'
-  website: https://openalex.org/W3039833797
+  website: https://arxiv.org/abs/2007.01152
   image: null
   code: null
   pdf: null
@@ -1521,7 +1512,7 @@
   code: null
   pdf: null
 - title: Teacher-Student chain for efficient semi-supervised histology image classification
-  authors: Shayne Shaw, Maciej Pajak, Aneta Lisowska, Sotirios A. Tsaftaris, Alison Q. O’Neil
+  authors: Shayne Shaw, Maciej Pajak, Aneta Lisowska, Sotirios A. Tsaftaris, O'Neil, Alison Q
   venue: arXiv
   date: '2020-03-17'
   website: https://doi.org/10.48550/arxiv.2003.08797
@@ -1540,7 +1531,7 @@
   authors: Daniel Hernandez-Juarez, Sarah Parisot, Benjamin Busam, Aleš Leonardis, Greg Slabaugh, Steven McDonagh
   venue: arXiv
   date: '2020-02-28'
-  website: https://openalex.org/W3008695516
+  website: https://arxiv.org/pdf/2002.12896
   image: null
   code: null
   pdf: null
@@ -1644,7 +1635,7 @@
   authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: arXiv
   date: '2019-11-12'
-  website: https://openalex.org/W2985506298
+  website: https://arxiv.org/pdf/1911.04417.pdf
   image: null
   code: https://github.com/vios-s/multimodal_segmentation
   pdf: null
@@ -1684,7 +1675,7 @@
   authors: Agisilaos Chartsias, Giorgos Papanastasiou, Chengjia Wang, Colin Stirrat, Scott Semple, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: null
   date: '2019-08-09'
-  website: https://openalex.org/W3009043258
+  website: https://www.research.ed.ac.uk/en/publications/multimodal-cardiac-segmentation-using-disentangled-representation
   image: null
   code: null
   pdf: null
@@ -1740,7 +1731,7 @@
   authors: Grzegorz Jacenków, Agisilaos Chartsias, Brian Mohr, Sotirios A. Tsaftaris
   venue: null
   date: '2019-04-17'
-  website: https://openalex.org/W3036211085
+  website: https://openreview.net/pdf?id=BklGUoAEcE
   image: null
   code: null
   pdf: null
@@ -1748,7 +1739,7 @@
   authors: Agisilaos Chartsias, T. A. Joyce, Giorgos Papanastasiou, Michelle C. Williams, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
   venue: null
   date: '2019-03-22'
-  website: https://openalex.org/W2922871285
+  website: http://dblp.uni-trier.de/db/journals/corr/corr1903.html#abs-1903-09467
   image: null
   code: null
   pdf: null
@@ -1820,7 +1811,7 @@
   authors: Tian Xia, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: null
   date: '2018-12-13'
-  website: https://openalex.org/W2964915519
+  website: http://proceedings.mlr.press/v102/xia19a/xia19a.pdf
   image: /assets/images/publications/xia_2019_midl.png
   code: https://github.com/vios-s/pseudo-healthy-synthesis
   pdf: null
@@ -1828,7 +1819,7 @@
   authors: Steven McDonagh, Sarah Parisot, Zhenguo Li, Greg Slabaugh
   venue: arXiv
   date: '2018-11-28'
-  website: https://openalex.org/W2902351455
+  website: https://arxiv.org/pdf/1811.11788.pdf
   image: null
   code: null
   pdf: null
@@ -1852,7 +1843,7 @@
   authors: Hao Chen, Mario Valerio Giuffrida, Peter Doerner, Sotirios A. Tsaftaris
   venue: Edinburgh Napier Research Repository (Edinburgh Napier University)
   date: '2018-09-06'
-  website: https://openalex.org/W2892466808
+  website: https://napier-repository.worktribe.com/file/2158375/1/Root%20Gap%20Correction%20With%20A%20Deep%20Inpainting%20Model
   image: null
   code: null
   pdf: null
@@ -1860,7 +1851,7 @@
   authors: Tony Pridmore, Sotirios A. Tsaftaris, Hanno Scharr
   venue: Repository@Nottingham (University of Nottingham)
   date: '2018-09-03'
-  website: https://openalex.org/W3105508479
+  website: https://nottingham-repository.worktribe.com/file/1055915/1/CVPPP%202018%20Editorial
   image: null
   code: null
   pdf: null
@@ -1897,7 +1888,7 @@
   authors: T. A. Joyce, Agisilaos Chartsias, Sotirios A. Tsaftaris
   venue: null
   date: '2018-04-11'
-  website: https://openalex.org/W2907274850
+  website: https://openreview.net/pdf?id=S11Xr-3iM
   image: null
   code: null
   pdf: null
@@ -1905,7 +1896,7 @@
   authors: Nick Pawlowski, Matthew C. H. Lee, Martin Rajchl, Steven McDonagh, Enzo Ferrante, Konstantinos Kamnitsas, Sam F Cooke, Susan Stevenson, Aneesh Khetani, Tom Newman, Frederick A. Zeiler, Richard Digby, Jonathan Coles, Daniel Rueckert, David Menon, Virginia Newcombe, Ben Glocker
   venue: null
   date: '2018-04-11'
-  website: https://openalex.org/W2911059780
+  website: https://openreview.net/pdf?id=S1hpzoisz
   image: null
   code: null
   pdf: null
@@ -1913,7 +1904,7 @@
   authors: Benjamin Hou, Nina Miolane, Bishesh Khanal, Matthew Lee, Amir Alansary, Steven McDonagh, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
   venue: null
   date: '2018-04-11'
-  website: https://openalex.org/W2906552534
+  website: https://openreview.net/pdf?id=SyweajisG
   image: null
   code: null
   pdf: null
@@ -1921,7 +1912,7 @@
   authors: Benjamin Hou, Bishesh Khanal, Amir Alansary, Steven McDonagh, Alice Davidson, Mary Rutherford, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
   venue: null
   date: '2018-04-11'
-  website: https://openalex.org/W2914746730
+  website: https://openreview.net/pdf?id=Syxv3ijjf
   image: null
   code: null
   pdf: null
@@ -1969,7 +1960,7 @@
   authors: Tony Pridmore, Sotirios A. Tsaftaris, Hanno Scharr
   venue: JuSER (Forschungszentrum Jülich)
   date: '2018-01-01'
-  website: https://openalex.org/W3033482922
+  website: http://juser.fz-juelich.de/record/859919
   image: null
   code: null
   pdf: null
@@ -2007,7 +1998,7 @@
   pdf: null
 - title: Learning to Count Leaves of Plants
   authors: Mario Valerio Giuffrida
-  venue: 'The Signal Calculus: beyond message based coordination for services (IMT School for Advanced Studies Lucca)'
+  venue: Open MIND
   date: '2018-01-01'
   website: https://doi.org/10.13118/giuffrida-mario-valerio_phd2018
 - title: Editorial for Simulation and Synthesis in Medical Imaging
@@ -2054,7 +2045,7 @@
   authors: Sotirios A. Tsaftaris
   venue: ERA
   date: '2017-11-22'
-  website: https://openalex.org/W2785235814
+  website: http://hdl.handle.net/1842/26032
   image: null
   code: null
   pdf: null
@@ -2062,7 +2053,7 @@
   authors: Hsin‐Jung Yang, Damini Dey, Jane Sykes, Michael G. Klein, John M. Butler, Michael S. Kovacs, Olivia Sobczyk, Behzad Sharif, Xiaoming Bi, Avinash Kali, Ivan Cokic, Richard Tang, Roya Yumul, Antonio Hernandez Conte, Sotirios A. Tsaftaris, Mourad Tighiouart, Debiao Li, Piotr J. Slomka, Daniel S. Berman, Frank S. Prato, Joseph A. Fisher, Rohan Dharmakumar
   venue: Circulation
   date: '2017-11-14'
-  website: https://openalex.org/W2938574426
+  website: https://www.ahajournals.org/doi/10.1161/circ.136.suppl_1.16081
   image: null
   code: null
   pdf: null
@@ -2190,7 +2181,7 @@
   authors: Sotirios A. Tsaftaris, Ali Gooya, Alejandro F. Frangi, Jerry L. Prince
   venue: Research Explorer (The University of Manchester)
   date: '2017-01-01'
-  website: https://openalex.org/W3136531031
+  website: https://research.manchester.ac.uk/en/publications/d62b5ce7-be92-41f0-b314-b6c3ad8b86a4
   image: null
   code: null
   pdf: null
@@ -2358,7 +2349,7 @@
   authors: Robert B. Fisher, Steven McDonagh
   venue: Edinburgh Research Explorer
   date: '2016-01-01'
-  website: https://openalex.org/W2788256795
+  website: https://www.research.ed.ac.uk/en/publications/6be6fe6c-9956-42af-836c-1bd5e8e9898b
   image: null
   code: null
   pdf: null
@@ -2422,7 +2413,7 @@
   authors: Steven McDonagh
   venue: ERA
   date: '2015-11-26'
-  website: https://openalex.org/W2177004142
+  website: http://hdl.handle.net/1842/10568
   image: null
   code: null
   pdf: null
@@ -2606,7 +2597,7 @@
   authors: Hanno Scharr, Massimo Minervini, Andreas Fischbach, Sotirios A. Tsaftaris
   venue: null
   date: '2014-07-01'
-  website: https://openalex.org/W2229420909
+  website: http://juser.fz-juelich.de/record/154525/files/FZJ-2014-03837.pdf
   image: null
   code: null
   pdf: null
@@ -2822,7 +2813,7 @@
   authors: Bob Fisher, Steven McDonagh
   venue: Edinburgh Research Explorer (University of Edinburgh)
   date: '2013-01-01'
-  website: https://openalex.org/W2607852527
+  website: https://www.research.ed.ac.uk/en/publications/c66b371e-a8a8-47dc-9f62-d23608631a22
   image: null
   code: null
   pdf: null
@@ -2830,7 +2821,7 @@
   authors: Bastiaan J. Boom, Sergio Orts‐Escolano, Xin Ning, Steven McDonagh, Peter Sandilands, B. Aubrey Fisher
   venue: null
   date: '2013-01-01'
-  website: https://openalex.org/W2720768003
+  website: https://www.research.ed.ac.uk/portal/en/publications/point-light-source-estimation-based-on-scenes-recorded-by-a-rgbd-camera(8330ed84-9f1d-49e9-9318-a6adbe4452ff)/export.html
   image: null
   code: null
   pdf: null
@@ -2878,7 +2869,7 @@
   authors: Avinash Kali, Andreas Kumar, Ivan Cokic, Richard Tang, Sotirios A. Tsaftaris, Matthias G. Friedrich, Rohan Dharmakumar
   venue: Circulation
   date: '2012-11-20'
-  website: https://openalex.org/W175116518
+  website: https://www.research.ed.ac.uk/portal/en/publications/chronic-iron-deposition-following-acute-hemorrhagic-myocardial-infarction(b8f46c10-ec13-4da0-919b-108b5f692666)/export.html
   image: null
   code: null
   pdf: null
@@ -2886,7 +2877,7 @@
   authors: Avinash Kali, Andreas Kumar, Ivan Cokic, Richard Tang, Sotirios A. Tsaftaris, Matthias G. Friedrich, Rohan Dharmakumar
   venue: Circulation
   date: '2012-11-20'
-  website: https://openalex.org/W2275174001
+  website: https://www.ahajournals.org/doi/10.1161/circ.126.suppl_21.A10912
   image: null
   code: null
   pdf: null
@@ -2918,7 +2909,7 @@
   authors: Zhaofu Chen, Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
   venue: European Signal Processing Conference
   date: '2012-01-01'
-  website: https://openalex.org/W3143218145
+  website: http://www.research.ed.ac.uk/portal/en/publications/trackingoptimal-error-control-schemes-for-h264-compressed-video-for-vehicle-surveillance(b30d87a2-c02c-4528-813b-fb19a24146ca)/export.html
   image: null
   code: null
   pdf: null
@@ -2942,7 +2933,7 @@
   authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Debiao Li, Rohan Dharmakumar
   venue: Circulation
   date: '2011-11-22'
-  website: https://openalex.org/W128369899
+  website: https://www.research.ed.ac.uk/portal/en/publications/detecting-myocardial-ischemic-territories-in-the-setting-of-acute-coronary-obstructions-at-rest-with-cardiac-phaseresolved-blood-oxygen-level-dependent-cpbold-mri(b550c231-25a9-4155-84d7-83f59a034462).html
   image: null
   code: null
   pdf: null
@@ -3014,7 +3005,7 @@
   authors: Eren Soyak, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
   venue: International Conference on Image Processing
   date: '2011-01-01'
-  website: https://openalex.org/W3146151427
+  website: http://www.research.ed.ac.uk/portal/en/publications/channel-protection-for-h-264-compression-in-transportation-video-surveillance-applications(7fadb219-381c-4a78-a957-ae20e8c14c1c).html
   image: null
   code: null
   pdf: null
@@ -3102,7 +3093,7 @@
   authors: Sotirios A. Tsaftaris, Aggelos K Katsaggelo, Eren Soyak
   venue: null
   date: '2010-08-01'
-  website: https://openalex.org/W777596755
+  website: https://rosap.ntl.bts.gov/view/dot/18506
   image: null
   code: null
   pdf: null
@@ -3158,7 +3149,7 @@
   authors: Aggelos K. Katsaggelos, Sotirios A. Tsaftaris, Yi Wu
   venue: null
   date: '2010-01-01'
-  website: https://openalex.org/W608718930
+  website: https://rosap.ntl.bts.gov/view/dot/18088
   image: null
   code: null
   pdf: null
@@ -3166,7 +3157,7 @@
   authors: Sotirios A. Tsaftaris, Xiangzhi Zhou, Richard Tang, Rachel Klein, Aggelos K. Katsaggelos, Rohan Dharmakumar
   venue: null
   date: '2010-01-01'
-  website: https://openalex.org/W93145178
+  website: https://www.scholars.northwestern.edu/en/publications/automated-synchronization-of-cardiac-phases-for-myocardial-bold-m
   image: null
   code: null
   pdf: null
@@ -3306,14 +3297,6 @@
   image: null
   code: null
   pdf: null
-- title: Secure Judicial Communication Exchange Using Soft-computing Methods and Biometric Authentication
-  authors: Mauro Cislaghi, George Eleftherakis, Roberto Mazzilli, François Mohier, Sara Ferri, Mario Valerio Giuffrida, Elisa Negroni
-  venue: Advances in soft computing
-  date: '2008-10-20'
-  website: https://doi.org/10.1007/978-3-540-88181-0_2
-  image: null
-  code: null
-  pdf: null
 - title: '2097 Automated tracking of a passive intramyocardial needle with off-resonance mri: a feasibility study'
   authors: Ioannis Koktzoglou, Sotirios A. Tsaftaris, Debiao Li, Aggelos K. Katsaggelos, Rohan Dharmakumar
   venue: Journal of Cardiovascular Magnetic Resonance
@@ -3326,7 +3309,7 @@
   authors: Sotirios A. Tsaftaris, Jana Zujovic, Aggelos K. Katsaggelos
   venue: http://ivpl.ece.northwestern.edu/system/files/1569105426 (1).pdf
   date: '2008-08-01'
-  website: https://openalex.org/W2128621032
+  website: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.342.9857
   image: null
   code: null
   pdf: /assets/pdfs/Tsaftaris_EUSIPCO_2008_AFM.pdf
@@ -3334,7 +3317,7 @@
   authors: Steven McDonagh, Robert B. Fisher, Jonathan Rees
   venue: Edinburgh Research Explorer (University of Edinburgh)
   date: '2008-07-01'
-  website: https://openalex.org/W2788392717
+  website: http://www.inf.ed.ac.uk/publications/report/1267.html
   image: null
   code: null
   pdf: null
@@ -3342,12 +3325,12 @@
   authors: Ioannis Koktzoglou, Sotirios A. Tsaftaris, Sven Zuehlsdorff, Debiao Li, Aggelos K. Katsaggelos, Rohan Dharmakumar
   venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
   date: '2008-05-01'
-  website: https://openalex.org/W77370748
+  website: https://www.scholars.northwestern.edu/en/publications/automated-tracking-of-a-passive-endomyocardial-stiletto-catheter-
   image: null
   code: null
   pdf: /assets/pdfs/Tsaftaris_2008b.pdf
 - title: Local feature extraction for video copy detection in a database
-  authors: Ehsan Maani Miandoab, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
+  authors: Ehsan Maani, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
   venue: 2008 15th IEEE International Conference on Image Processing
   date: '2008-01-01'
   website: https://doi.org/10.1109/icip.2008.4712105
@@ -3382,7 +3365,7 @@
   authors: Elisan Maani, Sotirios A. Tsaftaris, Aggelos K. Katsaggelos
   venue: International Conference on Image Processing
   date: '2008-01-01'
-  website: https://openalex.org/W2710269534
+  website: http://www.research.ed.ac.uk/portal/en/publications/local-feature-extraction-for-video-copy-detection-in-a-database(b161efa2-166c-4803-a649-9ff98b10c2e0).html
   image: null
   code: null
   pdf: null
@@ -3414,7 +3397,7 @@
   authors: Sotirios A. Tsaftaris, Vassily Hatzimanikati, Aggelos K. Katsaggelos
   venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
   date: '2006-08-01'
-  website: https://openalex.org/W46479768
+  website: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.344.1426
   image: null
   code: null
   pdf: /assets/pdfs/Tsaftaris_Alife10.pdf
@@ -3438,7 +3421,7 @@
   authors: Sotirios A. Tsaftaris, Aggelos K. Katsaggelos, John G. Webster
   venue: null
   date: '2006-01-01'
-  website: https://openalex.org/W2745355717
+  website: https://www.scholars.northwestern.edu/en/publications/dna-sequence-encyclopedia-of-medical-devices-and-instrumentation
   image: null
   code: null
   pdf: null
@@ -3454,7 +3437,7 @@
   authors: Sotirios A. Tsaftaris, Vassily Hatzimanikatis, Aggelos K. Katsaggelos
   venue: Medical Entomology and Zoology
   date: '2005-12-15'
-  website: https://openalex.org/W648087873
+  website: http://ci.nii.ac.jp/naid/110004059524
   image: null
   code: null
   pdf: null
@@ -3462,7 +3445,7 @@
   authors: Sotirios A. Tsaftaris, Vassily Hatzimanikati, Aggelos K. Katsaggelos
   venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
   date: '2005-12-01'
-  website: https://openalex.org/W1496886314
+  website: http://www.ece.northwestern.edu/~stsaft/papers/Tsaftaris05JSST.pdf
   image: null
   code: null
   pdf: /assets/pdfs/Tsaftaris05JSST.pdf
@@ -3526,7 +3509,7 @@
   authors: D. Simitopoulos, Sotirios A. Tsaftaris, Nikos Boulgouris, M.G. Strintzis
   venue: Research Portal (King's College London)
   date: '2002-01-01'
-  website: https://openalex.org/W2611844842
+  website: http://www.scopus.com/inward/record.url?scp=37849040792&partnerID=8YFLogxK
   image: null
   code: null
   pdf: /assets/pdfs/icecs2002.pdf
@@ -3534,7 +3517,7 @@
   authors: D Simitopoulos, Sotirios A. Tsaftaris, NV Boulgouris, M G Strintzis
   venue: International Conference on Multimedia and Expo
   date: '2002-01-01'
-  website: https://openalex.org/W2649858108
+  website: https://www.research.ed.ac.uk/portal/en/publications/compresseddomain-video-watermarking-of-mpeg-streams(8ec337bc-daa2-4b5e-876f-0e074edae903)/export.html
   image: null
   code: null
   pdf: null
