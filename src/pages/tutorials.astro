@@ -35,17 +35,6 @@ allTutorials.sort((leftTutorial, rightTutorial) => {
                         href={base(`/tutorials/${tutorial.slug || tutorial.id.replace(/\.(md|mdx)$/, "")}`)}
                         class="tutorial-card"
                     >
-                        {tutorial.data.teaser && (
-                            <img
-                                class="tc-img"
-                                src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/${tutorial.data.teaser.replace(/^\//, "")}`}
-                                alt={
-                                    tutorial.data.shorttitle ||
-                                    tutorial.data.title
-                                }
-                                loading="lazy"
-                            />
-                        )}
                         <div class="tc-body">
                             <span class="tc-year">
                                 {tutorial.data.date
@@ -143,18 +132,6 @@ allTutorials.sort((leftTutorial, rightTutorial) => {
 
     .tutorial-card:hover::before {
         transform: scaleX(1);
-    }
-
-    .tc-img {
-        width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        display: block;
-        border-bottom: 1px solid var(--border);
-        transition: transform 0.5s ease;
-    }
-    .tutorial-card:hover .tc-img {
-        transform: scale(1.04);
     }
 
     .tc-body {
