@@ -1,108 +1,208 @@
 # vios.science Website
 
-This project is built using [Astro](https://astro.build/) and contains the website source code for vios.science.
+This repository contains the source code for the `vios.science` website.
 
-## 🚀 Getting Started
+This README is mainly for people in the group who want to contribute content to the website, whether that means fixing a typo, suggesting new content, updating a bio, or improving publication entries.
 
-To run the project locally, run the following commands in the terminal from the root of the project:
+## Table of Contents
 
-```sh
-# 1. Install dependencies
-npm install
+- [How to Contribute](#how-to-contribute)
+- [Fix Text, Grammar, or Typos](#fix-text-grammar-or-typos)
+- [Suggest or Add Content](#suggest-or-add-content)
+- [Update a Team Bio](#update-a-team-bio)
+- [Update Publication Links or Assets](#update-publication-links-or-assets)
+- [Other Content You Can Update](#other-content-you-can-update)
+- [Adding Assets](#adding-assets)
+- [Run the Website Locally](#run-the-website-locally)
+- [Build and Preview](#build-and-preview)
 
-# 2. Start the local development server
-npm run dev
-```
+## How to Contribute
 
-Your site will be running at `http://localhost:4321`.
+Small contributions are welcome. If you notice a typo, unclear wording, outdated information, or a missing link, please feel free to open a pull request.
 
-### Build & Preview
-To test a production build before deploying:
-```sh
-npm run build
-npm run preview
-```
+If you are not comfortable editing the site directly, you can still suggest changes by opening an issue or by contacting the maintainers with the text, links, or files you would like added.
 
-## 📝 How to Maintain Content
+## Fix Text, Grammar, or Typos
 
-The site uses Astro Content Collections plus data files to keep content maintainable.
+For small wording fixes, update the relevant content file and open a pull request.
 
-### 👥 Team Members (`src/content/team/`)
-To add or update a team member, create/edit a `.md` file in the `src/content/team/` directory.
+Most website text lives in one of these places:
 
-**Example frontmatter:**
+- `src/content/team/` for team biographies
+- `src/content/news/` for news posts
+- `src/content/tutorials/` for tutorials
+- `src/content/pages/` for standalone pages such as `research.mdx` or `alumni.mdx`
+- `src/data/projects.json` for project listings
+
+If you are unsure where some text comes from, searching the repository for a short phrase from the page is usually the fastest way to find it.
+
+## Suggest or Add Content
+
+Suggestions for new content are welcome, including:
+
+- new pages or updates to existing pages
+- news items
+- project updates
+- corrections to team information
+- missing links, PDFs, or publication images
+
+If you want to add the content yourself, edit the relevant file and open a pull request. If you would rather just propose the change, send the text and any supporting links or files to the maintainers.
+
+## Update a Team Bio
+
+Team bios are stored as Markdown files in `src/content/team/`.
+
+To update a bio:
+
+1. Edit the existing `.md` file for that person, or create a new one in `src/content/team/`.
+2. Update the frontmatter fields at the top of the file.
+3. Update the body text below the frontmatter with the biography.
+4. If needed, add or replace the profile image in `public/assets/images/team/`.
+
+Useful frontmatter fields include:
+
+- `title`
+- `role`
+- `subtitle`
+- `profile`
+- `linkedin`
+- `scholar`
+- `twitter`
+- `github`
+- `CV`
+- `order`
+- `permalink`
+
+Example:
+
 ```yaml
 ---
 title: "First Last"
-role: "none" # or another role
+role: "student"
 subtitle: "PhD Student"
-profile: "filename.jpg" # image stored in public/assets/
+profile: "first-last.jpg"
 github: "https://github.com/username"
 linkedin: "https://linkedin.com/in/username"
+scholar: "https://scholar.google.com/citations?user=example"
+twitter: "https://twitter.com/username"
+CV: "/assets/pdfs/first-last-cv.pdf"
+order: 999
 collection: team
-permalink: /team/first
+permalink: /team/first-last
 ---
-Biographical text goes here...
+Short biographical text goes here.
 ```
 
-### 🗞️ News (`src/content/news/`)
-Add Markdown files for news updates. Include `title` and `date` in the frontmatter.
+Notes:
 
-### 📚 Publications (`src/data/publications.yaml`)
-Publications are stored as a YAML list in `src/data/publications.yaml`.
+- `profile` should be the filename only. The website reads team images from `public/assets/images/team/`.
+- The biography text is written below the frontmatter in normal Markdown.
+- `order` controls display order on the team page. Lower numbers appear first.
 
-This file is generated from the separate [**Publication Lists**](https://github.com/vios-s/publication-lists) repository using OpenAlex data, then synced into this website repo via automation.
+## Update Publication Links or Assets
 
-The cross-repo workflow:
-- runs manually or on schedule (on the 1st and 16th of each month),
-- updates `src/data/publications.yaml` in this repo via a PR on branch `publications-update`,
-- preserves existing extra fields (for example `image`, `code`, `pdf`).
+Publication entries are stored in `src/data/publications.yaml`.
 
-Each item supports:
+Core publication metadata is generated from the separate [Publication Lists](https://github.com/vios-s/publication-lists) repository and synced into this website repository automatically.
+
+What you should usually edit here:
+
+- `image`
+- `code`
+- `pdf`
+
+What you should usually not edit here:
+
+- `title`
+- `authors`
+- `venue`
+- `date`
+
+Those core fields are normally managed by the publication-sync workflow and may be overwritten by future updates unless a manual correction is intentionally needed.
+
+Assets should be added here:
+
+- publication images: `public/assets/images/publications/`
+- publication PDFs: `public/assets/pdfs/`
+
+Example publication entry:
+
 ```yaml
 - title: Paper Title
   authors: Author A, Author B
-  venue: Conference/Journal Name
+  venue: Conference or Journal Name
   date: 'YYYY-MM-DD'
-  image: /assets/images/publications/example.png # optional
-  pdf: /assets/pdfs/example.pdf                  # optional
-  code: https://github.com/org/repo              # optional
-  website: https://doi.org/...                   # optional
+  website: https://doi.org/...
+  image: /assets/images/publications/example.png
+  pdf: /assets/pdfs/example.pdf
+  code: https://github.com/org/repo
 ```
 
-### 💻 Tutorials (`src/content/tutorials/`)
-Add Markdown files for tutorials. Useful frontmatter properties: `title`, `description`, `date`, `author`.
+Notes:
 
-### 📄 Static Pages (`src/content/pages/`)
-Markdown and MDX content for standalone pages. E.g., `alumni.mdx`. Uses `title` in frontmatter.
+- `website`, `image`, `pdf`, and `code` are optional.
+- Paths inside `public/` should be written as website paths, such as `/assets/pdfs/example.pdf`.
+- If a publication needs a true metadata correction, make that change deliberately and mention it clearly in the pull request so maintainers know it is meant to override the synced value.
 
-### 🔬 Projects (`src/data/projects.json`)
-The projects (both ongoing and completed) are listed in `src/data/projects.json`. Edit this JSON file to add new projects.
+## Other Content You Can Update
+
+### News
+
+News posts live in `src/content/news/`. Add or edit Markdown or MDX files with frontmatter such as `title` and `date`.
+
+### Tutorials
+
+Tutorials live in `src/content/tutorials/`. Useful frontmatter fields include `title`, `description`, `summary`, `date`, `teaser`, and `author`.
+
+### Pages
+
+Standalone pages live in `src/content/pages/`. Examples include `research.mdx`, `join_us.mdx`, and `alumni.mdx`.
+
+### Projects
+
+Projects are listed in `src/data/projects.json`.
+
+Example project entry:
+
 ```json
 {
-    "title": "Project Title",
-    "funder": "Funder Name",
-    "short_funder": "Short Funder Name",
-    "team": "Team structure",
-    "timeline": "MM/YY - MM/YY",
-    "url": "Project link"
+  "title": "Project Title",
+  "funder": "Funder Name",
+  "short_funder": "Short Funder Name",
+  "team": "Team structure",
+  "timeline": "MM/YY - MM/YY",
+  "url": "Project link"
 }
 ```
 
-## 🖼️ Adding Assets and Images
-Static assets such as images and PDFs should be placed inside the `public/` directory (e.g., in `public/assets/`). Anything in `public/` is served at the root URL (for example, `public/assets/image.jpg` is accessible at `/assets/image.jpg`).
+## Adding Assets
 
-## 🛠 Project Structure
+Static assets such as images and PDFs should be placed inside `public/`.
 
-```text
-/
-├── public/                 # Static assets (images, icons)
-├── src/
-│   ├── content/            # Markdown data collections (team, news, etc.)
-│   ├── data/               # Data files (projects.json, publications.yaml)
-│   ├── layouts/            # Page layouts
-│   ├── utils/              # Helper utilities
-│   └── pages/              # Astro routing (.astro pages)
-├── astro.config.mjs        # Astro configuration
-└── package.json            # Dependencies and scripts
+Examples:
+
+- `public/assets/images/team/`
+- `public/assets/images/publications/`
+- `public/assets/pdfs/`
+
+Anything in `public/` is served from the site root. For example, `public/assets/image.jpg` becomes `/assets/image.jpg`.
+
+## Run the Website Locally
+
+From the root of the project:
+
+```sh
+npm install
+npm run dev
+```
+
+The local site runs at `http://localhost:4321`.
+
+## Build and Preview
+
+To test a production build locally:
+
+```sh
+npm run build
+npm run preview
 ```

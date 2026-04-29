@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import { getSortedPublications, type Publication } from "../utils/publications";
 import publicationsData from "../data/publications.yaml";
-import publicationPlaceholderLightSvg from "../assets/placeholders/publication-placeholder-light.svg?raw";
 
 const publications = getSortedPublications(publicationsData as Publication[]);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
@@ -10,7 +9,6 @@ const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 const publicationsJson = JSON.stringify(
     publications.map((publication) => ({
         ...publication,
-        image: publication.image ? `${baseUrl}/${publication.image.replace(/^\//, "")}` : null,
         pdf: publication.pdf
             ? publication.pdf.startsWith("/")
                 ? `${baseUrl}/${publication.pdf.replace(/^\//, "")}`
@@ -32,7 +30,7 @@ const publicationsJson = JSON.stringify(
     </section>
 
     <div class="publication-container">
-        <div class="publication-search-wrap">
+        <div class="publication-controls">
             <input
                 id="publication-search"
                 class="publication-search"
@@ -42,7 +40,7 @@ const publicationsJson = JSON.stringify(
             />
         </div>
 
-        <div id="publication-cards" class="publication-cards"></div>
+        <div id="publication-list" class="publication-list"></div>
 
         <p id="publication-empty" class="publication-empty" hidden>No publications match your search.</p>
 
@@ -50,7 +48,7 @@ const publicationsJson = JSON.stringify(
     </div>
 </Layout>
 
-<script define:vars={{ publicationsJson, publicationPlaceholderLightSvg }}>
+<script define:vars={{ publicationsJson }}>
     const PAGE_SIZE = 20;
     const ALL_PUBLICATIONS = JSON.parse(publicationsJson);
 
@@ -58,7 +56,7 @@ const publicationsJson = JSON.stringify(
     let offset = 0;
     let lastRenderedYear = null;
 
-    const grid = document.getElementById("publication-cards");
+    const list = document.getElementById("publication-list");
     const empty = document.getElementById("publication-empty");
     const sentinel = document.getElementById("publication-sentinel");
 
@@ -80,28 +78,26 @@ const publicationsJson = JSON.stringify(
         return Number.isNaN(year) ? "Unknown" : String(year);
     }
 
-    const PLACEHOLDER_LIGHT = publicationPlaceholderLightSvg;
-
-    function cardHTML(publication) {
-        const media = publication.image
-            ? `<img class="publication-card-img" src="${escape(publication.image)}" alt="Paper Teaser" loading="lazy" />`
-            : `<div class="publication-card-img-placeholder" role="img" aria-label="No preview available">${PLACEHOLDER_LIGHT}</div>`;
-        const links = [
-            publication.pdf ? `<a href="${escape(publication.pdf)}" class="publication-card-link" target="_blank" rel="noopener noreferrer">PDF →</a>` : "",
-            publication.code    ? `<a href="${escape(publication.code)}"    class="publication-card-link" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
-            publication.website ? `<a href="${escape(publication.website)}" class="publication-card-link" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
+    function publicationLinksHTML(publication, className) {
+        return [
+            publication.pdf ? `<a href="${escape(publication.pdf)}" class="${className}" target="_blank" rel="noopener noreferrer">PDF →</a>` : "",
+            publication.code ? `<a href="${escape(publication.code)}" class="${className}" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
+            publication.website ? `<a href="${escape(publication.website)}" class="${className}" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
         ].join("");
-        const footer = links ? `<div class="publication-card-footer">${links}</div>` : "";
+    }
+
+    function listHTML(publication) {
+        const links = publicationLinksHTML(publication, "publication-list-link");
+        const footer = links ? `<div class="publication-list-links">${links}</div>` : "";
         return `
-            <div class="publication-card publication-card-new">
-                ${media}
-                <div class="publication-card-body">
-                    <span class="publication-card-venue">${escape(publication.venue)}</span>
-                    <p class="publication-card-title">${escape(publication.title)}</p>
-                    <p class="publication-card-authors">${escape(truncateAuthors(publication.authors))}</p>
+            <article class="publication-list-item publication-result-new">
+                <div class="publication-list-content">
+                    <span class="publication-list-venue">${escape(publication.venue)}</span>
+                    <h3 class="publication-list-title">${escape(publication.title)}</h3>
+                    <p class="publication-list-authors">${escape(truncateAuthors(publication.authors))}</p>
                 </div>
                 ${footer}
-            </div>`;
+            </article>`;
     }
 
     function renderChunk() {
@@ -117,22 +113,22 @@ const publicationsJson = JSON.stringify(
                 frag.appendChild(heading);
                 lastRenderedYear = year;
             }
-            const cardContainer = document.createElement("div");
-            cardContainer.innerHTML = cardHTML(publication);
-            frag.appendChild(cardContainer.firstElementChild);
+            const listItemContainer = document.createElement("div");
+            listItemContainer.innerHTML = listHTML(publication);
+            frag.appendChild(listItemContainer.firstElementChild);
         });
-        grid.appendChild(frag);
+        list.appendChild(frag);
         // Trigger fade-in on next frame
         requestAnimationFrame(() => {
-            grid.querySelectorAll(".publication-card-new").forEach((el) => {
-                el.classList.remove("publication-card-new");
+            list.querySelectorAll(".publication-result-new").forEach((el) => {
+                el.classList.remove("publication-result-new");
             });
         });
         offset += chunk.length;
     }
 
     function reset() {
-        grid.innerHTML = "";
+        list.innerHTML = "";
         offset = 0;
         lastRenderedYear = null;
         empty.hidden = filtered.length > 0;
@@ -178,14 +174,15 @@ const publicationsJson = JSON.stringify(
         padding: 0 8rem 6rem;
     }
 
-    .publication-search-wrap {
+    .publication-controls {
         display: flex;
         align-items: center;
-        max-width: 800px;
+        max-width: 980px;
         margin: 0 auto 1.5rem;
     }
     .publication-search {
         flex: 1;
+        min-height: 44px;
         background: var(--bg2);
         border: 1px solid var(--border);
         color: var(--text);
@@ -205,20 +202,22 @@ const publicationsJson = JSON.stringify(
     /* hide the browser's built-in × button so style stays consistent */
     .publication-search::-webkit-search-cancel-button { display: none; }
 
-    .publication-cards {
+    .publication-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        max-width: 980px;
+        margin: 0 auto;
     }
 
     @keyframes fadeUp {
         from { opacity: 0; transform: translateY(12px); }
         to   { opacity: 1; transform: translateY(0); }
     }
-    :global(.publication-card-new) {
+    :global(.publication-result-new) {
         opacity: 0;
     }
-    :global(.publication-card:not(.publication-card-new)) {
+    :global(.publication-list-item:not(.publication-result-new)) {
         animation: fadeUp 0.3s ease both;
     }
     :global(.publication-year-heading) {
@@ -247,88 +246,70 @@ const publicationsJson = JSON.stringify(
         height: 1px;
     }
 
-    :global(.publication-card) {
+    :global(.publication-list-item) {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: start;
+        gap: 1rem;
         background: var(--bg2);
         border: 1px solid var(--border);
-        display: flex;
-        flex-direction: column;
+        padding: 1.15rem 1.25rem;
         transition:
-            transform 0.3s,
-            border-color 0.3s,
-            background 0.35s ease;
-        overflow: hidden;
+            border-color 0.25s,
+            background 0.25s,
+            transform 0.25s;
     }
-    :global(.publication-card:hover) {
-        transform: translateY(-4px);
+    :global(.publication-list-item:hover) {
+        transform: translateY(-2px);
         border-color: rgba(0, 212, 170, 0.4);
         background: var(--bg3);
     }
-    :global(.publication-card-img) {
-        width: 100%;
-        aspect-ratio: 16/9;
-        object-fit: cover;
-        border-bottom: 1px solid var(--border);
+    :global(.publication-list-content) {
+        min-width: 0;
     }
-    :global(.publication-card-img-placeholder) {
-        width: 100%;
-        aspect-ratio: 16/9;
-        border-bottom: 1px solid var(--border);
-        overflow: hidden;
+    :global(.publication-list-venue) {
         display: block;
-        line-height: 0;
-    }
-    :global(.publication-card-img-placeholder svg) {
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-    :global(.publication-card-body) {
-        padding: 1.5rem;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    :global(.publication-card-venue) {
+        margin-bottom: 0.45rem;
         font-family: "JetBrains Mono", monospace;
-        font-size: 0.7rem;
+        font-size: 0.68rem;
         color: var(--accent);
         letter-spacing: 0.08em;
+        line-height: 1.3;
         text-transform: uppercase;
     }
-    :global(.publication-card-title) {
-        font-family: "Outfit", sans-serif;
-        font-size: 1.1rem;
-        font-weight: 600;
+    :global(.publication-list-title) {
+        margin: 0;
         color: var(--text);
+        font-family: "Outfit", sans-serif;
+        font-size: 1.02rem;
+        font-weight: 600;
         line-height: 1.35;
     }
-    :global(.publication-card-authors) {
-        font-size: 0.85rem;
+    :global(.publication-list-authors) {
+        margin: 0.55rem 0 0;
         color: var(--muted);
-        line-height: 1.4;
-        margin-top: auto;
-        padding-top: 0.5rem;
+        font-size: 0.84rem;
+        line-height: 1.45;
     }
-    :global(.publication-card-footer) {
-        padding: 0.85rem 1.5rem;
-        border-top: 1px solid var(--border);
+    :global(.publication-list-links) {
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 1.25rem;
+        gap: 0.8rem;
+        padding-top: 0.2rem;
     }
-    :global(.publication-card-link) {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 0.75rem;
+    :global(.publication-list-link) {
         color: var(--muted);
-        text-decoration: none;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.72rem;
         letter-spacing: 0.08em;
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
+        line-height: 1.4;
+        text-decoration: none;
+        text-transform: uppercase;
         transition: color 0.2s;
+        white-space: nowrap;
     }
-    :global(.publication-card-link:hover) {
+    :global(.publication-list-link:hover) {
         color: var(--accent);
     }
 
@@ -348,11 +329,16 @@ const publicationsJson = JSON.stringify(
         .publication-container {
             padding: 0 1.5rem 3rem;
         }
-        .publication-cards {
+        .publication-controls {
+            align-items: stretch;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        :global(.publication-list-item) {
             grid-template-columns: 1fr;
         }
-        .publication-search-wrap {
-            max-width: 100%;
+        :global(.publication-list-links) {
+            justify-content: flex-start;
         }
     }
 </style>

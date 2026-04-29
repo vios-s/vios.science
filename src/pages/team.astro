@@ -69,7 +69,14 @@ const sectionTitles = {
                         {members.map(async (member) => {
                             const { Content } = await member.render();
                             return (
-                            <div class="team-card" data-member-id={member.id}>
+                            <div
+                                class="team-card"
+                                data-member-id={member.id}
+                                role="button"
+                                tabindex="0"
+                                aria-haspopup="dialog"
+                                aria-label={`Open biography for ${member.data.title}`}
+                            >
                                 <div class="card-inner">
                                     {member.data.profile ? (
                                         <div class="profile-img-wrap">
@@ -91,10 +98,10 @@ const sectionTitles = {
                                                 <h2>{member.data.title}</h2>
                                                 {member.data.subtitle && <h3>{member.data.subtitle}</h3>}
                                                 <div class="modal-socials">
-                                                    {member.data.linkedin && <a href={member.data.linkedin} target="_blank">LinkedIn</a>}
-                                                    {member.data.scholar && <a href={member.data.scholar} target="_blank">Google Scholar</a>}
-                                                    {member.data.twitter && <a href={member.data.twitter} target="_blank">Twitter</a>}
-                                                    {member.data.CV && <a href={base(member.data.CV)} target="_blank">CV</a>}
+                                                    {member.data.linkedin && <a href={member.data.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>}
+                                                    {member.data.scholar && <a href={member.data.scholar} target="_blank" rel="noopener noreferrer">Google Scholar</a>}
+                                                    {member.data.twitter && <a href={member.data.twitter} target="_blank" rel="noopener noreferrer">Twitter</a>}
+                                                    {member.data.CV && <a href={base(member.data.CV)} target="_blank" rel="noopener noreferrer">CV</a>}
                                                 </div>
                                             </div>
                                         </div>
@@ -118,9 +125,9 @@ const sectionTitles = {
         </div>
     </div>
 
-    <dialog id="teamModal" class="team-modal">
+    <dialog id="teamModal" class="team-modal" aria-label="Team member biography">
         <div class="modal-inner">
-            <button id="closeModal" class="close-btn">&times;</button>
+            <button id="closeModal" class="close-btn" aria-label="Close biography">&times;</button>
             <div id="modalBody"></div>
         </div>
     </dialog>
@@ -162,6 +169,11 @@ const sectionTitles = {
     .team-card:hover {
         transform: translateY(-5px);
         border-color: rgba(0,212,170,0.4);
+        background: var(--bg3);
+    }
+    .team-card:focus-visible {
+        transform: translateY(-5px);
+        border-color: var(--accent);
         background: var(--bg3);
     }
     
@@ -384,14 +396,28 @@ const sectionTitles = {
     const modalBody = document.getElementById('modalBody');
     const closeBtn = document.getElementById('closeModal');
     if (modal && modalBody && closeBtn) {
+        let lastFocusedCard = null;
+
+        function openCard(card) {
+            lastFocusedCard = card;
+            const template = card.querySelector('template');
+            if (template) {
+                modalBody.innerHTML = '';
+                modalBody.appendChild(template.content.cloneNode(true));
+                modal.showModal();
+                document.body.style.overflow = 'hidden';
+                closeBtn.focus();
+            }
+        }
+
         teamCards.forEach(card => {
             card.addEventListener('click', () => {
-                const template = card.querySelector('template');
-                if (template) {
-                    modalBody.innerHTML = '';
-                    modalBody.appendChild(template.content.cloneNode(true));
-                    modal.showModal();
-                    document.body.style.overflow = 'hidden';
+                openCard(card);
+            });
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openCard(card);
                 }
             });
         });
@@ -402,6 +428,7 @@ const sectionTitles = {
         
         modal.addEventListener('close', () => {
             document.body.style.overflow = '';
+            if (lastFocusedCard) lastFocusedCard.focus();
         });
 
         modal.addEventListener('click', (event) => {
