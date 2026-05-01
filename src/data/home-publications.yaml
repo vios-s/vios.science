@@ -1,0 +1,120 @@
+- title: A conversational multi-agent AI system for automated plant phenotyping
+  authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
+  venue: Nature Communications
+  date: '2026-04-03'
+  website: https://doi.org/10.1038/s41467-026-71090-y
+  image: /assets/images/publications/feng_2026_nat_comm.png
+  code: https://github.com/vios-s/PhenoAssistant/
+  pdf: null
+- title: Causal Ordering for Structure Learning from Time Series
+  authors: Pedro Sanchez, Damian Machlanski, Steven McDonagh, Sotirios A. Tsaftaris
+  venue: Transactions on Machine Learning Research
+  date: '2025-12-07'
+  website: https://openreview.net/forum?id=hWuTzqggSd
+  image: /assets/images/publications/pedro_2025_tmlr.png
+  code: https://github.com/CHAI-UK/DOTS
+  pdf: null
+- title: Digital twin assisted surgery, concept, opportunities, and challenges
+  authors: Lisa Asciak, Justicia Kyeremeh, Xichun Luo, Asimina Kazakidi, Patricia Connolly, F. Picard, Kevin O’Neill, Sotirios A. Tsaftaris, Grant D. Stewart, Wenmiao Shu
+  venue: npj Digital Medicine
+  date: '2025-01-15'
+  website: https://doi.org/10.1038/s41746-024-01413-0
+  image: /assets/images/publications/lisa_2025_npj.png
+  code: null
+  pdf: null
+- title: Benchmarking Counterfactual Image Generation
+  authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
+  venue: Advances in Neural Information Processing Systems 37
+  date: '2024-01-01'
+  website: https://doi.org/10.52202/079017-4233
+  image: /assets/images/publications/thomas_2024_nips.png
+  code: https://github.com/gulnazaki/counterfactual-benchmark
+  pdf: null
+- title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
+  authors: Yuning Du, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2024-01-01'
+  website: https://doi.org/10.1007/978-3-031-72384-1_44
+  image: /assets/images/publications/yuning_2024_miccai.png
+  code: https://github.com/vios-s/MRI_Active_Sampling
+  pdf: null
+- title: Zero-Shot Medical Phrase Grounding With Off-the-Shelf Diffusion Models
+  authors: Konstantinos Vilouras, Pedro Sanchez, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: IEEE Journal of Biomedical and Health Informatics
+  date: '2024-11-08'
+  website: https://doi.org/10.1109/jbhi.2024.3494246
+  image: /assets/images/publications/kostas_2025_jbhi.png
+  code: https://github.com/vios-s/ldm-phrase-grounding
+  pdf: null
+- title: Diffusion Models for Causal Discovery via Topological Ordering
+  authors: Pedro L. Sánchez, Xiao Liu, O'Neil, Alison Q, Sotirios A. Tsaftaris
+  venue: arXiv
+  date: '2022-10-12'
+  website: https://doi.org/10.48550/arxiv.2210.06201
+  image: /assets/images/publications/sanchez_2022_topological.png
+  code: https://github.com/vios-s/DiffAN
+  pdf: null
+- title: 'Survey: Leakage and Privacy at Inference Time'
+  authors: Marija Jegorova, Chaitanya Kaul, Charlie Mayor, Alison Q. O’Neil, Alexander Weir, Roderick Murray‐Smith, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  date: '2022-01-01'
+  website: https://doi.org/10.1109/tpami.2022.3229593
+  image: null
+  code: null
+  pdf: null
+- title: Learning disentangled representations in the imaging domain
+  authors: Xiao Liu, Pedro Sanchez, Spyridon Thermos, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2022-06-17'
+  website: https://doi.org/10.1016/j.media.2022.102516
+  image: null
+  code: null
+  pdf: null
+- title: Causal machine learning for healthcare and precision medicine
+  authors: Pedro Sanchez, Jeremy P. Voisey, Tian Xia, Hannah Watson, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Royal Society Open Science
+  date: '2022-08-01'
+  website: https://doi.org/10.1098/rsos.220638
+  image: null
+  code: null
+  pdf: null
+- title: Learning to synthesise the ageing brain without longitudinal data
+  authors: Tian Xia, Agisilaos Chartsias, Chengjia Wang, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2021-07-18'
+  website: https://doi.org/10.1016/j.media.2021.102169
+  image: /assets/images/publications/xia_2019_journal.png
+  code: https://github.com/vios-s/BrainAgeing
+  pdf: null
+- title: Disentangled representation learning in cardiac image analysis
+  authors: Agisilaos Chartsias, T. A. Joyce, Giorgos Papanastasiou, Scott Semple, Michelle C. Williams, David E. Newby, Rohan Dharmakumar, Sotirios A. Tsaftaris
+  venue: Medical Image Analysis
+  date: '2019-07-18'
+  website: https://doi.org/10.1016/j.media.2019.101535
+  image: /assets/images/publications/chartsias_2019_media.png
+  code: https://github.com/vios-s/anatomy_modality_decomposition
+  pdf: null
+- title: Multimodal MR Synthesis via Modality-Invariant Latent Representation
+  authors: Agisilaos Chartsias, T. A. Joyce, Mario Valerio Giuffrida, Sotirios A. Tsaftaris
+  venue: IEEE Transactions on Medical Imaging
+  date: '2017-10-18'
+  website: https://doi.org/10.1109/tmi.2017.2764326
+  image: /assets/images/publications/chartsias_2017_tmi.png
+  code: https://github.com/vios-s/multimodal_brain_synthesis
+  pdf: /assets/pdfs/TMI_Synthesis_final.pdf
+- title: 'Phenotiki: an open software and hardware platform for affordable and easy image‐based phenotyping of rosette‐shaped plants'
+  authors: Massimo Minervini, Mario Valerio Giuffrida, Pierdomenico Perata, Sotirios A. Tsaftaris
+  venue: The Plant Journal
+  date: '2017-01-09'
+  website: https://doi.org/10.1111/tpj.13472
+  image: null
+  code: null
+  pdf: null
+- title: 'Leaf segmentation in plant phenotyping: a collation study'
+  authors: Hanno Scharr, Massimo Minervini, Andrew P. French, Christian Klukas, David Kramer, Xiaoming Liu, Imanol Luengo, Jean-Michel Pape, G. Polder, Danijela Vukadinovic, Xi Yin, Sotirios A. Tsaftaris
+  venue: Machine Vision and Applications
+  date: '2015-12-12'
+  website: https://doi.org/10.1007/s00138-015-0737-3
+  image: null
+  code: null
+  pdf: /assets/pdfs/Scharr_MVAP2015.pdf

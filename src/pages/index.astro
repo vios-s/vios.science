@@ -3,15 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { base } from "../utils/base";
 import { getSortedNews } from "../utils/news";
-import { getSortedPublications, type Publication } from "../utils/publications";
+import type { Publication } from "../utils/publications";
 import projectsData from "../data/projects.json";
-import publicationsData from "../data/publications.yaml";
+import homePublicationsData from "../data/home-publications.yaml";
 
 const allNews = await getCollection("news");
 const topNews = getSortedNews(allNews).slice(0, 3);
 
-const recentPublications = getSortedPublications(publicationsData as Publication[]).slice(0, 3);
+const homePublicationLimit = 6;
+const homePublications = (homePublicationsData as Publication[]).slice(0, homePublicationLimit);
 const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
+const resolveImageSrc = (image?: string) =>
+    image?.startsWith("http") ? image : base(image ?? "/assets/placeholders/publication-placeholder-light.svg");
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">
@@ -255,13 +258,19 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
                 <div class="s-eyebrow-line"></div>
                 <span class="s-eyebrow-text">Selected Work</span>
             </div>
-            <h2 class="s-title">Recent <em>publications</em></h2>
+            <h2 class="s-title">Representative <em>publications</em></h2>
         </div>
 
         <div class="publication-cards stagger">
             {
-                recentPublications.map((publication) => (
+                homePublications.map((publication) => (
                     <div class="publication-card">
+                        <img
+                            src={resolveImageSrc(publication.image)}
+                            alt=""
+                            class="publication-card-img"
+                            loading="lazy"
+                        />
                         <div class="publication-card-body">
                             <span class="publication-card-venue">{publication.venue}</span>
                             <p class="publication-card-title">{publication.title}</p>
