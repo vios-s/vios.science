@@ -15,6 +15,14 @@ const homePublications = (homePublicationsData as Publication[]).slice(0, homePu
 const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
 const resolveImageSrc = (image?: string) =>
     image?.startsWith("http") ? image : base(image ?? "/assets/placeholders/publication-placeholder-light.svg");
+const truncateAuthors = (authors: string, max = 8) => {
+    const parts = (authors ?? "")
+        .split(",")
+        .map((author) => author.trim())
+        .filter(Boolean);
+    if (parts.length <= max) return authors ?? "";
+    return `${parts.slice(0, max).join(", ")}, …`;
+};
 ---
 
 <Layout title="VIOS Collaboratory — AI for Life Sciences">
@@ -274,7 +282,7 @@ const resolveImageSrc = (image?: string) =>
                         <div class="publication-card-body">
                             <span class="publication-card-venue">{publication.venue}</span>
                             <p class="publication-card-title">{publication.title}</p>
-                            <p class="publication-card-authors">{publication.authors}</p>
+                            <p class="publication-card-authors">{truncateAuthors(publication.authors)}</p>
                         </div>
                         <div class="publication-card-footer">
                             {publication.pdf && (
