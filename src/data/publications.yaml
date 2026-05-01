@@ -490,6 +490,7 @@
   venue: arXiv
   date: '2024-04-16'
   website: https://doi.org/10.48550/arxiv.2404.10574
+  display: false
   image: null
   code: null
   pdf: null
@@ -871,6 +872,7 @@
   venue: arXiv
   date: '2022-11-16'
   website: https://doi.org/10.48550/arxiv.2211.09022
+  display: false
   image: null
   code: null
   pdf: null
@@ -975,6 +977,7 @@
   venue: arXiv
   date: '2022-06-03'
   website: https://doi.org/10.48550/arxiv.2206.01653
+  display: false
   image: null
   code: null
   pdf: null
@@ -1252,6 +1255,7 @@
   venue: F1000Research
   date: '2021-04-27'
   website: https://doi.org/10.12688/f1000research.52204.1
+  display: false
   image: null
   code: null
   pdf: null
@@ -2294,6 +2298,7 @@
   venue: Lecture notes in computer science
   date: '2016-01-01'
   website: https://doi.org/10.1007/978-3-319-46630-9
+  display: false
   image: null
   code: null
   pdf: null

@@ -8,6 +8,7 @@ export interface Publication {
     code?: string;
     website?: string;
     pdf?: string;
+    display?: boolean;
 }
 
 export function getSortedPublications(items: Publication[]): Publication[] {
@@ -15,5 +16,11 @@ export function getSortedPublications(items: Publication[]): Publication[] {
         const leftDateMs = leftPublication.date ? new Date(leftPublication.date).getTime() : 0;
         const rightDateMs = rightPublication.date ? new Date(rightPublication.date).getTime() : 0;
         return rightDateMs - leftDateMs;
+    });
+}
+
+export function getVisiblePublications(items: Publication[]): Publication[] {
+    return items.filter((publication) => {
+        return publication.display !== false;
     });
 }

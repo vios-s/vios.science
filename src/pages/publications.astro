@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getSortedPublications, type Publication } from "../utils/publications";
+import { getSortedPublications, getVisiblePublications, type Publication } from "../utils/publications";
 import publicationsData from "../data/publications.yaml";
 
-const publications = getSortedPublications(publicationsData as Publication[]);
+const publications = getSortedPublications(
+    getVisiblePublications(publicationsData as Publication[])
+);
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const publicationsJson = JSON.stringify(

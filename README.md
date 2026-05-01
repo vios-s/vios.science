@@ -110,6 +110,7 @@ What you should usually edit here:
 - `image`
 - `code`
 - `pdf`
+- `display: false` to hide generated entries from the website
 
 What you should usually not edit here:
 
@@ -141,6 +142,7 @@ Example publication entry:
 Notes:
 
 - `website`, `image`, `pdf`, and `code` are optional.
+- `display: false` hides a publication from website publication lists. Use it for generated entries that should stay in the data file but should not appear publicly, such as duplicates or incorrectly generated papers. The publication sync preserves extra fields like this when the generated title and date still match the existing entry.
 - Paths inside `public/` should be written as website paths, such as `/assets/pdfs/example.pdf`.
 - If a publication needs a true metadata correction, make that change deliberately and mention it clearly in the pull request so maintainers know it is meant to override the synced value.
 
