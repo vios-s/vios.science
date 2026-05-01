@@ -1893,7 +1893,7 @@
   code: null
   pdf: null
 - title: Unsupervised Lesion Detection in Brain CT using Bayesian Convolutional Autoencoders
-  authors: Nick Pawlowski, Matthew C. H. Lee, Martin Rajchl, Steven McDonagh, Enzo Ferrante, Konstantinos Kamnitsas, Sam F Cooke, Susan Stevenson, Aneesh Khetani, Tom Newman, Frederick A. Zeiler, Richard Digby, Jonathan Coles, Daniel Rueckert, David Menon, Virginia Newcombe, Ben Glocker
+  authors: Nick Pawlowski, Matthew Chung Hai Lee, Martin Rajchl, Steven McDonagh, Enzo Ferrante, Konstantinos Kamnitsas, Sam F Cooke, Susan Stevenson, Aneesh Khetani, Tom Newman, Frederick A. Zeiler, Richard Digby, Jonathan Coles, Daniel Rueckert, David Menon, Virginia Newcombe, Ben Glocker
   venue: null
   date: '2018-04-11'
   website: https://openreview.net/pdf?id=S1hpzoisz
@@ -1917,7 +1917,7 @@
   code: null
   pdf: null
 - title: 'Attention U-Net: Learning Where to Look for the Pancreas'
-  authors: Ozan Oktay, Jo Schlemper, Loïc Le Folgoc, Matthew C. H. Lee, Mattias P. Heinrich‬, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Hammerla, Bernhard Kainz, Ben Glocker, Daniel Rueckert
+  authors: Ozan Oktay, Jo Schlemper, Loïc Le Folgoc, Matthew Chung Hai Lee, Mattias P. Heinrich‬, Kazunari Misawa, Kensaku Mori, Steven McDonagh, Nils Hammerla, Bernhard Kainz, Ben Glocker, Daniel Rueckert
   venue: arXiv
   date: '2018-04-11'
   website: https://doi.org/10.48550/arxiv.1804.03999
@@ -1973,7 +1973,7 @@
   code: null
   pdf: null
 - title: Computing CNN Loss and Gradients for Pose Estimation with Riemannian Geometry
-  authors: Benjamin Hou, Nina Miolane, Bishesh Khanal, Matthew C. H. Lee, Amir Alansary, Steven McDonagh, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
+  authors: Benjamin Hou, Nina Miolane, Bishesh Khanal, Matthew Chung Hai Lee, Amir Alansary, Steven McDonagh, Joseph V. Hajnal, Daniel Rueckert, Ben Glocker, Bernhard Kainz
   venue: Lecture notes in computer science
   date: '2018-01-01'
   website: https://doi.org/10.1007/978-3-030-00928-1_85
