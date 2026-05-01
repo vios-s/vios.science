@@ -24,7 +24,7 @@
   pdf: null
 - title: Benchmarking Counterfactual Image Generation
   authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
-  venue: Advances in Neural Information Processing Systems 37
+  venue: Neurips
   date: '2024-01-01'
   website: https://doi.org/10.52202/079017-4233
   image: /assets/images/publications/thomas_2024_nips.png
@@ -32,7 +32,7 @@
   pdf: null
 - title: 'The MRI Scanner as a Diagnostic: Image-Less Active Sampling'
   authors: Yuning Du, Rohan Dharmakumar, Sotirios A. Tsaftaris
-  venue: Lecture notes in computer science
+  venue: MICCAI
   date: '2024-01-01'
   website: https://doi.org/10.1007/978-3-031-72384-1_44
   image: /assets/images/publications/yuning_2024_miccai.png
