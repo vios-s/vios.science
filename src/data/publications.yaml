@@ -28,6 +28,7 @@
   venue: Open MIND
   date: '2026-03-10'
   website: https://doi.org/10.5281/zenodo.18940282
+  display: false
 - title: Uncertainty-guided Open-Set Source-Free Unsupervised Domain Adaptation with Target-private Class Segregation
   authors: Mattia Litrico, Davide Talon, Sebastiano Battiato, Alessio Del Bue, Mario Valerio Giuffrida, Pietro Morerio
   venue: International Journal of Computer Vision
@@ -72,6 +73,7 @@
   venue: Repository@Nottingham (University of Nottingham)
   date: '2026-01-07'
   website: https://nottingham-repository.worktribe.com/file/59901747/1/A%20Conversational%20Multi-Agent%20AI%20System%20for%20Automated%20Plant%20Phenotyping
+  display: false
   image: null
   code: null
   pdf: null
@@ -253,6 +255,7 @@
   venue: Research Square
   date: '2025-05-13'
   website: https://doi.org/10.21203/rs.3.rs-6430233/v1
+  display: false
   image: null
   code: null
   pdf: null
