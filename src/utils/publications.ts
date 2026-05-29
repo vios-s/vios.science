@@ -5,6 +5,7 @@ export interface Publication {
     date?: string;
     image?: string;
     link?: string;
+    page?: string;
     code?: string;
     website?: string;
     pdf?: string;

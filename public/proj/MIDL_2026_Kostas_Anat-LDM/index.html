@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models</title>
+<meta name="description" content="A weakly supervised fine-tuning framework that steers cross-attention in chest X-ray latent diffusion models toward anatomical regions described in radiology reports, achieving SOTA phrase grounding on MS-CXR and VinDr-CXR.">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models">
+<meta property="og:description" content="MIDL 2026 — Improving multi-modal alignment in CXR latent diffusion models for phrase grounding.">
+<meta property="og:image" content="https://vios.science/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f6f7f9;
+    --ink: #1a1d24;
+    --ink-soft: #4a5160;
+    --line: #e4e7ec;
+    --accent: #2d6cdf;
+    --accent-soft: #eaf1fe;
+    --green: #228b22;
+    --orange: #ff8c00;
+    --purple: #663399;
+    --maxw: 880px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Header ---------- */
+  header {
+    text-align: center;
+    padding: 64px 0 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .venue {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(28px, 4.4vw, 42px);
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin: 0 auto 28px;
+    max-width: 760px;
+  }
+  .authors {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 auto 6px;
+    max-width: 720px;
+  }
+  .authors a { color: var(--ink); border-bottom: 1px solid transparent; }
+  .authors a:hover { color: var(--accent); text-decoration: none; border-bottom-color: var(--accent); }
+  .authors sup { color: var(--accent); font-weight: 600; }
+  .affil {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-top: 12px;
+  }
+  .affil span { display: inline-block; margin: 0 10px; }
+
+  /* ---------- Buttons ---------- */
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: #fff;
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform .12s ease, background .12s ease;
+  }
+  .btn:hover { text-decoration: none; transform: translateY(-1px); background: #000; }
+  .btn svg { width: 17px; height: 17px; fill: currentColor; }
+  .btn.alt { background: var(--bg-soft); color: var(--ink); border: 1px solid var(--line); }
+  .btn.alt:hover { background: #eceef1; }
+
+  /* ---------- Sections ---------- */
+  section { padding: 52px 0; border-bottom: 1px solid var(--line); }
+  h2 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    margin: 0 0 22px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 10px;
+  }
+  p { margin: 0 0 18px; }
+  .abstract p { font-size: 17px; color: var(--ink-soft); text-align: justify; }
+
+  figure { margin: 0; }
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+  }
+  figure img.plain { border: none; }
+  figcaption {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin-top: 12px;
+    line-height: 1.55;
+  }
+  figcaption b { color: var(--ink); }
+  .teaser { max-width: 520px; margin: 0 auto; }
+  .c-orange { color: var(--orange); font-weight: 600; }
+  .c-purple { color: var(--purple); font-weight: 600; }
+  .c-green  { color: var(--green);  font-weight: 600; }
+
+  /* ---------- Contributions ---------- */
+  .contrib { list-style: none; padding: 0; margin: 0; }
+  .contrib li {
+    position: relative;
+    padding: 16px 18px 16px 52px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .contrib li::before {
+    content: counter(c);
+    counter-increment: c;
+    position: absolute;
+    left: 16px; top: 16px;
+    width: 24px; height: 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .contrib { counter-reset: c; }
+
+  /* ---------- Table ---------- */
+  .table-scroll { overflow-x: auto; margin: 8px 0 6px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    min-width: 540px;
+  }
+  caption { caption-side: top; text-align: left; font-size: 14px; color: var(--ink-soft); margin-bottom: 10px; }
+  th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; font-weight: 500; }
+  thead th { font-weight: 600; border-bottom: 2px solid var(--ink); }
+  tbody tr:last-child td { border-bottom: 2px solid var(--ink); font-weight: 600; background: var(--accent-soft); }
+  .ours { background: var(--accent-soft); }
+  .best { font-weight: 700; }
+
+  .tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
+  .tab {
+    padding: 8px 18px; border: 1px solid var(--line); border-radius: 999px;
+    background: #fff; cursor: pointer; font: inherit; font-size: 14px; font-weight: 500; color: var(--ink-soft);
+  }
+  .tab.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* ---------- BibTeX ---------- */
+  pre {
+    background: #1a1d24;
+    color: #e6e9ef;
+    padding: 22px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .copy-row { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+  .copy-btn {
+    font: inherit; font-size: 13px; cursor: pointer;
+    background: var(--bg-soft); border: 1px solid var(--line); color: var(--ink-soft);
+    padding: 6px 12px; border-radius: 7px;
+  }
+  .copy-btn:hover { background: #eceef1; }
+
+  footer { text-align: center; padding: 36px 0 56px; color: var(--ink-soft); font-size: 14px; }
+
+  @media (max-width: 600px) {
+    header { padding: 40px 0 32px; }
+    section { padding: 40px 0; }
+    .authors { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="venue">MIDL 2026 &middot; Full Paper</div>
+    <h1>Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models</h1>
+
+    <div class="authors">
+      <a href="mailto:konstantinos.vilouras@ed.ac.uk">Konstantinos Vilouras</a><sup>1</sup>,
+      <a href="mailto:i.stogiannidis@ed.ac.uk">Ilias Stogiannidis</a><sup>1</sup>,
+      <a href="mailto:Junyu.Yan@ed.ac.uk">Junyu Yan</a><sup>1</sup>,
+      <a href="mailto:alison.smithard@mre.medical.canon">Alison Q. Smithard</a><sup>1,2</sup>,
+      <a href="mailto:s.tsaftaris@ed.ac.uk">Sotirios A. Tsaftaris</a><sup>1</sup>
+    </div>
+    <div class="affil">
+      <span><sup>1</sup> School of Engineering, University of Edinburgh</span>
+      <span><sup>2</sup> Canon Medical Research Europe Ltd.</span>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="#" aria-label="Paper PDF">
+        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3h8v1.5H8V15zm0 3h5v1.5H8V18z"/></svg>
+        Paper
+      </a>
+      <a class="btn alt" href="https://github.com/vios-s" target="_blank" rel="noopener" aria-label="Code">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        Code
+      </a>
+      <a class="btn alt" href="#bibtex">
+        <svg viewBox="0 0 24 24"><path d="M3 5h18v2H3V5zm0 6h18v2H3v-2zm0 6h12v2H3v-2z"/></svg>
+        BibTeX
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ---------- Teaser ---------- -->
+<section>
+  <div class="wrap">
+    <figure class="teaser">
+      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png" alt="Cross-attention leakage comparison in a pre-trained vs. fine-tuned chest X-ray LDM">
+      <figcaption>
+        <b>Cross-attention leakage in a pre-trained LDM.</b> Using a description of findings from the
+        radiology report as a prompt (<span class="c-orange">orange</span> path), cross-attention activations
+        are diffused over the whole image. A simpler "<code>{location} {pathology}</code>" prompt
+        (<span class="c-purple">purple</span> path) does not help. Our weakly supervised fine-tuning
+        (<span class="c-green">green</span> path) yields activations localized to the anatomical region named in the prompt.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ---------- Abstract ---------- -->
+<section class="abstract">
+  <div class="wrap">
+    <h2>Abstract</h2>
+    <p>
+      Latent Diffusion Models have shown remarkable results in text-guided image synthesis in recent years.
+      In the domain of natural (RGB) images, recent works have shown that such models can be adapted to various
+      vision–language downstream tasks with little to no supervision involved. On the contrary, text-to-image
+      Latent Diffusion Models remain relatively underexplored in the field of medical imaging, primarily due to
+      limited data availability (e.g., due to privacy concerns). In this work, focusing on the chest X-ray modality,
+      we first demonstrate that a standard text-conditioned Latent Diffusion Model has not learned to align clinically
+      relevant information in free-text radiology reports with the corresponding areas of the given scan. Then, to
+      alleviate this issue, we propose a fine-tuning framework to improve multi-modal alignment in a pre-trained model
+      such that it can be efficiently repurposed for downstream tasks such as phrase grounding. Our method sets a new
+      state-of-the-art on a standard benchmark dataset (MS-CXR), while also exhibiting robust performance on
+      out-of-distribution data (VinDr-CXR). We further validate our approach through a pilot qualitative study and an
+      experiment on grounded disease classification.
+    </p>
+    <p style="text-align:center; font-size:15px;">
+      <b>Keywords:</b> Chest X-rays &middot; Text-to-Image Latent Diffusion Models &middot; Phrase Grounding
+    </p>
+  </div>
+</section>
+
+<!-- ---------- Contributions ---------- -->
+<section>
+  <div class="wrap">
+    <h2>Contributions</h2>
+    <ul class="contrib">
+      <li>A novel approach to improving image–text alignment in biomedical VLP by extracting a pathology-localisation
+          supervision signal directly from unstructured radiology reports — combining a clinical entity recognition
+          model (RadGraph-XL) with annotations of anatomical regions commonly depicted in CXRs.</li>
+      <li>An efficient, parameter-light fine-tuning framework that steers a pre-trained LDM's cross-attention
+          activations toward the anatomical area specified in text by updating <b>only the anatomy token embeddings</b>.</li>
+      <li>State-of-the-art phrase grounding on the MS-CXR benchmark and on out-of-distribution VinDr-CXR data,
+          further supported by a pilot radiologist study and a grounded disease classification experiment.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ---------- Method ---------- -->
+<section>
+  <div class="wrap">
+    <h2>Method</h2>
+    <p style="color:var(--ink-soft)">
+      We derive a weak 2D supervision signal from free-text reports and use it to steer cross-attention activations.
+      RadGraph-XL extracts <i>location</i> entities ("ANAT-DP") from each sentence; a lookup table built from
+      Chest ImaGenome gold-standard bounding boxes maps each location to a 2D Gaussian prior. Prompts are
+      standardized to the "<code>{location} {pathology}</code>" format. The curated set has 6,480 samples
+      spanning 27 anatomical locations and 8 pathologies.
+    </p>
+
+    <figure>
+      <img class="plain" src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig2.png" alt="Overview of the data curation process">
+      <figcaption>
+        <b>Data curation.</b> <i>(top)</i> Chest ImaGenome annotations define a lookup table summarizing first-order
+        statistics per anatomical area, used to fit one Gaussian per location. <i>(bottom)</i> RadGraph-XL processes
+        raw sentences to identify <span style="color:#2d6cdf;font-weight:600">location</span> tokens, which retrieve
+        the corresponding Gaussian(s) and build prompts in the "{location} {pathology}" format.
+      </figcaption>
+    </figure>
+
+    <figure style="margin-top:36px;">
+      <img class="plain" src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/concept_diagram_final.png" alt="Overview of the proposed prompt tuning method">
+      <figcaption>
+        <b>Prompt tuning.</b> Features are extracted from intermediate cross-attention layers (30 timesteps, 4 layers).
+        A dynamic target merges the averaged cross-attention map with the Gaussian prior. Two losses supervise the
+        features — a <b>diversity loss</b> (minimizing overlap across token activations) and a <b>localization loss</b>
+        (aligning activations with the target). Only the anatomy token embeddings (in <span style="color:#cc3333;font-weight:600">red</span>) are learnable;
+        the VAE, CLIP text encoder, and denoising U-Net stay frozen.
+      </figcaption>
+    </figure>
+
+    <figure style="margin-top:36px; max-width:560px; margin-left:auto; margin-right:auto;">
+      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/2d_gaussians.png" alt="Mapping from anatomical locations to 2D Gaussians">
+      <figcaption>
+        <b>Anatomical Gaussian priors.</b> Mapping from anatomical locations to 2D Gaussians based on Chest ImaGenome
+        gold-standard annotations, overlaid on a sample CXR. These serve as targets during fine-tuning.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ---------- Results ---------- -->
+<section>
+  <div class="wrap">
+    <h2>Results</h2>
+    <p style="text-align:center; color:var(--ink-soft); max-width:680px; margin:0 auto 28px;">
+      Our fine-tuned LDM achieves SOTA phrase grounding on both benchmarks, outperforming strong contrastive
+      baselines (BioViL, BioViL-T) on most pathologies. We report per-class mean CNR and mIoU.
+      <b>Best</b> per row is bold; * denotes statistically significant gains over the best baseline (non-overlapping 95% CIs).
+    </p>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="mscxr">MS-CXR-loc</button>
+      <button class="tab" data-tab="vindr">VinDr-CXR (OOD)</button>
+    </div>
+
+    <!-- MS-CXR -->
+    <div class="panel active" id="mscxr">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Pathology</th><th>BioViL</th><th>BioViL-T</th><th>LDM (frozen)</th><th>LDM (ours)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pneumonia</td><td>27.9</td><td>29.0</td><td>21.6</td><td class="ours best">36.9*</td></tr>
+            <tr><td>Pneumothorax</td><td>10.1</td><td>13.0</td><td>6.1</td><td class="ours best">15.4</td></tr>
+            <tr><td>Consolidation</td><td>29.5</td><td class="best">30.4</td><td>23.3</td><td class="ours">27.0</td></tr>
+            <tr><td>Atelectasis</td><td>10.7</td><td>13.3</td><td>21.5</td><td class="ours best">32.7*</td></tr>
+            <tr><td>Edema</td><td>18.0</td><td>17.6</td><td class="best">30.5</td><td class="ours">28.4</td></tr>
+            <tr><td>Cardiomegaly</td><td>22.1</td><td>23.2</td><td>40.8</td><td class="ours best">43.8*</td></tr>
+            <tr><td>Lung Opacity</td><td>19.0</td><td>21.4</td><td>15.6</td><td class="ours best">24.0</td></tr>
+            <tr><td>Pleural Effusion</td><td>24.5</td><td>23.3</td><td>16.5</td><td class="ours best">28.1</td></tr>
+            <tr><td>Average mIoU (%)</td><td>20.2</td><td>21.4</td><td>22.0</td><td class="best">29.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:13px; color:var(--ink-soft); text-align:center;">mIoU (%) on MS-CXR-loc &middot; Average CNR: BioViL 1.17 / BioViL-T 1.37 / LDM frozen 0.93 / <b>LDM ours 1.37</b></p>
+    </div>
+
+    <!-- VinDr -->
+    <div class="panel" id="vindr">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr><th>Pathology</th><th>BioViL</th><th>BioViL-T</th><th>LDM (frozen)</th><th>LDM (ours)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pneumonia</td><td class="best">26.1</td><td>21.5</td><td>21.1</td><td class="ours">24.8</td></tr>
+            <tr><td>Pneumothorax</td><td>9.5</td><td>10.5</td><td>5.5</td><td class="ours best">17.1</td></tr>
+            <tr><td>Consolidation</td><td>20.0</td><td class="best">21.0</td><td>9.4</td><td class="ours">20.2</td></tr>
+            <tr><td>Atelectasis</td><td>3.2</td><td>4.9</td><td>4.4</td><td class="ours best">9.7*</td></tr>
+            <tr><td>Cardiomegaly</td><td>18.7</td><td>23.3</td><td>27.7</td><td class="ours best">42.8*</td></tr>
+            <tr><td>Lung Opacity</td><td>8.1</td><td>6.9</td><td>4.7</td><td class="ours best">11.1</td></tr>
+            <tr><td>Pleural Effusion</td><td>15.9</td><td>16.1</td><td>9.6</td><td class="ours best">17.8</td></tr>
+            <tr><td>Average mIoU (%)</td><td>14.5</td><td>14.9</td><td>11.8</td><td class="best">20.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:13px; color:var(--ink-soft); text-align:center;">mIoU (%) on VinDr-CXR &middot; Average CNR: BioViL 1.48 / BioViL-T 1.62 / LDM frozen 0.97 / <b>LDM ours 1.80</b></p>
+    </div>
+
+    <figure style="margin-top:40px;">
+      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/xattn-vis-vindr-cxr.png" alt="Qualitative cross-attention visualizations on VinDr-CXR">
+      <figcaption>
+        <b>Qualitative results.</b> Cross-attention heatmaps from our fine-tuned LDM localize findings to the
+        correct anatomical regions on out-of-distribution VinDr-CXR scans.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ---------- BibTeX ---------- -->
+<section id="bibtex">
+  <div class="wrap">
+    <h2>BibTeX</h2>
+    <div class="copy-row"><button class="copy-btn" id="copyBib">Copy</button></div>
+    <pre id="bibtex-text">@inproceedings{vilouras2026anatomy,
+  title     = {Anatomy-Grounded Weakly Supervised Prompt Tuning for
+               Chest X-ray Latent Diffusion Models},
+  author    = {Vilouras, Konstantinos and Stogiannidis, Ilias and
+               Yan, Junyu and Smithard, Alison Q. and Tsaftaris, Sotirios A.},
+  booktitle = {Medical Imaging with Deep Learning (MIDL)},
+  year      = {2026}
+}</pre>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>University of Edinburgh &middot; Canon Medical Research Europe Ltd.<br>
+    Accepted for publication at MIDL 2026. Code: <a href="https://github.com/vios-s" target="_blank" rel="noopener">github.com/vios-s</a></p>
+  </div>
+</footer>
+
+<script>
+  // Tab switching for results
+  document.querySelectorAll('.tab').forEach(function (t) {
+    t.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('active'); });
+      document.querySelectorAll('.panel').forEach(function (x) { x.classList.remove('active'); });
+      t.classList.add('active');
+      document.getElementById(t.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Copy BibTeX
+  document.getElementById('copyBib').addEventListener('click', function () {
+    var txt = document.getElementById('bibtex-text').innerText;
+    navigator.clipboard.writeText(txt).then(function () {
+      var b = document.getElementById('copyBib');
+      b.textContent = 'Copied!';
+      setTimeout(function () { b.textContent = 'Copy'; }, 1600);
+    });
+  });
+</script>
+</body>
+</html>

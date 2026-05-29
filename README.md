@@ -11,6 +11,7 @@ This README is mainly for people in the group who want to contribute content to 
 - [Suggest or Add Content](#suggest-or-add-content)
 - [Update a Team Bio](#update-a-team-bio)
 - [Update Publication Links or Assets](#update-publication-links-or-assets)
+- [Host Static Project Pages](#host-static-project-pages)
 - [Other Content You Can Update](#other-content-you-can-update)
 - [Adding Assets](#adding-assets)
 - [Run the Website Locally](#run-the-website-locally)
@@ -109,6 +110,7 @@ What you should usually edit here:
 
 - `image`
 - `code`
+- `page`
 - `pdf`
 - `display: false` to hide generated entries from the website
 
@@ -134,6 +136,7 @@ Example publication entry:
   venue: Conference or Journal Name
   date: 'YYYY-MM-DD'
   website: https://doi.org/...
+  page: /proj/example-project/
   image: /assets/images/publications/example.png
   pdf: /assets/pdfs/example.pdf
   code: https://github.com/org/repo
@@ -141,10 +144,135 @@ Example publication entry:
 
 Notes:
 
-- `website`, `image`, `pdf`, and `code` are optional.
+- `website`, `page`, `image`, `pdf`, and `code` are optional.
 - `display: false` hides a publication from website publication lists. Use it for generated entries that should stay in the data file but should not appear publicly, such as duplicates or incorrectly generated papers. The publication sync preserves extra fields like this when the generated title and date still match the existing entry.
 - Paths inside `public/` should be written as website paths, such as `/assets/pdfs/example.pdf`.
+- Use `page` for a publication-specific project page. If the page is hosted in this repository, use a path such as `/proj/example-project/`.
 - If a publication needs a true metadata correction, make that change deliberately and mention it clearly in the pull request so maintainers know it is meant to override the synced value.
+
+## Host Static Project Pages
+
+Static project pages can be added under `public/proj/`.
+
+Use this when you want `vios.science` to host a standalone paper or project website, such as:
+
+```text
+https://vios.science/proj/example-project/
+```
+
+Use this naming convention for the project folder:
+
+```text
+{venue}_{year}_{name}_{shortname}
+```
+
+For example, `MIDL_2026_Kostas_Anat-LDM` becomes:
+
+```text
+https://vios.science/proj/MIDL_2026_Kostas_Anat-LDM/
+```
+
+The fields mean:
+
+- `venue`: short venue name, such as `MIDL`, `MICCAI`, `CVPR`, `NeurIPS`, or `TMI`
+- `year`: publication or conference year
+- `name`: lead VIOS contributor name, such as `Kostas`
+- `shortname`: short project or paper name, such as `Anat-LDM`
+
+You usually need to prepare five things:
+
+1. A stable URL slug using the naming convention above.
+2. One static HTML entry point, for example `public/proj/MIDL_2026_Kostas_Anat-LDM/index.html`.
+3. Any page-specific assets, for example images, CSS, JavaScript, or small downloads.
+4. A `page` field on the related publication entry in `src/data/publications.yaml`.
+5. A local build and preview check before opening the pull request.
+
+Recommended folder layout:
+
+```text
+public/proj/example-project/
+|-- index.html
+`-- assets/
+    |-- figure-1.png
+    |-- figure-2.png
+    `-- teaser.jpg
+```
+
+In your HTML, use root-relative paths for assets so the page works with or without a trailing slash:
+
+```html
+<img src="/proj/example-project/assets/figure-1.png" alt="Short figure description">
+<link rel="stylesheet" href="/proj/example-project/assets/style.css">
+<script src="/proj/example-project/assets/script.js" defer></script>
+```
+
+Avoid paths like `assets/figure-1.png` unless you have tested both `/proj/example-project` and `/proj/example-project/`. Relative paths can break when the trailing slash is missing.
+
+To link the page from the publication list, first check whether the paper already exists on `/publications/` or in `src/data/publications.yaml`.
+
+If the paper already exists, add only the `page` field to the matching entry:
+
+```yaml
+- title: Paper Title
+  authors: Author A, Author B
+  venue: Conference or Journal Name
+  date: 'YYYY-MM-DD'
+  website: https://doi.org/...
+  page: /proj/example-project/
+```
+
+Do not edit generated fields such as `title`, `authors`, `venue`, or `date` unless you are intentionally correcting metadata.
+
+If the paper does not exist yet, add a new publication entry with the core metadata and the `page` field:
+
+```yaml
+- title: Paper Title
+  authors: Author A, Author B
+  venue: Conference or Journal Name
+  date: 'YYYY-MM-DD'
+  website: https://doi.org/...
+  page: /proj/example-project/
+  image: null
+  code: null
+  pdf: null
+```
+
+In the pull request, mention that this is a new publication entry. Core publication metadata is normally synced from the separate [Publication Lists](https://github.com/vios-s/publication-lists) repository, so maintainers may also need to add the paper there to keep future syncs stable.
+
+Keep the trailing slash in `page`. The website will show a `Page` button for that publication.
+
+Before committing, test the page locally:
+
+```sh
+npm install
+npm run build
+npm run preview
+```
+
+The preview server prints a local URL, usually `http://localhost:4321`. Check these pages in your browser:
+
+- `http://localhost:4321/proj/example-project/`
+- `http://localhost:4321/proj/example-project`
+- `http://localhost:4321/publications/`
+
+Confirm the following before opening a pull request:
+
+- The project page loads at both URLs, with and without the trailing slash.
+- All images, CSS, JavaScript, and downloads load correctly.
+- The publication entry shows a `Page` button.
+- The `Page` button opens the project page.
+- The page works on a narrow mobile browser width.
+- `npm run build` finishes successfully.
+
+Your pull request should include:
+
+- the new `public/proj/example-project/` folder
+- the `page: /proj/example-project/` update in `src/data/publications.yaml`
+- any assets needed by the page
+- a short note that you ran `npm run build`
+- a screenshot or local preview link if useful for review
+
+Anything in `public/proj/example-project/` is served unchanged at `/proj/example-project/`, so keep project pages self-contained and avoid relying on files outside the project folder unless they are shared site assets.
 
 ## Other Content You Can Update
 
