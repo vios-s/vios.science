@@ -29,7 +29,7 @@ const truncateAuthors = (authors: string, max = 8) => {
     if (parts.length <= max) return authors ?? "";
     return `${parts.slice(0, max).join(", ")}, ...`;
 };
-const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
+const resolvePublicationHref = (href?: string) => (href?.startsWith("/") ? base(href) : href);
 ---
 
 {
@@ -41,12 +41,22 @@ const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf
                     const publicationLinks = [
                         publication.pdf ? (
                             <a
-                                href={resolvePdfHref(publication.pdf)}
+                                href={resolvePublicationHref(publication.pdf)}
                                 class="publication-list-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 PDF →
+                            </a>
+                        ) : null,
+                        publication.page ? (
+                            <a
+                                href={resolvePublicationHref(publication.page)}
+                                class="publication-list-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Page →
                             </a>
                         ) : null,
                         publication.code ? (

@@ -7,15 +7,18 @@ const publications = getSortedPublications(
     getVisiblePublications(publicationsData as Publication[])
 );
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
+const resolveBaseHref = (href?: string) =>
+    href
+        ? href.startsWith("/")
+            ? `${baseUrl}/${href.replace(/^\//, "")}`
+            : href
+        : null;
 
 const publicationsJson = JSON.stringify(
     publications.map((publication) => ({
         ...publication,
-        pdf: publication.pdf
-            ? publication.pdf.startsWith("/")
-                ? `${baseUrl}/${publication.pdf.replace(/^\//, "")}`
-                : publication.pdf
-            : null,
+        pdf: resolveBaseHref(publication.pdf),
+        page: resolveBaseHref(publication.page),
     }))
 );
 ---
@@ -83,6 +86,7 @@ const publicationsJson = JSON.stringify(
     function publicationLinksHTML(publication, className) {
         return [
             publication.pdf ? `<a href="${escape(publication.pdf)}" class="${className}" target="_blank" rel="noopener noreferrer">PDF →</a>` : "",
+            publication.page ? `<a href="${escape(publication.page)}" class="${className}" target="_blank" rel="noopener noreferrer">Page →</a>` : "",
             publication.code ? `<a href="${escape(publication.code)}" class="${className}" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
             publication.website ? `<a href="${escape(publication.website)}" class="${className}" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
         ].join("");

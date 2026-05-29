@@ -12,7 +12,7 @@ const topNews = getSortedNews(allNews).slice(0, 3);
 
 const homePublicationLimit = 6;
 const homePublications = (homePublicationsData as Publication[]).slice(0, homePublicationLimit);
-const resolvePdfHref = (pdf?: string) => (pdf?.startsWith("/") ? base(pdf) : pdf);
+const resolvePublicationHref = (href?: string) => (href?.startsWith("/") ? base(href) : href);
 const resolveImageSrc = (image?: string) =>
     image?.startsWith("http") ? image : base(image ?? "/assets/placeholders/publication-placeholder-light.svg");
 const truncateAuthors = (authors: string, max = 8) => {
@@ -287,12 +287,22 @@ const truncateAuthors = (authors: string, max = 8) => {
                         <div class="publication-card-footer">
                             {publication.pdf && (
                                 <a
-                                    href={resolvePdfHref(publication.pdf)}
+                                    href={resolvePublicationHref(publication.pdf)}
                                     class="publication-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     PDF →
+                                </a>
+                            )}
+                            {publication.page && (
+                                <a
+                                    href={resolvePublicationHref(publication.page)}
+                                    class="publication-card-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Page →
                                 </a>
                             )}
                             {publication.code && (
