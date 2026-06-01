@@ -13,6 +13,11 @@
   venue: Pattern Recognition
   date: '2026-04-14'
   website: https://doi.org/10.1016/j.patcog.2026.113755
+- title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
+  authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Sotirios A. Tsaftaris
+  venue: 2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI)
+  date: '2026-04-08'
+  website: https://doi.org/10.1109/isbi61048.2026.11516022
 - title: A conversational multi-agent AI system for automated plant phenotyping
   authors: Feng Chen, Ilias Stogiannidis, Andrew Wood, Danilo Bueno, Dominic Williams, Fraser Macfarlane, Bruce Grieve, Darren M. Wells, Jonathan A. Atkinson, Malcolm J. Hawkesford, Stephen A. Rolfe, Tracy Lawson, Tony Pridmore, Sotirios A. Tsaftaris, Mario Valerio Giuffrida
   venue: Nature Communications
@@ -39,6 +44,11 @@
   venue: The British Journal of Psychiatry
   date: '2026-03-09'
   website: https://doi.org/10.1192/bjp.2026.10561
+- title: 'GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting'
+  authors: Madhav Agarwal, Ming‐Tian Zhang, Laura Sevilla-Lara, Steven McDonagh
+  venue: 2026 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+  date: '2026-03-06'
+  website: https://doi.org/10.1109/wacv61042.2026.00774
 - title: 'Beyond Pixel Histories: World Models with Persistent 3D State'
   authors: Samuel Garcin, Thomas Walker, Steven McDonagh, Tim Pearce, Hakan Bilen, Tianyu He, Kaixin Wang, Jiang Bian
   venue: arXiv
@@ -49,14 +59,6 @@
   venue: arXiv
   date: '2026-02-14'
   website: http://arxiv.org/abs/2602.13873
-  image: null
-  code: null
-  pdf: null
-- title: 'CSEval: A Framework for Evaluating Clinical Semantics in Text-to-Image Generation'
-  authors: Robert Cronshaw, Konstantinos Vilouras, Junyu Yan, Yuning Du, Feng Chen, Steven McDonagh, Sotirios A. Tsaftaris
-  venue: arXiv
-  date: '2026-02-12'
-  website: http://arxiv.org/abs/2602.12004
   image: null
   code: null
   pdf: null
@@ -87,14 +89,6 @@
   venue: Computerized Medical Imaging and Graphics
   date: '2025-12-16'
   website: https://doi.org/10.1016/j.compmedimag.2025.102688
-  image: null
-  code: null
-  pdf: null
-- title: 'GaussianHeadTalk: Wobble-Free 3D Talking Heads with Audio Driven Gaussian Splatting'
-  authors: Madhav Agarwal, Ming‐Tian Zhang, Laura Sevilla-Lara, Steven McDonagh
-  venue: arXiv
-  date: '2025-12-11'
-  website: https://doi.org/10.48550/arxiv.2512.10939
   image: null
   code: null
   pdf: null
@@ -409,14 +403,6 @@
   image: null
   code: null
   pdf: null
-- title: 'All You Need Is a Guiding Hand: Mitigating Shortcut Bias in Deep Learning Models for Medical Imaging'
-  authors: Christopher Boland, Owen Anderson, Keith A. Goatman, John H. Hipwell, Sotirios A. Tsaftaris, Sonia Dahdouh
-  venue: Lecture notes in computer science
-  date: '2024-10-12'
-  website: https://doi.org/10.1007/978-3-031-72787-0_7
-  image: null
-  code: null
-  pdf: null
 - title: 'BMFT: Achieving Fairness via Bias-Based Weight Masking Fine-Tuning'
   authors: Yuyang Xue, Junyu Yan, Raman Dutt, Fasih Haider, Jingshuai Liu, Steven McDonagh, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
@@ -424,6 +410,14 @@
   website: https://doi.org/10.1007/978-3-031-72787-0_10
   image: /assets/images/publications/xue_bmft_miccai.png
   code: https://github.com/vios-s/BMFT
+  pdf: null
+- title: 'All You Need Is a Guiding Hand: Mitigating Shortcut Bias in Deep Learning Models for Medical Imaging'
+  authors: Christopher Boland, Owen Anderson, Keith A. Goatman, John H. Hipwell, Sotirios A. Tsaftaris, Sonia Dahdouh
+  venue: Lecture notes in computer science
+  date: '2024-10-12'
+  website: https://doi.org/10.1007/978-3-031-72787-0_7
+  image: null
+  code: null
   pdf: null
 - title: Improving Object Detection via Local-global Contrastive Learning
   authors: Danai Triantafyllidou, Sarah Parisot, Aleš Leonardis, Steven McDonagh
@@ -1311,14 +1305,6 @@
   image: /assets/images/publications/liu_2021_metalearning.png
   code: https://github.com/vios-s/DGNet
   pdf: null
-- title: Disentangled Representations for Domain-Generalized Cardiac Segmentation
-  authors: Xiao Liu, Spyridon Thermos, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: Lecture notes in computer science
-  date: '2021-01-01'
-  website: https://doi.org/10.1007/978-3-030-68107-4_19
-  image: /assets/images/publications/liu_2020_miccai.png
-  code: https://github.com/vios-s/RA_FA_Cardiac
-  pdf: null
 - title: Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health
   authors: Albarqouni, Shadi, Shadi Albarqouni, M. Jorge Cardoso, Qi Dou, Konstantinos Kamnitsas, Bishesh Khanal, Islem Rekik, Nicola Rieke, Debdoot Sheet, Sotirios A. Tsaftaris, Daguang Xu
   venue: Lecture notes in computer science
@@ -1326,6 +1312,14 @@
   website: https://doi.org/10.1007/978-3-030-87722-4
   image: null
   code: null
+  pdf: null
+- title: Disentangled Representations for Domain-Generalized Cardiac Segmentation
+  authors: Xiao Liu, Spyridon Thermos, Agisilaos Chartsias, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  website: https://doi.org/10.1007/978-3-030-68107-4_19
+  image: /assets/images/publications/liu_2020_miccai.png
+  code: https://github.com/vios-s/RA_FA_Cardiac
   pdf: null
 - title: Measuring the Biases and Effectiveness of Content-Style Disentanglement
   authors: Xiao Liu, Spyridon Thermos, Gabriele Valvano, Agisilaos Chartsias, Alison Q O'Neil, Sotirios A. Tsaftaris
@@ -2154,7 +2148,7 @@
   code: null
   pdf: null
 - title: 'Statistical Shape Modeling of the Left Ventricle: Myocardial Infarct Classification Challenge'
-  authors: Avan Suinesiaputra, Jan D’hooge, Nicolás Duchateau, Jan Ehrhardt, Alejandro F. Frangi, Ali Gooya, Vicente Grau, Karim Lekadir, Allen Lu, Anirban Mukhopadhyay, İlkay Öksüz, Pierre Ablin, Nripesh Parajuli, Xavier Pennec, Marco Pereañez, Catarina Pinto, Paolo Piras, Marc-Michel Rohe, Daniel Rueckert, Dennis Säring, Maxime Sermesant, Kaleem Siddiqi, Xenia Alba, Mahdi Tabassian, Luciano Teresi, Sotirios A. Tsaftaris, Matthias Wilms, Alistair A. Young, Xing-Yu Zhang, Pau Medrano−Gracia, Martino Alessandrini, Jack Allen, Wenjia Bai, Serkan Çimen, Peter Claes, Brett R. Cowan
+  authors: Avan Suinesiaputra, Jan D’hooge, Nicolás Duchateau, Jan Ehrhardt, Alejandro F. Frangi, Ali Gooya, Vicente Grau, Karim Lekadir, Allen Lu, Anirban Mukhopadhyay, İlkay Öksüz, Pierre Ablin, Nripesh Parajuli, Xavier Pennec, Marco Pereañez, Catarina Pinto, Paolo Piras, Marc-Michel Rohe, Daniel Rueckert, Dennis Säring, Maxime Sermesant, Kaleem Siddiqi, Xènia Albà, Mahdi Tabassian, Luciano Teresi, Sotirios A. Tsaftaris, Matthias Wilms, Alistair A. Young, Xing-Yu Zhang, Pau Medrano−Gracia, Martino Alessandrini, Jack Allen, Wenjia Bai, Serkan Çimen, Peter Claes, Brett R. Cowan
   venue: IEEE Journal of Biomedical and Health Informatics
   date: '2017-01-17'
   website: https://doi.org/10.1109/jbhi.2017.2652449
