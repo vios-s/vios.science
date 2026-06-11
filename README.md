@@ -209,9 +209,7 @@ In your HTML, use root-relative paths for assets so the page works with or witho
 
 Avoid paths like `assets/figure-1.png` unless you have tested both `/project/example-project` and `/project/example-project/`. Relative paths can break when the trailing slash is missing.
 
-To link the page from the publication list, first check whether the paper already exists in `src/data/publications.yaml`. The website renders that file on its publications page.
-
-If the paper already exists, update only the website-side extra fields you need. For a hosted project page, set `website` to the project page path:
+To link the page from the publication list, first check whether the paper already exists in `src/data/publications.yaml`. If the paper already exists, set `website` to the project page path:
 
 ```yaml
 - title: Paper Title
@@ -221,7 +219,7 @@ If the paper already exists, update only the website-side extra fields you need.
   website: /project/example-project/
 ```
 
-If the paper does not exist yet, add it to the [Publication Lists](https://github.com/vios-s/publication-lists) repository first, in the `manual_publications.yaml` file, and wait for the website sync PR. Once the generated entry exists here, add the hosted page path to its `website` field.
+If the paper does not exist yet, add it to the [Publication Lists](https://github.com/vios-s/publication-lists) repository first, in the `manual_publications.yaml` file, and wait for the publication sync to run. Once the generated entry exists here, add the hosted page path to its `website` field.
 
 Before committing, test the page locally:
 
