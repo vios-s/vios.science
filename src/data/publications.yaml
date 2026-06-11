@@ -1,5 +1,5 @@
 - title: Identifiable Estimation of Causal Concept Effects under Visual Latent Confounding
-  authors: Thomas Melistas, Damian Machlanski, Kurt; id_orcid 0000-0002-1520-4909 Butler, Angelos Korakitis, Nikos Spyrou, Athanasios Vlontzos, Yannis Panagakis, Sotirios A. Tsaftaris, Giorgos Papanastasiou
+  authors: Thomas Melistas, Damian Machlanski, Kurt Butler, Angelos Korakitis, Nikos Spyrou, Athanasios Vlontzos, Yannis Panagakis, Sotirios A. Tsaftaris, Giorgos Papanastasiou
   venue: Edinburgh Research Explorer (University of Edinburgh)
   date: '2026-04-23'
   website: https://www.research.ed.ac.uk/en/publications/c8f21fda-c574-44aa-8843-abec73bf2a8e
@@ -124,14 +124,11 @@
   image: null
   code: null
   pdf: null
-- title: 'A large dataset of brain imaging linked to health systems data: the curation and access to a whole system national cohort from NHS Scotland'
+- title: 'A large dataset of brain imaging linked to health systems data: curation and access to a whole system national cohort from NHS Scotland'
   authors: Michael P. J. Camilleri, Dorian Gouzou, Salim Al‐Wasity, Muthu Rama Krishnan Mookiah, María Valdes Hernandez, Bea Alex, Sotirios A. Tsaftaris, Andrew Brooks, Ruairidh MacLeod, Honghan Wu, Brenda S. Bauer, Claire Grover, Parminder Singh Reel, Susan Krueger, Richard Tobin, J. Douglas Steele, Grant Mair, Joanna M. Wardlaw, Alex S. F. Doney, Emanuele Trucco, William Whiteley
-  venue: medRxiv
+  venue: GigaScience
   date: '2025-10-23'
-  website: https://doi.org/10.1101/2025.10.21.25338469
-  image: null
-  code: null
-  pdf: null
+  website: https://doi.org/10.1093/gigascience/giag072
 - title: 'Towards Surgical Task Automation: Actor-Critic Models Meet Self-Supervised Imitation Learning <sup>*</sup>'
   authors: Jingshuai Liu, Alain Andrés, Yonghang Jiang, Yuning Du, Xichun Luo, Wenmiao Shu, Can Pu, Sotirios A. Tsaftaris
   venue: 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
@@ -198,7 +195,7 @@
   pdf: null
 - title: 'Concept-based Adversarial Attack: a Probabilistic Perspective'
   authors: Andi Zhang, X. X. Ding, Steven McDonagh, Samuel Kaski
-  venue: arXiv
+  venue: Warwick Research Archive Portal (University of Warwick)
   date: '2025-06-30'
   website: https://doi.org/10.48550/arxiv.2507.02965
   image: null
