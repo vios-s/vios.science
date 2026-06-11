@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anatomy-Grounded Weakly Supervised Prompt Tuning for Chest X-ray Latent Diffusion Models">
 <meta property="og:description" content="MIDL 2026 — Improving multi-modal alignment in CXR latent diffusion models for phrase grounding.">
-<meta property="og:image" content="https://vios.science/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png">
+<meta property="og:image" content="https://vios.science/project/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -271,7 +271,7 @@
 <section>
   <div class="wrap">
     <figure class="teaser">
-      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png" alt="Cross-attention leakage comparison in a pre-trained vs. fine-tuned chest X-ray LDM">
+      <img src="/project/MIDL_2026_Kostas_Anat-LDM/assets/fig1.png" alt="Cross-attention leakage comparison in a pre-trained vs. fine-tuned chest X-ray LDM">
       <figcaption>
         <b>Cross-attention leakage in a pre-trained LDM.</b> Using a description of findings from the
         radiology report as a prompt (<span class="c-orange">orange</span> path), cross-attention activations
@@ -336,7 +336,7 @@
     </p>
 
     <figure>
-      <img class="plain" src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/fig2.png" alt="Overview of the data curation process">
+      <img class="plain" src="/project/MIDL_2026_Kostas_Anat-LDM/assets/fig2.png" alt="Overview of the data curation process">
       <figcaption>
         <b>Data curation.</b> <i>(top)</i> Chest ImaGenome annotations define a lookup table summarizing first-order
         statistics per anatomical area, used to fit one Gaussian per location. <i>(bottom)</i> RadGraph-XL processes
@@ -346,7 +346,7 @@
     </figure>
 
     <figure style="margin-top:36px;">
-      <img class="plain" src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/concept_diagram_final.png" alt="Overview of the proposed prompt tuning method">
+      <img class="plain" src="/project/MIDL_2026_Kostas_Anat-LDM/assets/concept_diagram_final.png" alt="Overview of the proposed prompt tuning method">
       <figcaption>
         <b>Prompt tuning.</b> Features are extracted from intermediate cross-attention layers (30 timesteps, 4 layers).
         A dynamic target merges the averaged cross-attention map with the Gaussian prior. Two losses supervise the
@@ -357,7 +357,7 @@
     </figure>
 
     <figure style="margin-top:36px; max-width:560px; margin-left:auto; margin-right:auto;">
-      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/2d_gaussians.png" alt="Mapping from anatomical locations to 2D Gaussians">
+      <img src="/project/MIDL_2026_Kostas_Anat-LDM/assets/2d_gaussians.png" alt="Mapping from anatomical locations to 2D Gaussians">
       <figcaption>
         <b>Anatomical Gaussian priors.</b> Mapping from anatomical locations to 2D Gaussians based on Chest ImaGenome
         gold-standard annotations, overlaid on a sample CXR. These serve as targets during fine-tuning.
@@ -427,7 +427,7 @@
     </div>
 
     <figure style="margin-top:40px;">
-      <img src="/proj/MIDL_2026_Kostas_Anat-LDM/assets/xattn-vis-vindr-cxr.png" alt="Qualitative cross-attention visualizations on VinDr-CXR">
+      <img src="/project/MIDL_2026_Kostas_Anat-LDM/assets/xattn-vis-vindr-cxr.png" alt="Qualitative cross-attention visualizations on VinDr-CXR">
       <figcaption>
         <b>Qualitative results.</b> Cross-attention heatmaps from our fine-tuned LDM localize findings to the
         correct anatomical regions on out-of-distribution VinDr-CXR scans.

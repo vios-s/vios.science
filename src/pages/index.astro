@@ -295,16 +295,6 @@ const truncateAuthors = (authors: string, max = 8) => {
                                     PDF →
                                 </a>
                             )}
-                            {publication.page && (
-                                <a
-                                    href={resolvePublicationHref(publication.page)}
-                                    class="publication-card-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Page →
-                                </a>
-                            )}
                             {publication.code && (
                                 <a
                                     href={publication.code}
@@ -317,7 +307,7 @@ const truncateAuthors = (authors: string, max = 8) => {
                             )}
                             {publication.website && (
                                 <a
-                                    href={publication.website}
+                                    href={resolvePublicationHref(publication.website)}
                                     class="publication-card-link"
                                     target="_blank"
                                     rel="noopener noreferrer"

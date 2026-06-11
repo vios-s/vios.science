@@ -18,7 +18,7 @@ const publicationsJson = JSON.stringify(
     publications.map((publication) => ({
         ...publication,
         pdf: resolveBaseHref(publication.pdf),
-        page: resolveBaseHref(publication.page),
+        website: resolveBaseHref(publication.website),
     }))
 );
 ---
@@ -86,7 +86,6 @@ const publicationsJson = JSON.stringify(
     function publicationLinksHTML(publication, className) {
         return [
             publication.pdf ? `<a href="${escape(publication.pdf)}" class="${className}" target="_blank" rel="noopener noreferrer">PDF →</a>` : "",
-            publication.page ? `<a href="${escape(publication.page)}" class="${className}" target="_blank" rel="noopener noreferrer">Page →</a>` : "",
             publication.code ? `<a href="${escape(publication.code)}" class="${className}" target="_blank" rel="noopener noreferrer">Code →</a>` : "",
             publication.website ? `<a href="${escape(publication.website)}" class="${className}" target="_blank" rel="noopener noreferrer">Website →</a>` : "",
         ].join("");

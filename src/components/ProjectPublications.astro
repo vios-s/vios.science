@@ -49,16 +49,6 @@ const resolvePublicationHref = (href?: string) => (href?.startsWith("/") ? base(
                                 PDF →
                             </a>
                         ) : null,
-                        publication.page ? (
-                            <a
-                                href={resolvePublicationHref(publication.page)}
-                                class="publication-list-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Page →
-                            </a>
-                        ) : null,
                         publication.code ? (
                             <a
                                 href={publication.code}
@@ -71,7 +61,7 @@ const resolvePublicationHref = (href?: string) => (href?.startsWith("/") ? base(
                         ) : null,
                         publication.website ? (
                             <a
-                                href={publication.website}
+                                href={resolvePublicationHref(publication.website)}
                                 class="publication-list-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
