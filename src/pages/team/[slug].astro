@@ -1,0 +1,203 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { base } from "../../utils/base";
+
+export async function getStaticPaths() {
+    const team = await getCollection("team");
+    return team
+        .filter((member) => {
+            const role = (member.data.role || "").toLowerCase();
+            return role !== "none" && role !== "advert";
+        })
+        .map((member) => ({
+            params: { slug: member.id.replace(/\.(md|mdx)$/, "") },
+            props: { member },
+        }));
+}
+
+const { member } = Astro.props;
+const { Content } = await member.render();
+---
+
+<Layout title={`${member.data.title} - VIOS Collaboratory`}>
+    <article class="member-page">
+        <nav class="member-nav">
+            <a href={base("/team")} class="back-link">&larr; Back to Team</a>
+        </nav>
+
+        <header class="member-header">
+            {member.data.profile && (
+                <img
+                    class="member-photo"
+                    src={base("/assets/images/team/" + member.data.profile)}
+                    alt={member.data.title}
+                />
+            )}
+            <div class="member-titles">
+                <h1>{member.data.title}</h1>
+                {member.data.subtitle && <h2>{member.data.subtitle}</h2>}
+                <div class="member-socials">
+                    {member.data.linkedin && <a href={member.data.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>}
+                    {member.data.scholar && <a href={member.data.scholar} target="_blank" rel="noopener noreferrer">Google Scholar</a>}
+                    {member.data.twitter && <a href={member.data.twitter} target="_blank" rel="noopener noreferrer">Twitter</a>}
+                    {member.data.github && <a href={member.data.github} target="_blank" rel="noopener noreferrer">GitHub</a>}
+                    {member.data.CV && <a href={base(member.data.CV)} target="_blank" rel="noopener noreferrer">CV</a>}
+                </div>
+            </div>
+        </header>
+
+        <div class="member-content">
+            <Content />
+        </div>
+    </article>
+</Layout>
+
+<style>
+    .member-page {
+        padding: 10rem 8rem 8rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .member-nav {
+        margin-bottom: 3rem;
+    }
+
+    .back-link {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.85rem;
+        color: var(--dim);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: color 0.3s;
+    }
+
+    .back-link:hover {
+        color: var(--accent);
+    }
+
+    .member-header {
+        display: flex;
+        gap: 2.5rem;
+        align-items: center;
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .member-photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--accent);
+        flex-shrink: 0;
+    }
+
+    .member-titles h1 {
+        font-family: "Spectral", serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: var(--text);
+        margin-bottom: 0.3rem;
+    }
+
+    .member-titles h2 {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.95rem;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    .member-socials {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .member-socials a {
+        font-size: 0.85rem;
+        color: var(--muted);
+        text-decoration: none;
+        padding: 0.3rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s;
+    }
+
+    .member-socials a:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+
+    .member-content {
+        color: var(--muted);
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .member-content :global(p) {
+        margin-bottom: 1.5rem;
+    }
+
+    .member-content :global(a) {
+        color: var(--accent2);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+    }
+
+    .member-content :global(a:hover) {
+        border-color: var(--accent2);
+    }
+
+    .member-content :global(h2),
+    .member-content :global(h3) {
+        font-family: "Spectral", serif;
+        color: var(--text);
+        font-weight: 400;
+        margin: 2.5rem 0 1rem;
+    }
+
+    .member-content :global(ul),
+    .member-content :global(ol) {
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .member-content :global(li) {
+        margin-bottom: 0.5rem;
+    }
+
+    .member-content :global(strong) {
+        color: var(--text);
+        font-weight: 600;
+    }
+
+    @media (max-width: 900px) {
+        .member-page {
+            padding: 10rem 3rem 4rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .member-page {
+            padding: 8rem 1.5rem 3rem;
+        }
+        .member-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .member-photo {
+            width: 120px;
+            height: 120px;
+        }
+        .member-titles h1 {
+            font-size: 2rem;
+        }
+    }
+</style>

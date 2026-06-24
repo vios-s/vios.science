@@ -1,8 +1,8 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { Content as AlumniContent } from '../content/pages/alumni.mdx';
-import { base } from '../utils/base';
+import { Content as AlumniContent } from '../../content/pages/alumni.mdx';
+import { base } from '../../utils/base';
 
 const teamMembers = await getCollection('team');
 
@@ -68,10 +68,12 @@ const sectionTitles = {
                     <div class="team-grid">
                         {members.map(async (member) => {
                             const { Content } = await member.render();
+                            const memberSlug = member.id.replace(/\.(md|mdx)$/, "");
                             return (
                             <div
                                 class="team-card"
                                 data-member-id={member.id}
+                                data-member-slug={memberSlug}
                                 role="button"
                                 tabindex="0"
                                 aria-haspopup="dialog"
@@ -86,7 +88,9 @@ const sectionTitles = {
                                         <div class="profile-placeholder"></div>
                                     )}
                                     <div class="member-info">
-                                        <h3 class="member-name">{member.data.title}</h3>
+                                        <h3 class="member-name">
+                                            <a href={base("/team/" + memberSlug)} class="member-page-link">{member.data.title}</a>
+                                        </h3>
                                         {member.data.subtitle && <p class="member-role">{member.data.subtitle}</p>}
                                     </div>
                                 </div>
@@ -212,6 +216,14 @@ const sectionTitles = {
         font-weight: 400;
         color: var(--text);
         margin-bottom: 0.4rem;
+    }
+
+    .member-page-link {
+        color: inherit;
+        text-decoration: none;
+    }
+    .member-page-link:hover {
+        color: var(--accent);
     }
     
     .member-role {
@@ -411,7 +423,8 @@ const sectionTitles = {
         }
 
         teamCards.forEach(card => {
-            card.addEventListener('click', () => {
+            card.addEventListener('click', (event) => {
+                if (event.target.closest('.member-page-link')) return;
                 openCard(card);
             });
             card.addEventListener('keydown', (event) => {
