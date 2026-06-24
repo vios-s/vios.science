@@ -2,6 +2,8 @@
 
 This repository contains the source code for the `vios.science` website.
 
+> **Quick edits via GitHub:** You can edit team profiles, news, projects, and tutorials directly on GitHub without cloning the repo. See [CONTRIBUTING.md](CONTRIBUTING.md) for a quick-start guide with direct links to each content folder.
+
 This README is mainly for people in the group who want to contribute content to the website, whether that means fixing a typo, suggesting new content, updating a bio, or improving publication entries.
 
 ## Table of Contents
