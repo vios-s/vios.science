@@ -1,6 +1,6 @@
 - title: Identifiable Estimation of Causal Concept Effects under Visual Latent Confounding
   authors: Thomas Melistas, Damian Machlanski, Kurt Butler, Angelos Korakitis, Nikos Spyrou, Athanasios Vlontzos, Yannis Panagakis, Sotirios A. Tsaftaris, Giorgos Papanastasiou
-  venue: Edinburgh Research Explorer (University of Edinburgh)
+  venue: Edinburgh Research Explorer
   date: '2026-04-23'
   website: https://www.research.ed.ac.uk/en/publications/c8f21fda-c574-44aa-8843-abec73bf2a8e
 - title: Why Do Vision Language Models Struggle To Recognize Human Emotions?
@@ -25,7 +25,7 @@
   website: https://doi.org/10.1038/s41467-026-71090-y
 - title: A Causal Framework for Mitigating Data Shifts in Healthcare
   authors: Kurt Butler, Stephanie Riley, Damian Machlanski, Edward Moroshko, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Konstantinos Vilouras, Zhihua Liu, Steven McDonagh, Hana Chockler, Ben Glocker, Niccolo Tempini, Matthew Sperrin, Sotirios Tsaftaris, Ricardo Silva
-  venue: arXiv
+  venue: Edinburgh Research Explorer (University of Edinburgh)
   date: '2026-03-13'
   website: http://arxiv.org/abs/2603.13595
 - title: Arabidopsis Thaliana Data for A Conversational Multi-Agent AI System for Automated Plant Phenotyping
@@ -51,12 +51,12 @@
   website: https://doi.org/10.1109/wacv61042.2026.00774
 - title: 'Beyond Pixel Histories: World Models with Persistent 3D State'
   authors: Samuel Garcin, Thomas Walker, Steven McDonagh, Tim Pearce, Hakan Bilen, Tianyu He, Kaixin Wang, Jiang Bian
-  venue: arXiv
+  venue: Open MIND
   date: '2026-03-03'
   website: http://arxiv.org/abs/2603.03482
 - title: 'Ambient Physics: Training Neural PDE Solvers with Partial Observations'
   authors: Harris Abdul Majid, Giannis Daras, Francesco Tudisco, Steven McDonagh
-  venue: arXiv
+  venue: Open MIND
   date: '2026-02-14'
   website: http://arxiv.org/abs/2602.13873
   image: null
@@ -553,7 +553,7 @@
   code: null
   pdf: null
 - title: Benchmarking Counterfactual Image Generation
-  authors: Nefeli Gkouti, Thomas Melistas, Yannis Panagakis, Giorgos Papanastasiou, Pedro Sanchez, Nikos Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
+  authors: Thomas Melistas, Nikos Spyrou, Nefeli Gkouti, Giorgos Papanastasiou, Pedro Sanchez, N. M. Spyrou, Sotirios A. Tsaftaris, Athanasios Vlontzos
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
   website: https://doi.org/10.52202/079017-4233
@@ -577,7 +577,7 @@
   code: null
   pdf: null
 - title: 'einspace: Searching for Neural Architectures from Fundamental Operations'
-  authors: Antreas Antoniou, Shay B. Cohen, Elliot J. Crowley, Linus Ericsson, Miguel Espinosa, Steven McDonagh, Amos Storkey, Chenhongyi Yang
+  authors: Antreas Antoniou, Shay B. Cohen, Elliot J. Crowley, Linus Ericsson, Miguel Espinosa, Steven McDonagh, Steven McDonagh, Chenhongyi Yang
   venue: Advances in Neural Information Processing Systems 37
   date: '2024-01-01'
   website: https://doi.org/10.52202/079017-0061
@@ -1119,6 +1119,11 @@
   image: null
   code: null
   pdf: null
+- title: 'Multi-Centre, Multi-Vendor and Multi-Disease Cardiac Segmentation: The M&Ms Challenge'
+  authors: Víctor M. Campello, Polyxeni Gkontra, Cristian Izquierdo, Carlos Martín-Isla, Alireza Sojoudi, Bjoern Menze, Klaus H. Maier‐Hein, Yao Zhang, Zhiqiang He, Jun Ma, Mario Parreño, Alberto Albiol, Fanwei Kong, Shawn C. Shadden, Jorge Corral Acero, Vaanathi Sundaresan, Mina Saber, Mustafa Elattar, Hongwei Li, Bjoern Menze, Firas Khader, Christoph Haarburger, Cian M. Scannell, Mitko Veta, Adam Carscadden, Kumaradevan Punithakumar, Xiao Liu, Sotirios A. Tsaftaris, Xiaoqiong Huang, Xin Yang, Lei Li, Xiahai Zhuang, David Viladés, M. Descalzo, Andrea Guala, Lucia La Mura, Matthias G. Friedrich, Ria Garg, Julie Lebel, Filipe Henriques, Mahir Karakas, Ersin Çavuş, Steffen E. Petersen, Sérgio Escalera, Santi Seguí, José F. Rodríguez-Palomares, Karim Lekadir
+  venue: Zurich Open Repository and Archive (University of Zurich)
+  date: '2021-12-01'
+  website: https://doi.org/10.5167/uzh-214495
 - title: <scp>COVID</scp>‐19 policy responses, mobility, and food prices
   authors: Stephan Dietrich, Mario Valerio Giuffrida, Bruno Martorano, Georg Schmerzeck
   venue: American Journal of Agricultural Economics
@@ -1333,6 +1338,14 @@
   image: null
   code: null
   pdf: null
+- title: Controllable Cardiac Synthesis via Disentangled Anatomy Arithmetic
+  authors: Spyridon Thermos, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
+  venue: Lecture notes in computer science
+  date: '2021-01-01'
+  website: https://doi.org/10.1007/978-3-030-87199-4_15
+  image: /assets/images/publications/thermos_2021_daa_gan.png
+  code: https://github.com/spthermo/DAA-GAN
+  pdf: null
 - title: Cohort Bias Adaptation in Aggregated Datasets for Lesion Segmentation
   authors: Brennan Nichyporuk, Jillian Cardinell, Justin Szeto, Raghav Mehta, Sotirios A. Tsaftaris, Douglas L. Arnold, Tal Arbel
   venue: Lecture notes in computer science
@@ -1348,14 +1361,6 @@
   website: https://doi.org/10.1007/978-3-030-87722-4_7
   image: /assets/images/publications/valvano_2021_stop.png
   code: https://vios-s.github.io/adversarial-test-time-training/
-  pdf: null
-- title: Controllable Cardiac Synthesis via Disentangled Anatomy Arithmetic
-  authors: Spyridon Thermos, Xiao Liu, Alison Q. O’Neil, Sotirios A. Tsaftaris
-  venue: Lecture notes in computer science
-  date: '2021-01-01'
-  website: https://doi.org/10.1007/978-3-030-87199-4_15
-  image: /assets/images/publications/thermos_2021_daa_gan.png
-  code: https://github.com/spthermo/DAA-GAN
   pdf: null
 - title: How Should We Create Algorithms to Do More with Less
   authors: Sotirios A. Tsaftaris
@@ -1813,19 +1818,19 @@
   image: /assets/images/publications/xia_2019_midl.png
   code: https://github.com/vios-s/pseudo-healthy-synthesis
   pdf: null
-- title: Meta-Learning for Few-shot Camera-Adaptive Color Constancy.
-  authors: Steven McDonagh, Sarah Parisot, Zhenguo Li, Greg Slabaugh
-  venue: arXiv
-  date: '2018-11-28'
-  website: https://arxiv.org/pdf/1811.11788.pdf
-  image: null
-  code: null
-  pdf: null
 - title: Formulating Camera-Adaptive Color Constancy as a Few-shot Meta-Learning Problem
   authors: Steven McDonagh, Sarah Parisot, Fengwei Zhou, Xing Zhang, Aleš Leonardis, Zhenguo Li, Greg Slabaugh
   venue: arXiv
   date: '2018-11-28'
   website: https://doi.org/10.48550/arxiv.1811.11788
+  image: null
+  code: null
+  pdf: null
+- title: Meta-Learning for Few-shot Camera-Adaptive Color Constancy.
+  authors: Steven McDonagh, Sarah Parisot, Zhenguo Li, Greg Slabaugh
+  venue: arXiv
+  date: '2018-11-28'
+  website: https://arxiv.org/pdf/1811.11788.pdf
   image: null
   code: null
   pdf: null
