@@ -33,6 +33,11 @@
   venue: Nature Communications
   date: '2026-04-03'
   website: https://doi.org/10.1038/s41467-026-71090-y
+- title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
+  authors: Mattia Litrico, Mario Valerio Giuffrida, Sebastiano Battiato, Devis Tuia
+  venue: Proceedings of the AAAI Conference on Artificial Intelligence
+  date: '2026-03-14'
+  website: https://doi.org/10.1609/aaai.v40i28.39535
 - title: A Causal Framework for Mitigating Data Shifts in Healthcare
   authors: Kurt Butler, Stephanie Riley, Damian Machlanski, Edward Moroshko, Panagiotis Dimitrakopoulos, Thomas Melistas, Akchunya Chanchal, Konstantinos Vilouras, Zhihua Liu, Steven McDonagh, Hana Chockler, Ben Glocker, Niccolo Tempini, Matthew Sperrin, Sotirios Tsaftaris, Ricardo Silva
   venue: Edinburgh Research Explorer (University of Edinburgh)
@@ -181,14 +186,6 @@
   website: https://doi.org/10.59275/j.melba.2025-de23
   image: /assets/images/publications/jun_2025_melba.png
   code: https://github.com/vios-s/SWiFT
-  pdf: null
-- title: 'TRUST: Leveraging Text Robustness for Unsupervised Domain Adaptation'
-  authors: Mattia Litrico, Mario Valerio Giuffrida, Sebastiano Battiato, Devis Tuia
-  venue: arXiv
-  date: '2025-08-08'
-  website: https://doi.org/10.48550/arxiv.2508.06452
-  image: null
-  code: null
   pdf: null
 - title: No time to train! Training-Free Reference-Based Instance Segmentation
   authors: Miguel Espinosa, Chenhongyi Yang, Linus Ericsson, Steven McDonagh, Elliot J. Crowley
@@ -974,7 +971,7 @@
   pdf: null
 - title: 'Metrics reloaded: Recommendations for image analysis validation'
   authors: Lena Maier‐Hein, Annika Reinke, Patrick Godau, Minu D. Tizabi, Florian Buettner, Evangelia Christodoulou, Ben Glocker, Fabian Isensee, Jens Kleesiek, Michal Kozubek, Mauricio Reyes, Michael A. Riegler, Manuel Wiesenfarth, Ali Emre Kavur, Carole H. Sudre, Michael Baumgartner, Matthias Eisenmann, Doreen Heckmann-Nötzel, Tim Rädsch, Laura Ación, Michela Antonelli, Tal Arbel, Spyridon Bakas, Arriel Benis, Matthew B. Blaschko, M. Jorge Cardoso, Veronika Cheplygina, Beth A. Cimini, Professor Gary S. Collins, Keyvan Farahani, Luciana Ferrer, Adrián Galdrán, Bram van Ginneken, Robert Haase, Daniel A. Hashimoto, Michael M. Hoffman, Merel Huisman, Pierre Jannin, Charles E. Kahn, Dagmar Kainmueller, Bernhard Kainz, Alexandros Karargyris, Alan Karthikesalingam, Hannes Kenngott, Florian Kofler, Annette Kopp‐Schneider, Anna Kreshuk, Tahsin Kurç, Bennett A. Landman, Geert Litjens, Amin Madani, Klaus Maier‐Hein, Anne L. Martel, Peter Mattson, Erik Meijering, Bjoern Menze, Karel G. M. Moons, Henning Müller, Brennan Nichyporuk, Felix Nickel, Jens Petersen, Nasir Rajpoot, Nicola Rieke, Julio Sáez-Rodríguez, Clara I. Sá‎nchez, Shravya Shetty, Maarten van Smeden, Ronald M. Summers, Abdel Aziz Taha, Aleksei Tiulpin, Sotirios A. Tsaftaris, Ben Van Calster, Gaël Varoquaux, Paul F. Jäger
-  venue: arXiv
+  venue: IT University Of Copenhagen (IT University of Copenhagen)
   date: '2022-06-03'
   website: https://doi.org/10.48550/arxiv.2206.01653
   display: false
@@ -1298,7 +1295,7 @@
   pdf: null
 - title: 'GaNDLF: A Generally Nuanced Deep Learning Framework for Scalable End-to-End Clinical Workflows in Medical Imaging'
   authors: Sarthak Pati, Siddhesh Thakur, Hamamcı, İbrahim Ethem, Ujjwal Baid, Bhakti Baheti, Megh Bhalerao, Orhun Güley, Mouchtaris, Sofia, Lang, David, Spyridon Thermos, Karol Gotkowski, Camila González, Caleb M. Grenko, Getka, Alexander, Brandon Edwards, Micah Sheller, Wu, Junwen, Karkada, Deepthi, Panchumarthy, Ravi, Ahluwalia, Vinayak, Zou, Chunrui, Vishnu Bashyam, Li, Yuemeng, Babak Haghighi, Chitalia, Rhea, Abousamra, Shahira, Kurc, Tahsin M., Aimilia Gastounioti, Sezgin Er, Mark Bergman, Saltz, Joel H., Fan, Yong, Shah, Prashant, Anirban Mukhopadhyay, Sotirios A. Tsaftaris, Bjoern Menze, Christos Davatzikos, Despina Kontos, Karargyris, Alexandros, Umeton, Renato, Mattson, Peter, Spyridon Bakas
-  venue: Edinburgh Research Explorer (University of Edinburgh)
+  venue: Zurich Open Repository and Archive (University of Zurich)
   date: '2021-02-26'
   website: https://doi.org/10.48550/arxiv.2103.01006
 - title: 'CURL: Neural Curve Layers for Global Image Enhancement'
@@ -2012,7 +2009,7 @@
   pdf: null
 - title: Learning to Count Leaves of Plants
   authors: Mario Valerio Giuffrida
-  venue: Open MIND
+  venue: IMT Institutional Repository (IMT School for Advanced Studies Lucca)
   date: '2018-01-01'
   website: https://doi.org/10.13118/giuffrida-mario-valerio_phd2018
 - title: Editorial for Simulation and Synthesis in Medical Imaging
@@ -2244,6 +2241,11 @@
   image: null
   code: null
   pdf: /assets/pdfs/Tsaftaris_TiPS_Letter.pdf
+- title: 'Simulation and Synthesis in Medical Imaging: First International Workshop, SASHIMI 2016, Held in Conjunction with MICCAI 2016, Athens, Greece, October 21, 2016, Proceedings'
+  authors: Sotirios A. Tsaftaris, Alejandro F. Frangi, Jerry L. Prince, Ali Gooya
+  venue: null
+  date: '2016-10-01'
+  website: https://doi.org/10.1007/978-3-319-46630-9
 - title: Synthetic Prior Design for Real-Time Face Tracking
   authors: Steven McDonagh, Martin Klaudiny, Derek Bradley, Thabo Beeler, Iain Matthews, Kenny Mitchell
   venue: 2016 Fourth International Conference on 3D Vision (3DV)
@@ -2300,15 +2302,6 @@
   image: null
   code: null
   pdf: /assets/pdfs/Vasilis_SASHMI2016.pdf
-- title: Simulation and Synthesis in Medical Imaging
-  authors: Jerry L. Prince, Alejandro F. Frangi, Ali Gooya, Sotirios A. Tsaftaris
-  venue: Lecture notes in computer science
-  date: '2016-01-01'
-  website: https://doi.org/10.1007/978-3-319-46630-9
-  display: false
-  image: null
-  code: null
-  pdf: null
 - title: Supervised Learning of Functional Maps for Infarct Classification
   authors: Anirban Mukhopadhyay, İlkay Öksüz, Sotirios A. Tsaftaris
   venue: Lecture notes in computer science
