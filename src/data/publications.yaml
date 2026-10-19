@@ -118,6 +118,15 @@
   image: null
   code: null
   pdf: null
+- title: null
+  authors: null
+  venue: null
+  date: null
+  website: https://arxiv.org/abs/2511.18676
+  display: true
+  image: /assets/images/publications/yongcheng_2026_medvision.png
+  code: https://medvision-vlm.github.io
+  pdf: null
 - title: Preventing Shortcut Learning in Medical Image Analysis through Intermediate Layer Knowledge Distillation from Specialist Teachers
   authors: Christopher Boland, Sotirios A. Tsaftaris, Sonia Dahdouh
   venue: The Journal of Machine Learning for Biomedical Imaging
